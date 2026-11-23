@@ -716,32 +716,32 @@ main>section:not(#s-zh,#s-jp,#s-ko) .opt.no::before{background:var(--bad);border
 }
 
 /* ===== Hình minh họa & ví dụ (Ngữ pháp A–Z) ===== */
-#s-ngp .ga-fig{margin:18px 0;padding:14px 14px 10px;border:1px solid var(--line);border-radius:16px;background:var(--bg2);box-shadow:var(--sh)}
-#s-ngp .ga-fig figcaption{font-size:13px;color:var(--tx3);margin-top:8px;line-height:1.5;text-align:center}
-#s-ngp .ga-fig svg{display:block;width:100%;max-width:560px;height:auto;margin:0 auto;font-family:inherit;overflow:visible}
+main .ga-fig{margin:18px 0;padding:14px 14px 10px;border:1px solid var(--line);border-radius:16px;background:var(--bg2);box-shadow:var(--sh)}
+main .ga-fig figcaption{font-size:13px;color:var(--tx3);margin-top:8px;line-height:1.5;text-align:center}
+main .ga-fig svg{display:block;width:100%;max-width:560px;height:auto;margin:0 auto;font-family:inherit;overflow:visible}
 #s-ngp .ga-tl{max-width:460px!important}
-#s-ngp .ga-fig svg text{paint-order:stroke;stroke:var(--bg2);stroke-width:4px;stroke-linejoin:round}
+main .ga-fig svg text{paint-order:stroke;stroke:var(--bg2);stroke-width:4px;stroke-linejoin:round}
 /* khối dựng hình bằng HTML: gf-row (hàng thẻ), gf-card, gf-ic (biểu tượng), gf-arrow, gf-pill, gf-cols (so sánh 2 cột), gf-flow (sơ đồ bước) */
-#s-ngp .gf-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;align-items:stretch}
-#s-ngp .gf-card{flex:1 1 140px;max-width:240px;background:var(--bg3);border:1px solid var(--line);border-radius:14px;padding:12px;text-align:center;
+main .gf-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;align-items:stretch}
+main .gf-card{flex:1 1 140px;max-width:240px;background:var(--bg3);border:1px solid var(--line);border-radius:14px;padding:12px;text-align:center;
   border-top:3px solid var(--fc,var(--ac))}
-#s-ngp .gf-card b{display:block;font-size:15px;color:var(--tx);line-height:1.35}
-#s-ngp .gf-card small{display:block;font-size:12.5px;color:var(--tx2);line-height:1.45;margin-top:3px}
-#s-ngp .gf-ic{display:block;font-size:34px;line-height:1.15;margin-bottom:6px}
-#s-ngp .gf-arrow{align-self:center;font-size:22px;color:var(--tx3);font-weight:700}
-#s-ngp .gf-pill{display:inline-block;border-radius:20px;padding:2px 10px;margin:2px;font-size:13.5px;font-weight:600;
+main .gf-card b{display:block;font-size:15px;color:var(--tx);line-height:1.35}
+main .gf-card small{display:block;font-size:12.5px;color:var(--tx2);line-height:1.45;margin-top:3px}
+main .gf-ic{display:block;font-size:34px;line-height:1.15;margin-bottom:6px}
+main .gf-arrow{align-self:center;font-size:22px;color:var(--tx3);font-weight:700}
+main .gf-pill{display:inline-block;border-radius:20px;padding:2px 10px;margin:2px;font-size:13.5px;font-weight:600;
   background:color-mix(in srgb,var(--fc,var(--ac)) 16%,transparent);color:var(--fc,var(--ac))}
-#s-ngp .gf-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
-#s-ngp .gf-col{background:var(--bg3);border:1px solid var(--line);border-radius:14px;padding:12px;border-top:3px solid var(--fc,var(--ac))}
-#s-ngp .gf-col>b:first-child{display:block;font-size:14.5px;margin-bottom:6px;color:var(--fc,var(--ac))}
-#s-ngp .gf-col p{margin:4px 0;font-size:14px;line-height:1.5}
-#s-ngp .gf-flow{display:flex;flex-direction:column;align-items:center;gap:0}
-#s-ngp .gf-step{width:100%;max-width:440px;background:var(--bg3);border:1px solid var(--line);border-left:4px solid var(--fc,var(--ac));
+main .gf-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+main .gf-col{background:var(--bg3);border:1px solid var(--line);border-radius:14px;padding:12px;border-top:3px solid var(--fc,var(--ac))}
+main .gf-col>b:first-child{display:block;font-size:14.5px;margin-bottom:6px;color:var(--fc,var(--ac))}
+main .gf-col p{margin:4px 0;font-size:14px;line-height:1.5}
+main .gf-flow{display:flex;flex-direction:column;align-items:center;gap:0}
+main .gf-step{width:100%;max-width:440px;background:var(--bg3);border:1px solid var(--line);border-left:4px solid var(--fc,var(--ac));
   border-radius:12px;padding:10px 14px;font-size:14px;line-height:1.5}
-#s-ngp .gf-step b{color:var(--fc,var(--ac))}
-#s-ngp .gf-down{font-size:18px;color:var(--tx3);line-height:1.6}
-#s-ngp .gf-big{font-size:44px;line-height:1.1}
-#s-ngp .ac{--fc:var(--ac)} #s-ngp .vio{--fc:var(--vio)} #s-ngp .warn{--fc:var(--warn)} #s-ngp .good{--fc:var(--good)} #s-ngp .bad{--fc:var(--bad)}
+main .gf-step b{color:var(--fc,var(--ac))}
+main .gf-down{font-size:18px;color:var(--tx3);line-height:1.6}
+main .gf-big{font-size:44px;line-height:1.1}
+main [class*="gf-"].ac{--fc:var(--ac)} main [class*="gf-"].vio{--fc:var(--vio)} main [class*="gf-"].warn{--fc:var(--warn)} main [class*="gf-"].good{--fc:var(--good)} main [class*="gf-"].bad{--fc:var(--bad)}
 #s-ngp .ga-ex{margin-top:30px}
 #s-ngp .ga-exg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:10px}
 #s-ngp .ga-exc{display:flex;gap:12px;align-items:flex-start;background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:12px 12px 12px 14px}
@@ -801,7 +801,7 @@ main>section:not(#s-zh,#s-jp,#s-ko) .opt.no::before{background:var(--bad);border
   #s-ngp .ga-item{padding:10px}
   #s-ngp .ga-tools .btn{flex:1 1 100%}
   #s-ngp .ga-exg{grid-template-columns:minmax(0,1fr)}
-  #s-ngp .ga-fig{padding:12px 10px 8px;margin:16px -4px}
+  main .ga-fig{padding:12px 10px 8px;margin:16px -4px}
   #s-ngp .ga-quiz-wrap{padding:14px 12px;margin-left:-4px;margin-right:-4px}
 }
 @media(max-width:600px){
@@ -819,9 +819,9 @@ main>section:not(#s-zh,#s-jp,#s-ko) .opt.no::before{background:var(--bad);border
   table.stk td:first-child::before{display:none}
   table.stk td.k1::before{display:inline;font-size:inherit;letter-spacing:0;text-transform:none;color:inherit;margin-right:5px}
   /* hàng thẻ có mũi tên: xếp dọc, mũi tên quay xuống */
-  #s-ngp .gf-row:has(>.gf-arrow):has(>.gf-card){flex-direction:column;align-items:stretch;gap:4px}
-  #s-ngp .gf-row:has(>.gf-arrow):has(>.gf-card)>.gf-card{max-width:none;flex:none}
-  #s-ngp .gf-row:has(>.gf-card)>.gf-arrow{transform:rotate(90deg);line-height:1;padding:2px 0}
+  main .gf-row:has(>.gf-arrow):has(>.gf-card){flex-direction:column;align-items:stretch;gap:4px}
+  main .gf-row:has(>.gf-arrow):has(>.gf-card)>.gf-card{max-width:none;flex:none}
+  main .gf-row:has(>.gf-card)>.gf-arrow{transform:rotate(90deg);line-height:1;padding:2px 0}
   table.stk td:empty,table.stk td:has(>.cv:empty){display:none}
 }
 
@@ -846,6 +846,155 @@ main>section:not(#s-zh,#s-jp,#s-ko) .opt.no::before{background:var(--bad);border
   #s-plan .pl-go{margin-left:38px}
   #s-plan .pl-go{gap:6px 5px;margin-left:36px}
   #s-plan .pl-go button{font-size:12.6px;padding:6px 10px 6px 7px;min-height:34px;gap:5px}
+}
+
+/* ===== Trung · Nhật · Hàn: hình ngữ pháp, lộ trình, điện thoại ===== */
+:is(#s-zh,#s-jp,#s-ko) .gx-fig{margin:12px 0 6px;padding:12px 12px 8px;box-shadow:none;background:color-mix(in srgb,var(--bg3) 55%,var(--bg2))}
+:is(#s-zh,#s-jp,#s-ko) .gx-fig .gf-pill{font-size:15px}
+:is(#s-zh,#s-jp,#s-ko) .gx-more{font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--tx3);margin:12px 0 2px}
+.cp-plan{border:1px solid var(--line);border-radius:18px;background:var(--bg2);box-shadow:var(--sh);padding:14px;margin:16px 0 18px}
+.cp-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.cp-head b{display:block;font-size:17px}
+.cp-head small{display:block;font-size:13px;color:var(--tx3);line-height:1.45;margin-top:2px}
+.cp-pct{font-weight:800;color:var(--ac);font-size:16px;white-space:nowrap}
+.cp-bar{height:6px;border-radius:9px;background:var(--bg3);overflow:hidden;margin:10px 0 8px}
+.cp-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--ac),var(--vio));border-radius:9px;transition:width .3s}
+.cp-wk{border:1px solid var(--line);border-radius:12px;margin:8px 0 0;background:var(--bg)}
+.cp-wk>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px 12px;font-weight:700;font-size:14.5px}
+.cp-wk>summary::-webkit-details-marker{display:none}
+.cp-wk>summary::before{content:"▸";color:var(--ac);margin-right:2px;transition:transform .15s}
+.cp-wk[open]>summary::before{transform:rotate(90deg)}
+.cp-wk>summary span{flex:1}
+.cp-wk>summary em{font-style:normal;font-size:12px;font-weight:700;color:var(--tx3);background:var(--bg3);border-radius:20px;padding:1px 8px}
+.cp-chk{display:flex;gap:10px;align-items:flex-start;padding:6px 12px 2px;cursor:pointer;font-size:14.3px;line-height:1.5}
+.cp-chk input{width:19px;height:19px;flex:none;margin-top:2px;accent-color:var(--ac)}
+.cp-chk.done span{color:var(--tx3);text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--tx3) 60%,transparent)}
+.cp-go{display:flex;flex-wrap:wrap;gap:6px 5px;margin:4px 12px 8px 41px}
+.cp-go button{display:inline-flex;align-items:center;gap:6px;font-family:inherit;font-size:12.8px;font-weight:600;line-height:1.3;color:var(--ac);
+  background:color-mix(in srgb,var(--ac) 10%,transparent);border:1px solid color-mix(in srgb,var(--ac) 30%,transparent);border-radius:20px;padding:5px 11px 5px 8px;cursor:pointer;text-align:left}
+.cp-go button:hover{background:color-mix(in srgb,var(--ac) 20%,transparent);border-color:var(--ac)}
+.cp-go button i{font-style:normal;font-size:11.5px;font-weight:800;min-width:15px;text-align:center}
+.cp-chk.done+.cp-go{opacity:.55}
+.cp-wk>.cp-go:last-child{margin-bottom:12px}
+#pl-back2{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:46;font-family:inherit;font-size:14px;font-weight:700;color:#fff;
+  background:linear-gradient(135deg,var(--ac2,var(--ac)),var(--vio));border:0;border-radius:24px;padding:11px 18px;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.35);white-space:nowrap}
+#pl-back2[hidden]{display:none}
+@media(min-width:861px){#pl-back2{left:calc(50% + 130px)}}
+@media(max-width:860px){
+  :is(#s-zh,#s-jp,#s-ko) .play{width:40px;height:40px;min-width:40px}
+  :is(#s-zh,#s-jp,#s-ko) .zbtn.sm{min-height:36px;padding:6px 12px}
+  :is(#s-zh,#s-jp,#s-ko) input:not([type=checkbox]):not([type=radio]),:is(#s-zh,#s-jp,#s-ko) select{font-size:16px!important}
+  .cp-go button{min-height:34px;font-size:12.6px}
+}
+@media(max-width:600px){
+  /* bảng từ vựng: mỗi dòng thành một thẻ, không phải vuốt ngang */
+  :is(#s-zh,#s-jp,#s-ko) .tbl-wrap:has(td.vic){overflow:visible;max-height:none!important;height:auto!important}
+  :is(#s-zh,#s-jp,#s-ko) table:has(td.vic),:is(#s-zh,#s-jp,#s-ko) table:has(td.vic)>tbody{display:block;width:100%}
+  :is(#s-zh,#s-jp,#s-ko) table:has(td.vic) tr:has(>th){display:none}
+  :is(#s-zh,#s-jp,#s-ko) table:has(td.vic) tr{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:10px;row-gap:1px;position:relative;
+    min-height:62px;padding:10px 12px 10px 60px;border-bottom:1px solid var(--line)}
+  :is(#s-zh,#s-jp,#s-ko) table:has(td.vic) tr:has(.zbtn){padding-right:74px}
+  :is(#s-zh,#s-jp,#s-ko) table:has(td.vic) td{display:block;padding:0!important;border:0!important;width:auto!important}
+  :is(#s-zh,#s-jp,#s-ko) table:has(td.vic) td:first-child{position:absolute;left:10px;top:50%;transform:translateY(-50%)}
+  :is(#s-zh,#s-jp,#s-ko) table:has(td.vic) td:has(>.zbtn){position:absolute;right:10px;top:50%;transform:translateY(-50%)}
+  :is(#s-zh,#s-jp,#s-ko) table:has(td.vic) td.vic{flex-basis:100%;font-size:14.5px}
+  :is(#s-zh,#s-jp,#s-ko) table:has(td.vic) :is(td.hvc,td.rom){font-size:12.5px}
+}
+
+/* ===================== Trang trí theo từng nước (body[data-lang]) ===================== */
+/* ---- bảng màu ---- */
+body[data-lang="en"]{--ac:#6b9bff;--vio:#ff6b7f;--jade-soft:rgba(107,155,255,.14)}
+body[data-lang="zh"]{--ac:#ff7a63;--ac2:#c0392b;--vio:#f0c14b;--jade-soft:rgba(255,122,99,.14)}
+body[data-lang="jp"]{--ac:#ff8fb5;--ac2:#c2185b;--vio:#95a6ff;--jade-soft:rgba(255,143,181,.14)}
+body[data-lang="ko"]{--ac:#38c6a4;--ac2:#0f7d65;--vio:#ff6f6f;--jade-soft:rgba(56,198,164,.14)}
+html:is([data-theme="light"],[data-theme="paper"]) body[data-lang="en"]{--ac:#1d4fc4;--vio:#c8102e;--jade-soft:rgba(29,79,196,.1)}
+html:is([data-theme="light"],[data-theme="paper"]) body[data-lang="zh"]{--ac:#b42318;--vio:#9a6a00;--jade-soft:rgba(180,35,24,.1)}
+html:is([data-theme="light"],[data-theme="paper"]) body[data-lang="jp"]{--ac:#c2185b;--vio:#3346a8;--jade-soft:rgba(194,24,91,.1)}
+html:is([data-theme="light"],[data-theme="paper"]) body[data-lang="ko"]{--ac:#0b7a62;--vio:#c62828;--jade-soft:rgba(11,122,98,.1)}
+
+/* ---- dải màu trên cùng màn hình ---- */
+body[data-lang]::before{content:"";position:fixed;left:0;right:0;top:0;height:4px;z-index:41;pointer-events:none}
+body[data-lang="en"]::before{background:linear-gradient(90deg,#012169 0 33.3%,#fff 33.3% 66.6%,#c8102e 66.6%)}
+body[data-lang="zh"]::before{height:6px;background:#b8261b url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='6'%3E%3Cpath d='M0 5.2h13V.8H3v2.6h6' fill='none' stroke='%23f0c14b' stroke-width='1.1'/%3E%3C/svg%3E") repeat-x}
+body[data-lang="jp"]::before{background:linear-gradient(90deg,#ffb7cc,#ff8fb5 40%,#3346a8)}
+body[data-lang="ko"]::before{height:6px;background:repeating-linear-gradient(90deg,#e23b3b 0 22px,#f6c431 22px 44px,#2e9b5b 44px 66px,#2f6fd6 66px 88px,#f4f1ea 88px 110px,#e86aa6 110px 132px,#7a4fc2 132px 154px)}
+
+/* ---- nền hoa văn ---- */
+body[data-lang="zh"]{background:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='170' height='130'%3E%3Cg fill='none' stroke='%23ff7a63' stroke-opacity='.07' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M22 74q0-14 14-14q7 0 10 5q4-12 17-12q14 0 16 14q12 0 12 11q0 8-8 8H30q-8 0-8-12z'/%3E%3Cpath d='M38 72q0-6 6-6q5 0 5 5q0 4-4 4q-3 0-3-3M62 62q0-7 7-7q6 0 6 6q0 5-5 5q-4 0-4-4'/%3E%3Cpath d='M110 118q0-10 10-10q5 0 7 4q3-8 12-8q10 0 11 10q9 0 9 8q0 5-5 5h-36q-8 0-8-9z'/%3E%3C/g%3E%3C/svg%3E"),
+  radial-gradient(900px 420px at 88% -140px,rgba(255,122,99,.12),transparent 70%),
+  radial-gradient(760px 400px at 20% -200px,rgba(240,193,75,.1),transparent 70%),var(--bg);background-attachment:fixed}
+body[data-lang="jp"]{background:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='28'%3E%3Cg fill='none' stroke='%2395a6ff' stroke-opacity='.075' stroke-width='1.3'%3E%3Ccircle cx='28' cy='28' r='26'/%3E%3Ccircle cx='28' cy='28' r='19'/%3E%3Ccircle cx='28' cy='28' r='12'/%3E%3Ccircle cx='0' cy='14' r='26'/%3E%3Ccircle cx='56' cy='14' r='26'/%3E%3C/g%3E%3C/svg%3E"),
+  radial-gradient(900px 420px at 88% -140px,rgba(255,143,181,.13),transparent 70%),
+  radial-gradient(760px 400px at 20% -200px,rgba(149,166,255,.1),transparent 70%),var(--bg);background-attachment:fixed}
+body[data-lang="ko"]{background:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Cg fill='none' stroke='%2338c6a4' stroke-opacity='.07' stroke-width='1.4'%3E%3Crect x='3' y='3' width='38' height='38'/%3E%3Cpath d='M22 3v38M3 22h38M12 12h20v20H12z'/%3E%3C/g%3E%3C/svg%3E"),
+  radial-gradient(900px 420px at 88% -140px,rgba(56,198,164,.12),transparent 70%),
+  radial-gradient(760px 400px at 20% -200px,rgba(255,111,111,.09),transparent 70%),var(--bg);background-attachment:fixed}
+body[data-lang="en"]{background:
+  radial-gradient(900px 420px at 88% -140px,rgba(107,155,255,.12),transparent 70%),
+  radial-gradient(760px 400px at 20% -200px,rgba(255,107,127,.08),transparent 70%),var(--bg);background-attachment:fixed}
+
+/* ---- tiêu đề: con dấu / hanko / thái cực ---- */
+body[data-lang="zh"] #s-zh .view>.top h1::after{content:"学";display:inline-grid;place-items:center;width:1.45em;height:1.45em;margin-left:.45em;
+  font:700 .62em/1 var(--f-han);color:#fff;background:#c0392b;border-radius:5px;transform:rotate(-7deg);vertical-align:.12em;
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,.4),0 3px 10px rgba(192,57,43,.35)}
+body[data-lang="jp"] #s-jp .view>.top h1::after{content:"学";display:inline-grid;place-items:center;width:1.5em;height:1.5em;margin-left:.45em;
+  font:700 .6em/1 "Klee One","Noto Sans JP",serif;color:#bc002d;border:2.5px solid #bc002d;border-radius:50%;transform:rotate(8deg);vertical-align:.12em;
+  background:rgba(188,0,45,.06)}
+body[data-lang="ko"] #s-ko .view>.top h1::after{content:"";display:inline-block;width:.95em;height:.95em;margin-left:.45em;vertical-align:-.05em;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M2 20a18 18 0 0 1 36 0a9 9 0 0 1-18 0a9 9 0 0 0-18 0z' fill='%23cd2e3a'/%3E%3Cpath d='M2 20a9 9 0 0 1 18 0a9 9 0 0 0 18 0a18 18 0 0 1-36 0z' fill='%230047a0'/%3E%3C/svg%3E") center/contain no-repeat}
+
+/* ---- hoạ tiết góc phải mỗi phần ---- */
+#s-zh,#s-jp,#s-ko{position:relative}
+#s-zh::before,#s-jp::before,#s-ko::before{content:"";position:absolute;top:-6px;right:0;pointer-events:none;background-repeat:no-repeat;background-position:top right;background-size:contain;z-index:0}
+/* đèn lồng đỏ */
+#s-zh::before{width:96px;height:118px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 118'%3E%3Cg id='l'%3E%3Cpath d='M24 0v14' stroke='%23e7b53c' stroke-width='2'/%3E%3Crect x='14' y='13' width='20' height='6' rx='2' fill='%23e7b53c'/%3E%3Cellipse cx='24' cy='40' rx='22' ry='21' fill='%23d7372f'/%3E%3Cpath d='M24 19v42M13 21q-8 19 0 38M35 21q8 19 0 38' stroke='%23a01f18' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='17' cy='33' rx='5' ry='9' fill='%23ff8a7a' opacity='.35'/%3E%3Crect x='14' y='60' width='20' height='6' rx='2' fill='%23e7b53c'/%3E%3Cpath d='M24 66v24M20 70v16M28 70v16' stroke='%23e7b53c' stroke-width='1.6'/%3E%3C/g%3E%3Cuse href='%23l' x='46' y='22'/%3E%3C/svg%3E")}
+/* cành hoa anh đào */
+#s-jp::before{width:170px;height:110px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 170 110'%3E%3Cdefs%3E%3Cg id='f'%3E%3Cg fill='%23ffc7d9' stroke='%23f48fb1' stroke-width='.8'%3E%3Cellipse rx='5.5' ry='8' transform='translate(0 -7)'/%3E%3Cellipse rx='5.5' ry='8' transform='rotate(72) translate(0 -7)'/%3E%3Cellipse rx='5.5' ry='8' transform='rotate(144) translate(0 -7)'/%3E%3Cellipse rx='5.5' ry='8' transform='rotate(216) translate(0 -7)'/%3E%3Cellipse rx='5.5' ry='8' transform='rotate(288) translate(0 -7)'/%3E%3C/g%3E%3Ccircle r='3' fill='%23e75480'/%3E%3C/g%3E%3C/defs%3E%3Cpath d='M170 6Q120 14 96 40T40 70Q22 78 8 96M96 40q10 18 2 40M128 22q-4 16-20 24' fill='none' stroke='%236b4a3a' stroke-width='3.2' stroke-linecap='round'/%3E%3Cuse href='%23f' x='40' y='70'/%3E%3Cuse href='%23f' x='70' y='52'/%3E%3Cuse href='%23f' x='98' y='80'/%3E%3Cuse href='%23f' x='112' y='44'/%3E%3Cuse href='%23f' x='146' y='14'/%3E%3Cuse href='%23f' x='16' y='92'/%3E%3C/svg%3E")}
+/* tấm vải ghép jogakbo */
+#s-ko::before{width:92px;height:92px;top:2px;opacity:.85;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 92 92'%3E%3Cg stroke='%23f4f1ea' stroke-width='2'%3E%3Crect x='2' y='2' width='40' height='28' fill='%232f6fd6'/%3E%3Crect x='42' y='2' width='48' height='18' fill='%23f6c431'/%3E%3Crect x='42' y='20' width='22' height='30' fill='%23e23b3b'/%3E%3Crect x='64' y='20' width='26' height='44' fill='%232e9b5b'/%3E%3Crect x='2' y='30' width='24' height='40' fill='%23e86aa6'/%3E%3Crect x='26' y='30' width='16' height='20' fill='%2338c6a4'/%3E%3Crect x='26' y='50' width='38' height='40' fill='%23f6c431'/%3E%3Crect x='2' y='70' width='24' height='20' fill='%237a4fc2'/%3E%3Crect x='64' y='64' width='26' height='26' fill='%23e23b3b'/%3E%3C/g%3E%3C/svg%3E")}
+#s-zh .view>.top h1{padding-right:96px}
+#s-jp .view>.top h1{padding-right:150px}
+#s-ko .view>.top h1{padding-right:96px}
+#s-zh>*,#s-jp>*,#s-ko>*{position:relative;z-index:1}
+
+/* ---- tiếng Anh: hình bóng London thay chữ "Aa" ở khối mở đầu ---- */
+body[data-lang="en"] .hero::after{content:"";right:8px;bottom:0;width:300px;height:92px;letter-spacing:0;opacity:.5;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 92'%3E%3Cg fill='%236b9bff' fill-opacity='.38'%3E%3Cpath d='M0 92V70h22V58h18v34z'/%3E%3Cpath d='M46 92V40h4l4-12 4 12h4v52z'/%3E%3Crect x='49' y='44' width='10' height='10' rx='5' fill-opacity='.6'/%3E%3Cpath d='M66 92V64h40v-8h8v8h30v28z'/%3E%3Cpath d='M150 92V50l10-12 10 12v42z'/%3E%3Cpath d='M176 92V66h30v26z'/%3E%3C/g%3E%3Cg fill='none' stroke='%236b9bff' stroke-opacity='.4' stroke-width='2'%3E%3Ccircle cx='250' cy='50' r='34'/%3E%3Cpath d='M250 16v68M216 50h68M226 26l48 48M274 26l-48 48'/%3E%3Cpath d='M240 92l10-42 10 42'/%3E%3C/g%3E%3C/svg%3E") bottom right/contain no-repeat}
+
+/* ---- cánh hoa anh đào rơi (chỉ tiếng Nhật, nằm dưới nội dung) ---- */
+#sakura{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;display:none}
+body[data-lang="jp"] #sakura{display:block}
+#sakura i{position:absolute;top:-24px;width:12px;height:10px;border-radius:120% 0 120% 0;background:linear-gradient(135deg,#ffd3e0,#ff9fc0);opacity:.75;
+  animation:skFall linear infinite}
+#sakura i:nth-child(1){left:6%;animation-duration:15s;animation-delay:-2s}
+#sakura i:nth-child(2){left:22%;animation-duration:19s;animation-delay:-9s;transform:scale(.8)}
+#sakura i:nth-child(3){left:38%;animation-duration:17s;animation-delay:-5s}
+#sakura i:nth-child(4){left:55%;animation-duration:21s;animation-delay:-13s}
+#sakura i:nth-child(5){left:71%;animation-duration:16s;animation-delay:-7s}
+#sakura i:nth-child(6){left:86%;animation-duration:20s;animation-delay:-1s}
+#sakura i:nth-child(7){left:94%;animation-duration:18s;animation-delay:-11s}
+@keyframes skFall{0%{transform:translate(0,0) rotate(0)}25%{transform:translate(24px,26vh) rotate(90deg)}50%{transform:translate(-14px,52vh) rotate(180deg)}
+  75%{transform:translate(20px,78vh) rotate(270deg)}100%{transform:translate(-8px,108vh) rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){#sakura{display:none!important}}
+
+/* ---- thẻ, nút theo nước ---- */
+body[data-lang="zh"] :is(#s-zh) :is(.zcard,.gram details){border-top:2px solid color-mix(in srgb,var(--vio) 55%,transparent)}
+body[data-lang="jp"] :is(#s-jp) :is(.zcard,.gram details){border-radius:18px}
+body[data-lang="ko"] :is(#s-ko) :is(.zcard,.gram details){border-top:3px solid transparent;border-image:linear-gradient(90deg,#e23b3b,#f6c431,#2e9b5b,#2f6fd6,#e86aa6) 1}
+body[data-lang="ko"] :is(#s-ko) .gram details{border-image:none;border-top-color:color-mix(in srgb,var(--ac) 55%,var(--line))}
+
+@media(max-width:860px){
+  body[data-lang]::before{z-index:41}
+  #s-zh::before{width:66px;height:82px}
+  #s-jp::before{width:120px;height:78px}
+  #s-ko::before{width:64px;height:64px}
+  #s-zh .view>.top h1{padding-right:64px}
+  #s-jp .view>.top h1{padding-right:96px}
+  #s-ko .view>.top h1{padding-right:62px}
+  body[data-lang="en"] .hero::after{width:210px;height:64px}
 }
 </style>
 <!--UI2_STYLE_END-->
@@ -2999,6 +3148,1571 @@ $('#eNote').addEventListener('keydown',e=>{if(e.key==='Enter')$('#eAdd').click()
 errRender();
 </script>
 <!--ZH_SCRIPT_START-->
+<!--GX_START-->
+<script>window.GXT={zh:{},jp:{},ko:{}};window.GXP={};
+function gxF(m,i,g){const x=GXT[m]&&GXT[m][i];if(!x||x.t!==g.t||!x.fig)return'';return x.fig.map(f=>'<figure class="ga-fig gx-fig">'+f.html+(f.cap?'<figcaption>'+f.cap+'</figcaption>':'')+'</figure>').join('')}
+function gxE(m,i,g){const x=GXT[m]&&GXT[m][i];return x&&x.t===g.t&&x.ex?g.ex.concat(x.ex):g.ex}
+</script>
+<script>/* gx_jp.js */
+/* ===== Tiếng Nhật · hình minh họa + ví dụ thêm cho ngữ pháp (GXT.jp) và lộ trình 12 tuần (GXP.jp) ===== */
+
+GXT.jp[0]={t:'Câu danh từ: N1 は N2 です',
+ fig:[
+  {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Tiếng Nhật</b><p><span class="gf-pill ac ja">私</span><span class="gf-pill warn ja">は</span><span class="gf-pill vio ja">エンジニア</span><span class="gf-pill good ja">です</span></p><p><span class="mini">chủ đề → は → danh từ → です</span></p></div>
+<div class="gf-col vio"><b>Tiếng Việt</b><p><span class="gf-pill ac">Tôi</span><span class="gf-pill good">là</span><span class="gf-pill vio">kỹ sư</span></p><p><span class="mini">“là” đứng giữa câu</span></p></div>
+</div>`, cap:'<b>は</b> (đọc “wa”) đánh dấu chủ đề. <b>です</b> luôn nằm cuối câu, còn “là” của tiếng Việt nằm giữa.'},
+  {html:`<div class="gf-cols">
+<div class="gf-col good"><b>✅ Khẳng định</b><p><span class="ja">学生です。</span></p><p><span class="mini">là sinh viên</span></p></div>
+<div class="gf-col bad"><b>❌ Phủ định</b><p><span class="ja">学生ではありません。</span></p><p><span class="ja">学生じゃありません。</span> <span class="mini">(khi nói)</span></p><p><span class="mini">không phải là sinh viên</span></p></div>
+</div>`, cap:'Chỉ đổi phần đuôi: <b>です</b> → <b>ではありません</b>; nói chuyện hằng ngày dùng <b>じゃありません</b>.'}
+ ],
+ ex:[
+  ['こちらは山田部長です。','こちらはやまだぶちょうです。','Đây là trưởng phòng Yamada.'],
+  ['私はITエンジニアです。','わたしはアイティーエンジニアです。','Tôi là kỹ sư IT.'],
+  ['リンさんは学生じゃありません。会社員です。','リンさんはがくせいじゃありません。かいしゃいんです。','Chị Linh không phải sinh viên. Chị ấy là nhân viên công ty.']
+ ]};
+
+GXT.jp[1]={t:'Câu hỏi với か',
+ fig:[
+  {html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🗣️</span><b class="ja">会社員です。</b><small>câu kể</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card warn"><span class="gf-ic ja">か</span><b class="ja">会社員ですか。</b><small>thêm か, giữ nguyên trật tự</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card good"><span class="gf-ic">💬</span><b class="ja">はい、そうです。</b><small class="ja">いいえ、違います。</small></div>
+</div>`, cap:'Không đảo từ như tiếng Anh: chỉ thêm <b>か</b> vào cuối câu và lên giọng nhẹ.'},
+  {html:`<div class="gf-cols">
+<div class="gf-col warn"><b>Hỏi</b><p><span class="gf-pill ac ja">これ</span><span class="gf-pill ac ja">は</span><span class="gf-pill warn ja">何</span><span class="gf-pill ac ja">ですか</span></p><p><span class="mini">Cái này là cái gì?</span></p></div>
+<div class="gf-col good"><b>Trả lời</b><p><span class="gf-pill ac ja">これ</span><span class="gf-pill ac ja">は</span><span class="gf-pill good ja">本</span><span class="gf-pill ac ja">です</span></p><p><span class="mini">Cái này là quyển sách.</span></p></div>
+</div>`, cap:'Từ để hỏi (<b>何, 誰, どこ</b>) đứng đúng chỗ của thông tin trả lời.'}
+ ],
+ ex:[
+  ['この資料は誰のですか。','このしりょうはだれのですか。','Tài liệu này là của ai?'],
+  ['会議は何時からですか。','かいぎはなんじからですか。','Cuộc họp bắt đầu từ mấy giờ?'],
+  ['お国はどちらですか。','おくにはどちらですか。','Anh/chị đến từ nước nào?']
+ ]};
+
+GXT.jp[2]={t:'の — sở hữu và bổ nghĩa',
+ fig:[
+  {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Tiếng Nhật</b><p><span class="gf-pill ac ja">私</span><span class="gf-pill warn ja">の</span><span class="gf-pill vio ja">本</span></p><p><span class="gf-pill ac ja">会社</span><span class="gf-pill warn ja">の</span><span class="gf-pill vio ja">パソコン</span></p></div>
+<div class="gf-col vio"><b>Tiếng Việt</b><p><span class="gf-pill vio">sách</span><span class="gf-pill warn">của</span><span class="gf-pill ac">tôi</span></p><p><span class="gf-pill vio">máy tính</span><span class="gf-pill warn">của</span><span class="gf-pill ac">công ty</span></p></div>
+</div>`, cap:'Cùng màu là cùng một từ: tiếng Nhật đặt từ bổ nghĩa <b>trước の</b>, tiếng Việt đặt sau. Dịch thì đọc từ phải sang trái.'}
+ ],
+ ex:[
+  ['これは会社のパソコンです。','これはかいしゃのパソコンです。','Đây là máy tính của công ty.'],
+  ['田中さんはABC社のエンジニアです。','たなかさんはエービーシーしゃのエンジニアです。','Anh Tanaka là kỹ sư của công ty ABC.'],
+  ['その傘は私のです。','そのかさはわたしのです。','Cái ô đó là của tôi.']
+ ]};
+
+GXT.jp[3]={t:'も — cũng',
+ fig:[
+  {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Thay は・が・を</b><p><span class="ja">私<b>は</b>会社員です。</span></p><p><span class="ja">リンさん<b>も</b>会社員です。</span></p><p><span class="mini">chị Linh cũng là nhân viên</span></p></div>
+<div class="gf-col vio"><b>Giữ に・へ・で, thêm も</b><p><span class="ja">東京<b>へ</b>行きます。</span></p><p><span class="ja">大阪<b>へも</b>行きます。</span></p><p><span class="mini">cũng đi cả Osaka</span></p></div>
+<div class="gf-col bad"><b>Từ để hỏi + も + phủ định</b><p><span class="ja">何<b>も</b>食べません。</span></p><p><span class="ja">どこへ<b>も</b>行きません。</span></p><p><span class="mini">không … gì cả / không đi đâu cả</span></p></div>
+</div>`, cap:'<b>も</b> chiếm chỗ của は・が・を; với に・へ・で thì đứng sau trợ từ. Không bao giờ nói <b>をも</b>, <b>がも</b>.'}
+ ],
+ ex:[
+  ['ミンさんもエンジニアですか。','ミンさんもエンジニアですか。','Anh Minh cũng là kỹ sư à?'],
+  ['私はお茶も飲みます。','わたしはおちゃものみます。','Tôi cũng uống trà.'],
+  ['今朝は何も食べませんでした。','けさはなにもたべませんでした。','Sáng nay tôi không ăn gì cả.']
+ ]};
+
+GXT.jp[4]={t:'これ・それ・あれ / この・その・あの',
+ fig:[
+  {html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🙋</span><b class="ja">これ・この・ここ</b><small>gần người nói</small></div>
+<div class="gf-card vio"><span class="gf-ic">🫵</span><b class="ja">それ・その・そこ</b><small>gần người nghe</small></div>
+<div class="gf-card warn"><span class="gf-ic">👉</span><b class="ja">あれ・あの・あそこ</b><small>xa cả hai người</small></div>
+<div class="gf-card good"><span class="gf-ic">❓</span><b class="ja">どれ・どの・どこ</b><small>dùng để hỏi</small></div>
+</div>`, cap:'Bộ <b>こ・そ・あ・ど</b>: đầu từ cho biết khoảng cách, đuôi cho biết cách dùng (<b>れ</b> = vật, <b>の</b> + danh từ, <b>ここ・そこ・あそこ</b> = nơi chốn).'},
+  {html:`<div class="gf-cols">
+<div class="gf-col good"><b>Đứng một mình: これ</b><p><span class="gf-pill ac ja">これ</span><span class="gf-pill warn ja">は</span><span class="gf-pill vio ja">本です</span></p><p><span class="mini">Cái này là sách.</span></p></div>
+<div class="gf-col vio"><b>Đi kèm danh từ: この + N</b><p><span class="gf-pill ac ja">この本</span><span class="gf-pill warn ja">は</span><span class="gf-pill vio ja">私のです</span></p><p><span class="mini">❌ この は… (thiếu danh từ)</span></p></div>
+</div>`, cap:'<b>この・その・あの</b> không đứng một mình, luôn cần danh từ ngay sau.'}
+ ],
+ ex:[
+  ['あの人は誰ですか。','あのひとはだれですか。','Người kia là ai vậy?'],
+  ['ここは会議室です。','ここはかいぎしつです。','Đây là phòng họp.'],
+  ['その資料は田中さんのです。','そのしりょうはたなかさんのです。','Tài liệu đó là của anh Tanaka.']
+ ]};
+
+GXT.jp[5]={t:'Trật tự S – O – V: động từ luôn đứng cuối',
+ fig:[
+  {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Tiếng Nhật: S – O – V</b><p><span class="gf-pill ac ja">私は</span><span class="gf-pill warn ja">会社で</span><span class="gf-pill vio ja">メールを</span><span class="gf-pill good ja">書きます</span></p></div>
+<div class="gf-col vio"><b>Tiếng Việt: S – V – O</b><p><span class="gf-pill ac">Tôi</span><span class="gf-pill good">viết</span><span class="gf-pill vio">email</span><span class="gf-pill warn">ở công ty</span></p></div>
+</div>`, cap:'Cùng màu là cùng một ý. Động từ (<b>書きます</b>) nằm cuối; mỗi cụm mang trợ từ riêng (<b>は, で, を</b>) để biết vai trò.'},
+  {html:`<div class="gf-cols">
+<div class="gf-col good"><b>✅ Đổi chỗ cụm được</b><p><span class="ja">会社で私はメールを書きます。</span></p><p><span class="mini">trợ từ giữ vai trò, động từ vẫn ở cuối</span></p></div>
+<div class="gf-col bad"><b>❌ Động từ không ở cuối</b><p><span class="ja">私は書きますメールを。</span></p><p><span class="mini">bắt chước tiếng Việt, sai</span></p></div>
+</div>`, cap:'Mẹo: nói hết người, nơi, vật trước, hành động để dành nói sau cùng.'}
+ ],
+ ex:[
+  ['私は毎日日本語を勉強します。','わたしはまいにちにほんごをべんきょうします。','Ngày nào tôi cũng học tiếng Nhật.'],
+  ['山田さんは報告書を書きます。','やまださんはほうこくしょをかきます。','Anh Yamada viết báo cáo.'],
+  ['会社でアプリを作ります。','かいしゃでアプリをつくります。','Tôi làm ứng dụng ở công ty.']
+ ]};
+
+GXT.jp[6]={t:'Động từ thể ます',
+ fig:[
+  {html:`<div class="gf-flow">
+<div class="gf-step">Thể từ điển: <span class="ja"><b>食べる</b></span> <span class="mini">(ăn, dạng thường)</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step good"><span class="ja"><b>食べます</b></span> · ăn / sẽ ăn</div>
+<div class="gf-down">↓</div>
+<div class="gf-step bad"><span class="ja"><b>食べません</b></span> · không ăn</div>
+<div class="gf-down">↓</div>
+<div class="gf-step ac"><span class="ja"><b>食べました</b></span> · đã ăn</div>
+<div class="gf-down">↓</div>
+<div class="gf-step warn"><span class="ja"><b>食べませんでした</b></span> · đã không ăn</div>
+</div>`, cap:'Bốn đuôi lịch sự: <b>ます</b> → <b>ません</b> → <b>ました</b> → <b>ませんでした</b>. Phần đầu động từ giữ nguyên.'},
+  {html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic ja">書</span><b>Nhóm 1</b><small class="ja">書く → 書きます</small><small>âm cuối hàng う → hàng い</small></div>
+<div class="gf-card vio"><span class="gf-ic ja">食</span><b>Nhóm 2</b><small class="ja">食べる → 食べます</small><small>bỏ る</small></div>
+<div class="gf-card warn"><span class="gf-ic ja">来</span><b>Nhóm 3</b><small class="ja">する → します</small><small class="ja">来る → 来ます</small></div>
+</div>`, cap:'Từ thể từ điển sang thể ます theo ba nhóm động từ. Nhóm 3 chỉ có <b>する</b> và <b>来る</b> (きます).'}
+ ],
+ ex:[
+  ['明日、東京へ行きます。','あした、とうきょうへいきます。','Ngày mai tôi đi Tokyo.'],
+  ['今日は残業しません。','きょうはざんぎょうしません。','Hôm nay tôi không làm thêm giờ.'],
+  ['先週、契約書を送りました。','せんしゅう、けいやくしょをおくりました。','Tuần trước tôi đã gửi hợp đồng.']
+ ]};
+
+GXT.jp[7]={t:'に (thời điểm, đích) · へ (hướng)',
+ fig:[
+  {html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🕖</span><b class="ja">7時に・月曜日に</b><small>mốc giờ, ngày, thứ cụ thể + に</small></div>
+<div class="gf-card vio"><span class="gf-ic">➡️</span><b class="ja">日本へ・日本に 行きます</b><small>hướng hoặc đích đến</small></div>
+<div class="gf-card bad"><span class="gf-ic">🚫</span><b class="ja">今日・明日・毎日</b><small>thời gian tương đối: không thêm に</small></div>
+</div>`, cap:'<b>に</b> gắn vào mốc thời gian có số, ngày, thứ. <b>へ</b> (đọc “e”) chỉ hướng; với 行く・来る・帰る dùng に cũng được.'},
+  {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Tiếng Nhật</b><p><span class="gf-pill ac ja">三時に</span><span class="gf-pill vio ja">会議室へ</span><span class="gf-pill good ja">行きます</span></p></div>
+<div class="gf-col vio"><b>Tiếng Việt</b><p><span class="gf-pill ac">3 giờ</span><span class="gf-pill good">tôi đến</span><span class="gf-pill vio">phòng họp</span></p></div>
+</div>`, cap:'Thời gian thường đứng đầu, nơi đến + <b>へ</b> đứng ngay trước động từ.'}
+ ],
+ ex:[
+  ['三時に会議室へ行きます。','さんじにかいぎしつへいきます。','3 giờ tôi đến phòng họp.'],
+  ['金曜日に国へ帰ります。','きんようびにくにへかえります。','Thứ sáu tôi về nước.'],
+  ['明日、取引先へ行きます。','あした、とりひきさきへいきます。','Ngày mai tôi đến chỗ đối tác.']
+ ]};
+
+GXT.jp[8]={t:'で — nơi diễn ra hành động, phương tiện',
+ fig:[
+  {html:`<div class="gf-row">
+<div class="gf-card vio"><span class="gf-ic">📍</span><b class="ja">会社に います</b><small><b>に</b>: nơi tồn tại</small></div>
+<div class="gf-card ac"><span class="gf-ic">🏃</span><b class="ja">会社で 働きます</b><small><b>で</b>: nơi hành động</small></div>
+<div class="gf-card warn"><span class="gf-ic">➡️</span><b class="ja">会社へ 行きます</b><small><b>へ</b>: hướng đi tới</small></div>
+</div>`, cap:'Cùng chữ 会社, đổi trợ từ là đổi nghĩa: <b>ở đó</b> (に), <b>làm gì ở đó</b> (で), <b>đi về phía đó</b> (へ).'},
+  {html:`<div class="gf-row">
+<div class="gf-card good"><span class="gf-ic">🚆</span><b class="ja">電車で</b><small>bằng tàu điện</small></div>
+<div class="gf-card good"><span class="gf-ic">✉️</span><b class="ja">メールで</b><small>bằng email</small></div>
+<div class="gf-card good"><span class="gf-ic">🗣️</span><b class="ja">日本語で</b><small>bằng tiếng Nhật</small></div>
+</div>`, cap:'<b>で</b> còn có nghĩa “bằng”: phương tiện, công cụ, ngôn ngữ.'}
+ ],
+ ex:[
+  ['メールで連絡します。','メールでれんらくします。','Tôi sẽ liên lạc bằng email.'],
+  ['報告書は日本語で書きます。','ほうこくしょはにほんごでかきます。','Báo cáo thì tôi viết bằng tiếng Nhật.'],
+  ['会議室で打ち合わせをします。','かいぎしつでうちあわせをします。','Chúng tôi họp bàn ở phòng họp.']
+ ]};
+
+GXT.jp[9]={t:'と — với, và',
+ fig:[
+  {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>🤝 と = cùng với</b><p><span class="gf-pill ac ja">同僚と</span><span class="gf-pill vio ja">昼ご飯を</span><span class="gf-pill good ja">食べます</span></p><p><span class="mini">ăn trưa với đồng nghiệp</span></p></div>
+<div class="gf-col vio"><b>➕ と = và (nối danh từ)</b><p><span class="gf-pill vio ja">請求書</span><span class="gf-pill warn ja">と</span><span class="gf-pill vio ja">契約書</span></p><p><span class="mini">hóa đơn và hợp đồng</span></p></div>
+<div class="gf-col warn"><b>⚠️ Tính từ, câu: không dùng と</b><p>rẻ và tiện → <span class="ja">安くて便利です</span></p><p><span class="mini">(nối bằng thể て)</span></p></div>
+</div>`, cap:'<b>と</b> chỉ nối <b>danh từ</b> hoặc chỉ người cùng làm. Nối tính từ, nối câu dùng cách khác (học ở thể て).'}
+ ],
+ ex:[
+  ['同僚と昼ご飯を食べます。','どうりょうとひるごはんをたべます。','Tôi ăn trưa với đồng nghiệp.'],
+  ['請求書と契約書を送ります。','せいきゅうしょとけいやくしょをおくります。','Tôi gửi hóa đơn và hợp đồng.'],
+  ['部長と大阪へ行きました。','ぶちょうとおおさかへいきました。','Tôi đã đi Osaka cùng trưởng phòng.']
+ ]};
+
+GXT.jp[10]={t:'から … まで — từ … đến',
+ fig:[
+  {html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🕘</span><b class="ja">9時から</b><small>từ 9 giờ</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card good"><span class="gf-ic">🕔</span><b class="ja">5時まで</b><small>đến 5 giờ</small></div>
+</div>`, cap:'Thời gian: <b>から</b> đặt sau điểm bắt đầu, <b>まで</b> đặt sau điểm kết thúc.'},
+  {html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🇻🇳</span><b class="ja">ハノイから</b><small>từ Hà Nội</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card good"><span class="gf-ic">🗼</span><b class="ja">東京まで</b><small>đến Tokyo</small></div>
+</div>`, cap:'Địa điểm cũng vậy. Khác tiếng Việt: “từ”, “đến” đứng <b>sau</b> mốc chứ không đứng trước.'}
+ ],
+ ex:[
+  ['会議は十時から十一時までです。','かいぎはじゅうじからじゅういちじまでです。','Cuộc họp từ 10 giờ đến 11 giờ.'],
+  ['ハノイから東京まで飛行機で六時間ぐらいです。','ハノイからとうきょうまでひこうきでろくじかんぐらいです。','Từ Hà Nội đến Tokyo đi máy bay mất khoảng sáu tiếng.'],
+  ['月曜日から金曜日まで働きます。','げつようびからきんようびまではたらきます。','Tôi làm việc từ thứ hai đến thứ sáu.']
+ ]};
+
+GXT.jp[11]={t:'Tính từ い và tính từ な',
+ fig:[
+  {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Tính từ い · 高い</b><p><span class="ja">高いパソコン</span> <span class="mini">(+ N)</span></p><p><span class="ja">高<b>くない</b>です</span> <span class="mini">(phủ định)</span></p><p><span class="ja">高<b>かった</b>です</span> <span class="mini">(quá khứ)</span></p></div>
+<div class="gf-col vio"><b>Tính từ な · 便利</b><p><span class="ja">便利<b>な</b>ツール</span> <span class="mini">(+ N)</span></p><p><span class="ja">便利<b>じゃありません</b></span> <span class="mini">(phủ định)</span></p><p><span class="ja">便利<b>でした</b></span> <span class="mini">(quá khứ)</span></p></div>
+<div class="gf-col warn"><b>Bẫy</b><p><span class="ja">いい → よくないです</span></p><p><span class="ja">きれいな・きらいな</span> <span class="mini">(đuôi い nhưng là な)</span></p><p><span class="ja">❌ 寒いでした → 寒かったです</span></p></div>
+</div>`, cap:'Tính từ <b>い</b> tự chia đuôi; tính từ <b>な</b> giữ nguyên, chỉ đổi phần です phía sau.'}
+ ],
+ ex:[
+  ['この会社のシステムはとても便利です。','このかいしゃのシステムはとてもべんりです。','Hệ thống của công ty này rất tiện.'],
+  ['昨日の会議は長かったです。','きのうのかいぎはながかったです。','Cuộc họp hôm qua kéo dài lâu.'],
+  ['ここは有名なレストランです。','ここはゆうめいなレストランです。','Đây là một nhà hàng nổi tiếng.']
+ ]};
+
+GXT.jp[12]={t:'あります / います — có, ở',
+ fig:[
+  {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>📦 あります · vật, sự kiện</b><p><span class="ja">パソコンがあります</span></p><p><span class="ja">荷物があります</span></p><p><span class="ja">会議があります</span></p></div>
+<div class="gf-col vio"><b>🧑 います · người, con vật</b><p><span class="ja">部長がいます</span></p><p><span class="ja">お客さんがいます</span></p><p><span class="ja">猫がいます</span></p></div>
+</div>`, cap:'Là người hoặc con vật → <b>います</b>; đồ vật, cây cối, sự kiện → <b>あります</b>.'},
+  {html:`<div class="gf-cols">
+<div class="gf-col good"><b>Ở đó có gì?</b><p><span class="gf-pill warn ja">倉庫に</span><span class="gf-pill ac ja">荷物が</span><span class="gf-pill good ja">あります</span></p><p><span class="mini">Trong kho có hàng.</span></p></div>
+<div class="gf-col warn"><b>Cái đó ở đâu?</b><p><span class="gf-pill ac ja">荷物は</span><span class="gf-pill warn ja">倉庫に</span><span class="gf-pill good ja">あります</span></p><p><span class="mini">Hàng ở trong kho.</span></p></div>
+</div>`, cap:'Nơi chốn luôn đi với <b>に</b>. Chưa biết có gì: <b>Nơi に N が</b>; đã nói về vật đó: <b>N は Nơi に</b>.'}
+ ],
+ ex:[
+  ['倉庫に荷物がたくさんあります。','そうこににもつがたくさんあります。','Trong kho có nhiều hàng.'],
+  ['受付に女の人がいます。','うけつけにおんなのひとがいます。','Ở quầy lễ tân có một người phụ nữ.'],
+  ['明日、会議があります。','あした、かいぎがあります。','Ngày mai có cuộc họp.']
+ ]};
+
+GXT.jp[13]={t:'が 好き / 上手 / 分かります',
+ fig:[
+  {html:`<div class="gf-row">
+<div class="gf-card bad"><span class="gf-ic">❤️</span><b class="ja">好き・嫌い</b><small>thích, ghét</small></div>
+<div class="gf-card ac"><span class="gf-ic">🎯</span><b class="ja">上手・下手</b><small>giỏi, kém</small></div>
+<div class="gf-card good"><span class="gf-ic">💡</span><b class="ja">分かります</b><small>hiểu, biết</small></div>
+</div>`, cap:'Ba nhóm từ này đánh dấu đối tượng bằng <b>が</b>.'},
+  {html:`<div class="gf-cols">
+<div class="gf-col good"><b>✅ Đúng</b><p><span class="gf-pill ac ja">私は</span><span class="gf-pill vio ja">音楽</span><span class="gf-pill warn ja">が</span><span class="gf-pill good ja">好きです</span></p></div>
+<div class="gf-col bad"><b>❌ Sai</b><p><span class="gf-pill ac ja">私は</span><span class="gf-pill vio ja">音楽</span><span class="gf-pill bad ja">を</span><span class="gf-pill good ja">好きです</span></p><p><span class="mini">“thích” trong tiếng Việt là động từ, nhưng 好き là tính từ な</span></p></div>
+</div>`, cap:'Người Việt hay dịch “thích cái gì” thành <b>を</b>. Với 好き, 上手, 分かります hãy dùng <b>が</b>.'}
+ ],
+ ex:[
+  ['リンさんは料理が上手です。','リンさんはりょうりがじょうずです。','Chị Linh nấu ăn giỏi.'],
+  ['私はカラオケがあまり好きじゃありません。','わたしはカラオケがあまりすきじゃありません。','Tôi không thích karaoke lắm.'],
+  ['Pythonが分かりますか。','パイソンがわかりますか。','Anh có biết Python không?']
+ ]};
+
+GXT.jp[14]={t:'たい — muốn làm',
+ fig:[
+  {html:`<div class="gf-flow">
+<div class="gf-step"><span class="ja"><b>行きます</b></span> → bỏ <b>ます</b> → <span class="ja">行き</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step good"><span class="ja"><b>行きたいです</b></span> · muốn đi</div>
+<div class="gf-down">↓</div>
+<div class="gf-step bad"><span class="ja"><b>行きたくないです</b></span> · không muốn đi</div>
+<div class="gf-down">↓</div>
+<div class="gf-step ac"><span class="ja"><b>行きたかったです</b></span> · đã muốn đi</div>
+</div>`, cap:'Gắn <b>たい</b> vào thân ます; sau đó chia y như tính từ い (<b>くない</b>, <b>かった</b>).'},
+  {html:`<div class="gf-cols">
+<div class="gf-col good"><b>✅ Bạn bè, đồng nghiệp</b><p><span class="ja">何が食べたいですか。</span></p><p><span class="mini">Bạn muốn ăn gì?</span></p></div>
+<div class="gf-col warn"><b>⚠️ Cấp trên, khách</b><p><span class="ja">コーヒーはいかがですか。</span></p><p><span class="mini">Mời anh dùng cà phê ạ? (không hỏi 飲みたいですか)</span></p></div>
+</div>`, cap:'Hỏi thẳng mong muốn của cấp trên bằng <b>たいですか</b> nghe thiếu lịch sự.'}
+ ],
+ ex:[
+  ['日本の会社で働きたいです。','にほんのかいしゃではたらきたいです。','Tôi muốn làm việc ở công ty Nhật.'],
+  ['今日は何も食べたくないです。','きょうはなにもたべたくないです。','Hôm nay tôi không muốn ăn gì cả.'],
+  ['週末、何をしたいですか。','しゅうまつ、なにをしたいですか。','Cuối tuần bạn muốn làm gì?']
+ ]};
+
+GXT.jp[15]={t:'ませんか / ましょう — mời, rủ',
+ fig:[
+  {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>🙋 V ませんか · mời</b><p><span class="ja">一緒に行きませんか。</span></p><p><span class="mini">Đi cùng tôi không? (hỏi ý, nhẹ nhàng)</span></p></div>
+<div class="gf-col good"><b>👍 V ましょう · cùng làm nhé</b><p><span class="ja">ええ、行きましょう。</span></p><p><span class="mini">Ừ, đi thôi. (hưởng ứng)</span></p></div>
+<div class="gf-col vio"><b>🤲 V ましょうか · để tôi…</b><p><span class="ja">窓を開けましょうか。</span></p><p><span class="mini">Để tôi mở cửa sổ nhé?</span></p></div>
+</div>`, cap:'Mời bằng <b>ませんか</b>, đáp lại bằng <b>ましょう</b>, đề nghị giúp bằng <b>ましょうか</b>.'}
+ ],
+ ex:[
+  ['週末、一緒に映画を見ませんか。','しゅうまつ、いっしょにえいがをみませんか。','Cuối tuần đi xem phim cùng tôi không?'],
+  ['少し休みましょう。','すこしやすみましょう。','Mình nghỉ một chút nhé.'],
+  ['資料をコピーしましょうか。','しりょうをコピーしましょうか。','Để tôi photo tài liệu nhé?']
+ ]};
+
+GXT.jp[16]={t:'Thể て + ください — hãy làm',
+ fig:[
+  {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Nhóm 1 · theo âm cuối</b><p><span class="ja">う・つ・る → <b>って</b></span> <span class="mini">会う→会って</span></p><p><span class="ja">む・ぶ・ぬ → <b>んで</b></span> <span class="mini">読む→読んで</span></p><p><span class="ja">く → <b>いて</b></span> <span class="mini">書く→書いて</span></p><p><span class="ja">ぐ → <b>いで</b></span> <span class="mini">急ぐ→急いで</span></p><p><span class="ja">す → <b>して</b></span> <span class="mini">話す→話して</span></p><p><span class="mini">⚠️ 行く→行って</span></p></div>
+<div class="gf-col vio"><b>Nhóm 2 · bỏ る + て</b><p><span class="ja">食べる → 食べ<b>て</b></span></p><p><span class="ja">見る → 見<b>て</b></span></p></div>
+<div class="gf-col warn"><b>Nhóm 3 · học thuộc</b><p><span class="ja">する → <b>して</b></span></p><p><span class="ja">来る → <b>来て</b></span> <span class="mini">(きて)</span></p></div>
+</div>`, cap:'Quy tắc thể <b>て</b> theo nhóm động từ. Thuộc bảng này là chia được cả thể <b>た</b> (て→た, で→だ).'},
+  {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Tiếng Nhật</b><p><span class="gf-pill vio ja">資料を</span><span class="gf-pill ac ja">送って</span><span class="gf-pill good ja">ください</span></p></div>
+<div class="gf-col vio"><b>Tiếng Việt</b><p><span class="gf-pill good">Xin hãy</span><span class="gf-pill ac">gửi</span><span class="gf-pill vio">tài liệu</span></p></div>
+</div>`, cap:'“Xin hãy” đứng đầu câu tiếng Việt, còn <b>ください</b> đứng cuối câu tiếng Nhật.'}
+ ],
+ ex:[
+  ['もう一度言ってください。','もういちどいってください。','Xin hãy nói lại một lần nữa.'],
+  ['ここに名前を書いてください。','ここになまえをかいてください。','Xin hãy viết tên vào đây.'],
+  ['見積書をメールで送ってください。','みつもりしょをメールでおくってください。','Anh vui lòng gửi bảng báo giá qua email.']
+ ]};
+
+GXT.jp[17]={t:'ています — đang, trạng thái',
+ fig:[
+  {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>🔄 Đang diễn ra</b><p><span class="ja">今、会議をしています。</span></p><p><span class="ja">雨が降っています。</span></p></div>
+<div class="gf-col vio"><b>🏠 Trạng thái kéo dài</b><p><span class="ja">東京に住んでいます。</span></p><p><span class="ja">IT会社で働いています。</span></p><p><span class="ja">結婚しています。</span></p></div>
+<div class="gf-col warn"><b>⚠️ Bẫy 知る</b><p><span class="ja">知っています</span> <span class="mini">(biết)</span></p><p><span class="ja">知りません</span> <span class="mini">(không biết, không nói 知っていません)</span></p></div>
+</div>`, cap:'<b>V て います</b>: hành động đang xảy ra lúc nói, hoặc một tình trạng đang duy trì.'}
+ ],
+ ex:[
+  ['田中さんは今、電話をしています。','たなかさんはいま、でんわをしています。','Anh Tanaka bây giờ đang gọi điện thoại.'],
+  ['姉は銀行で働いています。','あねはぎんこうではたらいています。','Chị gái tôi làm việc ở ngân hàng.'],
+  ['山田さんの電話番号を知っていますか。','やまださんのでんわばんごうをしっていますか。','Bạn có biết số điện thoại của anh Yamada không?']
+ ]};
+
+GXT.jp[18]={t:'てもいいです / てはいけません',
+ fig:[
+  {html:`<div class="gf-cols">
+<div class="gf-col good"><b>✅ V てもいいですか · xin phép</b><p><span class="ja">📸 写真を撮ってもいいですか。</span></p><p><span class="mini">Tôi chụp ảnh được không?</span></p></div>
+<div class="gf-col bad"><b>🚫 V てはいけません · cấm</b><p><span class="ja">🚭 ここで吸ってはいけません。</span></p><p><span class="mini">Không được hút thuốc ở đây.</span></p></div>
+<div class="gf-col vio"><b>💬 Cách trả lời</b><p><span class="ja">はい、いいですよ。</span> <span class="mini">(được)</span></p><p><span class="ja">すみません、ちょっと…。</span> <span class="mini">(từ chối khéo)</span></p></div>
+</div>`, cap:'Cả hai đều xây từ thể <b>て</b>: thêm <b>もいい</b> là cho phép, thêm <b>はいけません</b> là cấm.'}
+ ],
+ ex:[
+  ['このパソコンを使ってもいいですか。','このパソコンをつかってもいいですか。','Tôi dùng máy tính này được không?'],
+  ['今日は早く帰ってもいいですか。','きょうははやくかえってもいいですか。','Hôm nay tôi về sớm được không ạ?'],
+  ['会議中に電話をしてはいけません。','かいぎちゅうにでんわをしてはいけません。','Không được gọi điện trong lúc họp.']
+ ]};
+
+GXT.jp[19]={t:'ないでください — xin đừng',
+ fig:[
+  {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Nhóm 1 · âm cuối → hàng あ + ない</b><p><span class="ja">行く → 行<b>か</b>ない</span></p><p><span class="ja">撮る → 撮<b>ら</b>ない</span></p><p><span class="ja">会う → 会<b>わ</b>ない</span> <span class="mini">(う → わ)</span></p></div>
+<div class="gf-col vio"><b>Nhóm 2 · bỏ る + ない</b><p><span class="ja">忘れる → 忘れ<b>ない</b></span></p><p><span class="ja">見る → 見<b>ない</b></span></p></div>
+<div class="gf-col warn"><b>Nhóm 3</b><p><span class="ja">する → <b>しない</b></span></p><p><span class="ja">来る → <b>来ない</b></span> <span class="mini">(こない)</span></p></div>
+</div>`, cap:'Đổi sang thể <b>ない</b> trước, rồi thêm <b>でください</b>.'},
+  {html:`<div class="gf-cols">
+<div class="gf-col good"><b>✅ Hãy làm</b><p><span class="ja">写真を撮ってください。</span></p></div>
+<div class="gf-col bad"><b>🚫 Xin đừng làm</b><p><span class="ja">写真を撮らないでください。</span></p></div>
+</div>`, cap:'Cặp đối lập: <b>て ください</b> ↔ <b>ないで ください</b>.'}
+ ],
+ ex:[
+  ['パスワードを忘れないでください。','パスワードをわすれないでください。','Xin đừng quên mật khẩu.'],
+  ['ここで写真を撮らないでください。','ここでしゃしんをとらないでください。','Xin đừng chụp ảnh ở đây.'],
+  ['心配しないでください。','しんぱいしないでください。','Xin đừng lo lắng.']
+ ]};
+
+GXT.jp[20]={t:'たことがあります — đã từng',
+ fig:[
+  {html:`<div class="gf-flow">
+<div class="gf-step">Thể từ điển: <span class="ja"><b>行く</b></span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step vio">Thể て: <span class="ja"><b>行って</b></span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step ac">Thể た (て → た): <span class="ja"><b>行った</b></span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step good"><span class="ja"><b>行ったことがあります</b></span> · đã từng đi</div>
+</div>`, cap:'Biết thể て là có thể た: <b>て → た</b>, <b>で → だ</b> (読んで → 読んだ).'},
+  {html:`<div class="gf-cols">
+<div class="gf-col good"><b>✅ Trải nghiệm trong đời</b><p><span class="ja">日本へ行ったことがあります。</span></p><p><span class="ja">納豆を食べたことがありません。</span> <span class="mini">(chưa từng)</span></p></div>
+<div class="gf-col bad"><b>❌ Việc vừa làm, việc hằng ngày</b><p><span class="ja">昨日すしを食べたことがあります。</span></p><p><span class="mini">→ 昨日すしを食べました。</span></p></div>
+</div>`, cap:'Dùng cho kinh nghiệm “đã từng… (trong đời)”, không dùng cho việc có mốc gần như hôm qua.'}
+ ],
+ ex:[
+  ['すしを食べたことがありますか。','すしをたべたことがありますか。','Bạn đã từng ăn sushi chưa?'],
+  ['富士山に登ったことがありません。','ふじさんにのぼったことがありません。','Tôi chưa từng leo núi Phú Sĩ.'],
+  ['日本の会社と取引したことがあります。','にほんのかいしゃととりひきしたことがあります。','Tôi đã từng giao dịch với công ty Nhật.']
+ ]};
+
+GXT.jp[21]={t:'So sánh: より / のほうが / いちばん',
+ fig:[
+  {html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">⚖️</span><b class="ja">A は B より …</b><small>A hơn B</small></div>
+<div class="gf-card vio"><span class="gf-ic">❓</span><b class="ja">A と B と どちらが …</b><small>A hay B, cái nào hơn?</small></div>
+<div class="gf-card warn"><span class="gf-ic">👉</span><b class="ja">B のほうが …</b><small>B hơn (trả lời)</small></div>
+<div class="gf-card good"><span class="gf-ic">🏆</span><b class="ja">N の中で … が いちばん</b><small>nhất trong nhóm</small></div>
+</div>`, cap:'Bốn mẫu so sánh ở N5: hơn, hỏi chọn một trong hai, trả lời, và nhất.'},
+  {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Tiếng Nhật</b><p><span class="gf-pill ac ja">東京は</span><span class="gf-pill vio ja">大阪</span><span class="gf-pill warn ja">より</span><span class="gf-pill good ja">大きいです</span></p></div>
+<div class="gf-col vio"><b>Tiếng Việt</b><p><span class="gf-pill ac">Tokyo</span><span class="gf-pill good">lớn</span><span class="gf-pill warn">hơn</span><span class="gf-pill vio">Osaka</span></p></div>
+</div>`, cap:'<b>より</b> đứng <b>sau</b> vật bị so sánh, còn “hơn” đứng trước.'}
+ ],
+ ex:[
+  ['電車はバスより速いです。','でんしゃはバスよりはやいです。','Tàu điện nhanh hơn xe buýt.'],
+  ['メールと電話とどちらがいいですか。','メールとでんわとどちらがいいですか。','Liên lạc qua email hay điện thoại thì tốt hơn ạ?'],
+  ['チームの中でミンさんがいちばん若いです。','チームのなかでミンさんがいちばんわかいです。','Trong nhóm, anh Minh trẻ nhất.']
+ ]};
+
+GXT.jp[22]={t:'から — vì (nêu lý do)',
+ fig:[
+  {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Tiếng Nhật</b><p><span class="gf-pill vio ja">時間がありません</span><span class="gf-pill warn ja">から</span>、<span class="gf-pill good ja">タクシーで行きます</span></p></div>
+<div class="gf-col vio"><b>Tiếng Việt</b><p><span class="gf-pill warn">Vì</span><span class="gf-pill vio">không có thời gian</span><span class="gf-pill good">nên đi taxi</span></p></div>
+</div>`, cap:'<b>から</b> đứng <b>cuối</b> vế lý do, còn “vì” đứng đầu.'},
+  {html:`<div class="gf-flow">
+<div class="gf-step ac">❓ <span class="ja"><b>どうして</b>遅れましたか。</span> · Sao anh đến muộn?</div>
+<div class="gf-down">↓</div>
+<div class="gf-step good">💬 <span class="ja">バスが来ませんでした<b>から</b>。</span> · Vì xe buýt không đến.</div>
+</div>`, cap:'Trả lời câu hỏi <b>どうして</b> chỉ cần nói lý do + <b>から</b>.'}
+ ],
+ ex:[
+  ['明日は休みですから、ゆっくり寝ます。','あしたはやすみですから、ゆっくりねます。','Vì mai được nghỉ nên tôi sẽ ngủ thoải mái.'],
+  ['頭が痛いですから、早く帰ります。','あたまがいたいですから、はやくかえります。','Vì đau đầu nên tôi về sớm.'],
+  ['電車が遅れていますから、少し遅くなります。','でんしゃがおくれていますから、すこしおそくなります。','Vì tàu đang bị trễ nên tôi sẽ đến muộn một chút.']
+ ]};
+
+GXT.jp[23]={t:'Lịch sự nơi công sở (丁寧語)',
+ fig:[
+  {html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🌅</span><b class="ja">おはようございます</b><small>đến công ty buổi sáng</small></div>
+<div class="gf-card vio"><span class="gf-ic">🤝</span><b class="ja">お疲れ様です</b><small>gặp đồng nghiệp trong ngày</small></div>
+<div class="gf-card good"><span class="gf-ic">🙇</span><b class="ja">よろしくお願いします</b><small>nhờ việc, chào lần đầu</small></div>
+<div class="gf-card warn"><span class="gf-ic">🚪</span><b class="ja">お先に失礼します</b><small>về trước đồng nghiệp</small></div>
+</div>`, cap:'Bốn câu cố định dùng mỗi ngày ở công ty Nhật.'},
+  {html:`<div class="gf-cols">
+<div class="gf-col good"><b>✅ Nên</b><p><span class="ja">田中さん</span> <span class="mini">(họ + さん)</span></p><p><span class="ja">部長、今よろしいですか。</span></p><p><span class="ja">行きますか。</span> <span class="mini">(thể ます)</span></p></div>
+<div class="gf-col bad"><b>❌ Tránh</b><p><span class="ja">あなた</span> <span class="mini">(gọi cấp trên)</span></p><p><span class="ja">グエンさんです。</span> <span class="mini">(tự gọi mình là さん)</span></p><p><span class="ja">行く？</span> <span class="mini">(thể thường với cấp trên)</span></p></div>
+</div>`, cap:'Ở N5 chỉ cần: gọi đúng tên, chức danh và luôn nói thể <b>です・ます</b> với cấp trên, khách hàng.'}
+ ],
+ ex:[
+  ['よろしくお願いします。','よろしくおねがいします。','Rất mong được anh chị giúp đỡ.'],
+  ['部長、今よろしいですか。','ぶちょう、いまよろしいですか。','Thưa trưởng phòng, bây giờ tôi làm phiền một chút được không ạ?'],
+  ['遅れて、すみません。','おくれて、すみません。','Xin lỗi vì tôi đến muộn.']
+ ]};
+
+GXT.jp[24]={t:'Thể て nối hành động · てから',
+ fig:[
+  {html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">⏰</span><b class="ja">起きて</b><small>thức dậy</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card vio"><span class="gf-ic">🚿</span><b class="ja">シャワーを浴びて</b><small>tắm</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card good"><span class="gf-ic">🏢</span><b class="ja">会社へ行きました</b><small>đi làm (quá khứ)</small></div>
+</div>`, cap:'Các động từ giữa câu để ở thể <b>て</b>; chỉ động từ <b>cuối cùng</b> quyết định thì của cả câu.'},
+  {html:`<div class="gf-cols">
+<div class="gf-col good"><b>✅ てから · xong việc 1 mới làm việc 2</b><p><span class="ja">メールを確認してから、会議に出ます。</span></p></div>
+<div class="gf-col bad"><b>❌ Chia quá khứ giữa câu</b><p><span class="ja">起きました、行きました。</span></p><p><span class="mini">→ 起きて、行きました。</span></p></div>
+</div>`, cap:'<b>てから</b> nhấn mạnh thứ tự: phải xong việc trước rồi mới làm việc sau.'}
+ ],
+ ex:[
+  ['昼ご飯を食べて、少し休みます。','ひるごはんをたべて、すこしやすみます。','Tôi ăn trưa rồi nghỉ một chút.'],
+  ['テストをしてから、リリースします。','テストをしてから、リリースします。','Test xong rồi mới release.'],
+  ['昨日は渋谷へ行って、買い物をしました。','きのうはしぶやへいって、かいものをしました。','Hôm qua tôi đi Shibuya rồi mua sắm.']
+ ]};
+
+GXT.jp[25]={t:'ほしい — muốn có (vật)',
+ fig:[
+  {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>🎁 N が ほしいです · muốn CÓ</b><p><span class="gf-pill vio ja">パソコン</span><span class="gf-pill warn ja">が</span><span class="gf-pill ac ja">ほしいです</span></p><p><span class="ja">ほしくないです・ほしかったです</span></p></div>
+<div class="gf-col vio"><b>🏃 V たいです · muốn LÀM</b><p><span class="gf-pill vio ja">パソコンを</span><span class="gf-pill ac ja">買いたいです</span></p><p><span class="mini">muốn mua máy tính</span></p></div>
+</div>`, cap:'Muốn một <b>vật</b> → <b>ほしい</b> (tính từ い, đi với が). Muốn một <b>hành động</b> → <b>たい</b>.'}
+ ],
+ ex:[
+  ['大きいモニターがほしいです。','おおきいモニターがほしいです。','Tôi muốn có một màn hình lớn.'],
+  ['子供のとき、犬がほしかったです。','こどものとき、いぬがほしかったです。','Hồi nhỏ tôi rất muốn có một con chó.'],
+  ['誕生日に何がほしいですか。','たんじょうびになにがほしいですか。','Sinh nhật bạn muốn có quà gì?']
+ ]};
+
+GXT.jp[26]={t:'前に / 後で — trước khi, sau khi',
+ fig:[
+  {html:`<div class="gf-row">
+<div class="gf-card warn"><span class="gf-ic">⬅️</span><b class="ja">始まる前に</b><small>V thể từ điển + 前に</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card ac"><span class="gf-ic">🗓️</span><b class="ja">会議</b><small class="ja">会議の前に・会議の後で</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card good"><span class="gf-ic">➡️</span><b class="ja">終わった後で</b><small>V thể た + 後で</small></div>
+</div>`, cap:'Trước một việc: <b>V từ điển + 前に</b>; sau một việc: <b>V た + 後で</b>; với danh từ thì thêm <b>の</b>.'},
+  {html:`<div class="gf-cols">
+<div class="gf-col good"><b>✅ Đúng</b><p><span class="ja">寝る前に</span></p><p><span class="ja">終わった後で</span></p></div>
+<div class="gf-col bad"><b>❌ Sai</b><p><span class="ja">寝た前に</span></p><p><span class="ja">終わる後で</span></p></div>
+</div>`, cap:'Dù câu nói về quá khứ, <b>前に</b> vẫn đi với thể từ điển.'}
+ ],
+ ex:[
+  ['食事の前に、手を洗います。','しょくじのまえに、てをあらいます。','Trước bữa ăn, tôi rửa tay.'],
+  ['会社へ来る前に、メールを見ました。','かいしゃへくるまえに、メールをみました。','Trước khi đến công ty, tôi đã xem email.'],
+  ['授業の後で、図書館で勉強します。','じゅぎょうのあとで、としょかんでべんきょうします。','Sau giờ học, tôi học ở thư viện.']
+ ]};
+
+GXT.jp[27]={t:'Đếm số lượng: N を + số đếm + V',
+ fig:[
+  {html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🍎</span><b class="ja">〜つ</b><small class="ja">ひとつ・ふたつ・みっつ</small></div>
+<div class="gf-card vio"><span class="gf-ic">🧑</span><b class="ja">〜人</b><small class="ja">ひとり・ふたり・さんにん</small></div>
+<div class="gf-card warn"><span class="gf-ic">📄</span><b class="ja">〜枚</b><small class="ja">いちまい・にまい</small></div>
+<div class="gf-card good"><span class="gf-ic">🍾</span><b class="ja">〜本</b><small class="ja">いっぽん・にほん・さんぼん</small></div>
+<div class="gf-card ac"><span class="gf-ic">💻</span><b class="ja">〜台</b><small class="ja">いちだい・にだい</small></div>
+<div class="gf-card vio"><span class="gf-ic">☕</span><b class="ja">〜杯</b><small class="ja">いっぱい・にはい・さんばい</small></div>
+</div>`, cap:'Mỗi loại vật có trợ số từ riêng. Chú ý biến âm ở 1, 3, 6, 8, 10 với <b>本・杯・匹</b>.'},
+  {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Tiếng Nhật</b><p><span class="gf-pill vio ja">りんごを</span><span class="gf-pill warn ja">三つ</span><span class="gf-pill good ja">買いました</span></p></div>
+<div class="gf-col vio"><b>Tiếng Việt</b><p><span class="gf-pill good">Tôi đã mua</span><span class="gf-pill warn">ba</span><span class="gf-pill vio">quả táo</span></p></div>
+</div>`, cap:'Số lượng đứng <b>sau</b> danh từ + trợ từ, ngay trước động từ, không cần thêm trợ từ.'}
+ ],
+ ex:[
+  ['コピーを十枚お願いします。','コピーをじゅうまいおねがいします。','Nhờ anh photo giúp mười bản.'],
+  ['事務所にパソコンが三台あります。','じむしょにパソコンがさんだいあります。','Trong văn phòng có ba chiếc máy tính.'],
+  ['コーヒーを二杯ください。','コーヒーをにはいください。','Cho tôi hai cốc cà phê.']
+ ]};
+
+/* ===== Lộ trình 12 tuần: sẵn sàng N5 + tiếng Nhật công sở cơ bản ===== */
+GXP.jp=[
+ {t:'Tuần 1 · Hiragana (1): hàng あ đến な', x:[
+  ['Đọc phần tổng quan để biết cách học, bật furigana và giọng đọc tiếng Nhật', ['v:tongquan|Tổng quan khóa học']],
+  ['Nghe và đọc theo 5 nguyên âm あ い う え お; chú ý う không tròn môi', ['v:phatam>5 nguyên âm|5 nguyên âm tiếng Nhật']],
+  ['Học 25 chữ hàng あ, か, さ, た, な: bấm từng chữ để nghe, chép tay mỗi chữ 5 lần', ['v:kana>Âm cơ bản (46)|Bảng hiragana cơ bản']],
+  ['Mỗi ngày 10 phút luyện đọc hiragana, làm đến khi đúng 8/10 câu', ['b:kana@#k-quiz|Luyện đọc hiragana','q:hira|Bài trắc nghiệm hiragana']],
+  ['Nghe âm rồi chọn chữ để nhớ mặt chữ bằng tai', ['q:kanaListen|Nghe, chọn kana']]
+ ]},
+ {t:'Tuần 2 · Hiragana (2): đủ bảng, âm đục, âm ghép', x:[
+  ['Học nốt hàng は đến ん; tách riêng các cặp dễ nhầm: さ/ち, ぬ/め, ね/れ/わ, る/ろ', ['v:kana>Âm cơ bản (46)|Bảng hiragana cơ bản']],
+  ['Thêm dấu ゛ và ゜: か → が, は → ば → ぱ', ['v:kana>Âm đục và bán đục|Âm đục và bán đục']],
+  ['Âm ghép きゃ, しゅ, ちょ và âm ngắt っ (きって, がっこう)', ['v:kana>Âm ghép|Âm ghép']],
+  ['Làm quiz đọc và nghe hiragana đến khi đúng 90%', ['q:hira|Luyện đọc hiragana','q:kanaListen|Nghe, chọn kana']],
+  ['Đọc câu đầu tiên: 私は…です và tự nói tên, quốc tịch của mình', ['g:0|Bài は・です']]
+ ]},
+ {t:'Tuần 3 · Katakana và phát âm', x:[
+  ['Chuyển bảng sang katakana, học 46 chữ cơ bản; phân biệt シ/ツ, ソ/ン', ['b:kana@[data-s="kata"]|Mở bảng katakana']],
+  ['Mỗi ngày một lượt quiz đọc katakana; tự viết tên mình bằng katakana', ['q:kata|Luyện đọc katakana']],
+  ['Luyện các âm khó với người Việt: つ, ふ, hàng ら, trường âm', ['v:phatam>Âm cần chú ý với người Việt|Âm khó với người Việt']],
+  ['Nghe các cặp từ đổi nghĩa vì độ dài âm và cao độ (おばさん / おばあさん)', ['v:phatam>Những cặp đổi nghĩa vì nhịp và cao độ|Cặp từ đổi nghĩa']],
+  ['Đọc danh sách lỗi người Việt hay mắc và tự kiểm tra khi nói', ['v:phatam>Lỗi người Việt hay mắc|Lỗi người Việt hay mắc']]
+ ]},
+ {t:'Tuần 4 · Câu danh từ và tự giới thiệu', x:[
+  ['Học ba bài đầu: câu です, câu hỏi か, trợ từ の', ['g:0|Bài は・です','g:1|Bài câu hỏi か','g:2|Bài の']],
+  ['Làm bài điền cho は・です và の', ['gf:0|Điền bài は・です','gf:2|Điền bài の']],
+  ['Học thêm も và これ・それ・あれ', ['g:3|Bài も','g:4|Bài これ・それ・あれ']],
+  ['Học 50 từ N5 đầu tiên (người, nghề, đồ vật) bằng danh sách rồi thẻ', ['w:N5|Danh sách từ N5','c:N5|Thẻ từ N5']],
+  ['Nghe hội thoại tự giới thiệu, sau đó nói nhại theo từng câu', ['dl:0|Hội thoại: Tự giới thiệu','b:hoithoai@#d-shadow|Nói nhại có khoảng dừng']]
+ ]},
+ {t:'Tuần 5 · Động từ ます và trợ từ に・へ・で', x:[
+  ['Nắm trật tự câu S–O–V và bốn đuôi ます', ['g:5|Bài trật tự S–O–V','g:6|Bài thể ます','gf:6|Điền thể ます']],
+  ['Phân biệt に, へ, で qua hình minh họa rồi làm bài điền', ['g:7|Bài に・へ','g:8|Bài で','gf:8|Điền bài で']],
+  ['Sắp xếp câu: tập để động từ ở cuối', ['q:order|Sắp xếp câu']],
+  ['Ôn từ N5 mỗi ngày 15 phút', ['q:mean/N5|Chọn nghĩa từ N5','c:N5|Thẻ từ N5']],
+  ['Nghe và nhại hội thoại ở cửa hàng tiện lợi', ['dl:1|Hội thoại: Cửa hàng tiện lợi']]
+ ]},
+ {t:'Tuần 6 · Tính từ, tồn tại, と và から…まで', x:[
+  ['Học と và から…まで, đặt 3 câu về giờ làm việc của mình', ['g:9|Bài と','g:10|Bài から…まで']],
+  ['Chia tính từ い và な: phủ định, quá khứ', ['g:11|Bài tính từ い・な','gf:11|Điền tính từ い・な']],
+  ['Phân biệt あります và います', ['g:12|Bài あります・います','gf:12|Điền あります・います']],
+  ['Làm 20 câu điền trợ từ tổng hợp', ['q:fill|Điền vào chỗ trống']],
+  ['Nghe hội thoại ở nhà hàng, rồi luyện nghe từ N5', ['dl:2|Hội thoại: Nhà hàng','q:listen/N5|Nghe, chọn từ N5']]
+ ]},
+ {t:'Tuần 7 · Kanji N5 (1) và nói mong muốn', x:[
+  ['Học kanji số đếm và thứ trong tuần (一〜十, 日 月 火 水 木 金 土)', ['v:kanji|Bảng kanji N5','c:KJ|Thẻ Kanji N5']],
+  ['Kiểm tra nghĩa Hán Việt và cách đọc', ['q:kanji|Kanji → Hán Việt','q:reading|Cách đọc kanji']],
+  ['Học が 好き, たい, ほしい: nói điều mình thích và muốn', ['g:13|Bài が 好き・上手','g:14|Bài たい','g:25|Bài ほしい']],
+  ['Mời và rủ đồng nghiệp bằng ませんか・ましょう', ['g:15|Bài ませんか・ましょう','gf:15|Điền ませんか・ましょう']],
+  ['Nghe hội thoại hỏi đường', ['dl:3|Hội thoại: Hỏi đường']]
+ ]},
+ {t:'Tuần 8 · Thể て', x:[
+  ['Học thuộc bảng chia thể て theo nhóm, rồi làm bài điền', ['g:16|Bài thể て + ください','gf:16|Điền thể て']],
+  ['Dùng て cho “đang làm” và nối hành động', ['g:17|Bài ています','g:24|Bài nối câu bằng て']],
+  ['Xin phép, cấm và nhắc “xin đừng”', ['g:18|Bài てもいい・てはいけない','g:19|Bài ないでください']],
+  ['Kanji N5 đợt 2: thời gian, con người, động từ hay gặp', ['c:KJ|Thẻ Kanji N5','q:reading|Cách đọc kanji']],
+  ['Ôn lại những từ đã làm sai', ['q:wrong|Ôn từ hay sai','q:order|Sắp xếp câu']]
+ ]},
+ {t:'Tuần 9 · Tiếng Nhật công sở và phỏng vấn', x:[
+  ['Học các câu chào cố định và cách xưng hô ở công ty', ['g:23|Bài lịch sự công sở','v:hoithoai|Kính ngữ & văn hoá công sở']],
+  ['Nói kinh nghiệm và lý do: たことがあります, から', ['g:20|Bài たことがあります','g:22|Bài から (lý do)']],
+  ['Học từ vựng Công việc & IT', ['w:CV|Từ vựng Công việc & IT','c:CV|Thẻ Công việc & IT','q:mean/CV|Chọn nghĩa từ công việc']],
+  ['Mở hội thoại phỏng vấn, nghe hết bài rồi bấm nói nhại', ['dl:4|Hội thoại: Phỏng vấn','b:hoithoai@#d-shadow|Nói nhại có khoảng dừng']]
+ ]},
+ {t:'Tuần 10 · Báo cáo 報連相 và nghe điện thoại', x:[
+  ['Học so sánh, trước/sau và đếm số lượng', ['g:21|Bài so sánh より','g:26|Bài 前に・後で','g:27|Bài đếm số lượng']],
+  ['Làm bài điền 前に・後で và trợ số từ', ['gf:26|Điền 前に・後で','gf:27|Điền trợ số từ']],
+  ['Tập báo cáo tiến độ với cấp trên theo hội thoại 報連相', ['dl:5|Hội thoại: 報連相']],
+  ['Tập nhận điện thoại khi người cần gặp đi vắng', ['dl:7|Hội thoại: Nghe điện thoại']],
+  ['Nghe từ vựng công việc', ['q:listen/CV|Nghe từ công việc']]
+ ]},
+ {t:'Tuần 11 · Xuất nhập khẩu và đàm phán', x:[
+  ['Học từ vựng xuất nhập khẩu bằng danh sách và thẻ', ['w:XNK|Từ vựng xuất nhập khẩu','c:XNK|Thẻ xuất nhập khẩu']],
+  ['Luyện hai chiều: nhìn từ chọn nghĩa, nhìn nghĩa chọn từ', ['q:mean/XNK|Chọn nghĩa từ XNK','q:word/XNK|Chọn từ XNK']],
+  ['Nghe và nhại hội thoại đàm phán giá, thời hạn giao hàng', ['dl:6|Hội thoại: Đàm phán đơn hàng']],
+  ['Ôn trợ từ dễ nhầm bằng bài điền', ['gf:7|Điền に・へ','gf:8|Điền で','gf:13|Điền が 好き・上手']],
+  ['Ôn lại ba hội thoại đời sống', ['dl:1|Ôn: Cửa hàng tiện lợi','dl:2|Ôn: Nhà hàng','dl:3|Ôn: Hỏi đường']]
+ ]},
+ {t:'Tuần 12 · Ôn tập và thi thử N5', x:[
+  ['Thi thử từ vựng: chọn 30 câu mỗi phần trong bộ N5', ['q:mean/N5|Chọn nghĩa N5','q:word/N5|Chọn từ N5']],
+  ['Thi thử kanji: cách đọc và Hán Việt, ôn lại thẻ chưa thuộc', ['q:reading|Cách đọc kanji','q:kanji|Kanji → Hán Việt','c:KJ|Thẻ Kanji N5']],
+  ['Thi thử ngữ pháp: điền trợ từ và sắp xếp câu', ['q:fill|Điền vào chỗ trống','q:order|Sắp xếp câu']],
+  ['Thi thử nghe với toàn bộ từ vựng', ['q:listen/ALL|Nghe, chọn từ (tất cả)','q:kanaListen|Nghe, chọn kana']],
+  ['Dọn sạch danh sách từ hay sai, rồi tự giới thiệu và phỏng vấn lại không nhìn chữ', ['q:wrong|Ôn từ hay sai','dl:0|Ôn: Tự giới thiệu','dl:4|Ôn: Phỏng vấn']]
+ ]}
+];
+
+</script>
+<script>/* gx_ko.js */
+/* ===== Tiếng Hàn · hình minh họa + ví dụ thêm cho 34 điểm ngữ pháp + lộ trình 12 tuần ===== */
+
+GXT.ko[0]={t:'이에요/예요 · 아니에요 (là / không phải là)', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Có 받침 → 이에요 · 이 아니에요</b><p><span class="ko">학생 → 학생<b>이에요</b></span></p><p><span class="ko">회사원 → 회사원<b>이에요</b></span></p><p><span class="ko">학생<b>이 아니에요</b></span> <span class="mini">không phải học sinh</span></p></div>
+<div class="gf-col vio"><b>Không 받침 → 예요 · 가 아니에요</b><p><span class="ko">의사 → 의사<b>예요</b></span></p><p><span class="ko">개발자 → 개발자<b>예요</b></span></p><p><span class="ko">의사<b>가 아니에요</b></span> <span class="mini">không phải bác sĩ</span></p></div>
+</div>`, cap:'Nhìn âm tiết cuối của danh từ: có phụ âm cuối (받침) → <b>이에요 / 이 아니에요</b>; không có → <b>예요 / 가 아니에요</b>.'}
+], ex:[
+ ['제 이름은 하이예요.','je ireumeun haiyeyo','Tên tôi là Hải.'],
+ ['여기는 우리 회사 사무실이에요.','yeogineun uri hoesa samusirieyo','Đây là văn phòng công ty chúng tôi.'],
+ ['이건 버그가 아니에요. 새 기능이에요.','igeon beogeuga anieyo. sae gineungieyo','Cái này không phải lỗi đâu. Là tính năng mới đấy.']
+]};
+
+GXT.ko[1]={t:'은/는 và 이/가 (chủ đề và chủ ngữ)', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>은/는 · chủ đề</b><p>Điều đã biết, hoặc “còn… thì…”</p><p><span class="ko">저<b>는</b> 개발자예요.</span></p><p><span class="ko">커피<b>는</b> 좋아해요.</span> <span class="mini">(còn trà thì không)</span></p></div>
+<div class="gf-col warn"><b>이/가 · chủ ngữ mới</b><p>Trả lời “ai? cái gì?”, đi với 있다, 아프다…</p><p><span class="ko">누<b>가</b> 왔어요? — 팀장님<b>이</b> 왔어요.</span></p><p><span class="ko">시간<b>이</b> 있어요.</span></p></div>
+</div>`, cap:'<b>은/는</b> giới thiệu hoặc đối chiếu chủ đề; <b>이/가</b> đưa thông tin mới, trả lời câu hỏi “ai, cái gì”.'},
+ {html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic"><span class="ko">책</span></span><b><span class="ko">책은 · 책이</span></b><small>có 받침 → 은 / 이</small></div>
+<div class="gf-card vio"><span class="gf-ic"><span class="ko">차</span></span><b><span class="ko">차는 · 차가</span></b><small>không 받침 → 는 / 가</small></div>
+<div class="gf-card warn"><span class="gf-ic"><span class="ko">저</span></span><b><span class="ko">저는 · 제가</span></b><small>đặc biệt: 저 + 가 → 제가</small></div>
+</div>`, cap:'Chọn dạng theo 받침, như mọi trợ từ khác. Nhớ <b>제가</b>, không nói 저가.'}
+], ex:[
+ ['오늘은 날씨가 좋아요.','oneureun nalssiga joayo','Hôm nay thời tiết đẹp.'],
+ ['저는 커피를 마셔요. 동생은 차를 마셔요.','jeoneun keopireul masyeoyo. dongsaengeun chareul masyeoyo','Tôi uống cà phê. Còn em tôi uống trà.'],
+ ['어디가 아파요? — 머리가 아파요.','eodiga apayo? — meoriga apayo','Bạn đau ở đâu? — Tôi đau đầu.']
+]};
+
+GXT.ko[2]={t:'이/가 있어요 / 없어요 (có, ở / không có)', fig:[
+ {html:`<div class="gf-flow">
+<div class="gf-step ac"><span class="ko"><span class="gf-pill ac">사무실</span><span class="gf-pill warn">에</span> <span class="gf-pill ac">프린터</span><span class="gf-pill warn">가</span> <span class="gf-pill good">있어요</span></span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step">Văn phòng <b>(ở)</b> · máy in <b>(chủ ngữ)</b> · <b>có</b> → “Trong văn phòng có máy in.”</div>
+</div>`, cap:'Nơi chốn + <b>에</b>, vật tồn tại + <b>이/가</b>, <b>있어요/없어요</b> luôn ở cuối câu.'},
+ {html:`<div class="gf-cols">
+<div class="gf-col good"><b>있어요 · có / ở</b><p><span class="ko">시간이 있어요.</span> <span class="mini">có thời gian</span></p><p><span class="ko">집에 있어요.</span> <span class="mini">đang ở nhà</span></p></div>
+<div class="gf-col bad"><b>없어요 · không có / không ở</b><p><span class="ko">돈이 없어요.</span> <span class="mini">không có tiền</span></p><p>✗ <span class="ko">안 있어요</span> → ✓ <span class="ko">없어요</span></p></div>
+</div>`, cap:'Phủ định của 있다 là một từ riêng: <b>없다</b>.'}
+], ex:[
+ ['죄송해요, 지금 현금이 없어요.','joesonghaeyo, jigeum hyeongeumi eopseoyo','Xin lỗi, bây giờ tôi không có tiền mặt.'],
+ ['민수 씨는 지금 자리에 없어요.','minsu ssineun jigeum jarie eopseoyo','Anh Minsu hiện không có ở chỗ ngồi.'],
+ ['회의실에 프로젝터가 있어요?','hoeuisire peurojekteoga isseoyo?','Phòng họp có máy chiếu không?']
+]};
+
+GXT.ko[3]={t:'Hai hệ số đếm và lượng từ', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Thuần Hàn · 하나, 둘, 셋, 넷…</b><p><span class="ko">한 개 · 두 명 · 세 잔</span></p><p><span class="ko">네 시 · 스무 살</span></p><p><span class="mini">cái, người, cốc, giờ, tuổi, quyển, chai…</span></p></div>
+<div class="gf-col vio"><b>Hán Hàn · 일, 이, 삼, 사…</b><p><span class="ko">삼십 분 · 오만 원</span></p><p><span class="ko">오 층 · 이천이십육 년</span></p><p><span class="mini">phút, won, tầng, năm, ngày, số điện thoại…</span></p></div>
+</div>`, cap:'Lượng từ quyết định hệ số: giờ dùng thuần Hàn (<b>두 시</b>), phút dùng Hán Hàn (<b>삼십 분</b>).'},
+ {html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">☕</span><b><span class="ko">커피</span></b><small>danh từ</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card vio"><span class="gf-ic"><span class="ko">두</span></span><b>số</b><small><span class="ko">둘</span> → <span class="ko">두</span> trước lượng từ</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card warn"><span class="gf-ic"><span class="ko">잔</span></span><b>lượng từ</b><small>cốc, ly</small></div>
+</div>`, cap:'Trật tự “danh từ + số + lượng từ”: <b>커피 두 잔</b> = hai cốc cà phê.'}
+], ex:[
+ ['회의실은 오 층에 있어요.','hoeuisireun o cheunge isseoyo','Phòng họp ở tầng 5.'],
+ ['우리 팀에는 개발자가 여섯 명 있어요.','uri timeneun gaebaljaga yeoseon myeong isseoyo','Nhóm chúng tôi có sáu lập trình viên.'],
+ ['어제 샘플 세 개를 보냈어요.','eoje saempeul se gaereul bonaesseoyo','Hôm qua tôi đã gửi ba mẫu hàng.']
+]};
+
+GXT.ko[4]={t:'-아요/어요 (đuôi hiện tại lịch sự)', fig:[
+ {html:`<div class="gf-flow">
+<div class="gf-step">Bỏ <b>다</b>, nhìn nguyên âm cuối của gốc: <span class="ko">가다 → 가-</span>, <span class="ko">먹다 → 먹-</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step ac">Gốc có <b>ㅏ / ㅗ</b> → <b>아요</b> <span class="mini">· <span class="ko">앉아요, 가요, 봐요</span></span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step vio">Nguyên âm khác → <b>어요</b> <span class="mini">· <span class="ko">먹어요, 마셔요, 배워요</span></span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step warn">Đuôi <b>하다</b> → <b>해요</b> <span class="mini">· <span class="ko">일해요, 공부해요</span></span></div>
+</div>`, cap:'Ba bước chia <b>-아요/어요</b>. Nguyên âm gặp nhau thì rút gọn: 보+아요 → 봐요, 마시+어요 → 마셔요.'}
+], ex:[
+ ['저는 게임 회사에서 일해요.','jeoneun geim hoesaeseo ilhaeyo','Tôi làm việc ở một công ty game.'],
+ ['보통 지하철을 타요.','botong jihacheoreul tayo','Tôi thường đi tàu điện ngầm.'],
+ ['매일 아침 이메일을 읽어요.','maeil achim imeireul ilgeoyo','Sáng nào tôi cũng đọc email.']
+]};
+
+GXT.ko[5]={t:'을/를 (tân ngữ)', fig:[
+ {html:`<div class="gf-flow">
+<div class="gf-step ac"><span class="ko"><span class="gf-pill ac">저</span><span class="gf-pill warn">는</span> <span class="gf-pill vio">이메일</span><span class="gf-pill warn">을</span> <span class="gf-pill good">보내요</span></span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step">Hàn: Tôi – email – <b>gửi</b> · Việt: Tôi – <b>gửi</b> – email</div>
+</div>`, cap:'Tân ngữ mang <b>을/를</b> đứng trước động từ; động từ luôn ở cuối câu.'},
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Có 받침 + 을</b><p><span class="ko">밥<b>을</b> · 책<b>을</b> · 이메일<b>을</b></span></p></div>
+<div class="gf-col vio"><b>Không 받침 + 를</b><p><span class="ko">커피<b>를</b> · 서류<b>를</b> · 계약서<b>를</b></span></p></div>
+</div>`, cap:'Chọn <b>을</b> hay <b>를</b> theo phụ âm cuối của danh từ.'}
+], ex:[
+ ['오후에 회의 자료를 만들어요.','ohue hoeui jaryoreul mandeureoyo','Buổi chiều tôi làm tài liệu cho cuộc họp.'],
+ ['저는 한국 드라마를 자주 봐요.','jeoneun hanguk deuramareul jaju bwayo','Tôi hay xem phim truyền hình Hàn Quốc.'],
+ ['어제 계약서를 받았어요.','eoje gyeyakseoreul badasseoyo','Hôm qua tôi đã nhận được hợp đồng.']
+]};
+
+GXT.ko[6]={t:'에 (nơi tồn tại · thời điểm · điểm đến)', fig:[
+ {html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">📍</span><b><span class="ko">집에 있어요</span></b><small>nơi tồn tại · ở nhà</small></div>
+<div class="gf-card vio"><span class="gf-ic">🚶</span><b><span class="ko">회사에 가요</span></b><small>điểm đến · đi đến công ty</small></div>
+<div class="gf-card warn"><span class="gf-ic">⏰</span><b><span class="ko">아홉 시에</span></b><small>thời điểm · lúc 9 giờ</small></div>
+</div>`, cap:'Ba việc của <b>에</b>: ở đâu (với 있다/없다), đi đến đâu (với 가다/오다), lúc nào.'},
+ {html:`<div class="gf-cols">
+<div class="gf-col good"><b>Có 에</b><p><span class="ko">세 시에 · 월요일에 · 주말에</span></p></div>
+<div class="gf-col bad"><b>Không thêm 에</b><p><span class="ko">오늘 · 내일 · 어제 · 지금 · 매일</span></p><p><span class="mini">✗ 오늘에, ✗ 내일에</span></p></div>
+</div>`, cap:'Mốc giờ, thứ, ngày lễ thì thêm <b>에</b>; các từ “hôm nay, mai, bây giờ” thì không.'}
+], ex:[
+ ['월요일에 회의가 있어요.','woryoire hoeuiga isseoyo','Thứ Hai có cuộc họp.'],
+ ['다음 달에 서울에 가요.','daeum dare seoure gayo','Tháng sau tôi đi Seoul.'],
+ ['제 노트북은 책상 위에 있어요.','je noteubugeun chaeksang wie isseoyo','Laptop của tôi ở trên bàn.']
+]};
+
+GXT.ko[7]={t:'에서 (nơi diễn ra hành động · từ đâu)', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>에 · ở / đến</b><p>📍 <span class="ko">회사<b>에</b> 있어요</span></p><p>🚶 <span class="ko">회사<b>에</b> 가요</span></p></div>
+<div class="gf-col vio"><b>에서 · làm gì ở đâu</b><p>💻 <span class="ko">회사<b>에서</b> 일해요</span></p><p>☕ <span class="ko">카페<b>에서</b> 만나요</span></p></div>
+<div class="gf-col warn"><b>에서 · từ đâu</b><p>✈️ <span class="ko">하노이<b>에서</b> 왔어요</span></p><p>🚢 <span class="ko">부산항<b>에서</b> 출발해요</span></p></div>
+</div>`, cap:'Cùng chữ “ở” trong tiếng Việt: tồn tại hoặc đi đến dùng <b>에</b>; hành động diễn ra hoặc điểm xuất phát dùng <b>에서</b>.'}
+], ex:[
+ ['점심은 회사 식당에서 먹어요.','jeomsimeun hoesa sikdangeseo meogeoyo','Bữa trưa tôi ăn ở căng-tin công ty.'],
+ ['화물은 부산항에서 출발해요.','hwamureun busanhangeseo chulbalhaeyo','Hàng xuất phát từ cảng Busan.'],
+ ['카페에서 친구를 만나요.','kapeeseo chingureul mannayo','Tôi gặp bạn ở quán cà phê.']
+]};
+
+GXT.ko[8]={t:'도 (cũng) · 만 (chỉ)', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>도 = cũng</b><p><span class="ko">저는 → 저<b>도</b></span></p><p><span class="ko">커피를 → 커피<b>도</b></span></p><p><span class="ko">주말에 → 주말에<b>도</b></span></p></div>
+<div class="gf-col vio"><b>만 = chỉ</b><p><span class="ko">물을 → 물<b>만</b></span></p><p><span class="ko">저는 → 저<b>만</b></span></p><p><span class="ko">한국어로 → 한국어로<b>만</b></span></p></div>
+</div>`, cap:'<b>도/만</b> thay hẳn 은/는, 이/가, 을/를; còn với 에, (으)로… thì gắn phía sau.'}
+], ex:[
+ ['저도 회의에 가요.','jeodo hoeuie gayo','Tôi cũng đi họp.'],
+ ['여기는 현금만 받아요.','yeogineun hyeongeumman badayo','Ở đây chỉ nhận tiền mặt.'],
+ ['주말에도 서버를 확인해요.','jumaredo seobeoreul hwaginhaeyo','Cuối tuần tôi cũng kiểm tra máy chủ.']
+]};
+
+GXT.ko[9]={t:'하고 · 와/과 · (이)랑 (và, với)', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>하고 · nói, trung tính</b><p><span class="ko">빵<b>하고</b> 우유</span></p><p><span class="ko">팀장님<b>하고</b> 같이</span></p></div>
+<div class="gf-col vio"><b>와/과 · viết, trang trọng</b><p><span class="ko">친구<b>와</b></span> <span class="mini">không 받침</span></p><p><span class="ko">책<b>과</b></span> <span class="mini">có 받침</span></p></div>
+<div class="gf-col warn"><b>(이)랑 · thân mật</b><p><span class="ko">친구<b>랑</b></span> <span class="mini">không 받침</span></p><p><span class="ko">동생<b>이랑</b></span> <span class="mini">có 받침</span></p></div>
+</div>`, cap:'Ba cách nói “và, với” chỉ khác sắc thái. Riêng <b>와/과</b>: không 받침 → 와, có 받침 → 과.'}
+], ex:[
+ ['팀장님하고 같이 회의했어요.','timjangnimhago gachi hoeuihaesseoyo','Tôi đã họp cùng trưởng nhóm.'],
+ ['인보이스와 패킹 리스트를 보냈어요.','inboiseuwa paeking riseuteureul bonaesseoyo','Tôi đã gửi hóa đơn và phiếu đóng gói.'],
+ ['주말에 동생이랑 쇼핑했어요.','jumare dongsaengirang syopinghaesseoyo','Cuối tuần tôi đi mua sắm với em.']
+]};
+
+GXT.ko[10]={t:'-았/었어요 (quá khứ)', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>ㅏ/ㅗ → 았어요</b><p><span class="ko">가다 → 갔어요</span></p><p><span class="ko">받다 → 받았어요</span></p><p><span class="ko">보다 → 봤어요</span></p></div>
+<div class="gf-col vio"><b>Khác → 었어요</b><p><span class="ko">먹다 → 먹었어요</span></p><p><span class="ko">마시다 → 마셨어요</span></p><p><span class="ko">고치다 → 고쳤어요</span></p></div>
+<div class="gf-col warn"><b>하다 → 했어요</b><p><span class="ko">일하다 → 일했어요</span></p><p><span class="ko">회의하다 → 회의했어요</span></p></div>
+<div class="gf-col good"><b>Danh từ</b><p><span class="ko">학생이었어요</span> <span class="mini">có 받침</span></p><p><span class="ko">의사였어요</span> <span class="mini">không 받침</span></p></div>
+</div>`, cap:'Cùng quy tắc nguyên âm như -아요/어요, chỉ thêm <b>ㅆ</b>: 았/었/했어요.'}
+], ex:[
+ ['어제 늦게까지 일했어요.','eoje neutgekkaji ilhaesseoyo','Hôm qua tôi làm việc đến khuya.'],
+ ['버그를 벌써 고쳤어요.','beogeureul beolsseo gochyeosseoyo','Tôi đã sửa xong lỗi rồi.'],
+ ['지난주에 샘플을 받았어요.','jinanjue saempeureul badasseoyo','Tuần trước tôi đã nhận được hàng mẫu.']
+]};
+
+GXT.ko[11]={t:'안 / -지 않아요 (không) · 못 / -지 못해요 (không thể)', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col bad"><b>안 · không (không muốn, không phải)</b><p>🙅 <span class="ko"><b>안</b> 먹어요 = 먹<b>지 않아요</b></span></p><p><span class="ko">공부 <b>안</b> 해요</span> <span class="mini">(안 đứng ngay trước 하다)</span></p></div>
+<div class="gf-col warn"><b>못 · không thể (muốn mà không được)</b><p>🚫 <span class="ko"><b>못</b> 가요 = 가<b>지 못해요</b></span></p><p><span class="ko">운동 <b>못</b> 해요</span></p></div>
+<div class="gf-col vio"><b>Dạng phủ định riêng</b><p><span class="ko">있다 → 없다</span></p><p><span class="ko">알다 → 모르다</span></p><p><span class="ko">이다 → 아니다</span></p></div>
+</div>`, cap:'Hỏi “có muốn không?”: không muốn → <b>안</b>; muốn mà không làm được → <b>못</b>.'}
+], ex:[
+ ['저는 술을 안 마셔요.','jeoneun sureul an masyeoyo','Tôi không uống rượu.'],
+ ['주말에는 이메일을 확인하지 않아요.','jumareneun imeireul hwaginhaji anayo','Cuối tuần tôi không kiểm tra email.'],
+ ['저는 매운 음식을 잘 못 먹어요.','jeoneun maeun eumsigeul jal mon meogeoyo','Tôi không ăn cay giỏi lắm.']
+]};
+
+GXT.ko[12]={t:'-고 싶어요 (muốn)', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Tôi / bạn · -고 싶어요</b><p><span class="ko">커피를 마시<b>고 싶어요</b>.</span></p><p><span class="ko">뭐 하<b>고 싶어요</b>?</span></p></div>
+<div class="gf-col vio"><b>Người khác · -고 싶어 해요</b><p><span class="ko">친구는 한국에 가<b>고 싶어 해요</b>.</span></p></div>
+<div class="gf-col bad"><b>Không gắn vào danh từ</b><p>✗ <span class="ko">커피 싶어요</span></p><p>✓ <span class="ko">커피를 마시고 싶어요</span></p></div>
+</div>`, cap:'<b>-고 싶어요</b> cho mình và người nghe; nói về người thứ ba dùng <b>-고 싶어 해요</b>.'}
+], ex:[
+ ['한국 게임 회사에서 일하고 싶어요.','hanguk geim hoesaeseo ilhago sipeoyo','Tôi muốn làm việc ở một công ty game Hàn Quốc.'],
+ ['오늘은 일찍 퇴근하고 싶어요.','oneureun iljjik toegeunhago sipeoyo','Hôm nay tôi muốn tan làm sớm.'],
+ ['친구는 한국어를 배우고 싶어 해요.','chinguneun hangugeoreul baeugo sipeo haeyo','Bạn tôi muốn học tiếng Hàn.']
+]};
+
+GXT.ko[13]={t:'-(으)세요 (hãy…, mời…) · -지 마세요', fig:[
+ {html:`<div class="gf-flow">
+<div class="gf-step ac">Gốc có <b>받침</b> → <b>으세요</b> <span class="mini">· <span class="ko">앉으세요, 읽으세요</span></span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step vio">Không 받침 → <b>세요</b> <span class="mini">· <span class="ko">가세요, 기다리세요</span></span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step warn">Gốc <b>ㄹ</b> → bỏ ㄹ + <b>세요</b> <span class="mini">· <span class="ko">만들다 → 만드세요</span></span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step good">Từ đặc biệt <span class="mini">· <span class="ko">먹다 → 드세요, 자다 → 주무세요, 있다 → 계세요</span></span></div>
+</div>`, cap:'Cách chia <b>-(으)세요</b> theo 받침 của gốc động từ.'},
+ {html:`<div class="gf-cols">
+<div class="gf-col good"><b>Hãy… · -(으)세요</b><p><span class="ko">들어오<b>세요</b>.</span> <span class="mini">Mời vào.</span></p></div>
+<div class="gf-col bad"><b>Đừng… · -지 마세요</b><p><span class="ko">들어오<b>지 마세요</b>.</span> <span class="mini">Đừng vào.</span></p></div>
+</div>`, cap:'“Đừng” là <b>-지 마세요</b>, không phải 안 -(으)세요.'}
+], ex:[
+ ['여기에 이름을 쓰세요.','yeogie ireumeul sseuseyo','Hãy viết tên vào đây.'],
+ ['잠시만 기다리세요.','jamsiman gidariseyo','Xin chờ một chút.'],
+ ['회의 중에는 전화하지 마세요.','hoeui jungeneun jeonhwahaji maseyo','Trong lúc họp xin đừng gọi điện.']
+]};
+
+GXT.ko[14]={t:'-(으)ㄹ 거예요 (sẽ / chắc là)', fig:[
+ {html:`<div class="gf-row">
+<div class="gf-card vio"><span class="gf-ic">⏪</span><b><span class="ko">어제 일했어요</span></b><small>quá khứ · -았/었어요</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card ac"><span class="gf-ic">⏺️</span><b><span class="ko">오늘 일해요</span></b><small>hiện tại · -아/어요</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card warn"><span class="gf-ic">⏩</span><b><span class="ko">내일 일할 거예요</span></b><small>tương lai · -(으)ㄹ 거예요</small></div>
+</div>`, cap:'Ba thì cơ bản của cùng một động từ 일하다 (làm việc).'},
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Có 받침 + 을 거예요</b><p><span class="ko">먹을 거예요 · 읽을 거예요</span></p></div>
+<div class="gf-col vio"><b>Không 받침 + ㄹ 거예요</b><p><span class="ko">갈 거예요 · 볼 거예요</span></p></div>
+<div class="gf-col warn"><b>Gốc ㄹ + 거예요</b><p><span class="ko">살 거예요 · 만들 거예요</span></p></div>
+</div>`, cap:'Nói về mình là <b>dự định</b>; nói về thời tiết, người khác là <b>phỏng đoán</b> “chắc là”.'}
+], ex:[
+ ['다음 주에 새 버전을 출시할 거예요.','daeum jue sae beojeoneul chulsihal geoyeyo','Tuần sau chúng tôi sẽ phát hành phiên bản mới.'],
+ ['물건은 금요일쯤 올 거예요.','mulgeoneun geumyoiljjeum ol geoyeyo','Hàng chắc khoảng thứ Sáu sẽ tới.'],
+ ['이번 주말에 한국어 시험을 볼 거예요.','ibeon jumare hangugeo siheomeul bol geoyeyo','Cuối tuần này tôi sẽ thi tiếng Hàn.']
+]};
+
+GXT.ko[15]={t:'부터 … 까지 · 에서 … 까지 (từ… đến…)', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>⏰ Thời gian · 부터 … 까지</b><p><span class="ko">월요일<b>부터</b> 금요일<b>까지</b></span></p><p><span class="ko">아홉 시<b>부터</b> 여섯 시<b>까지</b></span></p></div>
+<div class="gf-col vio"><b>📍 Nơi chốn · 에서 … 까지</b><p><span class="ko">하노이<b>에서</b> 서울<b>까지</b></span></p><p><span class="ko">집<b>에서</b> 회사<b>까지</b></span></p></div>
+<div class="gf-col warn"><b>📅 까지 · hạn chót</b><p><span class="ko">내일<b>까지</b> 보내 주세요.</span></p><p><span class="mini">gửi trước (hạn) ngày mai</span></p></div>
+</div>`, cap:'Cùng dịch là “từ”: thời gian dùng <b>부터</b>, địa điểm dùng <b>에서</b>.'}
+], ex:[
+ ['점심시간은 열두 시부터 한 시까지예요.','jeomsimsiganeun yeoldu sibuteo han sikkajiyeyo','Giờ nghỉ trưa từ 12 giờ đến 1 giờ.'],
+ ['하노이에서 서울까지 비행기로 다섯 시간쯤 걸려요.','hanoieseo seoulkkaji bihaenggiro daseot siganjjeum geollyeoyo','Từ Hà Nội đến Seoul đi máy bay mất khoảng năm tiếng.'],
+ ['이번 달 말까지 대금을 보내 주세요.','ibeon dal malkkaji daegeumeul bonae juseyo','Xin chuyển tiền hàng trước cuối tháng này.']
+]};
+
+GXT.ko[16]={t:'-고 (và, rồi)', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Liệt kê · “và”</b><p><span class="ko">싸<b>고</b> 맛있어요.</span></p><p><span class="ko">가볍<b>고</b> 빨라요.</span></p></div>
+<div class="gf-col vio"><b>Trình tự · “rồi”</b><p><span class="ko">메일을 보내<b>고</b> 퇴근해요.</span></p><p><span class="ko">밥을 먹<b>고</b> 잤어요.</span> <span class="mini">(quá khứ chỉ ở cuối)</span></p></div>
+<div class="gf-col bad"><b>Hai danh từ → không dùng -고</b><p>✗ <span class="ko">빵고 우유</span></p><p>✓ <span class="ko">빵하고 우유</span></p></div>
+</div>`, cap:'<b>-고</b> nối động từ, tính từ, mệnh đề; nối danh từ thì dùng 하고, 와/과.'}
+], ex:[
+ ['이 노트북은 가볍고 빨라요.','i noteubugeun gabyeopgo ppallayo','Cái laptop này nhẹ và nhanh.'],
+ ['보고서를 쓰고 팀장님께 보냈어요.','bogoseoreul sseugo timjangnimkke bonaesseoyo','Tôi viết báo cáo rồi gửi cho trưởng nhóm.'],
+ ['저는 개발자고 제 친구는 디자이너예요.','jeoneun gaebaljago je chinguneun dijaineoyeyo','Tôi là lập trình viên, còn bạn tôi là nhà thiết kế.']
+]};
+
+GXT.ko[17]={t:'-지만 (nhưng)', fig:[
+ {html:`<div class="gf-flow">
+<div class="gf-step ac"><span class="ko"><span class="gf-pill ac">한국어는</span> <span class="gf-pill vio">어렵</span><span class="gf-pill warn">지만</span> <span class="gf-pill good">재미있어요</span></span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step">Tiếng Hàn khó <b>nhưng</b> thú vị — “nhưng” nằm ở <b>cuối vế 1</b></div>
+<div class="gf-down">↓</div>
+<div class="gf-step vio">Gắn thẳng vào gốc <span class="mini">· <span class="ko">비싸지만, 갔지만, 학생이지만</span></span></div>
+</div>`, cap:'<b>-지만</b> gắn vào cuối vế thứ nhất; vế này chia quá khứ được (<b>갔지만</b>).'}
+], ex:[
+ ['월급은 적지만 일이 재미있어요.','wolgeubeun jeokjiman iri jaemiisseoyo','Lương thấp nhưng công việc thú vị.'],
+ ['가격은 좋지만 납기가 너무 길어요.','gagyeogeun jochiman napgiga neomu gireoyo','Giá thì tốt nhưng thời gian giao hàng quá dài.'],
+ ['테스트는 했지만 버그가 또 나왔어요.','teseuteuneun haetjiman beogeuga tto nawasseoyo','Đã test rồi nhưng lỗi lại xuất hiện.']
+]};
+
+GXT.ko[18]={t:'에게 / 한테 / 께 (cho, tới ai)', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>에게 · viết, trang trọng</b><p>✉️ <span class="ko">고객<b>에게</b> 메일을 보내요.</span></p></div>
+<div class="gf-col vio"><b>한테 · văn nói</b><p>📱 <span class="ko">친구<b>한테</b> 전화해요.</span></p></div>
+<div class="gf-col warn"><b>께 · kính ngữ</b><p>🎁 <span class="ko">사장님<b>께</b> 드려요.</span></p></div>
+<div class="gf-col bad"><b>Đồ vật, nơi chốn → 에</b><p>🏢 <span class="ko">회사<b>에</b> 전화해요.</span></p></div>
+</div>`, cap:'Người nhận là <b>người</b> → 에게/한테/께; là công ty, nơi chốn → <b>에</b>.'}
+], ex:[
+ ['고객에게 견적서를 보냈어요.','gogaege gyeonjeokseoreul bonaesseoyo','Tôi đã gửi bảng báo giá cho khách hàng.'],
+ ['이 문제는 선배한테 물어보세요.','i munjeneun seonbaehante mureoboseyo','Vấn đề này hãy hỏi anh chị đi trước.'],
+ ['부모님께 매주 전화를 드려요.','bumonimkke maeju jeonhwareul deuryeoyo','Tuần nào tôi cũng gọi điện cho bố mẹ.']
+]};
+
+GXT.ko[19]={t:'-아/어 주세요 (làm ơn làm giúp)', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>N + 주세요 · cho tôi (vật)</b><p>💧 <span class="ko">물 주세요.</span></p><p>🧾 <span class="ko">영수증 주세요.</span></p></div>
+<div class="gf-col vio"><b>V-아/어 주세요 · làm giúp (việc)</b><p>✅ <span class="ko">확인해 주세요.</span></p><p>⏳ <span class="ko">기다려 주세요.</span></p></div>
+<div class="gf-col bad"><b>Nhớ chia 아/어</b><p>✗ <span class="ko">말하 주세요</span></p><p>✓ <span class="ko">말해 주세요</span></p></div>
+</div>`, cap:'Xin <b>vật</b>: danh từ + 주세요. Nhờ <b>làm việc</b>: động từ chia 아/어 + 주세요.'}
+], ex:[
+ ['파일을 다시 보내 주세요.','paireul dasi bonae juseyo','Xin gửi lại file giúp tôi.'],
+ ['코드 리뷰 좀 해 주세요.','kodeu ribyu jom hae juseyo','Làm ơn review code giúp tôi.'],
+ ['여기서 세워 주세요.','yeogiseo sewo juseyo','Cho tôi xuống ở đây (dừng xe ở đây).']
+]};
+
+GXT.ko[20]={t:'-(으)러 가다/오다 (đi để làm gì)', fig:[
+ {html:`<div class="gf-flow">
+<div class="gf-step ac"><span class="ko"><span class="gf-pill vio">점심</span> <span class="gf-pill ac">먹</span><span class="gf-pill warn">으러</span> <span class="gf-pill good">가요</span></span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step">Việt: <b>Đi</b> ăn trưa — Hàn: ăn trưa <b>để</b> → <b>đi</b></div>
+<div class="gf-down">↓</div>
+<div class="gf-step vio">Có 받침 + <b>으러</b> · không 받침, gốc ㄹ + <b>러</b> <span class="mini">· <span class="ko">찾으러, 사러, 놀러</span></span></div>
+</div>`, cap:'Mục đích đứng trước, động từ di chuyển (<b>가다, 오다, 다니다</b>) đứng cuối.'}
+], ex:[
+ ['은행에 돈을 찾으러 가요.','eunhaenge doneul chajeureo gayo','Tôi đến ngân hàng để rút tiền.'],
+ ['커피 사러 편의점에 가요.','keopi sareo pyeonuijeome gayo','Tôi ra cửa hàng tiện lợi mua cà phê.'],
+ ['내일 한국 바이어가 공장을 보러 와요.','naeil hanguk baieoga gongjangeul boreo wayo','Ngày mai bên mua Hàn Quốc đến xem nhà máy.']
+]};
+
+GXT.ko[21]={t:'-(으)ㄹ까요? (…nhé?) · -(으)ㅂ시다 (hãy cùng…)', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>-(으)ㄹ까요? · …nhé?</b><p><span class="ko">같이 <b>갈까요</b>?</span> <span class="mini">rủ</span></p><p><span class="ko">제가 <b>도와줄까요</b>?</span> <span class="mini">đề nghị giúp</span></p><p><span class="ko">먹을까요 · 만들까요</span></p></div>
+<div class="gf-col vio"><b>-(으)ㅂ시다 · hãy cùng…</b><p><span class="ko">같이 <b>갑시다</b>.</span></p><p><span class="ko">먹읍시다 · 만듭시다</span></p><p><span class="mini">hơi cứng, như hô hào</span></p></div>
+<div class="gf-col warn"><b>Với sếp, người lớn</b><p>✓ <span class="ko">같이 갈까요?</span></p><p>✗ <span class="ko">같이 갑시다</span></p></div>
+</div>`, cap:'Rủ người trên thì dùng <b>-(으)ㄹ까요?</b>; <b>-(으)ㅂ시다</b> để nói với người ngang hàng hoặc cả nhóm.'}
+], ex:[
+ ['회의를 세 시로 바꿀까요?','hoeuireul se siro bakkulkkayo?','Mình đổi cuộc họp sang 3 giờ nhé?'],
+ ['제가 자료를 보내 드릴까요?','jega jaryoreul bonae deurilkkayo?','Tôi gửi tài liệu cho anh/chị nhé?'],
+ ['시간이 늦었어요. 오늘은 여기까지 합시다.','sigani neujeosseoyo. oneureun yeogikkaji hapsida','Muộn rồi. Hôm nay dừng ở đây nhé.']
+]};
+
+GXT.ko[22]={t:'-고 있다 (đang)', fig:[
+ {html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">💻</span><b><span class="ko">지금 코딩하고 있어요</span></b><small>ngay lúc nói</small></div>
+<div class="gf-card vio"><span class="gf-ic">📚</span><b><span class="ko">요즘 배우고 있어요</span></b><small>giai đoạn dạo này</small></div>
+<div class="gf-card warn"><span class="gf-ic">👴</span><b><span class="ko">신문을 읽고 계세요</span></b><small>kính ngữ: 고 계세요</small></div>
+<div class="gf-card bad"><span class="gf-ic">✗</span><b><span class="ko">바쁘고 있어요</span></b><small>không dùng với tính từ</small></div>
+</div>`, cap:'<b>-고 있어요</b> = đang làm; với người bề trên đổi thành <b>-고 계세요</b>.'}
+], ex:[
+ ['지금 버그를 고치고 있어요.','jigeum beogeureul gochigo isseoyo','Tôi đang sửa lỗi.'],
+ ['팀장님은 지금 통화하고 계세요.','timjangnimeun jigeum tonghwahago gyeseyo','Trưởng nhóm đang nghe điện thoại.'],
+ ['요즘 새 프로젝트를 준비하고 있어요.','yojeum sae peurojekteureul junbihago isseoyo','Dạo này tôi đang chuẩn bị dự án mới.']
+]};
+
+GXT.ko[23]={t:'보다 (더) · 제일 (so sánh hơn, nhất)', fig:[
+ {html:`<div class="gf-flow">
+<div class="gf-step ac"><span class="ko"><span class="gf-pill ac">이 노트북</span><span class="gf-pill warn">이</span> <span class="gf-pill vio">저 노트북</span><span class="gf-pill warn">보다</span> <span class="gf-pill">더</span> <span class="gf-pill good">가벼워요</span></span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step">Laptop này <b>nhẹ hơn</b> laptop kia — <b>보다</b> gắn sau vật bị so sánh</div>
+</div>`, cap:'A이/가 B<b>보다</b> (더) + tính từ: tính từ luôn đứng cuối câu.'},
+ {html:`<div class="gf-row">
+<div class="gf-card"><span class="gf-ic">🙂</span><b><span class="ko">좋아요</span></b><small>tốt</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card vio"><span class="gf-ic">😀</span><b><span class="ko">더 좋아요</span></b><small>tốt hơn</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card good"><span class="gf-ic">🏆</span><b><span class="ko">제일 좋아요</span></b><small>tốt nhất · trong số: 중에서</small></div>
+</div>`, cap:'Thang so sánh: <b>더</b> (hơn), <b>제일 / 가장</b> (nhất).'}
+], ex:[
+ ['베트남이 한국보다 더워요.','beteunami hangukboda deowoyo','Việt Nam nóng hơn Hàn Quốc.'],
+ ['이 공급업체가 가격이 제일 싸요.','i gonggeubeopchega gagyeogi jeil ssayo','Nhà cung cấp này có giá rẻ nhất.'],
+ ['우리 팀에서 민수 씨가 제일 빨리 일해요.','uri timeseo minsu ssiga jeil ppalli ilhaeyo','Trong nhóm mình, anh Minsu làm việc nhanh nhất.']
+]};
+
+GXT.ko[24]={t:'-(으)ㄹ 수 있다/없다 (có thể / không thể)', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col good"><b>-(으)ㄹ 수 있어요 · có thể</b><p><span class="ko">한국어를 <b>할 수 있어요</b>.</span></p><p><span class="ko">읽을 수 있어요 · 만들 수 있어요</span></p></div>
+<div class="gf-col bad"><b>-(으)ㄹ 수 없어요 · không thể, không được</b><p><span class="ko">여기서 <b>주차할 수 없어요</b>.</span></p><p><span class="mini">không được đỗ xe ở đây</span></p></div>
+</div>`, cap:'Viết cách thành ba từ: <b>할 · 수 · 있어요</b>. Có 받침 → 을 수, không 받침 / gốc ㄹ → ㄹ 수.'}
+], ex:[
+ ['내일까지 끝낼 수 있어요?','naeilkkaji kkeunnael su isseoyo?','Bạn có thể xong trước ngày mai không?'],
+ ['죄송하지만 오늘은 회의에 갈 수 없어요.','joesonghajiman oneureun hoeuie gal su eopseoyo','Xin lỗi nhưng hôm nay tôi không thể đi họp.'],
+ ['최소 주문 수량을 줄일 수 있어요?','choeso jumun suryangeul juril su isseoyo?','Có thể giảm số lượng đặt hàng tối thiểu (MOQ) không?']
+]};
+
+GXT.ko[25]={t:'-아서/어서 (vì… nên · rồi)', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Lý do → kết quả</b><p>🌧️ <span class="ko">비가 와<b>서</b> 늦었어요.</span></p><p>🙇 <span class="ko">늦어<b>서</b> 죄송해요.</span></p></div>
+<div class="gf-col vio"><b>Làm A rồi làm B (ở đó)</b><p>🏭 <span class="ko">공장에 가<b>서</b> 확인했어요.</span></p><p>🤝 <span class="ko">친구를 만나<b>서</b> 밥을 먹었어요.</span></p></div>
+<div class="gf-col bad"><b>Không chia quá khứ trước 서</b><p>✗ <span class="ko">늦었어서</span> → ✓ <span class="ko">늦어서</span></p><p>✗ … <span class="ko">-아서 + -(으)세요</span></p></div>
+</div>`, cap:'<b>-아서/어서</b>: lý do, hoặc hai việc nối liền. Thì quá khứ chỉ chia ở cuối câu.'}
+], ex:[
+ ['비가 많이 와서 조금 늦었어요.','biga mani waseo jogeum neujeosseoyo','Mưa to quá nên tôi đến hơi muộn.'],
+ ['도와주셔서 감사합니다.','dowajusyeoseo gamsahamnida','Cảm ơn anh/chị đã giúp đỡ.'],
+ ['공장에 가서 제품을 확인했어요.','gongjange gaseo jepumeul hwaginhaesseoyo','Tôi đến nhà máy rồi kiểm tra sản phẩm ở đó.']
+]};
+
+GXT.ko[26]={t:'-(으)니까 (vì… nên — dùng được với mệnh lệnh)', fig:[
+ {html:`<div class="gf-flow">
+<div class="gf-step">Vế sau là gì?</div>
+<div class="gf-down">↓</div>
+<div class="gf-step good">Mệnh lệnh, rủ rê (<b>-(으)세요, -(으)ㅂ시다, -(으)ㄹ까요</b>) → <b>-(으)니까</b> <span class="mini">· <span class="ko">비가 오니까 우산을 가져가세요.</span></span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step warn">Xin lỗi, cảm ơn → <b>-아서/어서</b> <span class="mini">· <span class="ko">늦어서 죄송해요.</span></span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step">Câu kể bình thường → dùng được cả hai</div>
+</div>`, cap:'Chọn đuôi lý do bằng cách nhìn <b>vế sau</b> của câu.'}
+], ex:[
+ ['회의가 곧 있으니까 자료를 준비하세요.','hoeuiga got isseunikka jaryoreul junbihaseyo','Sắp có cuộc họp nên hãy chuẩn bị tài liệu.'],
+ ['오늘은 늦었으니까 내일 다시 이야기해요.','oneureun neujeosseunikka naeil dasi iyagihaeyo','Hôm nay muộn rồi nên mai mình bàn tiếp nhé.'],
+ ['이 가격은 너무 비싸니까 조금 깎아 주세요.','i gagyeogeun neomu bissanikka jogeum kkakka juseyo','Giá này đắt quá, bớt cho tôi một chút nhé.']
+]};
+
+GXT.ko[27]={t:'-아/어야 하다 (phải)', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col warn"><b>Phải · -아/어야 해요 (돼요)</b><p><span class="ko">가<b>야 해요</b> · 먹<b>어야 해요</b></span></p><p><span class="ko">일하다 → 일<b>해야 해요</b></span></p></div>
+<div class="gf-col good"><b>Không cần · -지 않아도 돼요</b><p><span class="ko">가<b>지 않아도 돼요</b></span></p><p><span class="ko"><b>안</b> 가<b>도 돼요</b></span></p></div>
+<div class="gf-col bad"><b>Lỗi hay gặp</b><p>✗ <span class="ko">하야 해요</span></p><p>✓ <span class="ko">해야 해요</span></p></div>
+</div>`, cap:'“Phải” đứng <b>sau</b> động từ: gốc chia 아/어 + <b>야 해요</b>.'}
+], ex:[
+ ['선적 전에 검사를 받아야 해요.','seonjeok jeone geomsareul badaya haeyo','Trước khi xếp hàng lên tàu phải qua kiểm định.'],
+ ['이 버그는 오늘 고쳐야 돼요.','i beogeuneun oneul gochyeoya dwaeyo','Lỗi này phải sửa trong hôm nay.'],
+ ['토요일에는 출근하지 않아도 돼요.','toyoireneun chulgeunhaji anado dwaeyo','Thứ Bảy không cần phải đi làm.']
+]};
+
+GXT.ko[28]={t:'-(으)면 (nếu, khi)', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Có 받침 + 으면</b><p><span class="ko">있<b>으면</b> · 먹<b>으면</b></span></p></div>
+<div class="gf-col vio"><b>Không 받침 + 면</b><p><span class="ko">가<b>면</b> · 바쁘<b>면</b></span></p></div>
+<div class="gf-col warn"><b>Gốc ㄹ + 면</b><p><span class="ko">알<b>면</b> · 멀<b>면</b></span></p></div>
+<div class="gf-col good"><b>Danh từ + (이)면</b><p><span class="ko">학생<b>이면</b> · 내일<b>이면</b></span></p></div>
+</div>`, cap:'<b>-(으)면</b> gắn vào cuối vế điều kiện, chọn dạng theo 받침.'}
+], ex:[
+ ['질문이 있으면 언제든지 물어보세요.','jilmuni isseumyeon eonjedeunji mureoboseyo','Nếu có câu hỏi thì cứ hỏi bất cứ lúc nào.'],
+ ['주문 수량이 많으면 할인해 드릴 수 있어요.','jumun suryangi maneumyeon harinhae deuril su isseoyo','Nếu đặt số lượng lớn, chúng tôi có thể giảm giá.'],
+ ['오류가 나면 이 버튼을 누르세요.','oryuga namyeon i beoteuneul nureuseyo','Nếu có lỗi thì hãy bấm nút này.']
+]};
+
+GXT.ko[29]={t:'-아/어 보다 (thử · đã từng)', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>-아/어 보세요 · hãy thử</b><p>👕 <span class="ko">입어 보세요.</span></p><p>🍲 <span class="ko">먹어 보세요.</span></p></div>
+<div class="gf-col vio"><b>-아/어 봤어요 · đã từng</b><p>✈️ <span class="ko">한국에 가 봤어요.</span></p><p>🎮 <span class="ko">이 게임을 해 봤어요.</span></p></div>
+<div class="gf-col warn"><b>So sánh</b><p><span class="ko">가 봤어요</span> <span class="mini">đã từng đến (trải nghiệm)</span></p><p><span class="ko">갔어요</span> <span class="mini">đã đi (một lần cụ thể)</span></p></div>
+</div>`, cap:'Động từ phụ <b>보다</b> đứng sau: thử làm, hoặc ở quá khứ là đã từng làm.'}
+], ex:[
+ ['이 앱을 한번 써 보세요.','i aebeul hanbeon sseo boseyo','Hãy dùng thử ứng dụng này xem.'],
+ ['한국 회사에서 일해 봤어요?','hanguk hoesaeseo ilhae bwasseoyo?','Bạn đã từng làm việc ở công ty Hàn Quốc chưa?'],
+ ['저는 김치를 직접 만들어 봤어요.','jeoneun gimchireul jikjeop mandeureo bwasseoyo','Tôi đã từng tự làm kim chi.']
+]};
+
+GXT.ko[30]={t:'-기 전에 (trước khi) · -(으)ㄴ 후에 (sau khi)', fig:[
+ {html:`<div class="gf-row">
+<div class="gf-card vio"><span class="gf-ic">📄</span><b><span class="ko">회의하기 전에</span></b><small>trước khi họp: xem tài liệu</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card ac"><span class="gf-ic">👥</span><b><span class="ko">회의</span></b><small>mốc: cuộc họp</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card warn"><span class="gf-ic">📝</span><b><span class="ko">회의한 후에</span></b><small>sau khi họp: viết biên bản</small></div>
+</div>`, cap:'Động từ + <b>기 전에</b> / <b>(으)ㄴ 후에</b>; danh từ thì chỉ cần <b>N 전에 / N 후에</b> (회의 전에).'}
+], ex:[
+ ['퇴근하기 전에 컴퓨터를 꺼 주세요.','toegeunhagi jeone keompyuteoreul kkeo juseyo','Trước khi tan làm, xin hãy tắt máy tính.'],
+ ['계약서에 서명한 후에 돈을 보낼 거예요.','gyeyakseoe seomyeonghan hue doneul bonael geoyeyo','Sau khi ký hợp đồng, chúng tôi sẽ chuyển tiền.'],
+ ['점심 후에 같이 커피 마실까요?','jeomsim hue gachi keopi masilkkayo?','Ăn trưa xong mình cùng uống cà phê nhé?']
+]};
+
+GXT.ko[31]={t:'Định ngữ -(으)ㄴ / -는 / -(으)ㄹ', fig:[
+ {html:`<div class="gf-row">
+<div class="gf-card vio"><span class="gf-ic">⏪</span><b><span class="ko">어제 먹은 음식</span></b><small>-(으)ㄴ · món đã ăn hôm qua</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card ac"><span class="gf-ic">⏺️</span><b><span class="ko">지금 먹는 음식</span></b><small>-는 · món đang ăn</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card warn"><span class="gf-ic">⏩</span><b><span class="ko">내일 먹을 음식</span></b><small>-(으)ㄹ · món sẽ ăn ngày mai</small></div>
+</div>`, cap:'Thì nằm ở đuôi định ngữ: <b>먹은</b> (đã), <b>먹는</b> (đang, thường), <b>먹을</b> (sẽ).'},
+ {html:`<div class="gf-flow">
+<div class="gf-step ac"><span class="ko"><span class="gf-pill vio">어제</span> <span class="gf-pill ac">만난</span> <span class="gf-pill good">사람</span></span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step"><b>người</b> (mà) tôi gặp hôm qua — tiếng Việt đặt danh từ lên <b>đầu</b></div>
+</div>`, cap:'Định ngữ tiếng Hàn đứng <b>trước</b> danh từ, ngược với tiếng Việt.'}
+], ex:[
+ ['이건 제가 만든 프로그램이에요.','igeon jega mandeun peurogeuraemieyo','Đây là chương trình do tôi làm.'],
+ ['한국어를 할 수 있는 사람을 찾고 있어요.','hangugeoreul hal su inneun sarameul chatgo isseoyo','Chúng tôi đang tìm người nói được tiếng Hàn.'],
+ ['다음 주에 보낼 물건이 많아요.','daeum jue bonael mulgeoni manayo','Tuần sau có nhiều hàng phải gửi.']
+]};
+
+GXT.ko[32]={t:'Kính ngữ -(으)시- · 께서 · động từ và danh từ kính ngữ', fig:[
+ {html:`<div class="gf-flow">
+<div class="gf-step vio">🎩 <b>합쇼체</b> · <span class="ko">감사합니다, 가십니까?</span> <span class="mini">phỏng vấn, họp, khách hàng</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step ac">🙂 <b>해요체</b> · <span class="ko">감사해요, 가세요?</span> <span class="mini">đồng nghiệp, người lạ</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step warn">👕 <b>반말</b> · <span class="ko">고마워, 가?</span> <span class="mini">bạn thân, người nhỏ tuổi hơn</span></div>
+</div>`, cap:'Ba mức lịch sự từ cao xuống thấp. Ở chỗ làm, tối thiểu dùng <b>해요체</b>.'},
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Động từ kính ngữ</b><p><span class="ko">먹다 → 드시다</span></p><p><span class="ko">자다 → 주무시다</span></p><p><span class="ko">있다 → 계시다</span></p></div>
+<div class="gf-col vio"><b>Danh từ kính ngữ</b><p><span class="ko">집 → 댁 · 이름 → 성함</span></p><p><span class="ko">나이 → 연세 · 말 → 말씀</span></p></div>
+<div class="gf-col warn"><b>Trợ từ</b><p><span class="ko">이/가 → 께서</span></p><p><span class="ko">에게 → 께</span></p></div>
+</div>`, cap:'Tôn trọng <b>người được nói tới</b>; không bao giờ dùng kính ngữ cho chính mình.'}
+], ex:[
+ ['사장님, 내일 몇 시에 출발하세요?','sajangnim, naeil myeot sie chulbalhaseyo?','Thưa giám đốc, ngày mai mấy giờ anh/chị khởi hành ạ?'],
+ ['성함이 어떻게 되세요?','seonghami eotteoke doeseyo?','Xin hỏi quý danh của anh/chị là gì ạ?'],
+ ['팀장님께서 이 보고서를 보셨어요.','timjangnimkkeseo i bogoseoreul bosyeosseoyo','Trưởng nhóm đã xem báo cáo này rồi.']
+]};
+
+GXT.ko[33]={t:'Bất quy tắc ㅂ · ㄷ · ㅡ · 르', fig:[
+ {html:`<div class="gf-cols">
+<div class="gf-col ac"><b>ㅂ → 우</b><p><span class="ko">덥다 → 더워요</span></p><p><span class="ko">쉽다 → 쉬워요</span></p><p><span class="mini">riêng 돕다 → 도와요</span></p></div>
+<div class="gf-col vio"><b>ㄷ → ㄹ</b><p><span class="ko">듣다 → 들어요</span></p><p><span class="ko">걷다 → 걸어요</span></p></div>
+<div class="gf-col warn"><b>rơi ㅡ</b><p><span class="ko">바쁘다 → 바빠요</span></p><p><span class="ko">쓰다 → 써요</span></p></div>
+<div class="gf-col good"><b>르 → ㄹㄹ</b><p><span class="ko">모르다 → 몰라요</span></p><p><span class="ko">빠르다 → 빨라요</span></p></div>
+</div>`, cap:'Bốn nhóm bất quy tắc hay gặp nhất ở TOPIK I.'},
+ {html:`<div class="gf-flow">
+<div class="gf-step">Đuôi phía sau bắt đầu bằng gì?</div>
+<div class="gf-down">↓</div>
+<div class="gf-step bad">Nguyên âm (<b>-아요, -(으)면, -(으)ㄴ</b>) → <b>biến đổi</b> <span class="mini">· <span class="ko">더워요, 들으면</span></span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step good">Phụ âm (<b>-고, -지만</b>) → <b>giữ nguyên</b> <span class="mini">· <span class="ko">덥고, 듣지만</span></span></div>
+</div>`, cap:'Gốc chỉ đổi khi gặp đuôi mở đầu bằng <b>nguyên âm</b>.'}
+], ex:[
+ ['이 일은 생각보다 어려워요.','i ireun saenggakboda eoryeowoyo','Việc này khó hơn tôi nghĩ.'],
+ ['길을 몰라서 직원에게 물어봤어요.','gireul mollaseo jigwonege mureobwasseoyo','Không biết đường nên tôi đã hỏi nhân viên.'],
+ ['요즘 일이 많아서 너무 바빠요.','yojeum iri manaseo neomu bappayo','Dạo này nhiều việc nên tôi bận lắm.']
+]};
+
+/* ===== Lộ trình 12 tuần: TOPIK I + tiếng Hàn công sở ===== */
+GXP.ko=[
+ {t:'Tuần 1 · Bảng chữ hangul', x:[
+  ['Đọc tổng quan để biết module có những phần nào, cách học mỗi ngày', ['v:tongquan|Tổng quan tiếng Hàn']],
+  ['Học 10 nguyên âm cơ bản: bấm nghe từng chữ, viết tay mỗi chữ 5 lần', ['v:hangul>Nguyên âm cơ bản (10)|Nguyên âm cơ bản']],
+  ['Học 14 phụ âm cơ bản và 5 phụ âm căng, chú ý ba bộ ㄱ/ㅋ/ㄲ, ㄷ/ㅌ/ㄸ, ㅂ/ㅍ/ㅃ', ['v:hangul>Phụ âm cơ bản (14)|Phụ âm cơ bản', 'v:hangul>Phụ âm căng (5)|Phụ âm căng']],
+  ['Học 11 nguyên âm ghép (ㅘ, ㅝ, ㅢ…)', ['v:hangul>Nguyên âm ghép (11)|Nguyên âm ghép']],
+  ['Mỗi ngày 10 phút nhận mặt chữ, làm đến khi đúng trên 90%', ['b:hangul@#h-quiz|Luyện đọc chữ cái', 'q:jamo|Trắc nghiệm chữ cái']]
+ ]},
+ {t:'Tuần 2 · Âm tiết và phụ âm cuối 받침', x:[
+  ['Tự ghép phụ âm + nguyên âm thành âm tiết (가, 노, 뷔…)', ['v:hangul>Tự ghép âm tiết|Tự ghép âm tiết']],
+  ['Học 7 âm cuối 받침 đọc thành ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅇ', ['v:hangul>Phụ âm cuối 받침|Phụ âm cuối 받침']],
+  ['Luyện đọc âm tiết, rồi nghe và chọn đúng âm tiết', ['b:hangul@#h-quiz2|Luyện đọc âm tiết', 'q:syl|Đọc âm tiết', 'q:sylListen|Nghe, chọn âm tiết']],
+  ['Ôn lại những chữ cái còn hay nhầm', ['q:jamo|Ôn chữ cái']],
+  ['Bài ngữ pháp đầu tiên: “là” với 이에요/예요, chọn theo 받침', ['g:0|Bài 이에요/예요', 'gf:0|Điền 이에요/예요']]
+ ]},
+ {t:'Tuần 3 · Biến âm và 50 từ đầu tiên', x:[
+  ['Học quy tắc nối âm, căng âm, mũi hóa; đọc to từng ví dụ', ['v:phatam|Phát âm & biến âm']],
+  ['Đọc kỹ các lỗi người Việt hay mắc và tự sửa giọng mình', ['v:phatam>Lỗi người Việt hay mắc|Lỗi người Việt hay mắc']],
+  ['Học 50 từ TOPIK I đầu tiên: xem danh sách rồi lật thẻ', ['w:T1|Danh sách TOPIK I', 'c:T1|Thẻ TOPIK I']],
+  ['Nghe từ rồi chọn đáp án để luyện tai', ['q:listen/T1|Nghe, chọn từ TOPIK I']],
+  ['Ngữ pháp: chủ đề 은/는 và chủ ngữ 이/가', ['g:1|Bài 은/는 · 이/가', 'gf:1|Điền 은/는 · 이/가']]
+ ]},
+ {t:'Tuần 4 · Câu cơ bản và tự giới thiệu', x:[
+  ['Học 있어요/없어요 (có, ở) và làm bài điền', ['g:2|Bài 있어요 / 없어요', 'gf:2|Điền 있어요 / 없어요']],
+  ['Học hai hệ số đếm và lượng từ: đọc to giờ, giá tiền, số tầng', ['g:3|Bài số đếm', 'gf:3|Điền số và lượng từ']],
+  ['Chia đuôi -아요/어요 và đánh dấu tân ngữ 을/를', ['g:4|Bài -아요/어요', 'g:5|Bài 을/를', 'gf:4|Điền -아요/어요']],
+  ['Xếp câu theo trật tự Chủ ngữ – Tân ngữ – Động từ', ['gf:5|Điền 을/를', 'q:order|Sắp xếp câu']],
+  ['Nghe hội thoại tự giới thiệu rồi nói nhại theo, thay tên và nghề của mình', ['dl:0|Hội thoại: Tự giới thiệu', 'b:hoithoai@#d-shadow|Nói nhại theo bài']]
+ ]},
+ {t:'Tuần 5 · Trợ từ nơi chốn và quán cà phê', x:[
+  ['Phân biệt 에 (ở, đến, lúc) và 에서 (làm gì ở đâu, từ đâu)', ['g:6|Bài 에', 'g:7|Bài 에서', 'gf:7|Điền 에 · 에서']],
+  ['Học 도 (cũng), 만 (chỉ) và làm bài điền', ['g:8|Bài 도 · 만', 'gf:8|Điền 도 · 만']],
+  ['Học 하고, 와/과, (이)랑 (và, với)', ['g:9|Bài 하고 · 와/과 · (이)랑', 'gf:9|Điền 하고 · 와/과']],
+  ['Nghe và nói nhại hội thoại gọi món ở quán cà phê', ['dl:1|Hội thoại: Quán cà phê']],
+  ['Ôn từ TOPIK I: nhìn từ chọn nghĩa, mỗi ngày một lượt', ['q:mean/T1|Chọn nghĩa TOPIK I', 'c:T1|Thẻ TOPIK I']]
+ ]},
+ {t:'Tuần 6 · Quá khứ, phủ định, mong muốn', x:[
+  ['Chia quá khứ -았/었어요; viết 5 câu kể hôm qua làm gì', ['g:10|Bài quá khứ -았/었어요', 'gf:10|Điền quá khứ']],
+  ['Phân biệt 안 (không) và 못 (không thể)', ['g:11|Bài 안 · 못', 'gf:11|Điền 안 · 못']],
+  ['Nói điều mình muốn với -고 싶어요', ['g:12|Bài -고 싶어요', 'gf:12|Điền -고 싶어요']],
+  ['Nghe hội thoại mua sắm quần áo: hỏi cỡ, thử đồ, mặc cả', ['dl:2|Hội thoại: Mua sắm']],
+  ['Nghe từ TOPIK I rồi chọn từ đúng', ['q:listen/T1|Nghe, chọn từ TOPIK I', 'q:word/T1|Nghĩa → từ TOPIK I']]
+ ]},
+ {t:'Tuần 7 · Đề nghị, kế hoạch, đi taxi', x:[
+  ['Học lời mời, yêu cầu -(으)세요 và “đừng” -지 마세요', ['g:13|Bài -(으)세요 · -지 마세요', 'gf:13|Điền -(으)세요']],
+  ['Nói kế hoạch tuần sau với -(으)ㄹ 거예요', ['g:14|Bài -(으)ㄹ 거예요', 'gf:14|Điền -(으)ㄹ 거예요']],
+  ['Học “từ… đến…”: 부터~까지 và 에서~까지', ['g:15|Bài 부터 · 까지', 'gf:15|Điền 부터 · 에서 · 까지']],
+  ['Nghe và nói nhại hội thoại đi taxi: nói điểm đến, xin dừng xe', ['dl:3|Hội thoại: Đi taxi', 'b:hoithoai@#d-shadow|Nói nhại theo bài']],
+  ['Làm bài điền trợ từ, đuôi câu tổng hợp', ['q:fill|Điền vào chỗ trống']]
+ ]},
+ {t:'Tuần 8 · Nối câu và nhờ vả, ở nhà hàng', x:[
+  ['Nối câu bằng -고 (và, rồi) và -지만 (nhưng)', ['g:16|Bài -고', 'g:17|Bài -지만', 'gf:16|Điền -고']],
+  ['Học 에게/한테/께 (cho ai) và làm bài điền', ['g:18|Bài 에게 · 한테 · 께', 'gf:18|Điền 에게 · 한테 · 께']],
+  ['Nhờ người khác giúp với -아/어 주세요', ['g:19|Bài -아/어 주세요', 'gf:19|Điền -아/어 주세요']],
+  ['Nghe hội thoại ở nhà hàng: gọi món, xin thêm nước, tính tiền', ['dl:4|Hội thoại: Nhà hàng']],
+  ['Ôn những từ hay sai trong các tuần trước', ['q:wrong|Ôn từ hay sai']]
+ ]},
+ {t:'Tuần 9 · Rủ rê, so sánh và từ vựng công sở', x:[
+  ['Học -(으)러 가다 (đi để làm gì) và -(으)ㄹ까요 / -(으)ㅂ시다 (rủ rê)', ['g:20|Bài -(으)러 가다', 'g:21|Bài -(으)ㄹ까요 · -(으)ㅂ시다', 'gf:21|Điền -(으)ㄹ까요']],
+  ['Học -고 있다 (đang) và so sánh 보다, 제일', ['g:22|Bài -고 있다', 'g:23|Bài 보다 · 제일', 'gf:23|Điền 보다 · 제일']],
+  ['Học từ vựng công việc và IT: xem danh sách rồi lật thẻ', ['w:CV|Từ vựng Công việc & IT', 'c:CV|Thẻ Công việc & IT']],
+  ['Đoán từ Hàn qua âm Hán Việt (회의 = hội nghị, 계약 = khế ước)', ['q:hanviet|Hán Việt → từ Hàn']],
+  ['Chọn nghĩa từ công sở để nhớ lâu', ['q:mean/CV|Chọn nghĩa Công việc & IT']]
+ ]},
+ {t:'Tuần 10 · Khả năng, lý do, nghĩa vụ và phỏng vấn', x:[
+  ['Học -(으)ㄹ 수 있다/없다 (có thể / không thể)', ['g:24|Bài -(으)ㄹ 수 있다', 'gf:24|Điền -(으)ㄹ 수 있다']],
+  ['Phân biệt hai cách nói lý do -아서/어서 và -(으)니까', ['g:25|Bài -아서/어서', 'g:26|Bài -(으)니까', 'gf:26|Điền -아서 · -(으)니까']],
+  ['Học -아/어야 하다 (phải) và làm bài điền', ['g:27|Bài -아/어야 하다', 'gf:27|Điền -아/어야 하다']],
+  ['Nghe hội thoại phỏng vấn ở công ty game, tập trả lời bằng 합쇼체', ['dl:5|Hội thoại: Phỏng vấn', 'b:hoithoai@#d-shadow|Nói nhại theo bài']],
+  ['Lật thẻ từ công sở theo chiều Nghĩa → Hàn', ['c:CV|Thẻ Công việc & IT']]
+ ]},
+ {t:'Tuần 11 · Điều kiện, trình tự, định ngữ, kính ngữ', x:[
+  ['Học -(으)면 (nếu) và -아/어 보다 (thử, đã từng)', ['g:28|Bài -(으)면', 'g:29|Bài -아/어 보다', 'gf:28|Điền -(으)면']],
+  ['Học trước khi / sau khi và định ngữ -(으)ㄴ/-는/-(으)ㄹ', ['g:30|Bài -기 전에 · -(으)ㄴ 후에', 'g:31|Bài định ngữ', 'gf:31|Điền định ngữ']],
+  ['Học kính ngữ và ba mức lịch sự dùng ở công ty', ['g:32|Bài kính ngữ', 'gf:32|Điền kính ngữ']],
+  ['Nghe hội thoại báo cáo với trưởng nhóm: bug, tiến độ, lịch phát hành', ['dl:6|Hội thoại: Báo cáo trưởng nhóm']],
+  ['Học từ vựng xuất nhập khẩu (báo giá, L/C, chứng từ)', ['w:XNK|Từ vựng Xuất nhập khẩu', 'c:XNK|Thẻ Xuất nhập khẩu']]
+ ]},
+ {t:'Tuần 12 · Ôn tập và thi thử TOPIK I', x:[
+  ['Học bất quy tắc ㅂ, ㄷ, ㅡ, 르 và làm bài điền', ['g:33|Bài bất quy tắc', 'gf:33|Điền bất quy tắc']],
+  ['Nghe và nói nhại hội thoại đàm phán đơn hàng xuất nhập khẩu', ['dl:7|Hội thoại: Đàm phán XNK', 'b:hoithoai@#d-shadow|Nói nhại theo bài']],
+  ['Thi thử từ vựng: chọn nghĩa và nghe trên toàn bộ từ, đặt mục tiêu 80%', ['q:mean/ALL|Thi thử chọn nghĩa', 'q:listen/ALL|Thi thử nghe']],
+  ['Thi thử ngữ pháp: điền chỗ trống và sắp xếp câu', ['q:fill|Thi thử điền chỗ trống', 'q:order|Thi thử sắp xếp câu']],
+  ['Làm lại những từ còn sai cho đến khi danh sách trống', ['q:wrong|Ôn từ hay sai']]
+ ]}
+];
+
+</script>
+<script>/* gx_zh.js */
+/* ===== Tiếng Trung · hình minh họa + ví dụ thêm cho 25 điểm ngữ pháp, và lộ trình 12 tuần ===== */
+
+GXT.zh[0]={t:'Câu chữ 是 — “A là B”',
+ fig:[{html:`<div class="gf-cols">
+<div class="gf-col good"><b>✓ <span class="han">是</span> + danh từ</b><p><span class="gf-pill ac">我</span><span class="gf-pill good">是</span><span class="gf-pill vio">越南人</span></p><p><span class="gf-pill ac">她</span><span class="gf-pill good">是</span><span class="gf-pill vio">经理</span></p><p><span class="gf-pill ac">他</span><span class="gf-pill bad">不是</span><span class="gf-pill vio">老师</span></p></div>
+<div class="gf-col bad"><b>✗ <span class="han">是</span> + tính từ</b><p><span class="han">我是很忙</span> ✗</p><p><span class="han">我很忙</span> ✓</p><p><span class="mini">Tính từ đi với <span class="han">很</span>, không cần <span class="han">是</span>.</span></p></div>
+</div>`, cap:'<b>是</b> chỉ nối hai danh từ: A là B. Phủ định thêm <b>不</b> thành <b>不是</b> (bú shì).'}],
+ ex:[
+  ['她是我们的经理。','Tā shì wǒmen de jīnglǐ.','Cô ấy là quản lý của chúng tôi.'],
+  ['这不是我的手机。','Zhè bú shì wǒ de shǒujī.','Đây không phải điện thoại của tôi.'],
+  ['我们都是学生。','Wǒmen dōu shì xuésheng.','Chúng tôi đều là học sinh.']
+ ]};
+
+GXT.zh[1]={t:'Câu tính từ với 很',
+ fig:[{html:`<div class="gf-cols">
+<div class="gf-col good"><b>Khẳng định: <span class="han">很</span> + tính từ</b><p><span class="gf-pill ac">今天</span><span class="gf-pill good">很</span><span class="gf-pill vio">热</span></p><p><span class="mini">Hôm nay nóng. (<span class="han">很</span> gần như không mang nghĩa “rất”)</span></p></div>
+<div class="gf-col warn"><b>Phủ định: <span class="han">不</span> + tính từ</b><p><span class="gf-pill ac">今天</span><span class="gf-pill warn">不</span><span class="gf-pill vio">热</span></p><p><span class="mini">Hôm nay không nóng. Bỏ <span class="han">很</span>.</span></p></div>
+<div class="gf-col vio"><b>Bỏ <span class="han">很</span> = đang so sánh</b><p><span class="han">我忙，他不忙。</span></p><p><span class="mini">Tôi thì bận, còn anh ấy thì không.</span></p></div>
+</div>`, cap:'Câu tính từ không có <b>是</b>. Khẳng định thường kèm <b>很</b>; phủ định chỉ cần <b>不</b>.'}],
+ ex:[
+  ['这个房间很大。','Zhège fángjiān hěn dà.','Phòng này rộng.'],
+  ['我们公司不大。','Wǒmen gōngsī bú dà.','Công ty chúng tôi không lớn.'],
+  ['她的汉语很好。','Tā de Hànyǔ hěn hǎo.','Tiếng Trung của cô ấy giỏi.']
+ ]};
+
+GXT.zh[2]={t:'Câu hỏi với 吗',
+ fig:[{html:`<div class="gf-flow">
+<div class="gf-step">Câu trần thuật: <span class="han">你是老师。</span> <span class="mini">Bạn là giáo viên.</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step vio">Thêm <b><span class="han">吗</span></b> cuối câu: <span class="han">你是老师<b>吗</b>？</span> <span class="mini">Bạn là giáo viên à?</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step good">Trả lời bằng chính động từ: <span class="han"><b>是</b>。/ <b>不是</b>。</span> <span class="mini">không nói “có/không” chung chung</span></div>
+</div>`, cap:'Giữ nguyên trật tự câu, chỉ thêm <b>吗</b>. Trả lời bằng cách lặp lại động từ hoặc tính từ của câu hỏi.'}],
+ ex:[
+  ['你喜欢喝茶吗？——喜欢。','Nǐ xǐhuan hē chá ma? — Xǐhuan.','Bạn thích uống trà không? — Thích.'],
+  ['明天你来公司吗？','Míngtiān nǐ lái gōngsī ma?','Mai bạn có đến công ty không?'],
+  ['你有微信吗？——有。','Nǐ yǒu Wēixìn ma? — Yǒu.','Bạn có WeChat không? — Có.']
+ ]};
+
+GXT.zh[3]={t:'Phủ định 不 và 没',
+ fig:[{html:`<div class="gf-cols">
+<div class="gf-col warn"><b><span class="han">不</span> · không (muốn / thường / sẽ)</b><p>🙅 <span class="han">我<b>不</b>去。</span> <span class="mini">Tôi không đi (không muốn).</span></p><p>📅 <span class="han">明天<b>不</b>上班。</span> <span class="mini">Mai không đi làm.</span></p><p>💰 <span class="han"><b>不</b>贵。</span> <span class="mini">Không đắt (tính từ).</span></p></div>
+<div class="gf-col vio"><b><span class="han">没</span> · không / chưa (đã xảy ra)</b><p>🕒 <span class="han">我<b>没</b>去。</span> <span class="mini">Tôi đã không đi / chưa đi.</span></p><p>📅 <span class="han">昨天<b>没</b>上班。</span> <span class="mini">Hôm qua không đi làm.</span></p><p>👛 <span class="han"><b>没有</b>钱。</span> <span class="mini"><span class="han">有</span> chỉ đi với <span class="han">没</span>, không có <span class="han">不有</span>.</span></p></div>
+</div>`, cap:'Hỏi: việc đó <b>đã xảy ra</b> chưa? Đã/chưa xảy ra → <b>没</b>. Ý muốn, thói quen, tương lai, tính từ → <b>不</b>.'}],
+ ex:[
+  ['他今天不来公司。','Tā jīntiān bù lái gōngsī.','Hôm nay anh ấy không đến công ty.'],
+  ['我还没吃饭。','Wǒ hái méi chī fàn.','Tôi vẫn chưa ăn cơm.'],
+  ['工厂没有这个颜色。','Gōngchǎng méiyǒu zhège yánsè.','Nhà máy không có màu này.']
+ ]};
+
+GXT.zh[4]={t:'Định ngữ đứng TRƯỚC danh từ (的)',
+ fig:[{html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Tiếng Trung: bổ nghĩa → danh từ</b><p><span class="gf-pill vio">很贵的</span><span class="gf-pill ac">衣服</span></p><p><span class="gf-pill vio">我朋友的</span><span class="gf-pill ac">电脑</span></p><p><span class="gf-pill vio">红色的</span><span class="gf-pill ac">杯子</span></p></div>
+<div class="gf-col warn"><b>Tiếng Việt: danh từ → bổ nghĩa</b><p><span class="gf-pill ac">quần áo</span><span class="gf-pill vio">rất đắt</span></p><p><span class="gf-pill ac">máy tính</span><span class="gf-pill vio">của bạn tôi</span></p><p><span class="gf-pill ac">cái cốc</span><span class="gf-pill vio">màu đỏ</span></p></div>
+</div>`, cap:'Cùng màu là cùng một phần: trật tự <b>ngược nhau</b>. Tiếng Trung luôn đặt phần bổ nghĩa + <b>的</b> lên trước danh từ.'}],
+ ex:[
+  ['这是我朋友的电脑。','Zhè shì wǒ péngyou de diànnǎo.','Đây là máy tính của bạn tôi.'],
+  ['我喜欢红色的杯子。','Wǒ xǐhuan hóngsè de bēizi.','Tôi thích cái cốc màu đỏ.'],
+  ['他是我们公司的新同事。','Tā shì wǒmen gōngsī de xīn tóngshì.','Anh ấy là đồng nghiệp mới của công ty chúng tôi.']
+ ]};
+
+GXT.zh[5]={t:'Trạng ngữ thời gian, địa điểm đứng TRƯỚC động từ',
+ fig:[{html:`<div class="gf-flow">
+<div class="gf-step ac"><b>Tiếng Trung</b><br><span class="gf-pill ac">我</span><span class="gf-pill warn">明天</span><span class="gf-pill vio">在公司</span><span class="gf-pill good">开会</span><br><span class="mini">Chủ ngữ → Thời gian → Nơi chốn → Động từ</span></div>
+<div class="gf-down">⇅</div>
+<div class="gf-step warn"><b>Tiếng Việt</b><br><span class="gf-pill ac">Tôi</span><span class="gf-pill good">họp</span><span class="gf-pill vio">ở công ty</span><span class="gf-pill warn">ngày mai</span><br><span class="mini">Nơi chốn, thời gian thường đứng sau động từ</span></div>
+</div>`, cap:'Cùng màu là cùng một phần. Tiếng Trung dồn <b>thời gian</b> và <b>在 + nơi chốn</b> lên trước, động từ đứng gần cuối.'}],
+ ex:[
+  ['我们下午三点在会议室见面。','Wǒmen xiàwǔ sān diǎn zài huìyìshì jiànmiàn.','Ba giờ chiều chúng ta gặp nhau ở phòng họp.'],
+  ['他每天在家玩游戏。','Tā měitiān zài jiā wán yóuxì.','Ngày nào anh ấy cũng chơi game ở nhà.'],
+  ['下午我在办公室写报告。','Xiàwǔ wǒ zài bàngōngshì xiě bàogào.','Chiều nay tôi viết báo cáo ở văn phòng.']
+ ]};
+
+GXT.zh[6]={t:'Lượng từ',
+ fig:[{html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🧑</span><b><span class="han">个</span> gè</b><small>người, đồ vật chung<br><span class="han">一个人</span></small></div>
+<div class="gf-card vio"><span class="gf-ic">📚</span><b><span class="han">本</span> běn</b><small>sách, vở<br><span class="han">两本书</span></small></div>
+<div class="gf-card warn"><span class="gf-ic">👕</span><b><span class="han">件</span> jiàn</b><small>áo, quần áo, việc<br><span class="han">一件衣服</span></small></div>
+<div class="gf-card good"><span class="gf-ic">☕</span><b><span class="han">杯</span> bēi</b><small>cốc, ly<br><span class="han">三杯茶</span></small></div>
+<div class="gf-card ac"><span class="gf-ic">📄</span><b><span class="han">张</span> zhāng</b><small>vật phẳng: giấy, vé, bàn<br><span class="han">一张票</span></small></div>
+<div class="gf-card vio"><span class="gf-ic">💻</span><b><span class="han">台</span> tái</b><small>máy móc<br><span class="han">两台电脑</span></small></div>
+</div>`, cap:'Học lượng từ thành cặp với danh từ, giống “cái, quyển, chiếc” trong tiếng Việt. Số 2 trước lượng từ là <b>两</b>.'}],
+ ex:[
+  ['我要两杯咖啡。','Wǒ yào liǎng bēi kāfēi.','Cho tôi hai cốc cà phê.'],
+  ['这个月我们买了三台电脑。','Zhège yuè wǒmen mǎi le sān tái diànnǎo.','Tháng này chúng tôi đã mua ba cái máy tính.'],
+  ['那张桌子多少钱？','Nà zhāng zhuōzi duōshao qián?','Cái bàn kia bao nhiêu tiền?']
+ ]};
+
+GXT.zh[7]={t:'Đại từ nghi vấn giữ nguyên vị trí',
+ fig:[{html:`<div class="gf-cols">
+<div class="gf-col warn"><b>Hỏi</b><p><span class="han">你去</span><span class="gf-pill warn">哪儿</span>？</p><p><span class="gf-pill warn">谁</span><span class="han">是经理</span>？</p><p><span class="han">你</span><span class="gf-pill warn">几点</span><span class="han">下班</span>？</p></div>
+<div class="gf-col good"><b>Trả lời: thay đúng chỗ đó</b><p><span class="han">我去</span><span class="gf-pill good">公司</span>。</p><p><span class="gf-pill good">王先生</span><span class="han">是经理</span>。</p><p><span class="han">我</span><span class="gf-pill good">六点</span><span class="han">下班</span>。</p></div>
+</div>`, cap:'Từ để hỏi nằm đúng chỗ của câu trả lời, giống tiếng Việt (“đi <b>đâu</b>” → “đi <b>công ty</b>”). Không đảo lên đầu câu, không thêm 吗.'}],
+ ex:[
+  ['谁是你们的老板？','Shéi shì nǐmen de lǎobǎn?','Ai là sếp của các bạn?'],
+  ['你几点下班？','Nǐ jǐ diǎn xiàbān?','Mấy giờ bạn tan làm?'],
+  ['你们要多少件？','Nǐmen yào duōshao jiàn?','Bên anh cần bao nhiêu cái?']
+ ]};
+
+GXT.zh[8]={t:'Câu hỏi chính phản (V不V)',
+ fig:[{html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Cách 1: thêm <span class="han">吗</span></b><p><span class="han">你去<b>吗</b>？</span></p><p><span class="han">贵<b>吗</b>？</span></p></div>
+<div class="gf-col vio"><b>Cách 2: V <span class="han">不</span> V</b><p><span class="gf-pill vio">去</span><span class="gf-pill warn">不</span><span class="gf-pill vio">去</span>？</p><p><span class="gf-pill vio">有</span><span class="gf-pill warn">没</span><span class="gf-pill vio">有</span>？ <span class="mini">(<span class="han">有</span> dùng <span class="han">没</span>)</span></p></div>
+<div class="gf-col bad"><b>✗ Không ghép hai cách</b><p><span class="han">你去不去吗？</span> ✗</p><p><span class="mini">Đã V<span class="han">不</span>V thì bỏ <span class="han">吗</span>.</span></p></div>
+</div>`, cap:'Hai cách hỏi có/không cùng nghĩa. <b>V不V</b> nghe tự nhiên trong khẩu ngữ; chữ 不 ở giữa đọc nhẹ (bu).'}],
+ ex:[
+  ['你喜欢不喜欢这个游戏？','Nǐ xǐhuan bu xǐhuan zhège yóuxì?','Bạn có thích game này không?'],
+  ['明天你有没有时间？','Míngtiān nǐ yǒu méiyǒu shíjiān?','Mai bạn có rảnh không?'],
+  ['这件衣服贵不贵？','Zhè jiàn yīfu guì bu guì?','Bộ quần áo này có đắt không?']
+ ]};
+
+GXT.zh[9]={t:'Trợ từ 呢 — “còn … thì sao?”',
+ fig:[{html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🔁</span><b><span class="han">我很好，你呢？</span></b><small>Hỏi lại cùng câu: “còn bạn?”</small></div>
+<div class="gf-card vio"><span class="gf-ic">🔍</span><b><span class="han">我的钥匙呢？</span></b><small>Hỏi chỗ: “chìa khóa của tôi đâu rồi?”</small></div>
+</div>`, cap:'<b>Danh từ/đại từ + 呢？</b> là câu hỏi ngắn. Có câu trước thì hiểu là “còn … thì sao?”, đứng một mình thì là “… đâu rồi?”.'}],
+ ex:[
+  ['我是越南人，你呢？','Wǒ shì Yuènán rén, nǐ ne?','Tôi là người Việt Nam, còn bạn?'],
+  ['王经理呢？——他在开会。','Wáng jīnglǐ ne? — Tā zài kāihuì.','Quản lý Vương đâu rồi? — Anh ấy đang họp.'],
+  ['我明天去，你们呢？','Wǒ míngtiān qù, nǐmen ne?','Mai tôi đi, còn các bạn?']
+ ]};
+
+GXT.zh[10]={t:'在 — “ở” và “đang”',
+ fig:[{html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">📍</span><b><span class="han">在</span> = ở</b><small>động từ<br><span class="han">我在公司。</span><br>Tôi ở công ty.</small></div>
+<div class="gf-card vio"><span class="gf-ic">🏢</span><b><span class="han">在</span> + nơi + V</b><small>làm gì ở đâu<br><span class="han">我在公司吃饭。</span><br>Tôi ăn cơm ở công ty.</small></div>
+<div class="gf-card good"><span class="gf-ic">⏳</span><b><span class="han">在</span> + V = đang</b><small>đang làm<br><span class="han">我在吃饭。</span><br>Tôi đang ăn cơm.</small></div>
+</div>`, cap:'Một chữ <b>在</b>, ba vai: “ở” (động từ), “ở…” trước động từ (giới từ), và “đang” (phó từ).'}],
+ ex:[
+  ['你现在在哪儿？','Nǐ xiànzài zài nǎr?','Bây giờ bạn đang ở đâu?'],
+  ['他在开会，请等一下。','Tā zài kāihuì, qǐng děng yíxià.','Anh ấy đang họp, xin đợi một chút.'],
+  ['我在网上买衣服。','Wǒ zài wǎngshàng mǎi yīfu.','Tôi mua quần áo trên mạng.']
+ ]};
+
+GXT.zh[11]={t:'Động từ năng nguyện: 会 · 能 · 可以 · 想',
+ fig:[{html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🎓</span><b><span class="han">会</span> huì</b><small>biết (nhờ học)<br><span class="han">我会游泳。</span></small></div>
+<div class="gf-card vio"><span class="gf-ic">💪</span><b><span class="han">能</span> néng</b><small>làm được (có điều kiện)<br><span class="han">我今天能加班。</span></small></div>
+<div class="gf-card good"><span class="gf-ic">✅</span><b><span class="han">可以</span> kěyǐ</b><small>được phép<br><span class="han">这儿可以拍照吗？</span></small></div>
+<div class="gf-card warn"><span class="gf-ic">💭</span><b><span class="han">想</span> xiǎng</b><small>muốn<br><span class="han">我想休息。</span></small></div>
+</div>`, cap:'Cả bốn đứng <b>trước động từ chính</b>. Tiếng Việt đều có thể nói “được”, nên hãy hỏi: đã học (会), có điều kiện (能), hay được phép (可以)?'}],
+ ex:[
+  ['你会开车吗？','Nǐ huì kāichē ma?','Bạn biết lái xe không?'],
+  ['我们下个星期能发货。','Wǒmen xià ge xīngqī néng fāhuò.','Tuần sau chúng tôi giao hàng được.'],
+  ['我可以用一下你的电脑吗？','Wǒ kěyǐ yòng yíxià nǐ de diànnǎo ma?','Tôi dùng máy tính của bạn một chút được không?']
+ ]};
+
+GXT.zh[12]={t:'了 — hoàn thành và thay đổi',
+ fig:[{html:`<div class="gf-cols">
+<div class="gf-col ac"><b>✅ V + <span class="han">了</span>: việc đã xong</b><p><span class="gf-pill ac">我</span><span class="gf-pill good">发了</span><span class="gf-pill vio">两封邮件</span></p><p><span class="mini">Tôi đã gửi hai email. Thường có số lượng sau <span class="han">了</span>.</span></p></div>
+<div class="gf-col vio"><b>🔄 Câu + <span class="han">了</span>: tình huống mới</b><p><span class="han">我会说汉语<b>了</b>！</span></p><p><span class="mini">Giờ tôi biết nói tiếng Trung rồi (trước thì chưa).</span></p></div>
+<div class="gf-col bad"><b>✗ Bẫy hay gặp</b><p><span class="han">我没去了。</span> ✗</p><p><span class="han">我没去。</span> ✓</p><p><span class="mini">Đã có <span class="han">没</span> thì bỏ <span class="han">了</span>.</span></p></div>
+</div>`, cap:'<b>了</b> sau động từ = hành động đã hoàn thành; <b>了</b> cuối câu = có thay đổi. Nó không phải dấu “thì quá khứ”.'}],
+ ex:[
+  ['昨天我们开了两个会。','Zuótiān wǒmen kāi le liǎng ge huì.','Hôm qua chúng tôi đã họp hai cuộc.'],
+  ['他已经下班了。','Tā yǐjīng xiàbān le.','Anh ấy đã tan làm rồi.'],
+  ['我现在不喝咖啡了。','Wǒ xiànzài bù hē kāfēi le.','Bây giờ tôi không uống cà phê nữa.']
+ ]};
+
+GXT.zh[13]={t:'过 — đã từng',
+ fig:[{html:`<div class="gf-cols">
+<div class="gf-col vio"><b>🧳 V + <span class="han">过</span>: đã từng</b><p><span class="han">我去<b>过</b>上海。</span></p><p><span class="mini">Ít nhất một lần trong đời, không cần nói khi nào.</span></p></div>
+<div class="gf-col bad"><b>🚫 <span class="han">没</span> + V + <span class="han">过</span>: chưa từng</b><p><span class="han">我<b>没</b>去<b>过</b>上海。</span></p><p><span class="mini">Giữ <span class="han">过</span>, không thêm <span class="han">了</span>.</span></p></div>
+<div class="gf-col ac"><b>📅 V + <span class="han">了</span>: việc cụ thể</b><p><span class="han">我昨天去<b>了</b>上海。</span></p><p><span class="mini">Một lần đi cụ thể, có mốc thời gian.</span></p></div>
+</div>`, cap:'<b>过</b> kể kinh nghiệm (“đã từng”), <b>了</b> kể một việc cụ thể đã xong. Phủ định của 过 là <b>没…过</b>.'}],
+ ex:[
+  ['你玩过这个游戏吗？','Nǐ wán guo zhège yóuxì ma?','Bạn từng chơi game này chưa?'],
+  ['我们以前跟这家工厂合作过。','Wǒmen yǐqián gēn zhè jiā gōngchǎng hézuò guo.','Trước đây chúng tôi từng hợp tác với nhà máy này.'],
+  ['我没看过这个电影。','Wǒ méi kàn guo zhège diànyǐng.','Tôi chưa xem bộ phim này bao giờ.']
+ ]};
+
+GXT.zh[14]={t:'So sánh với 比',
+ fig:[{html:`<div class="gf-flow">
+<div class="gf-step good"><b>A <span class="han">比</span> B + tính từ</b>: <span class="han">这个<b>比</b>那个便宜。</span> <span class="mini">Cái này rẻ hơn cái kia.</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step ac">Thêm mức chênh <b>phía sau</b>: <span class="han">便宜<b>五块</b> · 便宜<b>一点儿</b> · 便宜<b>多了</b></span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step bad">✗ <span class="han">这个比那个很便宜</span> <span class="mini">không đặt <span class="han">很</span>/<span class="han">非常</span> trước tính từ</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step vio">Phủ định dùng <b><span class="han">没有</span></b>: <span class="han">这个<b>没有</b>那个便宜。</span> <span class="mini">Cái này không rẻ bằng cái kia.</span></div>
+</div>`, cap:'Câu 比: tính từ đứng trần, mọi con số “hơn bao nhiêu” đều đặt <b>sau</b> tính từ.'}],
+ ex:[
+  ['这次的价格比上次高。','Zhè cì de jiàgé bǐ shàng cì gāo.','Giá lần này cao hơn lần trước.'],
+  ['他比我大两岁。','Tā bǐ wǒ dà liǎng suì.','Anh ấy hơn tôi hai tuổi.'],
+  ['坐地铁比坐出租车快一点儿。','Zuò dìtiě bǐ zuò chūzūchē kuài yìdiǎnr.','Đi tàu điện ngầm nhanh hơn đi taxi một chút.']
+ ]};
+
+GXT.zh[15]={t:'Bổ ngữ trình độ 得',
+ fig:[{html:`<div class="gf-flow">
+<div class="gf-step ac"><b>Không có tân ngữ</b><br><span class="gf-pill ac">他</span><span class="gf-pill good">说</span><span class="gf-pill warn">得</span><span class="gf-pill vio">很快</span><br><span class="mini">Anh ấy nói nhanh. (tiếng Việt không có chữ nào ở giữa)</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step vio"><b>Có tân ngữ: lặp lại động từ</b><br><span class="gf-pill ac">他</span><span class="gf-pill good">说</span><span class="gf-pill">汉语</span><span class="gf-pill good">说</span><span class="gf-pill warn">得</span><span class="gf-pill vio">很好</span><br><span class="mini">Hoặc bỏ động từ đầu: <span class="han">他汉语说得很好。</span></span></div>
+</div>`, cap:'Muốn nhận xét một hành động làm <b>thế nào</b>: động từ + <b>得</b> + (很) + tính từ. Tân ngữ không được chen giữa 说 và 得.'}],
+ ex:[
+  ['她跑得很快。','Tā pǎo de hěn kuài.','Cô ấy chạy rất nhanh.'],
+  ['你今天来得很早。','Nǐ jīntiān lái de hěn zǎo.','Hôm nay bạn đến sớm nhỉ.'],
+  ['他写报告写得很好。','Tā xiě bàogào xiě de hěn hǎo.','Anh ấy viết báo cáo rất tốt.']
+ ]};
+
+GXT.zh[16]={t:'正在 / 着 — đang và trạng thái',
+ fig:[{html:`<div class="gf-cols">
+<div class="gf-col ac"><b>🎬 <span class="han">正在</span> + V: hành động đang diễn ra</b><p><span class="han">他<b>正在</b>开会。</span> <span class="mini">Anh ấy đang họp.</span></p><p><span class="han">工厂<b>正在</b>生产。</span> <span class="mini">Nhà máy đang sản xuất.</span></p></div>
+<div class="gf-col vio"><b>🖼️ V + <span class="han">着</span>: trạng thái giữ nguyên</b><p><span class="han">灯开<b>着</b>。</span> <span class="mini">Đèn đang bật.</span></p><p><span class="han">她穿<b>着</b>红衣服。</span> <span class="mini">Cô ấy đang mặc áo đỏ.</span></p></div>
+</div>`, cap:'<b>正在</b> giống một đoạn phim đang chạy; <b>着</b> giống một bức ảnh chụp trạng thái sau hành động.'}],
+ ex:[
+  ['工厂正在生产你们的订单。','Gōngchǎng zhèngzài shēngchǎn nǐmen de dìngdān.','Nhà máy đang sản xuất đơn hàng của bên anh.'],
+  ['她穿着一件红色的衣服。','Tā chuān zhe yí jiàn hóngsè de yīfu.','Cô ấy mặc một chiếc áo màu đỏ.'],
+  ['电脑开着，你用吧。','Diànnǎo kāi zhe, nǐ yòng ba.','Máy tính đang mở đấy, bạn dùng đi.']
+ ]};
+
+GXT.zh[17]={t:'要…了 — sắp',
+ fig:[{html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">⏳</span><b><span class="han">要…了</span></b><small>sắp<br><span class="han">要下雨了。</span></small></div>
+<div class="gf-card warn"><span class="gf-ic">⚡</span><b><span class="han">快要…了</span></b><small>sắp lắm rồi<br><span class="han">快要下班了。</span></small></div>
+<div class="gf-card good"><span class="gf-ic">📅</span><b>mốc + <span class="han">就要…了</span></b><small>có thời gian cụ thể<br><span class="han">明天就要考试了。</span></small></div>
+<div class="gf-card bad"><span class="gf-ic">🚫</span><b><span class="han">明天快要…了</span></b><small>sai: có mốc thời gian thì không dùng <span class="han">快要</span></small></div>
+</div>`, cap:'Ba cách nói “sắp”, cả ba đều cần <b>了</b> cuối câu. Có mốc thời gian thì chọn <b>就要…了</b>.'}],
+ ex:[
+  ['快要下班了。','Kuài yào xiàbān le.','Sắp tan làm rồi.'],
+  ['货下个星期就要到了。','Huò xià ge xīngqī jiù yào dào le.','Tuần sau là hàng đến rồi.'],
+  ['新游戏要上线了。','Xīn yóuxì yào shàngxiàn le.','Game mới sắp ra mắt rồi.']
+ ]};
+
+GXT.zh[18]={t:'因为…所以… / 虽然…但是…',
+ fig:[{html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Nguyên nhân → kết quả</b><p><span class="gf-pill ac">因为</span> nguyên nhân，<span class="gf-pill good">所以</span> kết quả</p><p><span class="gf-pill ac">Vì</span> … <span class="gf-pill good">nên</span> …</p></div>
+<div class="gf-col vio"><b>Trái ý</b><p><span class="gf-pill vio">虽然</span> A，<span class="gf-pill warn">但是</span> B</p><p><span class="gf-pill vio">Tuy</span> … <span class="gf-pill warn">nhưng</span> …</p></div>
+</div>`, cap:'Ráp từng chữ với tiếng Việt: trật tự giống hệt. Có thể dùng cả cặp hoặc chỉ một vế (所以…, 但是…).'}],
+ ex:[
+  ['因为价格太高，所以客户没买。','Yīnwèi jiàgé tài gāo, suǒyǐ kèhù méi mǎi.','Vì giá quá cao nên khách hàng không mua.'],
+  ['虽然这个游戏很难，但是很好玩。','Suīrán zhège yóuxì hěn nán, dànshì hěn hǎowán.','Tuy game này khó nhưng rất vui.'],
+  ['因为今天要加班，所以我不能去。','Yīnwèi jīntiān yào jiābān, suǒyǐ wǒ bù néng qù.','Vì hôm nay phải tăng ca nên tôi không đi được.']
+ ]};
+
+GXT.zh[19]={t:'从…到… và 离',
+ fig:[{html:`<div class="gf-cols">
+<div class="gf-col ac"><b>🕘 → 🕔 <span class="han">从</span> A <span class="han">到</span> B: từ A đến B</b><p><span class="han"><b>从</b>星期一<b>到</b>星期五</span></p><p><span class="han"><b>从</b>河内<b>到</b>北京</span></p><p><span class="mini">Khoảng thời gian hoặc quãng đường.</span></p></div>
+<div class="gf-col vio"><b>📍 ↔ 📍 A <span class="han">离</span> B + <span class="han">远</span>/<span class="han">近</span></b><p><span class="gf-pill ac">我家</span><span class="gf-pill vio">离</span><span class="gf-pill ac">公司</span><span class="gf-pill good">很近</span></p><p><span class="mini">Nhà tôi cách công ty rất gần. <span class="han">远</span>/<span class="han">近</span> đứng cuối, sau B.</span></p></div>
+</div>`, cap:'<b>从…到…</b> nói điểm đầu và điểm cuối; <b>离</b> nói hai nơi cách nhau xa hay gần.'}],
+ ex:[
+  ['从河内到北京要多长时间？','Cóng Hénèi dào Běijīng yào duō cháng shíjiān?','Từ Hà Nội đến Bắc Kinh mất bao lâu?'],
+  ['工厂离港口不远。','Gōngchǎng lí gǎngkǒu bù yuǎn.','Nhà máy cách cảng không xa.'],
+  ['我们从星期一到星期五上班。','Wǒmen cóng xīngqīyī dào xīngqīwǔ shàngbān.','Chúng tôi làm việc từ thứ Hai đến thứ Sáu.']
+ ]};
+
+GXT.zh[20]={t:'Nhấn mạnh 是…的',
+ fig:[{html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🕒</span><b>Khi nào</b><small><span class="han">我是昨天来的。</span></small></div>
+<div class="gf-card vio"><span class="gf-ic">📍</span><b>Ở đâu</b><small><span class="han">这是在上海买的。</span></small></div>
+<div class="gf-card good"><span class="gf-ic">🚕</span><b>Bằng gì</b><small><span class="han">我是坐出租车来的。</span></small></div>
+<div class="gf-card warn"><span class="gf-ic">👥</span><b>Với ai</b><small><span class="han">我是跟朋友来的。</span></small></div>
+</div>`, cap:'Việc <b>đã xảy ra</b> rồi, chỉ hỏi hoặc nhấn mạnh chi tiết: kẹp chi tiết đó giữa <b>是</b> và <b>的</b>.'}],
+ ex:[
+  ['这件衣服是在网上买的。','Zhè jiàn yīfu shì zài wǎngshàng mǎi de.','Bộ quần áo này mua trên mạng đấy.'],
+  ['你是什么时候来中国的？','Nǐ shì shénme shíhou lái Zhōngguó de?','Bạn đến Trung Quốc từ khi nào?'],
+  ['我是跟同事一起来的。','Wǒ shì gēn tóngshì yìqǐ lái de.','Tôi đến cùng đồng nghiệp.']
+ ]};
+
+GXT.zh[21]={t:'Động từ lặp lại / 一下 — làm thử, làm một chút',
+ fig:[{html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Động từ 1 âm tiết</b><p><span class="han">看</span> → <span class="gf-pill ac">看看</span> / <span class="gf-pill ac">看一下</span></p><p><span class="han">试</span> → <span class="gf-pill ac">试试</span> / <span class="gf-pill ac">试一下</span></p></div>
+<div class="gf-col vio"><b>Động từ 2 âm tiết: ABAB</b><p><span class="han">休息</span> → <span class="gf-pill good">休息休息</span> ✓</p><p><span class="gf-pill bad">休休息息</span> ✗</p></div>
+</div>`, cap:'Lặp động từ hoặc thêm <b>一下</b> làm câu nhẹ nhàng, lịch sự: “xem thử”, “nghỉ một chút”.'}],
+ ex:[
+  ['你试试这件衣服。','Nǐ shìshi zhè jiàn yīfu.','Bạn mặc thử bộ này xem.'],
+  ['我们讨论讨论这个问题吧。','Wǒmen tǎolùn tǎolùn zhège wèntí ba.','Chúng ta bàn qua vấn đề này nhé.'],
+  ['你帮我看一下这个报告。','Nǐ bāng wǒ kàn yíxià zhège bàogào.','Bạn xem giúp tôi báo cáo này một chút.']
+ ]};
+
+GXT.zh[22]={t:'太…了 và 非常',
+ fig:[{html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🙂</span><b><span class="han">很贵</span></b><small>đắt (trung tính)</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card vio"><span class="gf-ic">😮</span><b><span class="han">非常贵</span></b><small>vô cùng đắt</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card bad"><span class="gf-ic">😱</span><b><span class="han">太贵了！</span></b><small>đắt quá! (cảm xúc mạnh)</small></div>
+</div>`, cap:'Mức độ tăng dần. <b>太…了</b> là lời cảm thán, nhớ có <b>了</b>; <b>非常</b> dùng được cả trong văn viết, báo cáo.'}],
+ ex:[
+  ['你的汉语太好了！','Nǐ de Hànyǔ tài hǎo le!','Tiếng Trung của bạn giỏi quá!'],
+  ['这个关卡太难了。','Zhège guānkǎ tài nán le.','Màn này khó quá.'],
+  ['今天的会议非常重要。','Jīntiān de huìyì fēicháng zhòngyào.','Cuộc họp hôm nay vô cùng quan trọng.']
+ ]};
+
+GXT.zh[23]={t:'Câu liên động — làm A để/để rồi làm B',
+ fig:[{html:`<div class="gf-cols">
+<div class="gf-col ac"><b>V1 = cách đi → V2</b><p><span class="gf-pill ac">他</span><span class="gf-pill vio">坐飞机</span><span class="gf-pill good">去上海</span></p><p><span class="mini">Anh ấy đi máy bay đến Thượng Hải.</span></p></div>
+<div class="gf-col vio"><b>V1 = đi đâu → V2 = để làm gì</b><p><span class="gf-pill ac">我</span><span class="gf-pill vio">去工厂</span><span class="gf-pill good">看样品</span></p><p><span class="mini">Tôi đến nhà máy xem hàng mẫu.</span></p></div>
+</div>`, cap:'Các động từ xếp theo <b>đúng trình tự</b> việc xảy ra, không cần từ nối, y như tiếng Việt.'}],
+ ex:[
+  ['我去银行换钱。','Wǒ qù yínháng huàn qián.','Tôi đi ngân hàng đổi tiền.'],
+  ['明天我们去工厂看样品。','Míngtiān wǒmen qù gōngchǎng kàn yàngpǐn.','Mai chúng tôi đến nhà máy xem hàng mẫu.'],
+  ['他每天骑自行车上班。','Tā měitiān qí zìxíngchē shàngbān.','Ngày nào anh ấy cũng đạp xe đi làm.']
+ ]};
+
+GXT.zh[24]={t:'Xem trước HSK3: câu chữ 把',
+ fig:[{html:`<div class="gf-flow">
+<div class="gf-step"><b>Câu thường</b>: <span class="gf-pill ac">我</span><span class="gf-pill good">发了</span><span class="gf-pill vio">报告</span> <span class="mini">S + V + O</span></div>
+<div class="gf-down">↓ đưa tân ngữ lên trước</div>
+<div class="gf-step good"><b>Câu <span class="han">把</span></b>: <span class="gf-pill ac">我</span><span class="gf-pill warn">把</span><span class="gf-pill vio">报告</span><span class="gf-pill good">发给你了</span> <span class="mini">S + <span class="han">把</span> + O + V + phần thêm</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step bad">✗ <span class="han">我把报告发。</span> <span class="mini">Động từ không đứng trơ trọi, cần <span class="han">了</span> / <span class="han">给你</span> / <span class="han">完…</span></span></div>
+</div>`, cap:'Hình dung “<b>đem</b> cái X đi làm gì đó”: 把 + đồ vật, rồi động từ + kết quả xử lý.'}],
+ ex:[
+  ['请把护照给我。','Qǐng bǎ hùzhào gěi wǒ.','Xin đưa hộ chiếu cho tôi.'],
+  ['我把文件放在桌子上了。','Wǒ bǎ wénjiàn fàng zài zhuōzi shang le.','Tôi để tài liệu trên bàn rồi.'],
+  ['你把价格再算一下。','Nǐ bǎ jiàgé zài suàn yíxià.','Bạn tính lại giá một lần nữa đi.']
+ ]};
+
+/* ===== Lộ trình 12 tuần: HSK1 ~ tuần 6, HSK2 + tiếng Trung công việc ~ tuần 12 ===== */
+GXP.zh=[
+ {t:'Tuần 1 · Pinyin và 4 thanh điệu', x:[
+  ['Nghe và đọc theo 4 thanh + thanh nhẹ với mā má mǎ mà ma, 10 phút mỗi ngày', ['v:phatam>4 thanh + thanh nhẹ|Bảng 4 thanh + thanh nhẹ', 'b:phatam@#zp-drill|Luyện nghe thanh điệu']],
+  ['Học 21 thanh mẫu, chú ý các cặp người Việt dễ nhầm: zh/z, ch/c, q/x, r', ['v:phatam>21 thanh mẫu|21 thanh mẫu', 'v:phatam>Lỗi người Việt hay mắc|Lỗi người Việt hay mắc']],
+  ['Đọc to bảng vận mẫu, mỗi ngày một hàng, ghi âm lại để tự so', ['v:phatam>Vận mẫu|Bảng vận mẫu']],
+  ['Làm bài nghe đoán thanh mỗi ngày đến khi đúng trên 80%', ['q:tone|Đoán thanh 1 âm']]
+ ]},
+ {t:'Tuần 2 · Biến điệu và nét chữ đầu tiên', x:[
+  ['Học biến điệu của 不, 一 và hai thanh 3 liền nhau, đọc to các ví dụ', ['v:phatam>Biến điệu|Quy tắc biến điệu']],
+  ['Luyện nghe cặp thanh của từ hai âm tiết, 10 câu mỗi ngày', ['q:tone2|Nghe cặp thanh']],
+  ['Học 8 quy tắc thứ tự nét, xem nét động rồi tự viết 5 chữ đơn giản (八, 大, 不…)', ['v:chuhan>8 quy tắc thứ tự nét|8 quy tắc thứ tự nét', 'b:chuhan@#hw-anim|Xem cách viết từng nét']],
+  ['Học 25 từ HSK1 nhóm 1 bằng thẻ nhớ (chọn “Nhóm 1”), 15 phút mỗi ngày', ['c:HSK1|Thẻ nhớ HSK 1']]
+ ]},
+ {t:'Tuần 3 · Bộ thủ và câu đầu tiên', x:[
+  ['Học 40 bộ thủ hay gặp, mỗi ngày 8 bộ, đoán nghĩa chữ mới qua bộ', ['v:chuhan>40 bộ thủ hay gặp|40 bộ thủ hay gặp']],
+  ['Câu 是 và câu tính từ 很: đọc bài, rồi làm ngay bài điền', ['g:0|Bài 是 — A là B', 'g:1|Bài 很 + tính từ', 'gf:1|Điền từ: câu tính từ 很']],
+  ['Câu hỏi 吗 và 呢: đặt 5 câu hỏi về bản thân rồi tự trả lời', ['g:2|Bài câu hỏi 吗', 'g:9|Bài 呢 — còn bạn?', 'gf:2|Điền từ: câu hỏi 吗']],
+  ['Nghe hội thoại Làm quen 3 lần, rồi nói nhại theo từng câu', ['dl:0|Hội thoại: Làm quen', 'b:hoithoai@#d-shadow|Nói nhại có khoảng dừng']],
+  ['Thẻ nhớ HSK1 nhóm 2 (từ 26–50), ôn lại nhóm 1', ['c:HSK1|Ôn thẻ HSK 1 nhóm 2']]
+ ]},
+ {t:'Tuần 4 · Trật tự câu và phủ định', x:[
+  ['Phân biệt 不 và 没, làm bài điền đến khi đúng hết', ['g:3|Bài 不 và 没', 'gf:3|Điền từ: 不 hay 没']],
+  ['Định ngữ 的 và trật tự thời gian, nơi chốn: viết 5 câu về lịch làm việc của bạn', ['g:4|Bài 的 — định ngữ đứng trước', 'g:5|Bài trật tự thời gian, nơi chốn', 'gf:5|Điền từ: trật tự câu']],
+  ['Học lượng từ 个, 本, 件, 杯…, mỗi lượng từ đặt 2 cụm', ['g:6|Bài lượng từ', 'gf:6|Điền từ: lượng từ']],
+  ['Thẻ nhớ HSK1 nhóm 3–4, rồi làm 20 câu chọn nghĩa mỗi ngày', ['c:HSK1|Thẻ nhớ HSK 1 nhóm 3–4', 'q:mean/HSK1|Chọn nghĩa từ HSK 1']],
+  ['Nghe hội thoại Mua sắm, tập hỏi giá bằng 多少钱', ['dl:2|Hội thoại: Mua sắm, mặc cả']]
+ ]},
+ {t:'Tuần 5 · Hỏi đáp, 在 và động từ năng nguyện', x:[
+  ['Từ để hỏi và câu V不V: đổi 5 câu 吗 thành V不V', ['g:7|Bài từ để hỏi', 'g:8|Bài câu hỏi V不V', 'gf:8|Điền từ: V不V']],
+  ['在 (ở / đang) và 会 · 能 · 可以 · 想: mỗi từ đặt 2 câu về công việc', ['g:10|Bài 在 — ở và đang', 'g:11|Bài 会 · 能 · 可以 · 想', 'gf:11|Điền từ: 会 能 可以 想']],
+  ['Nghe hai hội thoại Hẹn gặp và Ở nhà hàng, đóng vai người hỏi', ['dl:1|Hội thoại: Hẹn gặp', 'dl:3|Hội thoại: Ở nhà hàng']],
+  ['Thẻ nhớ HSK1 nhóm 5–6, rồi nghe từ chọn chữ 20 câu', ['c:HSK1|Thẻ nhớ HSK 1 nhóm 5–6', 'q:listen/HSK1|Nghe chọn chữ HSK 1']],
+  ['Tập viết tay 10 chữ HSK1 hay gặp nhất: xem nét rồi tự viết', ['w:HSK1|Danh sách từ HSK 1', 'b:chuhan@#hw-quiz|Tự viết chữ Hán']]
+ ]},
+ {t:'Tuần 6 · 了 và mốc HSK 1', x:[
+  ['Học 了 (hoàn thành, thay đổi), viết 5 câu về việc hôm qua', ['g:12|Bài 了 — hoàn thành', 'gf:12|Điền từ: 了']],
+  ['Sắp xếp câu và điền chỗ trống HSK1, 20 câu mỗi loại', ['q:order/HSK1|Sắp xếp câu HSK 1', 'q:fill/HSK1|Điền chỗ trống HSK 1']],
+  ['Kiểm tra mốc HSK1: 30 câu chọn nghĩa + 30 câu nghe, trên 80% là đạt', ['q:mean/HSK1|Thi thử: nghĩa HSK 1', 'q:listen/HSK1|Thi thử: nghe HSK 1']],
+  ['Làm lại các từ hay sai cho tới khi danh sách trống', ['q:wrong|Ôn từ hay sai']],
+  ['Nghe hội thoại Đi taxi, nói nhại không nhìn chữ', ['dl:4|Hội thoại: Đi taxi ra sân bay']]
+ ]},
+ {t:'Tuần 7 · Vào HSK 2: 过 và 比', x:[
+  ['Bắt đầu từ HSK2: 25 từ mỗi ngày bằng thẻ nhớ, lướt danh sách trước', ['w:HSK2|Danh sách từ HSK 2', 'c:HSK2|Thẻ nhớ HSK 2']],
+  ['Học 过 (đã từng), kể 5 nơi bạn đã/chưa từng đến', ['g:13|Bài 过 — đã từng', 'gf:13|Điền từ: 过']],
+  ['So sánh với 比: so giá 3 sản phẩm bất kỳ', ['g:14|Bài so sánh 比', 'gf:14|Điền từ: câu 比']],
+  ['Chọn pinyin đúng cho từ HSK2, 20 câu mỗi ngày', ['q:pinyin/HSK2|Chọn pinyin HSK 2']]
+ ]},
+ {t:'Tuần 8 · 得, 正在 / 着 và 要…了', x:[
+  ['Bổ ngữ 得: nhận xét 5 việc đồng nghiệp làm tốt', ['g:15|Bài bổ ngữ 得', 'gf:15|Điền từ: 得']],
+  ['正在 / 着 và 要…了: mô tả văn phòng của bạn lúc này', ['g:16|Bài 正在 / 着', 'g:17|Bài 要…了 — sắp', 'gf:17|Điền từ: 要…了']],
+  ['Hội thoại Phỏng vấn xin việc: nghe, rồi tập trả lời bằng thông tin của bạn', ['dl:5|Hội thoại: Phỏng vấn xin việc', 'b:hoithoai@#d-shadow|Nói nhại theo bài']],
+  ['Ôn thẻ HSK2 và làm 20 câu nhìn nghĩa chọn chữ', ['c:HSK2|Ôn thẻ HSK 2', 'q:han/HSK2|Chọn chữ Hán HSK 2']]
+ ]},
+ {t:'Tuần 9 · Nối câu: 因为, 从…到, 是…的', x:[
+  ['因为…所以… / 虽然…但是…: viết 3 câu giải thích lý do đi muộn', ['g:18|Bài 因为…所以 / 虽然…但是', 'gf:18|Điền từ: từ nối']],
+  ['从…到… và 离: nói giờ làm và đường từ nhà đến công ty', ['g:19|Bài 从…到… và 离', 'gf:19|Điền từ: 从 到 离']],
+  ['是…的: kể bạn đến nơi làm việc khi nào, bằng gì, với ai', ['g:20|Bài nhấn mạnh 是…的', 'gf:20|Điền từ: 是…的']],
+  ['Nghe từ HSK2 chọn chữ 20 câu, rồi sắp xếp câu 10 câu', ['q:listen/HSK2|Nghe chọn chữ HSK 2', 'q:order/HSK2|Sắp xếp câu HSK 2']]
+ ]},
+ {t:'Tuần 10 · Nói mềm và họp số liệu game', x:[
+  ['Lặp động từ / 一下, 太…了 và 非常: viết 5 câu nhờ vả lịch sự', ['g:21|Bài 看看 / 看一下', 'g:22|Bài 太…了 và 非常', 'gf:21|Điền từ: làm thử, một chút']],
+  ['Câu liên động: kể lịch trình một ngày đi công tác', ['g:23|Bài câu liên động', 'gf:23|Điền từ: câu liên động']],
+  ['Học từ vựng Công việc & Game bằng thẻ nhớ, 20 từ mỗi ngày', ['w:CV|Từ vựng Công việc & Game', 'c:CV|Thẻ nhớ Công việc & Game']],
+  ['Hội thoại Họp số liệu game: nghe cả bài, rồi nói nhại phần báo cáo số liệu', ['dl:7|Hội thoại: Họp số liệu game', 'b:hoithoai@#d-shadow|Nói nhại phần báo cáo']]
+ ]},
+ {t:'Tuần 11 · Nhà máy và xuất nhập khẩu', x:[
+  ['Học từ vựng Xuất nhập khẩu (FOB, MOQ, giao hàng…), 20 từ mỗi ngày', ['w:XNK|Từ vựng Xuất nhập khẩu', 'c:XNK|Thẻ nhớ Xuất nhập khẩu']],
+  ['Hội thoại Giục đơn hàng: tập hỏi ngày giao và báo lỗi hàng mẫu', ['dl:6|Hội thoại: Giục đơn nhà máy']],
+  ['Hội thoại Đàm phán XNK: đóng vai bên mua, hỏi giá FOB và MOQ', ['dl:8|Hội thoại: Đàm phán XNK']],
+  ['Xem trước câu 把, câu rất hay gặp trong email công việc', ['g:24|Bài câu chữ 把', 'gf:24|Điền từ: câu 把']],
+  ['Chọn nghĩa từ Công việc & Game và Xuất nhập khẩu, 20 câu mỗi bộ', ['q:mean/CV|Chọn nghĩa: Công việc', 'q:mean/XNK|Chọn nghĩa: Xuất nhập khẩu']]
+ ]},
+ {t:'Tuần 12 · Ôn tập và thi thử', x:[
+  ['Thi thử HSK2: điền chỗ trống và nghe chọn chữ, 30 câu mỗi phần', ['q:fill/HSK2|Thi thử: điền từ HSK 2', 'q:listen/HSK2|Thi thử: nghe HSK 2']],
+  ['Làm lại 3 điểm ngữ pháp hay sai nhất: 不/没, 了, 比', ['gf:3|Làm lại: 不 / 没', 'gf:12|Làm lại: 了', 'gf:14|Làm lại: 比']],
+  ['Nghe lại 3 hội thoại công việc, nói nhại không bật pinyin', ['dl:6|Nghe lại: Giục đơn hàng', 'dl:7|Nghe lại: Họp game', 'dl:8|Nghe lại: Đàm phán XNK']],
+  ['Ôn toàn bộ từ: chọn pinyin rồi xóa sạch danh sách từ hay sai', ['q:pinyin/ALL|Chọn pinyin: tất cả từ', 'q:wrong|Dọn sạch từ hay sai']]
+ ]}
+];
+
+</script>
+<!--GX_END-->
 <script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3.7.2/dist/hanzi-writer.min.js"></script>
 <script>
 (function(){
@@ -3982,12 +5696,12 @@ function voice(){if(!VOICES.length)return null;return VOICES.find(v=>v.name===SE
 function speak(text,rate){
   return new Promise(res=>{
     if(!('speechSynthesis' in window)){toast('Trình duyệt này không đọc được tiếng. Hãy dùng Chrome hoặc Edge.');return res()}
-    try{speechSynthesis.cancel()}catch(e){}
+    const busy=speechSynthesis.speaking||speechSynthesis.pending;try{if(busy)speechSynthesis.cancel()}catch(e){}
     const u=new SpeechSynthesisUtterance(text.replace(/…/g,'，'));
     u.lang='zh-CN';const v=voice();if(v)u.voice=v;u.rate=rate||SET.rate;
     let done=false;const fin=()=>{if(!done){done=true;res()}};
     u.onend=fin;u.onerror=fin;setTimeout(fin,Math.max(2500,text.length*650/(u.rate||1)));
-    speechSynthesis.speak(u);
+    window.__u=u;const go=()=>{try{speechSynthesis.resume()}catch(e){}speechSynthesis.speak(u)};if(busy)setTimeout(go,90);else go();
   });
 }
 const PLAY='<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2.5v11l9.5-5.5z"/></svg>';
@@ -4236,8 +5950,8 @@ function vGram(){
   ${head('Ngữ pháp 语法',`${GRAMMAR.length} điểm có giải thích, ví dụ và ghi chú cho người Việt. Trật tự từ tiếng Trung khá giống tiếng Việt, trừ hai chỗ ngược: <b>định ngữ</b> và <b>trạng ngữ</b> đều đứng TRƯỚC.`)}
   <div class="zrow"><button class="zbtn pri" id="g-order">Luyện sắp xếp câu →</button><button class="zbtn" id="g-fill">Điền chỗ trống (trộn mọi điểm) →</button></div>
   <div class="gram">${GRAMMAR.map((g,i)=>`<details ${i<2?'open':''}><summary><span class="n">${i+1}</span><h3>${g.t}</h3><span class="lv">HSK${g.lv}</span></summary><div class="body">
-    <div class="formula">${esc(g.f)}</div><p style="margin:0;font-size:14.4px">${esc(g.x)}</p>
-    ${g.ex.map(e=>`<div class="ex-line">${playBtn(e[0])}<div><div class="zh">${e[0]}</div><div class="pyl">${e[1]}</div><div class="vil">${e[2]}</div></div></div>`).join('')}
+    <div class="formula">${esc(g.f)}</div><p style="margin:0;font-size:14.4px">${esc(g.x)}</p>${gxF('zh',i,g)}
+    ${gxE('zh',i,g).map(e=>`<div class="ex-line">${playBtn(e[0])}<div><div class="zh">${e[0]}</div><div class="pyl">${e[1]}</div><div class="vil">${e[2]}</div></div></div>`).join('')}
     ${g.vn?`<div class="vnnote"><b>Người Việt lưu ý:</b> ${g.vn}</div>`:''}
     ${FL.some(f=>f.g===i)?`<div class="zrow"><button class="zbtn sm pri" data-gfill="${i}">Làm ${FL.filter(f=>f.g===i).length} bài tập điểm này →</button></div>`:''}
   </div></details>`).join('')}</div>
@@ -5507,11 +7221,11 @@ function voice(){if(!VOICES.length)return null;return VOICES.find(v=>v.name===SE
 function speak(text,rate){
   return new Promise(res=>{
     if(!('speechSynthesis' in window)){toast('Trình duyệt này không đọc được tiếng. Hãy dùng Chrome hoặc Edge.');return res()}
-    try{speechSynthesis.cancel()}catch(e){}
+    const busy=speechSynthesis.speaking||speechSynthesis.pending;try{if(busy)speechSynthesis.cancel()}catch(e){}
     const u=new SpeechSynthesisUtterance(text);u.lang='ja-JP';const v=voice();if(v)u.voice=v;u.rate=rate||SET.rate;
     let done=false;const fin=()=>{if(!done){done=true;res()}};
     u.onend=fin;u.onerror=fin;setTimeout(fin,Math.max(2500,text.length*450/(u.rate||1)));
-    speechSynthesis.speak(u);
+    window.__u=u;const go=()=>{try{speechSynthesis.resume()}catch(e){}speechSynthesis.speak(u)};if(busy)setTimeout(go,90);else go();
   });
 }
 const PLAY='<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2.5v11l9.5-5.5z"/></svg>';
@@ -5765,8 +7479,8 @@ function vGram(){
   ${head('Ngữ pháp 文法',`${JGRAMMAR.length} điểm N5, mỗi điểm có ví dụ đọc được và ghi chú cho người Việt. Nguyên tắc số 1: <b>động từ đứng cuối câu</b>, trợ từ đứng sau danh từ để đánh dấu vai trò.`)}
   <div class="zrow"><button class="zbtn pri" id="g-order">Luyện sắp xếp câu →</button><button class="zbtn" id="g-fill">Điền chỗ trống (trộn mọi điểm) →</button></div>
   <div class="gram">${JGRAMMAR.map((g,i)=>`<details ${i<2?'open':''}><summary><span class="n">${i+1}</span><h3>${g.t}</h3><span class="lv">${g.lv}</span></summary><div class="body">
-    <div class="formula ja">${esc(g.f)}</div><p style="margin:0;font-size:14.4px">${esc(g.x)}</p>
-    ${g.ex.map(e=>`<div class="ex-line">${playBtn(e[0])}<div><div class="jl">${e[0]}</div><div class="kanal">${e[1]}</div><div class="vil">${e[2]}</div></div></div>`).join('')}
+    <div class="formula ja">${esc(g.f)}</div><p style="margin:0;font-size:14.4px">${esc(g.x)}</p>${gxF('jp',i,g)}
+    ${gxE('jp',i,g).map(e=>`<div class="ex-line">${playBtn(e[0])}<div><div class="jl">${e[0]}</div><div class="kanal">${e[1]}</div><div class="vil">${e[2]}</div></div></div>`).join('')}
     ${g.vn?`<div class="vnnote"><b>Người Việt lưu ý:</b> ${g.vn}</div>`:''}
     ${FL.some(f=>f.g===i)?`<div class="zrow"><button class="zbtn sm pri" data-gfill="${i}">Làm ${FL.filter(f=>f.g===i).length} bài tập điểm này →</button></div>`:''}</div></details>`).join('')}</div>
   <h2>Cần học tiếp ở N4–N3</h2><p class="muted" style="margin:0;font-size:13.6px">Chưa có bài giảng trong web. Đây là danh sách để học theo giáo trình.</p>
@@ -7277,11 +8991,11 @@ function voice(){if(!VOICES.length)return null;return VOICES.find(v=>v.name===SE
 function speak(text,rate){
   return new Promise(res=>{
     if(!('speechSynthesis' in window)){toast('Trình duyệt này không đọc được tiếng. Hãy dùng Chrome hoặc Edge.');return res()}
-    try{speechSynthesis.cancel()}catch(e){}
+    const busy=speechSynthesis.speaking||speechSynthesis.pending;try{if(busy)speechSynthesis.cancel()}catch(e){}
     const u=new SpeechSynthesisUtterance(text);u.lang='ko-KR';const v=voice();if(v)u.voice=v;u.rate=rate||SET.rate;
     let done=false;const fin=()=>{if(!done){done=true;res()}};
     u.onend=fin;u.onerror=fin;setTimeout(fin,Math.max(2500,text.length*420/(u.rate||1)));
-    speechSynthesis.speak(u);
+    window.__u=u;const go=()=>{try{speechSynthesis.resume()}catch(e){}speechSynthesis.speak(u)};if(busy)setTimeout(go,90);else go();
   });
 }
 const PLAY='<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2.5v11l9.5-5.5z"/></svg>';
@@ -7485,8 +9199,8 @@ function vGram(){
   ${head('Ngữ pháp 문법',`${KGRAMMAR.length} điểm TOPIK I, mỗi điểm có ví dụ, phiên âm và ghi chú cho người Việt. Nguyên tắc: <b>động từ đứng cuối câu</b>; trợ từ đổi theo việc từ đứng trước có phụ âm cuối (받침) hay không.`)}
   <div class="zrow"><button class="zbtn pri" id="g-order">Luyện sắp xếp câu →</button><button class="zbtn" id="g-fill">Điền chỗ trống (trộn mọi điểm) →</button></div>
   <div class="gram">${KGRAMMAR.map((g,i)=>`<details ${i<2?'open':''}><summary><span class="n">${i+1}</span><h3>${esc(g.t)}</h3><span class="lv">${esc(g.lv)}</span></summary><div class="body">
-    <div class="formula ko">${esc(g.f)}</div><p style="margin:0;font-size:14.4px">${esc(g.x)}</p>
-    ${g.ex.map(e=>`<div class="ex-line">${playBtn(e[0])}<div><div class="kl">${esc(e[0])}</div><div class="roml">${esc(e[1])}</div><div class="vil">${esc(e[2])}</div></div></div>`).join('')}
+    <div class="formula ko">${esc(g.f)}</div><p style="margin:0;font-size:14.4px">${esc(g.x)}</p>${gxF('ko',i,g)}
+    ${gxE('ko',i,g).map(e=>`<div class="ex-line">${playBtn(e[0])}<div><div class="kl">${esc(e[0])}</div><div class="roml">${esc(e[1])}</div><div class="vil">${esc(e[2])}</div></div></div>`).join('')}
     ${g.vn?`<div class="vnnote"><b>Người Việt lưu ý:</b> ${esc(g.vn)}</div>`:''}
     ${KFILL.some(f=>f.g===i)?`<div class="zrow"><button class="zbtn sm pri" data-gfill="${i}">Làm ${KFILL.filter(f=>f.g===i).length} bài tập điểm này →</button></div>`:''}</div></details>`).join('')}</div>
   <h2>Cần học tiếp ở TOPIK II</h2><p class="muted" style="margin:0;font-size:13.6px">Chưa có bài giảng trong web. Đây là danh sách để học theo giáo trình.</p>
@@ -11040,12 +12754,26 @@ let VO=null;
 function pickVoice(){try{const v=speechSynthesis.getVoices().filter(x=>/^en[-_]/i.test(x.lang));
   VO=v.find(x=>/en[-_]US/i.test(x.lang)&&/Google|Natural|Aria|Jenny|Samantha/i.test(x.name))||v.find(x=>/en[-_](US|GB)/i.test(x.lang))||v[0]||null}catch(e){}}
 if('speechSynthesis' in window){pickVoice();speechSynthesis.addEventListener('voiceschanged',pickVoice)}
+let sayT=0;
 function say(text,btn){
   if(!('speechSynthesis' in window))return;
-  try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='en-US';if(VO)u.voice=VO;u.rate=.92;
-    if(btn){document.querySelectorAll('.ga-say.on').forEach(b=>b.classList.remove('on'));btn.classList.add('on');
-      u.onend=u.onerror=()=>btn.classList.remove('on')}
-    speechSynthesis.speak(u)}catch(e){}}
+  try{
+    if(!VO)pickVoice();
+    const S=speechSynthesis,busy=S.speaking||S.pending;if(busy)S.cancel();
+    document.querySelectorAll('.ga-say.on').forEach(b=>b.classList.remove('on'));
+    const u=new SpeechSynthesisUtterance(text);u.lang=VO?VO.lang:'en-US';if(VO)u.voice=VO;u.rate=.92;
+    window.__gaU=u; /* giữ tham chiếu: Chrome có thể xoá câu đang đọc làm mất tiếng */
+    const off=()=>{clearTimeout(sayT);if(btn)btn.classList.remove('on')};
+    u.onend=off;u.onerror=off;
+    if(btn){btn.classList.add('on');clearTimeout(sayT);sayT=setTimeout(off,Math.max(3000,text.length*110))}
+    const go=()=>{try{S.resume()}catch(e){}S.speak(u)};
+    /* đọc ngay sau cancel() hay bị nuốt mất trên Chrome/Safari iOS → chờ một nhịp */
+    if(busy)setTimeout(go,90);else go();
+  }catch(e){if(btn)btn.classList.remove('on')}}
+/* chữ để đọc: bỏ thẻ mà KHÔNG chèn khoảng trắng (He<b>’s</b> → He’s), giải mã &amp;… */
+const DEC=document.createElement('textarea');
+function sayText(h){DEC.innerHTML=String(h).replace(/<br\s*\/?>/gi,' ').replace(/<[^>]+>/g,'');
+  return DEC.value.replace(/\s+/g,' ').replace(/\s+([?.!,;:])/g,'$1').trim()}
 function exHTML(t){
   if(!t.ex.length)return'';
   const can='speechSynthesis' in window;
@@ -11053,7 +12781,7 @@ function exHTML(t){
     '<p class="mini" style="margin-top:-4px">'+(can?'Bấm 🔊 để nghe câu tiếng Anh. ':'')+'Phần in đậm là chỗ dùng ngữ pháp của bài.</p><div class="ga-exg">'+
     t.ex.map(e=>'<div class="ga-exc"><span class="ga-exi" aria-hidden="true">'+(e.i||'💬')+'</span><div class="ga-ext"><div class="ga-exe">'+e.e+'</div>'+
       '<div class="ga-exv">'+e.v+'</div>'+(e.n?'<div class="ga-exn">'+e.n+'</div>':'')+'</div>'+
-      (can?'<button class="ga-say" data-say="'+esc(strip(e.e).replace(/\s+/g,' ').trim())+'" aria-label="Nghe câu này">🔊</button>':'')+'</div>').join('')+
+      (can?'<button class="ga-say" data-say="'+esc(sayText(e.e))+'" aria-label="Nghe câu này">🔊</button>':'')+'</div>').join('')+
     '</div></div>'}
 
 function scoreTag(id){const s=st.score[id];if(!s)return'';const p=s.best/s.n;
@@ -11272,8 +13000,12 @@ document.querySelectorAll('main>section:not(#s-zh,#s-jp,#s-ko)').forEach(stack);
 function hint(){document.querySelectorAll('section.on .tw').forEach(w=>w.classList.toggle('scrolls',w.scrollWidth>w.clientWidth+4))}
 document.querySelectorAll('.nb').forEach(b=>b.addEventListener('click',()=>setTimeout(hint,60)));
 addEventListener('resize',hint);setTimeout(hint,300);
-document.querySelectorAll('.nb').forEach(b=>b.addEventListener('click',()=>{close();setTimeout(syncTitle)}));
-syncTitle();
+/* thứ tiếng đang học → body[data-lang] để đổi kiểu trang trí theo nước */
+function setLang(){const m=['zh','jp','ko'].find(x=>{const e=document.getElementById('s-'+x);return e&&e.classList.contains('on')})||'en';
+  if(body.dataset.lang!==m)body.dataset.lang=m}
+const sk=document.createElement('div');sk.id='sakura';sk.setAttribute('aria-hidden','true');sk.innerHTML='<i></i>'.repeat(7);body.appendChild(sk);
+document.querySelectorAll('.nb').forEach(b=>b.addEventListener('click',()=>{close();setTimeout(()=>{syncTitle();setLang()})}));
+syncTitle();setLang();
 
 const rb=$('#readbar'),tt=$('#totop');
 let raf=0;
@@ -11285,13 +13017,129 @@ tt.onclick=()=>scrollTo({top:0,behavior:'smooth'});
 
 /* nút lối tắt: data-go="tên mục", data-ga="id bài ngữ pháp" */
 document.addEventListener('click',e=>{
-  const a=e.target.closest('[data-go],[data-ga]');if(!a)return;e.preventDefault();
+  const a=e.target.closest('[data-go],[data-ga]');if(!a||a.closest('#s-zh,#s-jp,#s-ko'))return;e.preventDefault();
   if(a.dataset.ga&&window.gaOpen){window.gaOpen(a.dataset.ga);return}
   const b=document.querySelector('.nb[data-t="'+a.dataset.go+'"]');if(b){b.click();scrollTo({top:0})}
 });
 })();
 </script>
 <!--UI2_SCRIPT_END-->
+<!--CJK2_START-->
+<script>
+/* ============ Trung · Nhật · Hàn: lộ trình 12 tuần có nút mở bài + nút quay lại ============
+ Dữ liệu: GXP.zh / GXP.jp / GXP.ko = [{t:'Tuần 1 · …', x:[['việc', ['liên kết|nhãn', …]], …]}, …]
+ Liên kết: v:view · v:view>chữ · g:i · gf:i · q:mode[/deck] · dl:i · c:deck · w:deck · b:view@selector */
+(function(){
+'use strict';
+if(typeof GXP==='undefined')return;
+const MODS={zh:{attr:'zv',main:'zh-main'},jp:{attr:'jv',main:'jp-main'},ko:{attr:'kv',main:'ko-main'}};
+const $=(s,r)=>(r||document).querySelector(s),$$=(s,r)=>[...(r||document).querySelectorAll(s)];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const KEY=m=>'i7_cplan_'+m;
+const load=m=>{try{return JSON.parse(localStorage.getItem(KEY(m)))||{}}catch(e){return{}}};
+const store=(m,d)=>{try{localStorage.setItem(KEY(m),JSON.stringify(d))}catch(e){}};
+const VIEWN=m=>{const o={};$$('.nb[data-'+MODS[m].attr+']').forEach(b=>{const c=b.cloneNode(true);c.querySelectorAll('i,em').forEach(x=>x.remove());o[b.dataset[MODS[m].attr]]=c.textContent.trim()});return o};
+
+function parse(m,spec){
+  const [body,label]=spec.split('|');let mm,p={raw:body,label};
+  if((mm=body.match(/^v:([a-z]+)(?:>(.+))?$/))){p.k='v';p.v=mm[1];p.txt=mm[2];p.ic='📖'}
+  else if((mm=body.match(/^g:(\d+)$/))){p.k='g';p.i=+mm[1];p.ic='文'}
+  else if((mm=body.match(/^gf:(\d+)$/))){p.k='gf';p.i=+mm[1];p.ic='✎'}
+  else if((mm=body.match(/^q:(\w+)(?:\/(\w+))?$/))){p.k='q';p.mode=mm[1];p.deck=mm[2];p.ic='▶'}
+  else if((mm=body.match(/^dl:(\d+)$/))){p.k='dl';p.i=+mm[1];p.ic='💬'}
+  else if((mm=body.match(/^c:(\w+)$/))){p.k='c';p.deck=mm[1];p.ic='▧'}
+  else if((mm=body.match(/^w:(\w+)$/))){p.k='w';p.deck=mm[1];p.ic='▤'}
+  else if((mm=body.match(/^b:([a-z]+)@(.+)$/))){p.k='b';p.v=mm[1];p.sel=mm[2];p.ic='▶'}
+  if(!p.label){const vn=VIEWN(m);
+    p.label=p.k==='v'?(vn[p.v]||p.v)+(p.txt?' · '+p.txt:''):p.k==='g'?'Ngữ pháp · điểm '+(p.i+1):p.k==='gf'?'Bài tập điểm '+(p.i+1):
+      p.k==='q'?'Luyện tập · '+p.mode+(p.deck?' · '+p.deck:''):p.k==='dl'?'Hội thoại '+(p.i+1):p.k==='c'?'Thẻ nhớ · '+p.deck:p.k==='w'?'Từ vựng · '+p.deck:(vn[p.v]||p.v)}
+  return p;
+}
+function open(m,v){const b=$('.nb[data-'+MODS[m].attr+'="'+v+'"]');if(b)b.click();return $('#s-'+m)}
+function reveal(el){
+  if(!el)return;for(let p=el.parentElement;p;p=p.parentElement)if(p.tagName==='DETAILS')p.open=true;
+  if(el.tagName==='DETAILS')el.open=true;
+  el.style.scrollMarginTop='76px';
+  requestAnimationFrame(()=>{el.scrollIntoView({block:'start'});el.classList.remove('pl-flash');void el.offsetWidth;el.classList.add('pl-flash');
+    setTimeout(()=>el.classList.remove('pl-flash'),2600)});
+}
+function findText(sec,txt){const n=txt.toLowerCase();
+  const pick=sel=>$$(sel,sec).find(e=>e.textContent.replace(/\s+/g,' ').toLowerCase().includes(n));
+  return pick('h1,h2,h3,h4')||pick('summary')||pick('.zcard b, .zcard strong')||null}
+function run(m,p){
+  let sec;
+  switch(p.k){
+    case'v':sec=open(m,p.v);if(p.txt){const el=findText(sec,p.txt);if(el)reveal(el.closest('details')&&el.tagName==='SUMMARY'?el.closest('details'):el);else scrollTo({top:0})}else scrollTo({top:0});break;
+    case'g':sec=open(m,'nguphap');{const d=$$('.gram details',sec)[p.i];if(d)reveal(d)}break;
+    case'gf':sec=open(m,'nguphap');{const b=$('[data-gfill="'+p.i+'"]',sec);if(b){b.click();scrollTo({top:0})}}break;
+    case'q':sec=open(m,'luyentap');if(p.deck){const d=$('[data-d="'+p.deck+'"]',sec);if(d)d.click()}{const b=$('[data-mode="'+p.mode+'"]',sec);if(b)b.click()}scrollTo({top:0});break;
+    case'dl':sec=open(m,'hoithoai');{const b=$('#d-list [data-i="'+p.i+'"]',sec);if(b)b.click()}scrollTo({top:0});break;
+    case'c':sec=open(m,'the');{const b=$('[data-d="'+p.deck+'"]',sec);if(b)b.click()}scrollTo({top:0});break;
+    case'w':sec=open(m,'tuvung');{const b=$('[data-d="'+p.deck+'"]',sec);if(b)b.click()}scrollTo({top:0});break;
+    case'b':sec=open(m,p.v);{const b=$(p.sel,sec);if(b){b.click();reveal(b)}}break;
+  }
+}
+
+/* ---- khối lộ trình trong trang "Cần học những gì" ---- */
+function planHTML(m){
+  const P=GXP[m]||[],d=load(m);let tot=0,dn=0;P.forEach((w,i)=>w.x.forEach((t,j)=>{tot++;if(d[i+'-'+j])dn++}));
+  const cur=Math.max(0,P.findIndex((w,i)=>w.x.some((t,j)=>!d[i+'-'+j])));
+  return '<div class="cp-plan" data-m="'+m+'"><div class="cp-head"><div><b>Lộ trình '+P.length+' tuần</b>'+
+    '<small>Bấm nút dưới mỗi việc để mở đúng bài; làm xong thì tick. Tiến độ lưu trên máy bạn.</small></div>'+
+    '<span class="cp-pct">'+dn+'/'+tot+'</span></div><div class="cp-bar"><i style="width:'+(tot?dn/tot*100:0)+'%"></i></div>'+
+    P.map((w,i)=>{const n=w.x.filter((t,j)=>d[i+'-'+j]).length;
+      return '<details class="cp-wk" data-w="'+i+'"'+(i===cur?' open':'')+'><summary><span>'+esc(w.t)+'</span><em>'+n+'/'+w.x.length+'</em></summary>'+
+      w.x.map((t,j)=>{const k=i+'-'+j;return '<label class="cp-chk'+(d[k]?' done':'')+'"><input type="checkbox" data-k="'+k+'"'+(d[k]?' checked':'')+'><span>'+esc(t[0])+'</span></label>'+
+        '<div class="cp-go">'+t[1].map((s,q)=>{const p=parse(m,s);return '<button type="button" data-k="'+k+'" data-q="'+q+'"><i>'+p.ic+'</i>'+esc(p.label)+'</button>'}).join('')+'</div>'}).join('')+
+      '</details>'}).join('')+'</div>';
+}
+function inject(m){
+  const root=document.getElementById(MODS[m].main);if(!root)return;
+  const h=$('.view>.top h1',root);if(!h||!/cần học những gì/i.test(h.textContent)||$('.cp-plan',root))return;
+  let anchor=$('.view>.sub',root)||$('.view>.top',root);
+  /* giữ ghi chú "chưa thấy giọng đọc" ngay dưới phần giới thiệu, lộ trình nằm sau nó */
+  const nx=anchor.nextElementSibling;if(nx&&/giọng/i.test(nx.textContent)&&nx.textContent.length<500)anchor=nx;
+  anchor.insertAdjacentHTML('afterend',planHTML(m));
+}
+function refresh(m){const box=$('#'+MODS[m].main+' .cp-plan');if(!box)return;
+  const d=load(m),P=GXP[m];let tot=0,dn=0;P.forEach((w,i)=>w.x.forEach((t,j)=>{tot++;if(d[i+'-'+j])dn++}));
+  $('.cp-pct',box).textContent=dn+'/'+tot;$('.cp-bar i',box).style.width=(dn/tot*100)+'%';
+  $$('.cp-wk',box).forEach(wk=>{const i=+wk.dataset.w;$('summary em',wk).textContent=P[i].x.filter((t,j)=>d[i+'-'+j]).length+'/'+P[i].x.length})}
+
+/* nút quay lại */
+const back=document.createElement('button');back.id='pl-back2';back.type='button';back.hidden=true;document.body.appendChild(back);
+let from=null;
+back.onclick=()=>{const f=from;back.hidden=true;from=null;if(!f)return;open(f.m,'tongquan');inject(f.m);
+  const inp=$('#'+MODS[f.m].main+' .cp-plan input[data-k="'+f.k+'"]');if(inp)reveal(inp.closest('label'))};
+
+Object.keys(MODS).forEach(m=>{
+  const root=document.getElementById(MODS[m].main);if(!root||!GXP[m])return;
+  new MutationObserver(()=>inject(m)).observe(root,{childList:true});
+  inject(m);
+  root.addEventListener('change',e=>{const c=e.target.closest('.cp-plan input[data-k]');if(!c)return;
+    const d=load(m);d[c.dataset.k]=c.checked;store(m,d);c.closest('label').classList.toggle('done',c.checked);refresh(m)});
+  root.addEventListener('click',e=>{const b=e.target.closest('.cp-go button');if(!b)return;e.preventDefault();e.stopPropagation();
+    const [i,j]=b.dataset.k.split('-').map(Number);const p=parse(m,GXP[m][i].x[j][1][+b.dataset.q]);
+    from={m,k:b.dataset.k};run(m,p);back.innerHTML='← Về lộ trình · Tuần '+(i+1);back.hidden=false});
+});
+/* về trang tổng quan hoặc đổi môn bằng menu thì ẩn nút quay lại */
+$$('.nb').forEach(b=>b.addEventListener('click',()=>{if(!from)return;const t=b.dataset.t;
+  if(t!==from.m||b.dataset[MODS[from.m].attr]==='tongquan'){back.hidden=true}}));
+/* cho kiểm tra */
+window.cpCheck=m=>{const bad=[];(GXP[m]||[]).forEach((w,i)=>w.x.forEach((t,j)=>t[1].forEach(s=>{const p=parse(m,s);
+  const sec=open(m,p.k==='g'||p.k==='gf'?'nguphap':p.k==='q'?'luyentap':p.k==='dl'?'hoithoai':p.k==='c'?'the':p.k==='w'?'tuvung':p.v);
+  let ok=true;
+  if(p.k==='v'&&p.txt)ok=!!findText(sec,p.txt);
+  if(p.k==='g')ok=!!$$('.gram details',sec)[p.i];
+  if(p.k==='gf')ok=!!$('[data-gfill="'+p.i+'"]',sec);
+  if(p.k==='q')ok=!!$('[data-mode="'+p.mode+'"]',sec)&&(!p.deck||!!$('[data-d="'+p.deck+'"]',sec));
+  if(p.k==='dl')ok=!!$('#d-list [data-i="'+p.i+'"]',sec);
+  if(p.k==='c'||p.k==='w')ok=!!$('[data-d="'+p.deck+'"]',sec);
+  if(p.k==='b')ok=!!$(p.sel,sec);
+  if(!ok)bad.push((i+1)+'.'+(j+1)+' '+s)})));open(m,'tongquan');return bad};
+})();
+</script>
+<!--CJK2_END-->
 <!--PLAN2_START-->
 <script>
 /* ============ Lộ trình: mỗi việc có nút mở thẳng bài học / bài tập ============
