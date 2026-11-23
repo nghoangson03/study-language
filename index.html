@@ -714,6 +714,115 @@ main>section:not(#s-zh,#s-jp,#s-ko) .opt.no::before{background:var(--bad);border
   #s-ngp .ga-foot{grid-template-columns:1fr 1fr}
   #s-ngp .ga-foot .mid{grid-column:1/-1;grid-row:1}
 }
+
+/* ===== Hình minh họa & ví dụ (Ngữ pháp A–Z) ===== */
+#s-ngp .ga-fig{margin:18px 0;padding:14px 14px 10px;border:1px solid var(--line);border-radius:16px;background:var(--bg2);box-shadow:var(--sh)}
+#s-ngp .ga-fig figcaption{font-size:13px;color:var(--tx3);margin-top:8px;line-height:1.5;text-align:center}
+#s-ngp .ga-fig svg{display:block;width:100%;max-width:560px;height:auto;margin:0 auto;font-family:inherit;overflow:visible}
+#s-ngp .ga-tl{max-width:460px!important}
+#s-ngp .ga-fig svg text{paint-order:stroke;stroke:var(--bg2);stroke-width:4px;stroke-linejoin:round}
+/* khối dựng hình bằng HTML: gf-row (hàng thẻ), gf-card, gf-ic (biểu tượng), gf-arrow, gf-pill, gf-cols (so sánh 2 cột), gf-flow (sơ đồ bước) */
+#s-ngp .gf-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;align-items:stretch}
+#s-ngp .gf-card{flex:1 1 140px;max-width:240px;background:var(--bg3);border:1px solid var(--line);border-radius:14px;padding:12px;text-align:center;
+  border-top:3px solid var(--fc,var(--ac))}
+#s-ngp .gf-card b{display:block;font-size:15px;color:var(--tx);line-height:1.35}
+#s-ngp .gf-card small{display:block;font-size:12.5px;color:var(--tx2);line-height:1.45;margin-top:3px}
+#s-ngp .gf-ic{display:block;font-size:34px;line-height:1.15;margin-bottom:6px}
+#s-ngp .gf-arrow{align-self:center;font-size:22px;color:var(--tx3);font-weight:700}
+#s-ngp .gf-pill{display:inline-block;border-radius:20px;padding:2px 10px;margin:2px;font-size:13.5px;font-weight:600;
+  background:color-mix(in srgb,var(--fc,var(--ac)) 16%,transparent);color:var(--fc,var(--ac))}
+#s-ngp .gf-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+#s-ngp .gf-col{background:var(--bg3);border:1px solid var(--line);border-radius:14px;padding:12px;border-top:3px solid var(--fc,var(--ac))}
+#s-ngp .gf-col>b:first-child{display:block;font-size:14.5px;margin-bottom:6px;color:var(--fc,var(--ac))}
+#s-ngp .gf-col p{margin:4px 0;font-size:14px;line-height:1.5}
+#s-ngp .gf-flow{display:flex;flex-direction:column;align-items:center;gap:0}
+#s-ngp .gf-step{width:100%;max-width:440px;background:var(--bg3);border:1px solid var(--line);border-left:4px solid var(--fc,var(--ac));
+  border-radius:12px;padding:10px 14px;font-size:14px;line-height:1.5}
+#s-ngp .gf-step b{color:var(--fc,var(--ac))}
+#s-ngp .gf-down{font-size:18px;color:var(--tx3);line-height:1.6}
+#s-ngp .gf-big{font-size:44px;line-height:1.1}
+#s-ngp .ac{--fc:var(--ac)} #s-ngp .vio{--fc:var(--vio)} #s-ngp .warn{--fc:var(--warn)} #s-ngp .good{--fc:var(--good)} #s-ngp .bad{--fc:var(--bad)}
+#s-ngp .ga-ex{margin-top:30px}
+#s-ngp .ga-exg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:10px}
+#s-ngp .ga-exc{display:flex;gap:12px;align-items:flex-start;background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:12px 12px 12px 14px}
+#s-ngp .ga-exi{font-size:28px;line-height:1.1;flex:none;width:36px;text-align:center}
+#s-ngp .ga-ext{flex:1;min-width:0}
+#s-ngp .ga-exe{font-size:15.5px;line-height:1.5;color:var(--tx)}
+#s-ngp .ga-exe b{color:var(--ac)}
+#s-ngp .ga-exv{font-size:13.5px;color:var(--tx2);line-height:1.5;margin-top:3px}
+#s-ngp .ga-exn{font-size:12.5px;color:var(--tx3);margin-top:4px;line-height:1.45}
+#s-ngp .ga-say{flex:none;width:40px;height:40px;border-radius:12px;border:1px solid var(--line);background:var(--bg3);cursor:pointer;font-size:17px;
+  display:grid;place-items:center;transition:border-color .15s,background .15s}
+#s-ngp .ga-say:hover{border-color:var(--ac)}
+#s-ngp .ga-say.on{background:color-mix(in srgb,var(--ac) 25%,transparent);border-color:var(--ac);animation:gaPulse 1s infinite}
+@keyframes gaPulse{50%{transform:scale(.92)}}
+
+/* ===== Điện thoại: dễ bấm, dễ đọc ===== */
+.ga-mbar,.ga-sheet-bg{display:none}
+.scroller{scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.scroller::-webkit-scrollbar{display:none}
+.tw.scrolls{background-image:linear-gradient(to left,color-mix(in srgb,var(--ac) 14%,transparent),transparent 26px);
+  background-repeat:no-repeat;background-position:right;background-attachment:scroll}
+@media(max-width:1100px){
+  #s-ngp .ga-mbar{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;left:0;right:0;bottom:0;z-index:42;
+    background:color-mix(in srgb,var(--bg2) 94%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    border-top:1px solid var(--line);padding:4px 6px calc(4px + env(safe-area-inset-bottom))}
+  #s-ngp .ga-mbar button{background:none;border:0;color:var(--tx);font-family:inherit;cursor:pointer;padding:4px 2px;border-radius:10px;
+    display:flex;flex-direction:column;align-items:center;gap:1px;min-height:48px;justify-content:center}
+  #s-ngp .ga-mbar button:active{background:var(--bg3)}
+  #s-ngp .ga-mbar button:disabled{opacity:.35}
+  #s-ngp .ga-mbar b{font-size:20px;line-height:1;color:var(--ac)}
+  #s-ngp .ga-mbar small{font-size:11.5px;color:var(--tx2);white-space:nowrap}
+  #s-ngp article{padding-bottom:70px}
+  body:has(#s-ngp.on .ga-mbar) #totop{bottom:calc(72px + env(safe-area-inset-bottom))}
+  /* mục lục bài thành tấm trượt từ dưới lên */
+  #ga-root.toc-open .ga-toc{display:block;position:fixed;left:0;right:0;bottom:0;top:auto;z-index:62;max-height:72vh;border-radius:20px 20px 0 0;
+    padding:8px 10px calc(14px + env(safe-area-inset-bottom));box-shadow:0 -10px 40px rgba(0,0,0,.35);animation:gaUp .22s ease}
+  #ga-root.toc-open .ga-toc::before{content:"";display:block;width:42px;height:5px;border-radius:5px;background:var(--line);margin:4px auto 6px}
+  #ga-root.toc-open .ga-sheet-bg{display:block;position:fixed;inset:0;z-index:61;background:rgba(0,0,0,.45)}
+  #ga-root.toc-open .ga-toc .ga-item{padding:9px 8px}
+  #ga-root.toc-open .ga-toc .ga-it b{font-size:14.5px}
+}
+@keyframes gaUp{from{transform:translateY(40%);opacity:.4}}
+@media(max-width:860px){
+  /* chữ trong ô nhập ≥16px để iPhone không tự phóng to */
+  main>section:not(#s-zh,#s-jp,#s-ko) input:not([type=checkbox]):not([type=radio]):not([type=range]),
+  main>section:not(#s-zh,#s-jp,#s-ko) select,main>section:not(#s-zh,#s-jp,#s-ko) textarea{font-size:16px!important;min-height:42px}
+  main>section:not(#s-zh,#s-jp,#s-ko) input[type=checkbox],main>section:not(#s-zh,#s-jp,#s-ko) input[type=radio]{width:20px;height:20px;flex:none;accent-color:var(--ac)}
+  main>section:not(#s-zh,#s-jp,#s-ko) .btn{min-height:42px}
+  main>section:not(#s-zh,#s-jp,#s-ko) .btn.sm{min-height:36px;padding:6px 13px;font-size:13.5px}
+  main>section:not(#s-zh,#s-jp,#s-ko) .opt{padding:11px 12px;font-size:15px}
+  main>section:not(#s-zh,#s-jp,#s-ko) .qs{font-size:15.5px}
+  .scroller{margin:0 -16px;padding:2px 16px 6px;scroll-padding:16px}
+  .ql{grid-template-columns:1fr 1fr;gap:8px}
+  .ql button{flex-direction:column;align-items:flex-start;gap:8px;padding:12px}
+  .ql button b{font-size:14px}
+  #s-ngp .ga-crumb button{min-height:36px}
+  #s-ngp .ga-item{padding:10px}
+  #s-ngp .ga-tools .btn{flex:1 1 100%}
+  #s-ngp .ga-exg{grid-template-columns:minmax(0,1fr)}
+  #s-ngp .ga-fig{padding:12px 10px 8px;margin:16px -4px}
+  #s-ngp .ga-quiz-wrap{padding:14px 12px;margin-left:-4px;margin-right:-4px}
+}
+@media(max-width:600px){
+  /* bảng nhiều cột thành từng thẻ */
+  main>section:not(#s-zh,#s-jp,#s-ko) .tw:has(table.stk){overflow:visible;border:0!important;background:none!important}
+  table.stk,table.stk tbody,table.stk tr,table.stk td{display:block;width:100%}
+  table.stk tr.hd{display:none}
+  table.stk tr{border:1px solid var(--line);border-radius:14px;background:var(--bg2);margin:0 0 10px;padding:0 0 4px;overflow:hidden}
+  main>section:not(#s-zh,#s-jp,#s-ko) table.stk tr:hover td{background:none}
+  table.stk td{border:0!important;padding:6px 14px!important;display:grid;grid-template-columns:minmax(78px,34%) minmax(0,1fr);gap:10px;align-items:baseline}
+  table.stk td+td{border-top:1px dashed color-mix(in srgb,var(--line) 70%,transparent)!important}
+  table.stk td::before{content:attr(data-l);font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--tx3);line-height:1.5}
+  main>section:not(#s-zh,#s-jp,#s-ko) table.stk td:first-child{display:block;background:var(--bg3);padding:9px 14px!important;font-weight:700;border-bottom:1px solid var(--line)!important}
+  main>section:not(#s-zh,#s-jp,#s-ko) table.stk td:nth-child(2){border-top:0!important}
+  table.stk td:first-child::before{display:none}
+  /* hàng thẻ có mũi tên: xếp dọc, mũi tên quay xuống */
+  #s-ngp .gf-row:has(>.gf-arrow):has(>.gf-card){flex-direction:column;align-items:stretch;gap:4px}
+  #s-ngp .gf-row:has(>.gf-arrow):has(>.gf-card)>.gf-card{max-width:none;flex:none}
+  #s-ngp .gf-row:has(>.gf-card)>.gf-arrow{transform:rotate(90deg);line-height:1;padding:2px 0}
+  table.stk td:empty,table.stk td:has(>.cv:empty){display:none}
+}
 </style>
 <!--UI2_STYLE_END-->
 </head>
@@ -7552,7 +7661,7 @@ applyMode();
 </script>
 <!--CM_SCRIPT_END-->
 <!--GA_SCRIPT_START-->
-<script>const GA=[];</script>
+<script>const GA=[],GAX={};</script>
 <script>/* ga_A.js */
 /* ===== Ngữ pháp A–Z · Nhóm A: Danh từ, từ hạn định & từ loại ===== */
 
@@ -9665,6 +9774,1172 @@ GA.push({
 });
 
 </script>
+<script>/* ex_A.js */
+/* ===== Ngữ pháp A–Z · Nhóm A · hình minh họa + ví dụ ===== */
+GAX.countable={
+ fig:[
+  {sec:1, html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Đếm được: có số ít, số nhiều</b><p>🍎 <b>an</b> apple → three apple<b>s</b></p><p>📚 <b>a</b> book → many book<b>s</b></p><p>👶 <b>a</b> child → two <b>children</b></p><p><span class="gf-pill ac">many</span><span class="gf-pill ac">few</span><span class="gf-pill ac">a number of</span></p></div>
+<div class="gf-col vio"><b>Không đếm được: chỉ một dạng</b><p>💧 water <span class="mini">(không nói a water)</span></p><p>💰 money <span class="mini">(không nói moneys)</span></p><p>ℹ️ information <span class="mini">(động từ số ít: is)</span></p><p><span class="gf-pill vio">much</span><span class="gf-pill vio">little</span><span class="gf-pill vio">an amount of</span></p></div>
+</div>`, cap:'Hai loại danh từ đi với hai bộ từ khác nhau: <b>many/few</b> cho đếm được, <b>much/little</b> cho không đếm được.'},
+  {sec:3, html:`<div class="gf-row">
+<div class="gf-card vio"><span class="gf-ic">💡</span><b>a piece of advice</b><small>một lời khuyên</small></div>
+<div class="gf-card vio"><span class="gf-ic">📰</span><b>an item of news</b><small>một mẩu tin</small></div>
+<div class="gf-card vio"><span class="gf-ic">🧳</span><b>two pieces of luggage</b><small>hai kiện hành lý</small></div>
+<div class="gf-card vio"><span class="gf-ic">🍞</span><b>a loaf of bread</b><small>một ổ bánh mì</small></div>
+</div>`, cap:'Muốn đếm danh từ không đếm được, hãy đếm <b>đơn vị</b> của nó: số nhiều nằm ở từ đơn vị (pieces), không ở danh từ.'}
+ ],
+ ex:[
+  {i:'📚', e:'There are <b>two books</b> and <b>a pen</b> on my desk.', v:'Trên bàn tôi có hai quyển sách và một cây bút.'},
+  {i:'👶', e:'The <b>children</b> are playing in the garden.', v:'Bọn trẻ đang chơi trong vườn.', n:'child → children: số nhiều bất quy tắc, không thêm -s.'},
+  {i:'💡', e:'My teacher gave me <b>a useful piece of advice</b>.', v:'Thầy giáo cho tôi một lời khuyên hữu ích.', n:'advice không đếm được → muốn đếm thì dùng a piece of.'},
+  {i:'🧳', e:'How much <b>luggage</b> do you have?', v:'Bạn có bao nhiêu hành lý?'},
+  {i:'📰', e:'The <b>news is</b> better than we expected.', v:'Tin tức tốt hơn chúng tôi tưởng.', n:'news tận cùng -s nhưng không đếm được → động từ số ít.'},
+  {i:'⏱️', e:'I’ve been to Da Lat three <b>times</b>, but I never have enough <b>time</b> to explore it.', v:'Tôi đã đến Đà Lạt ba lần nhưng chưa lần nào đủ thời gian để khám phá.', n:'times = số lần (đếm được); time = thời gian (không đếm được).'},
+  {i:'🔬', e:'There is growing <b>evidence</b> that regular exercise improves mental health.', v:'Ngày càng có nhiều bằng chứng cho thấy tập thể dục đều đặn giúp tinh thần khỏe hơn.', n:'evidence không đếm được: không nói an evidence hay evidences.'},
+  {i:'📱', e:'Many <b>teenagers</b> rely on social media for <b>news</b> and <b>information</b>.', v:'Nhiều thiếu niên dựa vào mạng xã hội để nắm tin tức và thông tin.'}
+ ]
+};
+
+GAX.articles={
+ fig:[
+  {sec:0, html:`<div class="gf-flow">
+<div class="gf-step ac">❓ Người nghe đã biết <b>cái nào</b> chưa? <span class="mini">(đã nhắc trước, chỉ có một, có cụm xác định phía sau)</span></div>
+<div class="gf-down">↓ Biết rồi</div>
+<div class="gf-step good">✅ Dùng <b>the</b> <span class="mini">· the sun · the man who called you</span></div>
+<div class="gf-down">↓ Chưa biết</div>
+<div class="gf-step vio">1️⃣ Danh từ đếm được số ít → <b>a / an</b> <span class="mini">· a laptop · an hour</span></div>
+<div class="gf-down">↓ Không phải số ít</div>
+<div class="gf-step warn">🌐 Số nhiều hoặc không đếm được, nói chung → <b>không mạo từ</b> <span class="mini">· Cars cause pollution.</span></div>
+</div>`, cap:'Ba câu hỏi chọn mạo từ. Nhớ luật nền: danh từ đếm được số ít <b>không bao giờ đứng một mình</b>.'},
+  {sec:1, html:`<div class="gf-cols">
+<div class="gf-col vio"><b>a + âm phụ âm</b><p>📖 <b>a</b> book</p><p>🎓 <b>a</b> university <span class="mini">(/juː/)</span></p><p>🌍 <b>a</b> European country <span class="mini">(/jʊə/)</span></p><p>🎫 <b>a</b> one-way ticket <span class="mini">(/w/)</span></p></div>
+<div class="gf-col ac"><b>an + âm nguyên âm</b><p>🍎 <b>an</b> apple</p><p>⏳ <b>an</b> hour <span class="mini">(h câm, đọc /aʊ/)</span></p><p>🤝 <b>an</b> honest man <span class="mini">(h câm)</span></p><p>💼 <b>an</b> MBA <span class="mini">(đọc /em/)</span></p></div>
+</div>`, cap:'Chọn a hay an theo <b>âm đọc</b> đầu tiên, không theo chữ cái viết.'}
+ ],
+ ex:[
+  {i:'💻', e:'I bought <b>a</b> laptop yesterday. <b>The</b> laptop is very light.', v:'Hôm qua tôi mua một cái laptop. Cái laptop đó rất nhẹ.', n:'Nhắc lần đầu → a; nhắc lại → the.'},
+  {i:'🩺', e:'My sister is <b>a</b> nurse.', v:'Chị tôi là y tá.', n:'Nói nghề nghiệp luôn cần a/an.'},
+  {i:'🎓', e:'She has <b>an</b> MBA from <b>a</b> university in Singapore.', v:'Cô ấy có bằng MBA của một trường đại học ở Singapore.', n:'MBA đọc /em/ → an; university đọc /juː/ → a.'},
+  {i:'🌅', e:'<b>The</b> sun rises in <b>the</b> east.', v:'Mặt trời mọc ở hướng đông.'},
+  {i:'🍳', e:'I usually have <b>breakfast</b> at home before I go to <b>work</b>.', v:'Tôi thường ăn sáng ở nhà rồi mới đi làm.', n:'Bữa ăn và cụm cố định như go to work → không mạo từ.'},
+  {i:'🏫', e:'My mum went to <b>the school</b> to talk to my teacher.', v:'Mẹ tôi đến trường để nói chuyện với cô giáo tôi.', n:'Đến trường vì việc khác, không phải để học → the school.'},
+  {i:'📱', e:'<b>Smartphones</b> have changed the way people communicate.', v:'Điện thoại thông minh đã thay đổi cách con người giao tiếp.', n:'Nói chung về một loại vật → số nhiều, không mạo từ.'},
+  {i:'📊', e:'The chart shows <b>the</b> proportion of <b>the</b> elderly who live alone.', v:'Biểu đồ cho thấy tỷ lệ người cao tuổi sống một mình.'}
+ ]
+};
+
+GAX.quantifiers={
+ fig:[
+  {sec:0, html:`<div class="gf-row">
+<span class="gf-pill good">all · tất cả</span><span class="gf-arrow">→</span>
+<span class="gf-pill good">most · hầu hết</span><span class="gf-arrow">→</span>
+<span class="gf-pill ac">many / a lot of · nhiều</span><span class="gf-arrow">→</span>
+<span class="gf-pill ac">some · một số</span><span class="gf-arrow">→</span>
+<span class="gf-pill warn">a few · vài</span><span class="gf-arrow">→</span>
+<span class="gf-pill warn">few · rất ít</span><span class="gf-arrow">→</span>
+<span class="gf-pill bad">no / none · không</span>
+</div>`, cap:'Thang lượng từ từ nhiều đến không có gì. Với danh từ không đếm được, thay <b>many → much</b>, <b>a few → a little</b>, <b>few → little</b>.'},
+  {sec:3, html:`<div class="gf-cols">
+<div class="gf-col good"><b>🙂 a few / a little: có một ít, đủ dùng</b><p>I have <b>a few</b> friends here. <span class="mini">→ không cô đơn</span></p><p>We have <b>a little</b> time. <span class="mini">→ kịp uống cà phê</span></p></div>
+<div class="gf-col bad"><b>😟 few / little: rất ít, gần như không</b><p>He has <b>few</b> friends here. <span class="mini">→ khá cô đơn</span></p><p>We have <b>little</b> time. <span class="mini">→ phải vội</span></p></div>
+</div>`, cap:'Có <b>a</b> thì nhìn phía tích cực, không có <b>a</b> thì nhấn sự thiếu. few + đếm được · little + không đếm được.'},
+  {sec:4, html:`<div class="gf-row">
+<div class="gf-card good"><span class="gf-ic">✅✅</span><b>both</b><small>cả hai · Both options are good.</small></div>
+<div class="gf-card ac"><span class="gf-ic">☝️</span><b>either</b><small>một trong hai · You can take either bus.</small></div>
+<div class="gf-card bad"><span class="gf-ic">❌❌</span><b>neither</b><small>không cái nào · Neither answer is correct.</small></div>
+</div>`, cap:'Ba từ cho nhóm <b>hai</b> thứ. both + số nhiều; either, neither + danh từ số ít.'}
+ ],
+ ex:[
+  {i:'🍊', e:'Would you like <b>some</b> orange juice?', v:'Bạn uống chút nước cam nhé?', n:'Lời mời dùng some dù là câu hỏi.'},
+  {i:'🥛', e:'There isn’t <b>any</b> milk left in the fridge.', v:'Trong tủ lạnh không còn chút sữa nào.'},
+  {i:'🤝', e:'I’ve made <b>a few</b> friends here, so I don’t feel lonely.', v:'Tôi đã quen được vài người bạn ở đây nên không thấy cô đơn.', n:'a few = có vài, mang nghĩa tích cực.'},
+  {i:'🌵', e:'There was <b>little</b> rain last summer, so the crops failed.', v:'Mùa hè năm ngoái mưa rất ít nên mùa màng thất bát.', n:'little = rất ít, gần như không (nghĩa tiêu cực).'},
+  {i:'🏨', e:'<b>Every room</b> in the hotel <b>has</b> a sea view.', v:'Phòng nào trong khách sạn cũng nhìn ra biển.', n:'every + danh từ số ít + động từ số ít.'},
+  {i:'📭', e:'I applied to two companies, but <b>neither</b> of them replied.', v:'Tôi nộp đơn vào hai công ty nhưng không công ty nào trả lời.'},
+  {i:'💬', e:'In my view, <b>most</b> young people spend <b>too much</b> time online.', v:'Theo tôi, phần lớn giới trẻ dành quá nhiều thời gian trên mạng.', n:'most + danh từ, không có of; too much vẫn dùng trong câu khẳng định.'},
+  {i:'📊', e:'The graph shows <b>the number of</b> cars and <b>the amount of</b> fuel used in the city.', v:'Biểu đồ cho thấy số lượng ô tô và lượng nhiên liệu được sử dụng trong thành phố.', n:'number + danh từ đếm được; amount + danh từ không đếm được.'}
+ ]
+};
+
+GAX.pronouns={
+ fig:[
+  {sec:1, html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🙋</span><b>I</b><small>chủ ngữ · I like tea.</small></div>
+<div class="gf-card ac"><span class="gf-ic">👉</span><b>me</b><small>tân ngữ · Call me.</small></div>
+<div class="gf-card vio"><span class="gf-ic">🎒</span><b>my</b><small>+ danh từ · my bag</small></div>
+<div class="gf-card vio"><span class="gf-ic">✋</span><b>mine</b><small>đứng một mình · It’s mine.</small></div>
+<div class="gf-card warn"><span class="gf-ic">↩️</span><b>myself</b><small>phản thân · I did it myself.</small></div>
+</div>`, cap:'Một người, năm dạng theo vị trí trong câu. Tương tự: <b>they → them → their → theirs → themselves</b>.'},
+  {sec:3, html:`<div class="gf-row">
+<div class="gf-card vio"><span class="gf-ic">↩️ ↩️</span><b>They blamed themselves.</b><small>Mỗi người tự trách chính mình</small></div>
+<div class="gf-card warn"><span class="gf-ic">🔄</span><b>They blamed each other.</b><small>Người này trách người kia</small></div>
+</div>`, cap:'<b>-selves</b>: hành động quay về chính chủ ngữ. <b>each other</b>: hành động qua lại giữa hai bên.'},
+  {sec:4, html:`<div class="gf-cols">
+<div class="gf-col ac"><b>There is / are = “có”</b><p>☕ <b>There’s</b> a café near my house.</p><p>👥 <b>There are</b> many people here.</p></div>
+<div class="gf-col vio"><b>It = chủ ngữ giả</b><p>🌧️ <b>It’s</b> raining. <span class="mini">(thời tiết)</span></p><p>🕒 <b>It’s</b> three o’clock. <span class="mini">(thời gian)</span></p><p>🚗 <b>It</b> takes 30 minutes to get there.</p><p>💰 <b>It</b> is important to save money.</p></div>
+</div>`, cap:'Tiếng Việt bỏ được chủ ngữ, tiếng Anh thì không: “có…” → <b>there</b>, còn lại dùng <b>it</b>.'}
+ ],
+ ex:[
+  {i:'🎒', e:'This bag isn’t <b>mine</b>. I think it’s <b>hers</b>.', v:'Cái túi này không phải của tôi. Tôi nghĩ nó là của cô ấy.', n:'mine, hers đứng một mình, không có danh từ theo sau.'},
+  {i:'🐶', e:'The dog wagged <b>its</b> tail when it saw us.', v:'Con chó vẫy đuôi khi thấy chúng tôi.', n:'its = của nó, không có dấu nháy.'},
+  {i:'📞', e:'Can you call <b>me</b> when you get home?', v:'Về đến nhà bạn gọi cho tôi được không?'},
+  {i:'✈️', e:'<b>My friend and I</b> went to Da Lat last summer.', v:'Mùa hè năm ngoái tôi và bạn tôi đi Đà Lạt.', n:'Làm chủ ngữ → I, và thường nhắc người kia trước.'},
+  {i:'🎸', e:'He taught <b>himself</b> to play the guitar.', v:'Anh ấy tự học chơi guitar.', n:'Chủ ngữ và tân ngữ là một người → phản thân.'},
+  {i:'👟', e:'These trainers are more comfortable than the <b>ones</b> I bought last year.', v:'Đôi giày này êm hơn đôi tôi mua năm ngoái.'},
+  {i:'🚦', e:'<b>It</b> is often argued that <b>there are</b> too many cars in city centres.', v:'Nhiều người cho rằng trung tâm các thành phố có quá nhiều ô tô.', n:'it là chủ ngữ giả cho mệnh đề phía sau; “có” → there are.'},
+  {i:'🎓', e:'Every student should be able to choose <b>their</b> own subjects.', v:'Học sinh nào cũng nên được tự chọn môn học của mình.', n:'their số ít dùng khi không rõ giới tính.'}
+ ]
+};
+
+GAX.possessive={
+ fig:[
+  {sec:1, html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">👧</span><b>my sister’s room</b><small>một chị (sister) → thêm ’s</small></div>
+<div class="gf-card vio"><span class="gf-ic">👧👧</span><b>my sisters’ room</b><small>nhiều chị (sisters) → chỉ thêm ’</small></div>
+<div class="gf-card warn"><span class="gf-ic">👶👶</span><b>children’s books</b><small>số nhiều không có -s → thêm ’s</small></div>
+</div>`, cap:'Viết đúng danh từ <b>người sở hữu</b> trước (số ít hay số nhiều), rồi mới thêm dấu nháy ngay sau nó.'},
+  {sec:2, html:`<div class="gf-cols">
+<div class="gf-col ac"><b>’s · người, tổ chức, thời gian</b><p>👨 my father<b>’s</b> car</p><p>🏢 the company<b>’s</b> profit</p><p>📅 today<b>’s</b> meeting</p></div>
+<div class="gf-col vio"><b>of · vật, khái niệm, một phần</b><p>🏠 the roof <b>of</b> the house</p><p>❓ the cause <b>of</b> the problem</p><p>🎬 the end <b>of</b> the film</p></div>
+</div>`, cap:'Người sở hữu là người hay tổ chức → ’s đặt trước. Là vật hay khái niệm → dùng of.'},
+  {sec:3, html:`<div class="gf-row">
+<div class="gf-card vio"><span class="gf-ic">🥤</span><b>a coffee cup</b><small>cốc dùng để uống cà phê (có thể đang rỗng)</small></div>
+<div class="gf-card ac"><span class="gf-ic">☕</span><b>a cup of coffee</b><small>một cốc có cà phê bên trong</small></div>
+</div>`, cap:'Danh từ ghép: danh từ đầu chỉ <b>loại, công dụng</b>, không dùng ’s và không thêm -s.'}
+ ],
+ ex:[
+  {i:'🚲', e:'I borrowed <b>my brother’s</b> bike this morning.', v:'Sáng nay tôi mượn xe đạp của anh trai.', n:'Người sở hữu đứng trước, thêm ’s.'},
+  {i:'🏡', e:'We spent the weekend at <b>my grandparents’</b> house.', v:'Chúng tôi nghỉ cuối tuần ở nhà ông bà.', n:'grandparents là số nhiều tận cùng -s → chỉ thêm ’.'},
+  {i:'🧸', e:'This shop sells <b>children’s</b> clothes and toys.', v:'Cửa hàng này bán quần áo và đồ chơi trẻ em.'},
+  {i:'📅', e:'Have you finished the report for <b>tomorrow’s</b> meeting?', v:'Bạn làm xong báo cáo cho cuộc họp ngày mai chưa?', n:'Mốc thời gian cũng dùng ’s.'},
+  {i:'🦷', e:'I can’t talk now. I’m at <b>the dentist’s</b>.', v:'Giờ tôi không nói chuyện được. Tôi đang ở phòng khám nha khoa.', n:'’s đứng một mình = phòng khám, cửa hàng hoặc nhà của ai đó.'},
+  {i:'⏳', e:'Students take <b>a three-hour</b> exam at the end of each term.', v:'Cuối mỗi học kỳ, sinh viên làm một bài thi ba tiếng.', n:'Số + danh từ có gạch nối làm tính từ → danh từ giữ số ít.'},
+  {i:'🔍', e:'We need to understand <b>the causes of the problem</b> before we look for solutions.', v:'Chúng ta cần hiểu nguyên nhân của vấn đề trước khi tìm giải pháp.'},
+  {i:'📈', e:'<b>The country’s</b> exports rose steadily over <b>a ten-year period</b>.', v:'Xuất khẩu của nước này tăng đều trong suốt mười năm.', n:'Quốc gia, công ty → ’s gọn hơn of, hợp IELTS Task 1.'}
+ ]
+};
+
+GAX.adjectives={
+ fig:[
+  {sec:2, html:`<div class="gf-row">
+<span class="gf-pill vio">1 Ý kiến</span><span class="gf-pill ac">2 Kích thước</span><span class="gf-pill ac">3 Tuổi</span><span class="gf-pill ac">4 Hình dạng</span><span class="gf-pill ac">5 Màu</span><span class="gf-pill ac">6 Nguồn gốc</span><span class="gf-pill ac">7 Chất liệu</span><span class="gf-pill ac">8 Mục đích</span><span class="gf-pill warn">+ DANH TỪ</span>
+</div>
+<div class="gf-row" style="margin-top:12px">
+<div class="gf-card vio"><span class="gf-ic">😍</span><b>a lovely</b><small>ý kiến</small></div>
+<div class="gf-card ac"><span class="gf-ic">🕰️</span><b>old</b><small>tuổi</small></div>
+<div class="gf-card ac"><span class="gf-ic">🌳</span><b>wooden</b><small>chất liệu</small></div>
+<div class="gf-card warn"><span class="gf-ic">🪑</span><b>chair</b><small>danh từ</small></div>
+</div>`, cap:'<b>a lovely old wooden chair</b>: ý kiến đứng trước, các sự thật xếp theo thứ tự, danh từ đứng cuối.'},
+  {sec:3, html:`<div class="gf-row">
+<div class="gf-card warn"><span class="gf-ic">📺</span><b>a boring film</b><small>-ing: thứ gây ra cảm xúc</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card vio"><span class="gf-ic">😴</span><b>a bored viewer</b><small>-ed: người cảm thấy</small></div>
+</div>`, cap:'Bộ phim <b>boring</b> làm người xem <b>bored</b>. Nói “I’m boring” là tự nhận mình nhạt nhẽo.'}
+ ],
+ ex:[
+  {i:'🏠', e:'They live in <b>a big house</b> near the river.', v:'Họ sống trong một ngôi nhà lớn gần sông.', n:'Tính từ đứng trước danh từ, ngược với tiếng Việt.'},
+  {i:'🍲', e:'This soup <b>smells delicious</b>.', v:'Món súp này thơm quá.', n:'Sau smell, taste, look… dùng tính từ, không dùng trạng từ.'},
+  {i:'🎁', e:'I want to buy <b>something special</b> for my mum’s birthday.', v:'Tôi muốn mua một thứ gì đó đặc biệt cho sinh nhật mẹ.'},
+  {i:'👜', e:'She bought <b>a beautiful black leather</b> bag.', v:'Cô ấy mua một chiếc túi da màu đen rất đẹp.', n:'Ý kiến → màu → chất liệu.'},
+  {i:'👶', e:'Please be quiet. The baby is <b>asleep</b>.', v:'Làm ơn giữ yên lặng. Em bé đang ngủ.', n:'asleep chỉ đứng sau động từ; trước danh từ nói a sleeping baby.'},
+  {i:'🧾', e:'The instructions were so <b>confusing</b> that everyone felt <b>confused</b>.', v:'Hướng dẫn rối đến mức ai cũng thấy bối rối.'},
+  {i:'💼', e:'Nursing is a <b>demanding</b> but <b>rewarding</b> career.', v:'Điều dưỡng là một nghề vất vả nhưng nhiều ý nghĩa.', n:'Tính từ chính xác thay cho hard, good giúp tăng điểm từ vựng.'},
+  {i:'🌱', e:'A <b>well-educated</b> workforce brings <b>long-term</b> benefits to the economy.', v:'Lực lượng lao động có trình độ mang lại lợi ích lâu dài cho nền kinh tế.'}
+ ]
+};
+
+GAX.comparison={
+ fig:[
+  {sec:1, html:`<div class="gf-flow">
+<div class="gf-step ac">1 âm tiết → <b>-er / the -est</b> <span class="mini">· cheap → cheaper → the cheapest · nguyên âm ngắn + phụ âm thì gấp đôi: big → bigger</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step vio">2 âm tiết tận cùng -y → <b>-ier / the -iest</b> <span class="mini">· easy → easier → the easiest</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step warn">2 âm tiết trở lên → <b>more / the most</b> <span class="mini">· modern → more modern</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step bad">Bất quy tắc → <b>học thuộc</b> <span class="mini">· good → better → the best · bad → worse → the worst</span></div>
+</div>`, cap:'Đi từ trên xuống, dừng ở dòng đầu tiên khớp với tính từ. <b>Không bao giờ</b> dùng cả more và -er.'},
+  {sec:2, svg:`<svg viewBox="0 0 340 196" xmlns="http://www.w3.org/2000/svg">
+<line x1="8" y1="160" x2="332" y2="160" style="stroke:var(--tx3)" stroke-width="2"/>
+<rect x="20" y="110" width="50" height="50" rx="4" style="fill:var(--vio)"/>
+<rect x="90" y="80" width="50" height="80" rx="4" style="fill:var(--vio)"/>
+<rect x="160" y="40" width="50" height="120" rx="4" style="fill:var(--ac)"/>
+<rect x="245" y="90" width="35" height="70" rx="4" style="fill:var(--good)"/>
+<rect x="292" y="90" width="35" height="70" rx="4" style="fill:var(--good)"/>
+<line x1="238" y1="84" x2="334" y2="84" style="stroke:var(--tx2)" stroke-width="2" stroke-dasharray="5 4"/>
+<line x1="228" y1="30" x2="228" y2="162" style="stroke:var(--tx3)" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="45" y="182" font-size="14" text-anchor="middle" style="fill:var(--tx)">tall</text>
+<text x="115" y="182" font-size="14" text-anchor="middle" style="fill:var(--tx)">taller</text>
+<text x="185" y="182" font-size="14" text-anchor="middle" style="fill:var(--tx)">the tallest</text>
+<text x="286" y="182" font-size="14" text-anchor="middle" style="fill:var(--tx)">as tall as</text>
+<text x="115" y="22" font-size="13" text-anchor="middle" style="fill:var(--tx2)">hơn → nhất</text>
+<text x="286" y="22" font-size="13" text-anchor="middle" style="fill:var(--tx2)">bằng nhau</text>
+</svg>`, cap:'<b>taller than</b> so hai thứ, <b>the tallest</b> chọn ra một trong cả nhóm, <b>as tall as</b> là bằng nhau.'}
+ ],
+ ex:[
+  {i:'🏢', e:'My new flat is <b>bigger than</b> my old one.', v:'Căn hộ mới của tôi rộng hơn căn cũ.'},
+  {i:'🏔️', e:'This is <b>the most beautiful</b> place I’ve ever visited.', v:'Đây là nơi đẹp nhất tôi từng đến.', n:'Tính từ dài → the most; hay đi với I’ve ever.'},
+  {i:'📱', e:'My phone isn’t <b>as fast as</b> yours.', v:'Điện thoại của tôi không nhanh bằng của bạn.'},
+  {i:'🍜', e:'The food here is <b>much better than</b> I expected.', v:'Đồ ăn ở đây ngon hơn tôi tưởng nhiều.', n:'Nhấn mạnh so sánh hơn dùng much, không dùng very.'},
+  {i:'🚗', e:'<b>The earlier</b> we leave, <b>the sooner</b> we’ll get there.', v:'Đi càng sớm thì càng đến nơi sớm.', n:'So sánh kép: hai vế đều bắt đầu bằng the + so sánh hơn.'},
+  {i:'🏠', e:'Housing in big cities is getting <b>more and more expensive</b>.', v:'Nhà ở tại các thành phố lớn ngày càng đắt đỏ.'},
+  {i:'📊', e:'According to the chart, Shop A sold <b>twice as many</b> laptops <b>as</b> Shop B.', v:'Theo biểu đồ, cửa hàng A bán được số laptop gấp đôi cửa hàng B.', n:'Bội số: twice / three times + as many / as much + as.'},
+  {i:'🌾', e:'In the chart, the price of rice was <b>slightly higher than that of</b> wheat.', v:'Trong biểu đồ, giá gạo cao hơn giá lúa mì một chút.', n:'that of = giá của: so sánh giá với giá, không phải giá với lúa mì.'}
+ ]
+};
+
+GAX.adverbs={
+ fig:[
+  {sec:1, html:`<div class="gf-row">
+<div class="gf-card vio"><span class="gf-ic">🚗</span><b>a careful driver</b><small>tính từ + danh từ</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card ac"><span class="gf-ic">🛣️</span><b>He drives carefully.</b><small>động từ + trạng từ</small></div>
+</div>
+<div class="gf-row" style="margin-top:10px">
+<span class="gf-pill ac">quick → quickly</span><span class="gf-pill ac">easy → easily</span><span class="gf-pill ac">basic → basically</span><span class="gf-pill warn">good → well</span><span class="gf-pill warn">fast → fast</span><span class="gf-pill warn">hard → hard</span>
+</div>`, cap:'Mô tả <b>người, vật</b> dùng tính từ; mô tả <b>cách làm</b> dùng trạng từ. Thẻ màu cam là dạng bất quy tắc.'},
+  {sec:3, html:`<div class="gf-row">
+<div class="gf-card warn"><span class="gf-ic">⬅️</span><b>Đầu câu</b><small>bình luận cả câu · <i>Unfortunately, …</i></small></div>
+<div class="gf-card vio"><span class="gf-ic">↔️</span><b>Giữa câu</b><small>tần suất, mức độ · <i>I often…</i> · <i>extremely important</i></small></div>
+<div class="gf-card ac"><span class="gf-ic">➡️</span><b>Cuối câu</b><small>cách thức → nơi chốn → thời gian · <i>She sang beautifully at the party last night.</i></small></div>
+</div>`, cap:'Ba vị trí của trạng từ. Không chen trạng từ vào giữa <b>động từ và tân ngữ</b>.'},
+  {sec:4, svg:`<svg viewBox="0 0 340 182" xmlns="http://www.w3.org/2000/svg">
+<text x="112" y="23" font-size="14" text-anchor="end" style="fill:var(--tx)">always</text>
+<rect x="120" y="10" width="170" height="16" rx="4" style="fill:var(--ac)"/>
+<text x="296" y="23" font-size="13" style="fill:var(--tx2)">100%</text>
+<text x="112" y="47" font-size="14" text-anchor="end" style="fill:var(--tx)">usually</text>
+<rect x="120" y="34" width="153" height="16" rx="4" style="fill:var(--ac)"/>
+<text x="279" y="47" font-size="13" style="fill:var(--tx2)">~90%</text>
+<text x="112" y="71" font-size="14" text-anchor="end" style="fill:var(--tx)">often</text>
+<rect x="120" y="58" width="119" height="16" rx="4" style="fill:var(--ac)"/>
+<text x="245" y="71" font-size="13" style="fill:var(--tx2)">~70%</text>
+<text x="112" y="95" font-size="14" text-anchor="end" style="fill:var(--tx)">sometimes</text>
+<rect x="120" y="82" width="85" height="16" rx="4" style="fill:var(--vio)"/>
+<text x="211" y="95" font-size="13" style="fill:var(--tx2)">~50%</text>
+<text x="112" y="119" font-size="14" text-anchor="end" style="fill:var(--tx)">rarely / seldom</text>
+<rect x="120" y="106" width="17" height="16" rx="4" style="fill:var(--warn)"/>
+<text x="143" y="119" font-size="13" style="fill:var(--tx2)">~10%</text>
+<text x="112" y="143" font-size="14" text-anchor="end" style="fill:var(--tx)">hardly ever</text>
+<rect x="120" y="130" width="9" height="16" rx="3" style="fill:var(--warn)"/>
+<text x="135" y="143" font-size="13" style="fill:var(--tx2)">~5%</text>
+<text x="112" y="167" font-size="14" text-anchor="end" style="fill:var(--tx)">never</text>
+<rect x="120" y="154" width="2" height="16" style="fill:var(--bad)"/>
+<text x="128" y="167" font-size="13" style="fill:var(--tx2)">0%</text>
+</svg>`, cap:'Thang tần suất (con số chỉ ước lượng). Đặt <b>trước động từ thường</b>, <b>sau be</b> và sau trợ động từ đầu tiên.'}
+ ],
+ ex:[
+  {i:'🐢', e:'Please drive <b>slowly</b>. The road is wet.', v:'Làm ơn lái chậm thôi. Đường đang ướt.'},
+  {i:'🎾', e:'She plays tennis really <b>well</b>.', v:'Cô ấy chơi quần vợt rất giỏi.', n:'good là tính từ; trạng từ của nó là well.'},
+  {i:'😪', e:'I could <b>hardly</b> keep my eyes open in the meeting.', v:'Trong buổi họp tôi gần như không mở nổi mắt.', n:'hardly = hầu như không, khác hẳn hard = chăm chỉ.'},
+  {i:'🗣️', e:'He speaks English <b>fluently</b>.', v:'Anh ấy nói tiếng Anh trôi chảy.', n:'Trạng từ cách thức đứng sau tân ngữ, không chen giữa.'},
+  {i:'🚶', e:'I <b>usually</b> walk to work, so I’m <b>rarely</b> late.', v:'Tôi thường đi bộ đi làm nên hiếm khi bị muộn.', n:'Tần suất đứng trước động từ thường, sau be.'},
+  {i:'☔', e:'<b>Unfortunately</b>, the match was cancelled because of the rain.', v:'Thật đáng tiếc, trận đấu bị hủy vì trời mưa.'},
+  {i:'🏙️', e:'Living in the city centre is <b>relatively</b> expensive, but it saves a lot of time.', v:'Sống ở trung tâm thành phố khá đắt nhưng tiết kiệm được nhiều thời gian.', n:'relatively, generally: trạng từ rào đón, hợp IELTS Speaking.'},
+  {i:'📈', e:'According to the graph, sales rose <b>dramatically</b> in the first quarter.', v:'Theo biểu đồ, doanh số tăng mạnh trong quý một.', n:'rose dramatically = a dramatic rise: đổi cách viết trong Task 1.'}
+ ]
+};
+
+GAX.prepositions={
+ fig:[
+  {sec:1, html:`<div class="gf-flow">
+<div class="gf-step ac" style="max-width:440px"><b>in</b> · khoảng dài: tháng, năm, mùa, thế kỷ, buổi <span class="mini">· in May · in 2025 · in the morning</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step vio" style="max-width:340px"><b>on</b> · một ngày: thứ, ngày tháng <span class="mini">· on Monday · on 2 September</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step warn" style="max-width:240px"><b>at</b> · một thời điểm <span class="mini">· at 7 o’clock · at noon</span></div>
+</div>`, cap:'Phễu thời gian: khoảng càng rộng dùng <b>in</b>, một ngày dùng <b>on</b>, một điểm giờ dùng <b>at</b>.'},
+  {sec:2, svg:`<svg viewBox="0 0 340 176" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="40" width="80" height="70" rx="4" fill="none" style="stroke:var(--tx2)" stroke-width="3"/>
+<circle cx="60" cy="85" r="12" style="fill:var(--ac)"/>
+<rect x="130" y="88" width="80" height="8" rx="2" style="fill:var(--tx3)"/>
+<rect x="138" y="96" width="6" height="30" style="fill:var(--tx3)"/>
+<rect x="196" y="96" width="6" height="30" style="fill:var(--tx3)"/>
+<circle cx="170" cy="76" r="12" style="fill:var(--ac)"/>
+<rect x="258" y="44" width="4" height="82" style="fill:var(--tx3)"/>
+<circle cx="260" cy="46" r="14" style="fill:var(--warn)"/>
+<line x1="240" y1="126" x2="330" y2="126" style="stroke:var(--tx3)" stroke-width="2"/>
+<circle cx="292" cy="112" r="12" style="fill:var(--ac)"/>
+<text x="60" y="148" font-size="14" text-anchor="middle" style="fill:var(--tx)">in the box</text>
+<text x="170" y="148" font-size="14" text-anchor="middle" style="fill:var(--tx)">on the table</text>
+<text x="282" y="148" font-size="14" text-anchor="middle" style="fill:var(--tx)">at the bus stop</text>
+<text x="60" y="168" font-size="13" text-anchor="middle" style="fill:var(--tx2)">bên trong</text>
+<text x="170" y="168" font-size="13" text-anchor="middle" style="fill:var(--tx2)">trên bề mặt</text>
+<text x="282" y="168" font-size="13" text-anchor="middle" style="fill:var(--tx2)">tại một điểm</text>
+</svg>`, cap:'<b>in</b> = được bao quanh · <b>on</b> = nằm trên bề mặt · <b>at</b> = ở một điểm, nơi diễn ra hoạt động.'},
+  {sec:3, tl:{now:false, items:[
+    {p:.72,t:'Friday',c:'bad'},
+    {a:.08,b:.72,s:'d',t:'by: xong trước hạn là được',c:'warn'},
+    {a:.08,b:.72,s:'s',arr:1,t:'until: kéo dài liên tục đến',c:'ac'}],
+   marks:[{p:.08,t:'bây giờ'},{p:.72,t:'hạn chót'}]},
+   cap:'<b>by Friday</b>: việc xong lúc nào cũng được, miễn là không muộn hơn thứ Sáu. <b>until Friday</b>: việc kéo dài liên tục đến thứ Sáu.'}
+ ],
+ ex:[
+  {i:'🎬', e:'The film starts <b>at</b> 8 p.m. <b>on</b> Saturday.', v:'Phim bắt đầu lúc 8 giờ tối thứ Bảy.', n:'Giờ → at; thứ → on.'},
+  {i:'🍂', e:'Many birds fly south <b>in</b> autumn.', v:'Nhiều loài chim bay về phương nam vào mùa thu.'},
+  {i:'🚌', e:'Wait for me <b>at</b> the bus stop. I’m still <b>on</b> the bus.', v:'Chờ mình ở trạm xe buýt nhé. Mình vẫn đang trên xe.', n:'Một điểm → at; xe buýt là phương tiện lớn → on.'},
+  {i:'💼', e:'I’ve worked here <b>for</b> three years, <b>since</b> I graduated.', v:'Tôi làm ở đây được ba năm, từ khi tốt nghiệp.', n:'for + khoảng thời gian; since + mốc bắt đầu.'},
+  {i:'📄', e:'Please send me the report <b>by</b> Friday.', v:'Hãy gửi tôi báo cáo chậm nhất là thứ Sáu.'},
+  {i:'🎤', e:'He is very good <b>at</b> maths but afraid <b>of</b> public speaking.', v:'Cậu ấy rất giỏi toán nhưng lại sợ nói trước đám đông.', n:'Học giới từ theo cụm: good at, afraid of.'},
+  {i:'🌐', e:'Online learning gives students <b>access to</b> a wide range of courses.', v:'Học trực tuyến giúp sinh viên tiếp cận nhiều khóa học khác nhau.'},
+  {i:'📈', e:'Sales rose <b>by</b> 200 units <b>to</b> 1,500 in March.', v:'Doanh số tăng thêm 200 sản phẩm, lên mức 1.500 vào tháng Ba.', n:'by = mức thay đổi; to = mức cuối cùng.'}
+ ]
+};
+
+</script>
+<script>/* ex_B.js */
+/* ===== Ngữ pháp A–Z · Nhóm B · hình minh họa + ví dụ ===== */
+GAX.present={
+ fig:[
+  {sec:0, tl:{now:.62, items:[
+    {a:.06,b:.94,n:6,t:'I get up at 6 (mỗi ngày)',c:'ac'},
+    {a:.5,b:.74,s:'w',t:'I’m reading (lúc này)',c:'vio'}]},
+   cap:'<b>Hiện tại đơn</b>: việc lặp lại đều đặn, quá khứ, hiện tại, tương lai đều vậy (✓). <b>Hiện tại tiếp diễn</b>: việc đang diễn ra quanh lúc nói (đường sóng).'},
+  {sec:3, html:`<div class="gf-cols">
+<div class="gf-col vio"><b>Nghĩa trạng thái → thì đơn</b><p>🧠 I <b>think</b> it’s a good idea. <span class="mini">(cho rằng)</span></p><p>🚗 She <b>has</b> a car. <span class="mini">(sở hữu)</span></p><p>🍲 The soup <b>tastes</b> salty. <span class="mini">(có vị)</span></p></div>
+<div class="gf-col ac"><b>Nghĩa hành động → tiếp diễn được</b><p>🤔 I’<b>m thinking</b> about it. <span class="mini">(đang cân nhắc)</span></p><p>🍜 She’<b>s having</b> lunch. <span class="mini">(đang ăn)</span></p><p>🥄 The chef <b>is tasting</b> the soup. <span class="mini">(đang nếm)</span></p></div>
+</div>`, cap:'Cùng một động từ, hai nghĩa: trạng thái dùng thì đơn, hành động dùng được tiếp diễn.'}
+ ],
+ ex:[
+  {i:'⏰', e:'I usually <b>get up</b> at six on weekdays.', v:'Ngày thường tôi hay dậy lúc sáu giờ.'},
+  {i:'🌍', e:'The Earth <b>goes</b> around the Sun.', v:'Trái Đất quay quanh Mặt Trời.', n:'Sự thật hiển nhiên → hiện tại đơn.'},
+  {i:'🚆', e:'The last train <b>leaves</b> at 11.30 tonight.', v:'Chuyến tàu cuối rời ga lúc 11 giờ 30 tối nay.', n:'Lịch trình cố định: dù là tương lai vẫn dùng hiện tại đơn.'},
+  {i:'📞', e:'Shh! Mum <b>is talking</b> on the phone.', v:'Suỵt! Mẹ đang nói chuyện điện thoại.'},
+  {i:'🏠', e:'I<b>’m staying</b> with a friend until I find a flat.', v:'Tôi đang ở nhờ nhà bạn cho đến khi tìm được căn hộ.', n:'Việc tạm thời → tiếp diễn.'},
+  {i:'📈', e:'More and more students <b>are taking</b> online courses.', v:'Ngày càng nhiều sinh viên học khóa trực tuyến.', n:'Xu hướng đang thay đổi, rất hợp cho IELTS Writing.'},
+  {i:'😤', e:'He<b>’s always borrowing</b> my charger and never giving it back!', v:'Cậu ta lúc nào cũng mượn sạc của tôi mà chẳng bao giờ trả!', n:'always + tiếp diễn = phàn nàn.'},
+  {i:'💡', e:'I <b>don’t understand</b> this question. What <b>does</b> it <b>mean</b>?', v:'Tôi không hiểu câu hỏi này. Nó có nghĩa là gì?', n:'understand, mean là động từ trạng thái → không dùng tiếp diễn.'}
+ ]
+};
+
+GAX.past={
+ fig:[
+  {sec:0, tl:{now:.88, items:[
+    {p:.2,t:'went to the cinema',c:'ac'},
+    {a:.46,b:.74,s:'w',t:'was watching TV',c:'vio'}],
+    marks:[{p:.2,t:'last Sunday'},{p:.6,t:'9 p.m. yesterday'}]},
+   cap:'<b>Quá khứ đơn</b>: việc đã xong tại một mốc (chấm). <b>Quá khứ tiếp diễn</b>: việc đang dở dang quanh một mốc quá khứ (đường sóng).'},
+  {sec:3, tl:{now:.9, items:[
+    {a:.08,b:.44,s:'w',t:'was having a shower',c:'vio'},
+    {p:.4,t:'the phone rang',c:'bad'},
+    {p:.54,t:'I answered it',c:'ac'}]},
+   cap:'Việc dài (<b>was/were + V-ing</b>) bị việc ngắn (<b>V2</b>) cắt ngang. Chuông reo rồi mới nghe máy: hai việc nối tiếp, đều dùng quá khứ đơn.'}
+ ],
+ ex:[
+  {i:'🎬', e:'Last night we <b>had</b> dinner, <b>went</b> to the cinema and <b>got</b> home at midnight.', v:'Tối qua chúng tôi ăn tối, đi xem phim rồi nửa đêm mới về nhà.', n:'Chuỗi việc đã xong, có mốc quá khứ → quá khứ đơn.'},
+  {i:'🤒', e:'I <b>didn’t go</b> to class yesterday because I <b>felt</b> ill.', v:'Hôm qua tôi không đi học vì thấy mệt.', n:'did đã mang thì quá khứ, nên go giữ nguyên mẫu.'},
+  {i:'🚲', e:'When I was a child, we <b>walked</b> to school every day.', v:'Hồi nhỏ, ngày nào chúng tôi cũng đi bộ đến trường.'},
+  {i:'📺', e:'At nine o’clock last night, I <b>was watching</b> a football match.', v:'Lúc chín giờ tối qua, tôi đang xem một trận bóng đá.'},
+  {i:'🚑', e:'I <b>was walking</b> home when I <b>saw</b> an accident.', v:'Tôi đang đi bộ về nhà thì thấy một vụ tai nạn.', n:'Việc ngắn, bất ngờ dùng quá khứ đơn, không viết was seeing.'},
+  {i:'🍳', e:'While I <b>was cooking</b>, my brother <b>was setting</b> the table.', v:'Trong lúc tôi nấu ăn thì em trai tôi dọn bàn.'},
+  {i:'🌧️', e:'It <b>was raining</b> and people <b>were rushing</b> home when the lights suddenly <b>went</b> out.', v:'Trời đang mưa, mọi người đang vội về nhà thì đèn bỗng tắt phụt.', n:'IELTS Part 2: tiếp diễn dựng cảnh, quá khứ đơn kể sự kiện chính.'},
+  {i:'📈', e:'According to the graph, sales <b>rose</b> steadily between 2010 and 2015, then <b>dropped</b> slightly.', v:'Theo biểu đồ, doanh số tăng đều từ 2010 đến 2015, sau đó giảm nhẹ.', n:'Task 1 có mốc quá khứ → quá khứ đơn.'}
+ ]
+};
+
+GAX.presperf={
+ fig:[
+  {sec:2, tl:{now:.72, items:[
+    {a:.2,b:.72,s:'s',arr:1,t:'has lived here since 2015',c:'ac'},
+    {a:.08,b:.6,n:2,t:'have been to Japan twice',c:'vio'},
+    {p:.67,t:'I’ve just lost my keys',c:'warn'}],
+    marks:[{p:.2,t:'2015'}]},
+   cap:'<b>Hiện tại hoàn thành</b> luôn gắn với Bây giờ: trạng thái kéo dài đến nay (mũi tên), trải nghiệm không nói lúc nào, việc vừa xảy ra còn để lại kết quả.'},
+  {sec:3, html:`<div class="gf-cols">
+<div class="gf-col warn"><b>He has gone to Hanoi.</b><p class="gf-big">🏠 → 🏙️</p><p>Đã đi và <b>đang ở đó</b>, chưa về.</p></div>
+<div class="gf-col good"><b>He has been to Hanoi.</b><p class="gf-big">🏠 → 🏙️ → 🏠</p><p>Đã từng đến và <b>đã về</b> rồi.</p></div>
+</div>`, cap:'<b>gone</b> = người đó vẫn đang ở nơi kia. <b>been</b> = đã đến rồi quay về.'},
+  {sec:4, tl:{now:.82, items:[
+    {a:.1,b:.4,s:'s',t:'worked there (2015–2018)',c:'vio'},
+    {a:.4,b:.82,s:'s',arr:1,t:'has worked here since 2018',c:'ac'}],
+    marks:[{p:.1,t:'2015'},{p:.4,t:'2018'}]},
+   cap:'Việc nằm gọn trong quá khứ, có mốc kết thúc → <b>quá khứ đơn</b> (worked). Việc bắt đầu trong quá khứ và còn kéo đến Bây giờ → <b>hiện tại hoàn thành</b> (has worked).'}
+ ],
+ ex:[
+  {i:'😋', e:'<b>Have</b> you ever <b>tried</b> durian? — No, never.', v:'Bạn đã bao giờ ăn thử sầu riêng chưa? — Chưa bao giờ.', n:'Trải nghiệm, không nói lúc nào → have + V3.'},
+  {i:'📚', e:'I<b>’ve studied</b> English since I was in primary school.', v:'Tôi học tiếng Anh từ hồi tiểu học.', n:'IELTS Part 1: since + mốc, việc vẫn còn → have/has + V3.'},
+  {i:'🔑', e:'I<b>’ve just lost</b> my keys, so I can’t get in.', v:'Tôi vừa làm mất chìa khóa nên không vào nhà được.'},
+  {i:'☕', e:'I<b>’ve had</b> three cups of coffee today.', v:'Hôm nay tôi đã uống ba cốc cà phê.', n:'today chưa kết thúc → hiện tại hoàn thành.'},
+  {i:'📧', e:'<b>Have</b> you <b>replied</b> to her email yet? — Yes, I<b>’ve</b> already <b>replied</b>.', v:'Bạn trả lời email của cô ấy chưa? — Rồi, tôi trả lời rồi.', n:'yet: câu hỏi, phủ định, cuối câu. already: câu khẳng định.'},
+  {i:'✈️', e:'Tom isn’t here. He<b>’s gone</b> to Da Nang for a conference.', v:'Tom không có ở đây. Anh ấy đi Đà Nẵng dự hội nghị rồi.'},
+  {i:'🏮', e:'I<b>’ve visited</b> Hoi An three times; the last trip <b>was</b> in 2022.', v:'Tôi đã đến Hội An ba lần; chuyến gần nhất là năm 2022.', n:'Có mốc 2022 → quá khứ đơn. Trải nghiệm chung → hiện tại hoàn thành.'},
+  {i:'📱', e:'Social media <b>has changed</b> the way young people get their news.', v:'Mạng xã hội đã thay đổi cách giới trẻ tiếp nhận tin tức.', n:'Task 2: thay đổi kéo dài đến nay, không có mốc → hiện tại hoàn thành.'}
+ ]
+};
+
+GAX.presperfcont={
+ fig:[
+  {sec:2, tl:{now:.74, items:[
+    {a:.25,b:.74,s:'w',arr:1,t:'have been studying for 3 hrs',c:'vio'},
+    {a:.45,b:.68,s:'w',t:'been crying (mắt còn đỏ)',c:'warn'},
+    {a:.36,b:.72,n:4,t:'been going to the gym lately',c:'ac'}],
+    marks:[{p:.25,t:'3 tiếng trước'}]},
+   cap:'Ba cách dùng: việc kéo dài đến nay (mũi tên), việc vừa dừng nhưng còn dấu vết, và việc lặp lại nhiều lần gần đây.'},
+  {sec:3, html:`<div class="gf-cols">
+<div class="gf-col ac"><b>have + V3 · kết quả, số lượng</b><p>🍪 She<b>’s baked</b> 30 cookies. <span class="mini">(có con số)</span></p><p>🚗 I<b>’ve washed</b> the car. <span class="mini">(xe sạch rồi)</span></p><p>❓ How many <b>have</b> you <b>sold</b>?</p></div>
+<div class="gf-col vio"><b>have been + V-ing · quá trình, thời lượng</b><p>⏳ She<b>’s been baking</b> all afternoon. <span class="mini">(nhấn thời gian)</span></p><p>💦 I<b>’ve been washing</b> the car. <span class="mini">(người còn ướt, chưa chắc xong)</span></p><p>⏱️ How long <b>have</b> you <b>been selling</b> them?</p></div>
+</div>`, cap:'Hỏi "bao nhiêu", nói kết quả → <b>have + V3</b>. Hỏi "bao lâu", nói quá trình → <b>have been + V-ing</b>.'}
+ ],
+ ex:[
+  {i:'🚌', e:'I<b>’ve been waiting</b> for the bus for twenty minutes.', v:'Tôi đợi xe buýt hai mươi phút rồi.', n:'Kéo dài đến nay, nhấn mạnh thời lượng.'},
+  {i:'🎸', e:'I<b>’ve been playing</b> the guitar since I was twelve.', v:'Tôi chơi guitar từ năm mười hai tuổi.', n:'IELTS Part 1: trả lời câu hỏi "How long…?".'},
+  {i:'😓', e:'Why are you out of breath? <b>Have</b> you <b>been running</b>?', v:'Sao bạn thở hổn hển thế? Bạn vừa chạy à?', n:'Việc vừa dừng, còn dấu vết nhìn thấy.'},
+  {i:'😴', e:'I<b>’ve been sleeping</b> badly lately.', v:'Dạo này tôi ngủ không ngon.'},
+  {i:'📺', e:'I<b>’ve been watching</b> this series for weeks, and I<b>’ve seen</b> twenty episodes so far.', v:'Tôi xem bộ phim này mấy tuần nay, đến giờ đã xem được hai mươi tập.', n:'Thời lượng → been + V-ing. Con số → have + V3.'},
+  {i:'🤝', e:'I<b>’ve known</b> Lan since we were at school.', v:'Tôi quen Lan từ hồi còn đi học.', n:'know là động từ trạng thái, không viết have been knowing.'},
+  {i:'🎓', e:'I<b>’ve been studying</b> at this university for two years.', v:'Tôi học ở trường đại học này được hai năm rồi.'},
+  {i:'🚇', e:'Many cities <b>have been investing</b> in public transport to reduce traffic congestion.', v:'Nhiều thành phố đã và đang đầu tư vào giao thông công cộng để giảm ùn tắc.', n:'IELTS Part 3, Task 2: xu hướng bắt đầu từ trước và còn tiếp diễn.'}
+ ]
+};
+
+GAX.pastperf={
+ fig:[
+  {sec:0, tl:{now:.9, items:[
+    {p:.3,t:'the train had left',c:'vio'},
+    {p:.58,t:'I got to the station',c:'ac'}],
+    marks:[{p:.3,t:'trước'},{p:.58,t:'sau'}]},
+   cap:'Hai việc đều ở quá khứ: việc xảy ra <b>trước</b> dùng <b>had + V3</b>, việc xảy ra <b>sau</b> (mốc kể chuyện) dùng quá khứ đơn.'},
+  {sec:2, tl:{now:.9, items:[
+    {a:.15,b:.58,s:'w',t:'had been waiting for an hour',c:'vio'},
+    {p:.58,t:'the bus finally came',c:'ac'}],
+    marks:[{p:.15,t:'7.00'},{p:.58,t:'8.00'}]},
+   cap:'<b>had been + V-ing</b>: việc đã kéo dài bao lâu tính đến một mốc trong quá khứ.'},
+  {sec:3, html:`<div class="gf-cols">
+<div class="gf-col ac"><b>When I arrived, she left.</b><p><span class="gf-pill ac">1</span> 🚪 I arrived</p><p><span class="gf-pill ac">2</span> 👋 she left</p><p><span class="mini">Tôi đến thì cô ấy mới đi.</span></p></div>
+<div class="gf-col vio"><b>When I arrived, she had left.</b><p><span class="gf-pill vio">1</span> 👋 she had left</p><p><span class="gf-pill vio">2</span> 🚪 I arrived</p><p><span class="mini">Cô ấy đã đi trước khi tôi đến.</span></p></div>
+</div>`, cap:'Chỉ khác một chữ <b>had</b>, thứ tự hai việc đảo ngược.'}
+ ],
+ ex:[
+  {i:'🎬', e:'By the time we reached the cinema, the film <b>had</b> already <b>started</b>.', v:'Lúc chúng tôi đến rạp thì phim đã bắt đầu rồi.', n:'Phim bắt đầu trước khi chúng tôi đến → had + V3.'},
+  {i:'🔑', e:'I couldn’t get in because I <b>had left</b> my keys at the office.', v:'Tôi không vào nhà được vì đã để quên chìa khóa ở văn phòng.'},
+  {i:'🎤', e:'She was nervous because she <b>had never spoken</b> in public before.', v:'Cô ấy hồi hộp vì trước đó chưa bao giờ nói trước đám đông.', n:'IELTS Part 2: never… before để kể trải nghiệm lần đầu.'},
+  {i:'📚', e:'By the end of last year, he <b>had read</b> more than fifty books.', v:'Tính đến cuối năm ngoái, anh ấy đã đọc hơn năm mươi cuốn sách.', n:'by + mốc quá khứ → had + V3.'},
+  {i:'🥵', e:'They were exhausted because they <b>had been walking</b> all day.', v:'Họ kiệt sức vì đã đi bộ suốt cả ngày.'},
+  {i:'😢', e:'Her eyes were red; she <b>had been crying</b>.', v:'Mắt cô ấy đỏ hoe; hẳn là cô ấy đã khóc.', n:'Dấu vết thấy được ở thời điểm quá khứ → had been + V-ing.'},
+  {i:'🧹', e:'After the guests <b>had gone</b>, we cleaned up the kitchen.', v:'Sau khi khách về hết, chúng tôi dọn dẹp bếp.', n:'after đã rõ thứ tự, nên viết "After the guests went" cũng đúng.'},
+  {i:'📊', e:'By 2015, the number of mobile phone users <b>had overtaken</b> the number of landline users.', v:'Đến năm 2015, số người dùng điện thoại di động đã vượt số người dùng điện thoại bàn.', n:'Task 1: by + năm quá khứ → had + V3.'}
+ ]
+};
+
+GAX.future={
+ fig:[
+  {sec:2, tl:{now:.3, nowT:'Lúc nói', items:[
+    {p:.35,t:'I’ll get it (quyết ngay)',c:'ac'},
+    {a:.06,b:.7,s:'d',arr:1,t:'I’m going to visit (đã định)',c:'vio'},
+    {p:.6,t:'I’m seeing the dentist at 3',c:'warn'},
+    {p:.86,t:'Our flight lands at 10.30',c:'good'}]},
+   cap:'<b>will</b>: quyết định ngay lúc nói. <b>be going to</b>: ý định có từ trước (đường chấm nối quá khứ với tương lai). <b>Hiện tại tiếp diễn</b>: lịch hẹn đã chốt. <b>Hiện tại đơn</b>: lịch trình cố định.'},
+  {sec:4, html:`<div class="gf-flow">
+<div class="gf-step bad">Nằm sau <b>when, if, as soon as, until…</b>? → <b>hiện tại đơn</b>, không dùng will</div>
+<div class="gf-down">↓</div>
+<div class="gf-step good">Giờ tàu xe, lịch học, lịch họp cố định? → <b>hiện tại đơn</b></div>
+<div class="gf-down">↓</div>
+<div class="gf-step warn">Đã hẹn giờ, chỗ, người cụ thể? → <b>am/is/are + V-ing</b></div>
+<div class="gf-down">↓</div>
+<div class="gf-step vio">Đã định từ trước, hoặc có bằng chứng trước mắt? → <b>be going to + V</b></div>
+<div class="gf-down">↓</div>
+<div class="gf-step ac">Quyết định ngay, hứa, đề nghị, đoán theo ý kiến? → <b>will + V</b></div>
+</div>`, cap:'Tự hỏi lần lượt từ trên xuống; gặp ô đúng đầu tiên thì dùng cách nói ở ô đó.'}
+ ],
+ ex:[
+  {i:'🥛', e:'A: We’ve run out of milk. B: Oh, I<b>’ll buy</b> some on my way home.', v:'A: Hết sữa rồi. B: Ồ, để tôi mua trên đường về.', n:'Quyết định ngay lúc nói → will.'},
+  {i:'🤐', e:'I promise I <b>won’t tell</b> anyone.', v:'Tôi hứa sẽ không nói với ai.'},
+  {i:'🎓', e:'After graduation, I<b>’m going to look</b> for a job in marketing.', v:'Sau khi tốt nghiệp, tôi định tìm việc trong ngành marketing.', n:'IELTS Part 1 hỏi dự định → be going to.'},
+  {i:'🍷', e:'Watch out! That glass <b>is going to fall</b>.', v:'Cẩn thận! Cái cốc sắp rơi kìa.', n:'Có bằng chứng trước mắt → be going to.'},
+  {i:'📅', e:'I<b>’m meeting</b> my tutor at four o’clock tomorrow.', v:'Bốn giờ chiều mai tôi gặp gia sư.'},
+  {i:'📝', e:'The exam <b>starts</b> at 8.30, so don’t be late.', v:'Bài thi bắt đầu lúc 8 giờ 30, nên đừng đến muộn.', n:'Lịch cố định → hiện tại đơn.'},
+  {i:'📲', e:'I<b>’ll text</b> you as soon as I <b>get</b> home.', v:'Về đến nhà là tôi nhắn cho bạn ngay.', n:'Sau as soon as dùng hiện tại đơn, không dùng will.'},
+  {i:'🌐', e:'If this trend continues, remote work <b>will probably become</b> the norm in many industries.', v:'Nếu xu hướng này tiếp diễn, làm việc từ xa có lẽ sẽ trở thành điều bình thường ở nhiều ngành.', n:'Task 2: làm nhẹ mức chắc chắn bằng probably, likely.'}
+ ]
+};
+
+GAX.futureadv={
+ fig:[
+  {sec:2, tl:{now:.2, items:[
+    {a:.42,b:.68,s:'w',t:'will be lying on a beach',c:'vio'},
+    {p:.78,t:'will have finished (xong)',c:'good'},
+    {a:.04,b:.88,s:'s',t:'will have worked here 10 yrs',c:'ac'}],
+    marks:[{p:.55,t:'giờ này tuần sau'},{p:.88,t:'by June'}]},
+   cap:'<b>will be + V-ing</b>: đang diễn ra quanh một mốc tương lai (đường sóng). <b>will have + V3</b>: xong trước mốc "by…", hoặc tính thời lượng đến đúng mốc đó.'},
+  {sec:3, html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🕰️</span><b>2000–2020</b><small>số liệu đã qua: <i>rose, fell</i></small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card warn"><span class="gf-ic">🔮</span><b>2030</b><small>dự báo: <i>is expected to rise, is likely to remain</i></small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card good"><span class="gf-ic">🏁</span><b>by 2050</b><small>xong trước mốc: <i>will have doubled</i></small></div>
+</div>`, cap:'Biểu đồ Task 1 có cả năm đã qua lẫn năm dự báo: đổi thì theo từng mốc, xen kẽ <b>is expected to</b>, <b>is likely to</b> với <b>will have + V3</b>.'}
+ ],
+ ex:[
+  {i:'🚗', e:'Don’t call me at 8 p.m.; I<b>’ll be driving</b> home then.', v:'Đừng gọi tôi lúc 8 giờ tối, lúc đó tôi đang lái xe về nhà.', n:'Đang diễn ra tại một mốc tương lai.'},
+  {i:'✈️', e:'This time tomorrow, we<b>’ll be flying</b> over the Pacific.', v:'Giờ này ngày mai chúng tôi đang bay qua Thái Bình Dương.'},
+  {i:'🍲', e:'<b>Will</b> you <b>be staying</b> for dinner?', v:'Bạn có ở lại ăn tối không?', n:'Hỏi kế hoạch lịch sự, không ép người nghe.'},
+  {i:'📝', e:'I<b>’ll have finished</b> the report by Friday.', v:'Chậm nhất là thứ Sáu tôi sẽ làm xong báo cáo.', n:'by = chậm nhất là, trước lúc.'},
+  {i:'🧹', e:'By the time the guests arrive, we<b>’ll have cleaned</b> the whole flat.', v:'Trước khi khách đến, chúng tôi sẽ dọn xong cả căn hộ.', n:'Sau by the time dùng hiện tại đơn (arrive).'},
+  {i:'🏥', e:'By next month, she <b>will have worked</b> at the hospital for twenty years.', v:'Đến tháng sau là cô ấy làm ở bệnh viện tròn hai mươi năm.'},
+  {i:'📈', e:'According to the forecast, the figure <b>is expected to rise</b> to around 40% by 2035.', v:'Theo dự báo, con số này sẽ tăng lên khoảng 40% vào năm 2035.', n:'Task 1 có năm tương lai → is expected/projected to + V.'},
+  {i:'📊', e:'By 2050, sales of the two products <b>will have reached</b> the same level.', v:'Đến năm 2050, doanh số của hai sản phẩm sẽ ngang nhau.', n:'Task 1: by + năm tương lai → will have + V3.'}
+ ]
+};
+
+GAX.habits={
+ fig:[
+  {sec:0, tl:{now:.7, items:[
+    {a:.05,b:.45,n:5,t:'used to play football',c:'vio'},
+    {a:.05,b:.45,s:'s',t:'used to live in Hue',c:'warn'},
+    {a:.48,b:.64,s:'d',t:'got used to the traffic',c:'ac'},
+    {a:.64,b:.9,s:'s',arr:1,t:'am used to it now',c:'good'}],
+    marks:[{p:.25,t:'hồi nhỏ'}]},
+   cap:'<b>used to + V</b>: thói quen, trạng thái ngày xưa, nay đã hết (dừng trước Bây giờ). <b>get used to</b>: quá trình dần quen. <b>be used to</b>: đã quen, đến giờ vẫn thế.'},
+  {sec:2, html:`<div class="gf-cols">
+<div class="gf-col good"><b>Hành động lặp lại</b><p>🏊 We <b>used to swim</b> in the river. ✔</p><p>🏊 We <b>would swim</b> in the river. ✔</p></div>
+<div class="gf-col bad"><b>Trạng thái (be, have, live, like…)</b><p>🏡 I <b>used to live</b> near the sea. ✔</p><p>🚫 I <b>would live</b> near the sea. ✘</p></div>
+</div>`, cap:'<b>would</b> chỉ thay được <b>used to</b> khi nói về hành động lặp lại, không dùng cho trạng thái.'}
+ ],
+ ex:[
+  {i:'🏡', e:'I <b>used to live</b> in a small village, but now I live in the city.', v:'Tôi từng sống ở một ngôi làng nhỏ, giờ thì sống ở thành phố.'},
+  {i:'☕', e:'He <b>didn’t use to drink</b> coffee, but now he can’t live without it.', v:'Trước đây anh ấy không uống cà phê, giờ thì không thể thiếu nó.', n:'Sau didn’t viết use to, không có -d.'},
+  {i:'🎮', e:'<b>Did</b> you <b>use to play</b> video games as a child?', v:'Hồi nhỏ bạn có hay chơi điện tử không?', n:'IELTS Part 1 hay hỏi kiểu này; trả lời: Yes, I used to…'},
+  {i:'🎈', e:'When we were little, my grandfather <b>would take</b> us to the park every Sunday and buy us ice cream.', v:'Hồi chúng tôi còn nhỏ, chủ nhật nào ông cũng dẫn đi công viên và mua kem cho.', n:'would: hành động lặp lại, hợp khi kể chuyện hoài niệm.'},
+  {i:'🌙', e:'My mother is a nurse, so she <b>is used to working</b> night shifts.', v:'Mẹ tôi là y tá nên đã quen làm ca đêm.', n:'be used to + V-ing: to là giới từ.'},
+  {i:'🍜', e:'It took me a while to <b>get used to</b> the spicy food here.', v:'Tôi mất một thời gian mới quen được đồ ăn cay ở đây.'},
+  {i:'🔑', e:'I<b>’m</b> slowly <b>getting used to living</b> alone.', v:'Tôi đang dần quen với việc sống một mình.', n:'get used to + V-ing: quá trình dần quen.'},
+  {i:'🌳', e:'In the past, children <b>used to spend</b> more time playing outdoors than they do today.', v:'Ngày xưa trẻ em dành nhiều thời gian chơi ngoài trời hơn bây giờ.', n:'IELTS Part 3: so sánh xưa và nay.'}
+ ]
+};
+
+GAX.irregular={
+ fig:[
+  {sec:0, html:`<div class="gf-cols">
+<div class="gf-col ac"><b>A–A–A</b><p>✂️ cut – cut – cut</p><p>📦 put – put – put</p><p>💰 cost – cost – cost</p><p><span class="mini">ba dạng giống nhau</span></p></div>
+<div class="gf-col vio"><b>A–B–B</b><p>🛒 buy – bought – bought</p><p>📤 send – sent – sent</p><p>💳 pay – paid – paid</p><p><span class="mini">V2 giống V3</span></p></div>
+<div class="gf-col warn"><b>A–B–C</b><p>🚶 go – went – gone</p><p>✍️ write – wrote – written</p><p>📈 rise – rose – risen</p><p><span class="mini">ba dạng khác nhau</span></p></div>
+</div>`, cap:'Học theo nhóm mẫu biến đổi: mỗi nhóm một kiểu, nhớ một từ là đoán được cả nhóm.'},
+  {sec:5, html:`<div class="gf-cols">
+<div class="gf-col good"><b>Không tân ngữ (tự xảy ra)</b><p>📈 Salaries <b>rose</b>.</p><p>🛋️ She <b>lay</b> on the sofa.</p><p>🌳 The old tree <b>fell</b>.</p></div>
+<div class="gf-col vio"><b>Cần tân ngữ (tác động lên vật)</b><p>📈 The company <b>raised</b> salaries.</p><p>📖 She <b>laid</b> the book on the table.</p><p>🪓 Workers <b>felled</b> the old tree.</p></div>
+</div>`, cap:'Từng cặp đối nhau theo hàng: <b>rise/raise</b>, <b>lie/lay</b>, <b>fall/fell</b>. Cột phải luôn có tân ngữ đi sau động từ.'}
+ ],
+ ex:[
+  {i:'🛒', e:'I <b>bought</b> a new phone last week, and I<b>’ve</b> already <b>lost</b> it!', v:'Tuần trước tôi mua điện thoại mới, vậy mà đã làm mất rồi!', n:'buy, lose thuộc nhóm A–B–B: V2 giống V3.'},
+  {i:'✂️', e:'She <b>cut</b> her hair short yesterday.', v:'Hôm qua cô ấy cắt tóc ngắn.', n:'cut giữ nguyên ở cả ba dạng; yesterday cho biết đây là quá khứ.'},
+  {i:'📖', e:'I <b>read</b> that book last year.', v:'Tôi đã đọc cuốn sách đó năm ngoái.', n:'read ở quá khứ viết giống nguyên mẫu nhưng đọc là /red/.'},
+  {i:'✍️', e:'<b>Have</b> you ever <b>written</b> a poem?', v:'Bạn đã bao giờ làm thơ chưa?', n:'Thì hoàn thành dùng V3 (written), không dùng V2 (wrote).'},
+  {i:'🔔', e:'The bell <b>rang</b>, and the students <b>began</b> to leave.', v:'Chuông reo và học sinh bắt đầu ra về.'},
+  {i:'⚽', e:'She <b>has become</b> one of the best players on the team.', v:'Cô ấy đã trở thành một trong những cầu thủ giỏi nhất đội.', n:'become – became – become: V3 giống V1.'},
+  {i:'📈', e:'The figure <b>rose</b> sharply in 2010, then <b>fell</b> slightly, and it <b>has grown</b> steadily since 2015.', v:'Con số tăng mạnh năm 2010, sau đó giảm nhẹ, và tăng đều từ năm 2015 đến nay.', n:'Task 1: rise – rose – risen, fall – fell – fallen, grow – grew – grown.'},
+  {i:'🏷️', e:'The company <b>raised</b> its prices after costs <b>rose</b> by 15%.', v:'Công ty tăng giá bán sau khi chi phí tăng 15%.', n:'raise cần tân ngữ (its prices); rise thì không.'}
+ ]
+};
+
+GAX.agreement={
+ fig:[
+  {sec:1, html:`<div class="gf-row">
+<div class="gf-card good"><span class="gf-ic">🎯</span><b>The quality</b><small>chủ ngữ thật (số ít)</small></div>
+<div class="gf-card bad"><span class="gf-ic">✂️</span><b>(of the products)</b><small>cụm xen giữa, bỏ qua</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card ac"><span class="gf-ic">✅</span><b>is high</b><small>chia theo "quality"</small></div>
+</div>`, cap:'Che cụm giới từ ở giữa đi, động từ chia theo danh từ còn lại ở đầu câu.'},
+  {sec:2, html:`<div class="gf-flow">
+<div class="gf-step">Bỏ cụm xen giữa (<b>of…, as well as…, along with…</b>) → tìm chủ ngữ thật</div>
+<div class="gf-down">↓</div>
+<div class="gf-step ac"><b>each, every, everyone, one of…</b> → số ít</div>
+<div class="gf-down">↓</div>
+<div class="gf-step vio"><b>A and B, both A and B</b> → số nhiều</div>
+<div class="gf-down">↓</div>
+<div class="gf-step warn"><b>either… or, neither… nor</b> → theo danh từ <b>gần động từ nhất</b></div>
+<div class="gf-down">↓</div>
+<div class="gf-step good"><b>the number of</b> → số ít · <b>a number of</b> → số nhiều</div>
+<div class="gf-down">↓</div>
+<div class="gf-step bad"><b>V-ing, to V, mệnh đề, news, information</b> → số ít</div>
+</div>`, cap:'Các bước soát nhanh một câu: tìm chủ ngữ thật trước, rồi xem nó thuộc trường hợp đặc biệt nào.'}
+ ],
+ ex:[
+  {i:'📋', e:'The list of names <b>is</b> on the desk.', v:'Danh sách tên để trên bàn.', n:'Chủ ngữ thật là "the list", không phải "names".'},
+  {i:'🗣️', e:'Everyone in my class <b>speaks</b> some English.', v:'Ai trong lớp tôi cũng nói được chút tiếng Anh.', n:'everyone → số ít, nhớ thêm -s.'},
+  {i:'🏅', e:'Each of the players <b>gets</b> a medal.', v:'Mỗi cầu thủ đều được nhận một huy chương.'},
+  {i:'🏠', e:'Neither my sister nor my parents <b>were</b> at home.', v:'Cả chị tôi lẫn bố mẹ tôi đều không có nhà.', n:'neither… nor: chia theo danh từ gần động từ nhất (parents).'},
+  {i:'⛺', e:'My brother, along with his friends, <b>is</b> going camping this weekend.', v:'Anh tôi cùng mấy người bạn sẽ đi cắm trại cuối tuần này.', n:'along with không biến chủ ngữ thành số nhiều.'},
+  {i:'💤', e:'Getting enough sleep <b>is</b> essential for good health.', v:'Ngủ đủ giấc là điều thiết yếu cho sức khỏe.', n:'V-ing làm chủ ngữ → số ít. Hay dùng trong Task 2.'},
+  {i:'🏙️', e:'There <b>are</b> several reasons why people move to big cities.', v:'Có một vài lý do khiến người ta chuyển lên thành phố lớn.'},
+  {i:'🏢', e:'The number of people working from home <b>has risen</b>, and a number of companies <b>have reduced</b> their office space.', v:'Số người làm việc tại nhà đã tăng, và nhiều công ty đã thu hẹp diện tích văn phòng.', n:'The number of → số ít. A number of (= nhiều) → số nhiều.'}
+ ]
+};
+
+</script>
+<script>/* ex_C.js */
+/* ===== Ngữ pháp A–Z · Nhóm C · hình minh họa + ví dụ ===== */
+GAX.modals={
+ fig:[
+  {sec:2, tl:{now:.62, items:[
+    {a:.04,b:.36,t:'could read (khả năng chung)',c:'vio'},
+    {p:.46,t:'was able to escape (1 lần)',c:'ac'},
+    {p:.62,t:'can speak (bây giờ)',c:'good'},
+    {p:.88,t:'will be able to drive',c:'warn'}]},
+   cap:'Khả năng chung trong quá khứ dùng <b>could</b> (cả một giai đoạn). Làm được <b>một lần cụ thể</b> dùng <b>was able to</b>. Tương lai dùng <b>will be able to</b>.'},
+  {sec:4, html:`<div class="gf-row">
+<div class="gf-card good"><span class="gf-ic">✅</span><b>must</b><small>phải (mình thấy cần, quy định viết)</small></div>
+<div class="gf-card ac"><span class="gf-ic">📋</span><b>have to</b><small>phải (luật, công việc bắt buộc)</small></div>
+<div class="gf-card bad"><span class="gf-ic">⛔</span><b>mustn’t</b><small>cấm, không được làm</small></div>
+<div class="gf-card warn"><span class="gf-ic">🤷</span><b>don’t have to</b><small>không cần, tuỳ bạn</small></div>
+</div>`, cap:'<b>must</b> và <b>have to</b> đều là “phải”, nhưng khi phủ định thì nghĩa tách hẳn: <b>mustn’t</b> = cấm, <b>don’t have to</b> = không bắt buộc.'}
+ ],
+ ex:[
+  {i:'🏊', e:'I <b>could swim</b> when I was six, but I <b>couldn’t ride</b> a bike until I was ten.', v:'Tôi biết bơi từ năm sáu tuổi, nhưng đến mười tuổi mới biết đi xe đạp.', n:'Khả năng chung trong quá khứ → could.'},
+  {i:'🧗', e:'It was a hard climb, but we <b>were able to reach</b> the top before dark.', v:'Đường leo rất khó, nhưng chúng tôi đã lên được đỉnh trước khi trời tối.', n:'Một lần cụ thể đã làm được → was able to, không dùng could.'},
+  {i:'✏️', e:'<b>Could I borrow</b> your pen for a second?', v:'Cho mình mượn cây bút một chút được không?', n:'Xin phép: could lịch sự hơn can.'},
+  {i:'👔', e:'I <b>have to wear</b> a suit at work, even in summer.', v:'Tôi phải mặc com-lê đi làm, kể cả mùa hè.'},
+  {i:'📵', e:'You <b>mustn’t use</b> a dictionary in the exam, but you <b>don’t have to answer</b> the questions in order.', v:'Trong giờ thi không được dùng từ điển, nhưng không cần làm các câu theo thứ tự.', n:'mustn’t = cấm; don’t have to = không bắt buộc.'},
+  {i:'☔', e:'You<b>’d better take</b> an umbrella. It looks like it’s going to pour.', v:'Bạn nên mang ô đi. Trông như sắp mưa to rồi.', n:'had better: khuyên mạnh cho một tình huống cụ thể.'},
+  {i:'🏠', e:'With faster internet, more people <b>will be able to work</b> from home.', v:'Khi mạng nhanh hơn, nhiều người sẽ có thể làm việc tại nhà.'},
+  {i:'💰', e:'Schools <b>should teach</b> young people how to manage their money.', v:'Nhà trường nên dạy người trẻ cách quản lý tiền bạc.', n:'IELTS Task 2: should để nêu đề xuất.'}
+ ]
+};
+
+GAX.deduction={
+ fig:[
+  {sec:1, html:`<div class="gf-row">
+<div class="gf-card good"><span class="gf-ic">🎯</span><b>must</b><small>gần như chắc đúng</small></div><span class="gf-arrow">→</span>
+<div class="gf-card warn"><span class="gf-ic">🤔</span><b>may / might / could</b><small>khoảng 50%, có thể</small></div><span class="gf-arrow">→</span>
+<div class="gf-card vio"><span class="gf-ic">🙄</span><b>may not / might not</b><small>có thể không</small></div><span class="gf-arrow">→</span>
+<div class="gf-card bad"><span class="gf-ic">❌</span><b>can’t / couldn’t</b><small>gần như chắc sai</small></div>
+</div>`, cap:'Thang độ chắc chắn khi đoán: từ <b>must</b> (chắc đúng) giảm dần đến <b>can’t</b> (chắc sai). Phủ định của must khi đoán là can’t, không phải mustn’t.'},
+  {sec:2, tl:{now:.72, items:[
+    {p:.3,t:'must have rained',c:'ac'},
+    {p:.72,t:'Đất ướt (thấy bây giờ)',c:'good'}],
+    marks:[{p:.3,t:'Đêm qua'}]},
+   cap:'Đứng ở <b>hiện tại</b> nhìn bằng chứng (đất ướt), đoán việc đã xảy ra trong <b>quá khứ</b> → <b>must have + V3</b>.'},
+  {sec:3, html:`<div class="gf-cols">
+<div class="gf-col warn"><b>should have V3</b><p>📚 lẽ ra nên học chăm hơn</p><p>→ nhưng <b>đã không</b> học</p></div>
+<div class="gf-col bad"><b>shouldn’t have V3</b><p>📢 lẽ ra không nên quát</p><p>→ nhưng <b>đã</b> quát</p></div>
+<div class="gf-col vio"><b>needn’t have V3</b><p>🍲 đã nấu rất nhiều</p><p>→ hoá ra <b>không cần</b></p></div>
+</div>`, cap:'Cả ba đều nhìn lại việc <b>đã qua</b>: tiếc vì đã không làm, trách vì đã làm, hoặc làm rồi mới thấy thừa.'}
+ ],
+ ex:[
+  {i:'🔒', e:'The door’s locked and the lights are off. They <b>must be</b> out.', v:'Cửa khoá, đèn tắt. Chắc họ đi vắng rồi.'},
+  {i:'📱', e:'She isn’t answering her phone. She <b>might be driving</b>.', v:'Cô ấy không nghe máy. Có lẽ cô ấy đang lái xe.', n:'Việc đang diễn ra: modal + be + V-ing.'},
+  {i:'🧾', e:'That <b>can’t be</b> right. We only ordered two coffees.', v:'Không thể đúng được. Bọn mình chỉ gọi hai ly cà phê thôi mà.', n:'Đoán phủ định dùng can’t, không dùng mustn’t.'},
+  {i:'👛', e:'I can’t find my wallet. I <b>may have left</b> it in the taxi.', v:'Tôi không tìm thấy ví. Có lẽ tôi để quên trên taxi rồi.'},
+  {i:'🙈', e:'He <b>can’t have seen</b> us, or he would have waved.', v:'Chắc anh ấy không nhìn thấy mình, không thì đã vẫy tay rồi.', n:'Chắc chắn đã không → can’t have V3.'},
+  {i:'📚', e:'I <b>should have started</b> revising earlier. Now I’m panicking.', v:'Lẽ ra tôi nên ôn bài sớm hơn. Giờ thì cuống hết cả lên.'},
+  {i:'🕯️', e:'Life <b>must have been</b> much harder before electricity.', v:'Cuộc sống trước khi có điện hẳn là vất vả hơn nhiều.', n:'IELTS Part 3: đoán về quá khứ một cách tự nhiên.'},
+  {i:'📉', e:'The fall in sales <b>might have been caused</b> by the rise in prices.', v:'Doanh số giảm có thể là do giá tăng.', n:'Giải thích nguyên nhân dè dặt, không khẳng định quá mạnh.'}
+ ]
+};
+
+GAX.gerundinf={
+ fig:[
+  {sec:2, html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Động từ + V-ing</b><p><span class="gf-pill">enjoy</span><span class="gf-pill">avoid</span><span class="gf-pill">mind</span><span class="gf-pill">finish</span><span class="gf-pill">suggest</span><span class="gf-pill">keep</span><span class="gf-pill">consider</span><span class="gf-pill">give up</span></p><p>🎬 I enjoy <b>watching</b> films.</p></div>
+<div class="gf-col vio"><b>Động từ + to V</b><p><span class="gf-pill">want</span><span class="gf-pill">decide</span><span class="gf-pill">hope</span><span class="gf-pill">plan</span><span class="gf-pill">agree</span><span class="gf-pill">refuse</span><span class="gf-pill">manage</span><span class="gf-pill">afford</span></p><p>🚆 We decided <b>to travel</b> by train.</p></div>
+</div>`, cap:'Học theo nhóm: động từ đứng trước quyết định dạng theo sau. Nhóm trái đi với <b>V-ing</b>, nhóm phải đi với <b>to V</b>.'},
+  {sec:3, html:`<div class="gf-cols">
+<div class="gf-col vio"><b>stop</b><p>🚭 <b>stop smoking</b><br><span class="mini">thôi, bỏ hẳn việc đó</span></p><p>☕ <b>stop to buy</b> a coffee<br><span class="mini">dừng lại để làm việc khác</span></p></div>
+<div class="gf-col ac"><b>remember</b><p>⏪ <b>remember locking</b><br><span class="mini">nhớ là đã khoá rồi</span></p><p>⏩ <b>remember to lock</b><br><span class="mini">nhớ phải khoá (chưa làm)</span></p></div>
+<div class="gf-col warn"><b>try</b><p>💪 <b>try to open</b><br><span class="mini">cố gắng làm (việc khó)</span></p><p>🔄 <b>try restarting</b><br><span class="mini">thử xem có hiệu quả không</span></p></div>
+</div>`, cap:'Cùng động từ, đổi dạng là đổi nghĩa. Mẹo với remember/forget: <b>V-ing</b> nhìn lại việc đã làm, <b>to V</b> nhìn tới việc sắp làm.'}
+ ],
+ ex:[
+  {i:'🎧', e:'I <b>enjoy listening</b> to podcasts on my way to work.', v:'Tôi thích nghe podcast trên đường đi làm.'},
+  {i:'🏖️', e:'We <b>can’t afford to go</b> abroad this year, so we’re staying local.', v:'Năm nay nhà mình không đủ tiền đi nước ngoài, nên chỉ chơi gần nhà thôi.', n:'afford + to V.'},
+  {i:'🙋', e:'My manager <b>asked me to lead</b> the new project.', v:'Quản lý giao cho tôi dẫn dắt dự án mới.', n:'ask + người + to V.'},
+  {i:'🍳', e:'“Did you <b>remember to switch</b> off the oven?” “Yes, I <b>remember switching</b> it off.”', v:'“Anh có nhớ tắt lò chưa?” “Có, anh nhớ là đã tắt rồi.”', n:'to V = nhớ phải làm; V-ing = nhớ là đã làm.'},
+  {i:'🥖', e:'On the way home, I <b>stopped to buy</b> some bread.', v:'Trên đường về, tôi ghé lại mua ít bánh mì.', n:'stop + to V = dừng lại để làm việc khác.'},
+  {i:'🎉', e:'I’m really <b>looking forward to seeing</b> everyone at the reunion.', v:'Tôi rất mong được gặp mọi người ở buổi họp lớp.', n:'to ở đây là giới từ → V-ing.'},
+  {i:'📖', e:'<b>Reading</b> for pleasure helps children build a wider vocabulary.', v:'Đọc sách vì thích giúp trẻ có vốn từ rộng hơn.', n:'V-ing làm chủ ngữ: gọn và hay dùng trong Writing.'},
+  {i:'🌳', e:'Planting more trees could <b>contribute to reducing</b> air pollution in cities.', v:'Trồng thêm cây có thể góp phần giảm ô nhiễm không khí ở thành phố.', n:'contribute to + V-ing, không viết contribute to reduce.'}
+ ]
+};
+
+GAX.causative={
+ fig:[
+  {sec:1, html:`<div class="gf-row">
+<div class="gf-card vio"><span class="gf-ic">🙋</span><b>I cut my hair.</b><small>tự mình cắt</small></div><span class="gf-arrow">→</span>
+<div class="gf-card ac"><span class="gf-ic">💇</span><b>I had my hair cut.</b><small>ra tiệm, thợ cắt cho mình</small></div>
+</div>`, cap:'<b>have/get + vật + V3</b>: chủ ngữ không tự làm mà nhờ, thuê người khác làm cho mình. get thân mật hơn have.'},
+  {sec:2, html:`<div class="gf-cols">
+<div class="gf-col good"><b>Không “to”</b><p><span class="gf-pill">make sb V</span><span class="gf-pill">let sb V</span><span class="gf-pill">have sb V</span></p><p>😤 She made me <b>wait</b> for an hour.</p></div>
+<div class="gf-col warn"><b>Có “to”</b><p><span class="gf-pill">get sb to V</span><span class="gf-pill">allow sb to V</span><span class="gf-pill">permit sb to V</span></p><p>🙏 I got him <b>to help</b> me.</p></div>
+<div class="gf-col vio"><b>Tuỳ chọn</b><p><span class="gf-pill">help sb (to) V</span></p><p>📦 He helped me (to) <b>carry</b> the boxes.</p></div>
+</div>`, cap:'make / let / have + người + <b>V</b>; get / allow + người + <b>to V</b>. Nhưng bị động của make lại có to: <b>be made to</b> V.'}
+ ],
+ ex:[
+  {i:'💇', e:'I need to <b>get my hair cut</b> before the wedding.', v:'Tôi phải đi cắt tóc trước đám cưới.'},
+  {i:'📱', e:'He <b>had his phone stolen</b> while he was on holiday.', v:'Anh ấy bị trộm mất điện thoại khi đang đi nghỉ.', n:'Cùng cấu trúc, nói về chuyện xấu xảy ra với mình.'},
+  {i:'🚕', e:'I’ll <b>have the receptionist call</b> you a taxi.', v:'Tôi sẽ bảo lễ tân gọi taxi cho anh.', n:'have + người + V (không to): yêu cầu người làm dịch vụ.'},
+  {i:'🧹', e:'I finally <b>got my kids to tidy</b> their rooms.', v:'Cuối cùng tôi cũng bảo được bọn trẻ dọn phòng.', n:'get + người + to V = thuyết phục được ai làm.'},
+  {i:'😂', e:'That film always <b>makes me laugh</b>.', v:'Bộ phim đó lần nào cũng làm tôi bật cười.', n:'make + người + V = khiến.'},
+  {i:'🔔', e:'Our teacher <b>let us leave</b> ten minutes early.', v:'Cô giáo cho chúng tôi về sớm mười phút.'},
+  {i:'⏳', e:'Flexible hours <b>allow employees to balance</b> work and family life.', v:'Giờ làm linh hoạt cho phép nhân viên cân bằng công việc và gia đình.', n:'allow + người + to V, trang trọng hơn let.'},
+  {i:'🏭', e:'Companies that pollute rivers <b>should be made to pay</b> for the clean-up.', v:'Các công ty gây ô nhiễm sông nên bị buộc phải trả chi phí làm sạch.', n:'Bị động của make phải có to.'}
+ ]
+};
+
+GAX.phrasal={
+ fig:[
+  {sec:2, html:`<div class="gf-cols">
+<div class="gf-col good"><b>Tân ngữ là danh từ</b><p>✅ Turn off <b>the light</b>.</p><p>✅ Turn <b>the light</b> off.</p></div>
+<div class="gf-col bad"><b>Tân ngữ là đại từ</b><p>✅ Turn <b>it</b> off.</p><p>❌ Turn off <b>it</b>.</p></div>
+</div>`, cap:'Cụm tách được (turn sth off): danh từ đứng giữa hay sau đều được, còn <b>đại từ bắt buộc đứng giữa</b>.'},
+  {sec:3, html:`<div class="gf-row">
+<div class="gf-card good"><span class="gf-ic">⬆️</span><b>up</b><small>lên, tăng · go up, grow up, get up</small></div>
+<div class="gf-card bad"><span class="gf-ic">⬇️</span><b>down</b><small>xuống, giảm, hỏng · go down, cut down on, break down</small></div>
+<div class="gf-card ac"><span class="gf-ic">🔍</span><b>out</b><small>ra ngoài, tìm ra, hết · find out, figure out, run out of</small></div>
+<div class="gf-card vio"><span class="gf-ic">🔌</span><b>off</b><small>tắt, rời đi, huỷ · turn off, take off, call off</small></div>
+</div>`, cap:'Tiểu từ thường gợi một hướng nghĩa, giúp đoán và nhớ cụm. Đây chỉ là gợi ý: nhiều cụm như <b>give up</b>, <b>look after</b> vẫn phải học riêng.'}
+ ],
+ ex:[
+  {i:'🚭', e:'My dad <b>gave up smoking</b> five years ago.', v:'Bố tôi bỏ thuốc lá được năm năm rồi.', n:'give up + V-ing.'},
+  {i:'🔉', e:'Could you <b>turn</b> the music <b>down</b>? I’m trying to sleep.', v:'Bạn vặn nhỏ nhạc được không? Mình đang cố ngủ.', n:'Cụm tách được: tân ngữ đứng giữa cũng đúng.'},
+  {i:'🚉', e:'My sister <b>picked me up</b> from the station.', v:'Chị tôi ra ga đón tôi.', n:'Đại từ me bắt buộc đứng giữa.'},
+  {i:'👵', e:'She has been <b>looking after</b> her grandmother since the summer.', v:'Từ mùa hè đến giờ cô ấy chăm sóc bà.', n:'look after không tách được.'},
+  {i:'🥚', e:'We’ve <b>run out of</b> eggs, so I’ll pop to the shop.', v:'Nhà hết trứng rồi, để tôi chạy ra cửa hàng.', n:'Cụm ba từ: không bỏ of.'},
+  {i:'🌧️', e:'The match was <b>called off</b> because of heavy rain.', v:'Trận đấu bị huỷ vì mưa to.'},
+  {i:'🔬', e:'The university <b>carried out</b> a survey to <b>find out</b> how students use the library.', v:'Trường đại học đã thực hiện khảo sát để tìm hiểu sinh viên dùng thư viện thế nào.'},
+  {i:'♻️', e:'Local authorities need to <b>come up with</b> better ways to <b>deal with</b> waste.', v:'Chính quyền địa phương cần nghĩ ra cách xử lý rác tốt hơn.', n:'Writing vẫn dùng tốt; bản trang trọng hơn: devise, handle.'}
+ ]
+};
+
+GAX.questions={
+ fig:[
+  {sec:1, html:`<div class="gf-cols">
+<div class="gf-col good"><b>be / modal / have: tự đảo lên</b><p>She <b>is</b> a doctor.</p><p>→ <b>Is she</b> a doctor?</p></div>
+<div class="gf-col warn"><b>Động từ thường: mượn do/does/did</b><p>She <b>went</b> out.</p><p>→ <b>Did</b> she <b>go</b> out?</p></div>
+</div>`, cap:'Tiếng Anh không thêm “không?” vào cuối câu mà <b>đảo trợ động từ</b> lên trước chủ ngữ. Mượn did thì động từ chính về nguyên mẫu.'},
+  {sec:3, html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Hỏi chủ ngữ: ai gọi?</b><p>📞 <b>Who called</b> you?</p><p>→ <b>Sam</b> called me.</p></div>
+<div class="gf-col vio"><b>Hỏi tân ngữ: gọi cho ai?</b><p>📞 <b>Who did you call</b>?</p><p>→ I called <b>Sam</b>.</p></div>
+</div>`, cap:'Khi who/what đứng đúng chỗ của chủ ngữ, giữ trật tự câu thường và <b>không dùng did</b>.'},
+  {sec:4, html:`<div class="gf-row">
+<div class="gf-card good"><span class="gf-ic">👍</span><b>You’re coming, aren’t you?</b><small>khẳng định → đuôi phủ định</small></div>
+<div class="gf-card bad"><span class="gf-ic">👎</span><b>She doesn’t eat meat, does she?</b><small>phủ định → đuôi khẳng định</small></div>
+<div class="gf-card warn"><span class="gf-ic">🙋</span><b>I’m late, aren’t I?</b><small>I am → aren’t I</small></div>
+<div class="gf-card vio"><span class="gf-ic">🚶</span><b>Let’s go, shall we?</b><small>Let’s → shall we</small></div>
+</div>`, cap:'Đuôi luôn <b>ngược dấu</b> với câu chính và dùng lại trợ động từ của câu đó.'}
+ ],
+ ex:[
+  {i:'🎸', e:'<b>Do you play</b> any musical instruments?', v:'Bạn có chơi nhạc cụ nào không?'},
+  {i:'🍜', e:'<b>What did you have</b> for lunch?', v:'Trưa nay bạn ăn gì?'},
+  {i:'🚇', e:'<b>How long does it take</b> to get to the city centre by metro?', v:'Đi tàu điện vào trung tâm mất bao lâu?'},
+  {i:'🏆', e:'<b>Who won</b> the match last night?', v:'Tối qua đội nào thắng?', n:'who là chủ ngữ → không dùng did.'},
+  {i:'⏳', e:'<b>Who are</b> you <b>waiting for</b>?', v:'Bạn đang đợi ai thế?', n:'Giới từ thường đứng cuối câu hỏi.'},
+  {i:'🌤️', e:'It’s a lovely day, <b>isn’t it</b>?', v:'Hôm nay trời đẹp nhỉ?', n:'Câu khẳng định → đuôi phủ định.'},
+  {i:'🙏', e:'Sorry, could you explain <b>what “urban sprawl” means</b>?', v:'Xin lỗi, anh có thể giải thích “urban sprawl” nghĩa là gì không?', n:'IELTS Speaking: hỏi lại lịch sự; phần câu hỏi không đảo.'},
+  {i:'💻', e:'This essay will examine <b>whether online learning is</b> as effective as classroom teaching.', v:'Bài luận này sẽ xem xét học trực tuyến có hiệu quả bằng học trên lớp hay không.', n:'Câu hỏi Yes/No gián tiếp: whether + trật tự câu thường.'}
+ ]
+};
+
+GAX.negation={
+ fig:[
+  {sec:3, html:`<div class="gf-cols">
+<div class="gf-col good"><b>👍 Đồng ý với câu khẳng định</b><p>“I’m hungry.”</p><p>→ <b>So am I.</b> / I am, <b>too</b>.</p></div>
+<div class="gf-col bad"><b>👎 Đồng ý với câu phủ định</b><p>“I didn’t like the film.”</p><p>→ <b>Neither did I.</b> / I didn’t, <b>either</b>.</p></div>
+</div>`, cap:'Trợ động từ lấy theo câu gốc (am → <b>am</b>, didn’t → <b>did</b>). Sau neither, trợ động từ ở dạng khẳng định.'},
+  {sec:4, html:`<div class="gf-row">
+<div class="gf-card bad"><span class="gf-ic">❌</span><b>I don’t have nothing to do.</b><small>hai từ phủ định</small></div>
+<div class="gf-card good"><span class="gf-ic">✅</span><b>I don’t have anything to do.</b><small>not + any-</small></div>
+<div class="gf-card good"><span class="gf-ic">✅</span><b>I have nothing to do.</b><small>chỉ dùng nothing</small></div>
+</div>`, cap:'Tiếng Anh chuẩn: mỗi mệnh đề chỉ <b>một</b> từ phủ định.'}
+ ],
+ ex:[
+  {i:'☕', e:'My dad <b>doesn’t drink</b> coffee after lunch.', v:'Bố tôi không uống cà phê sau bữa trưa.', n:'Sau doesn’t, động từ về nguyên mẫu.'},
+  {i:'🛵', e:'“Can you ride a motorbike?” “No, I <b>can’t</b>.”', v:'“Bạn biết đi xe máy không?” “Không, mình không biết.”'},
+  {i:'🍕', e:'“I’m starving.” “<b>So am I</b>.”', v:'“Tớ đói lả rồi.” “Tớ cũng vậy.”', n:'Câu gốc dùng be → So am I.'},
+  {i:'😴', e:'“I didn’t sleep well last night.” “<b>Neither did I</b>.”', v:'“Đêm qua tớ ngủ không ngon.” “Tớ cũng thế.”', n:'Đồng ý với câu phủ định → Neither + trợ ĐT khẳng định.'},
+  {i:'🔇', e:'The line was bad, and I could <b>hardly</b> hear her.', v:'Đường dây kém quá, tôi gần như không nghe được cô ấy nói gì.', n:'hardly đã mang nghĩa phủ định → không thêm not.'},
+  {i:'🚗', e:'I <b>don’t</b> know <b>anything</b> about cars.', v:'Tôi chẳng biết gì về xe hơi.', n:'= I know nothing about cars. Không nói don’t … nothing.'},
+  {i:'✉️', e:'These days, people <b>rarely</b> write letters by hand.', v:'Ngày nay người ta hiếm khi viết thư tay.'},
+  {i:'🏫', e:'I <b>don’t think</b> technology will ever fully replace teachers.', v:'Tôi không nghĩ công nghệ sẽ thay thế hoàn toàn giáo viên.', n:'IELTS Part 3: đặt phủ định ở think để phản bác nhẹ nhàng.'}
+ ]
+};
+
+GAX.passive={
+ fig:[
+  {sec:0, html:`<div class="gf-flow">
+<div class="gf-step vio">① Chủ động: Workers <b>built</b> the bridge in 1990.</div>
+<div class="gf-down">↓</div>
+<div class="gf-step ac">② Tân ngữ lên làm chủ ngữ: <b>The bridge</b> …</div>
+<div class="gf-down">↓</div>
+<div class="gf-step warn">③ be (đúng thì) + V3: The bridge <b>was built</b> in 1990.</div>
+<div class="gf-down">↓</div>
+<div class="gf-step good">④ by workers? Không quan trọng thì <b>bỏ</b>.</div>
+</div>`, cap:'Từ chủ động sang bị động: tân ngữ lên đầu câu, động từ thành <b>be + V3</b>, người làm thường được bỏ đi.'},
+  {sec:3, html:`<div class="gf-flow">
+<div class="gf-step vio">People believe that the house is 300 years old.</div>
+<div class="gf-down">↓</div>
+<div class="gf-step ac"><b>It is believed that</b> the house is 300 years old.</div>
+<div class="gf-down">↓</div>
+<div class="gf-step good">The house <b>is believed to be</b> 300 years old.</div>
+</div>`, cap:'Hai cách bị động tường thuật. Nếu việc xảy ra trước lúc “tin, nói” thì dùng <b>to have V3</b>.'},
+  {sec:4, html:`<div class="gf-row">
+<div class="gf-card good"><span class="gf-ic">🌱</span><b>are harvested</b><small>thu hoạch</small></div><span class="gf-arrow">→</span>
+<div class="gf-card warn"><span class="gf-ic">☀️</span><b>are dried</b><small>phơi khô</small></div><span class="gf-arrow">→</span>
+<div class="gf-card bad"><span class="gf-ic">🔥</span><b>are roasted</b><small>rang</small></div><span class="gf-arrow">→</span>
+<div class="gf-card vio"><span class="gf-ic">⚙️</span><b>are ground</b><small>xay</small></div>
+</div>`, cap:'IELTS Task 1 (quy trình làm cà phê): mỗi bước dùng <b>bị động hiện tại đơn</b>, nối bằng first, then, after which.'}
+ ],
+ ex:[
+  {i:'📦', e:'Your parcel <b>was delivered</b> this morning.', v:'Bưu kiện của bạn đã được giao sáng nay.'},
+  {i:'🏠', e:'Our house <b>is being painted</b>, so we’re staying with my aunt.', v:'Nhà tôi đang được sơn lại, nên cả nhà ở nhờ nhà dì.', n:'Tiếp diễn: be + being + V3.'},
+  {i:'🧳', e:'All bags <b>must be left</b> at the entrance.', v:'Mọi túi xách phải để lại ở lối vào.', n:'Modal + be + V3.'},
+  {i:'🎓', e:'She <b>was offered</b> a place at three universities.', v:'Cô ấy được ba trường đại học mời nhập học.', n:'Động từ hai tân ngữ: lấy người làm chủ ngữ tự nhiên hơn.'},
+  {i:'🌧️', e:'We <b>got caught</b> in the rain on the way home.', v:'Trên đường về chúng tôi bị mắc mưa.', n:'get + V3: thân mật, thường cho chuyện không mong muốn.'},
+  {i:'🏰', e:'The castle <b>is said to be</b> haunted.', v:'Người ta đồn lâu đài đó có ma.'},
+  {i:'♻️', e:'Once the bottles <b>have been collected</b>, they <b>are sorted</b> and cleaned.', v:'Sau khi chai được thu gom, chúng được phân loại và làm sạch.', n:'IELTS Task 1 quy trình: bị động + từ nối thứ tự.'},
+  {i:'🏃', e:'<b>It is widely believed that</b> regular exercise improves mental health.', v:'Nhiều người tin rằng tập thể dục đều đặn giúp cải thiện sức khoẻ tinh thần.', n:'Task 2: giúp câu văn khách quan.'}
+ ]
+};
+
+GAX.conditionals={
+ fig:[
+  {sec:1, html:`<div class="gf-cols">
+<div class="gf-col good"><b>Loại 0 · sự thật</b><p>🧊 If you <b>heat</b> ice, it <b>melts</b>.</p><p><span class="mini">if + hiện tại, hiện tại · luôn đúng</span></p></div>
+<div class="gf-col ac"><b>Loại 1 · có thể xảy ra</b><p>☔ If it <b>rains</b>, we<b>’ll stay</b> home.</p><p><span class="mini">if + hiện tại, will + V · tương lai thật</span></p></div>
+<div class="gf-col warn"><b>Loại 2 · giả định hiện tại</b><p>💭 If I <b>had</b> wings, I <b>would fly</b>.</p><p><span class="mini">if + quá khứ, would + V · không có thật</span></p></div>
+<div class="gf-col bad"><b>Loại 3 · giả định quá khứ</b><p>⏪ If she <b>had studied</b>, she <b>would have passed</b>.</p><p><span class="mini">if + had V3, would have V3 · đã không xảy ra</span></p></div>
+</div>`, cap:'Từ loại 0 đến loại 3: càng xa thực tế, động từ càng <b>lùi về quá khứ</b>.'},
+  {sec:2, tl:{now:.7, items:[
+    {p:.25,t:'If I had taken that job…',c:'bad'},
+    {a:.25,b:.7,s:'d',arr:1,t:'…I would be rich now.',c:'warn'}],
+    marks:[{p:.25,t:'5 năm trước'}]},
+   cap:'Câu hỗn hợp: giả định <b>trái với quá khứ</b> (đã không nhận việc) dẫn tới kết quả <b>trái với hiện tại</b> (bây giờ không giàu). Đường chấm = không có thật.'},
+  {sec:3, html:`<div class="gf-cols">
+<div class="gf-col good"><b>☂️ in case it rains</b><p>Mang ô <b>ngay bây giờ</b>, mưa hay không cũng mang.</p></div>
+<div class="gf-col warn"><b>🌧️ if it rains</b><p><b>Chỉ khi</b> trời mưa mới mang ô.</p></div>
+</div>`, cap:'<b>in case</b> = làm trước để phòng; <b>if</b> = chỉ làm khi điều kiện xảy ra.'}
+ ],
+ ex:[
+  {i:'🧈', e:'If you <b>leave</b> butter in the sun, it <b>melts</b>.', v:'Để bơ ngoài nắng thì nó chảy.', n:'Loại 0: quy luật luôn đúng.'},
+  {i:'🚌', e:'If we <b>leave</b> now, we<b>’ll catch</b> the last bus.', v:'Nếu đi ngay bây giờ thì mình sẽ kịp chuyến xe buýt cuối.'},
+  {i:'🏝️', e:'If I <b>had</b> a month off, I<b>’d travel</b> around the country by motorbike.', v:'Nếu được nghỉ một tháng, tôi sẽ đi xe máy vòng quanh đất nước.', n:'Loại 2: giả định không có thật ở hiện tại.'},
+  {i:'⏰', e:'If I <b>had set</b> an alarm, I <b>wouldn’t have missed</b> the flight.', v:'Nếu tôi đặt báo thức thì đã không lỡ chuyến bay.', n:'Loại 3: chuyện đã qua, không thể đổi.'},
+  {i:'🧥', e:'Take a jacket <b>in case</b> it gets cold in the evening.', v:'Mang theo áo khoác phòng khi tối trời trở lạnh.'},
+  {i:'🍰', e:'I wish I <b>hadn’t eaten</b> so much. I feel terrible.', v:'Ước gì tôi đừng ăn nhiều như vậy. Giờ khó chịu quá.', n:'Ước về quá khứ: wish + quá khứ hoàn thành.'},
+  {i:'📧', e:'<b>Should you have</b> any questions, please do not hesitate to contact me.', v:'Nếu có thắc mắc gì, xin đừng ngần ngại liên hệ với tôi.', n:'Đảo ngữ loại 1, rất hay dùng trong thư trang trọng.'},
+  {i:'🚲', e:'If cities <b>invested</b> more in cycle lanes, fewer people <b>would drive</b> to work.', v:'Nếu các thành phố đầu tư thêm cho làn xe đạp, sẽ ít người lái ô tô đi làm hơn.', n:'IELTS Task 2: loại 2 để nêu giả định thuyết phục.'}
+ ]
+};
+
+GAX.reported={
+ fig:[
+  {sec:0, tl:{now:.8, nowT:'Lúc kể lại', items:[
+    {p:.3,t:'Lan: “I am tired.”',c:'vio'},
+    {p:.8,t:'Lan said she was tired.',c:'ac'}],
+    marks:[{p:.3,t:'Hôm qua'}]},
+   cap:'Lời nói xảy ra trong quá khứ; lúc kể lại thì thời điểm đó đã qua, nên động từ <b>lùi một thì</b> (am → was) và đại từ đổi theo người kể (I → she).'},
+  {sec:2, html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🔙</span><b>am / is → was</b><small>lùi một thì</small></div>
+<div class="gf-card ac"><span class="gf-ic">🔮</span><b>will → would</b><small>can → could</small></div>
+<div class="gf-card vio"><span class="gf-ic">📅</span><b>today → that day</b><small>tomorrow → the next day</small></div>
+<div class="gf-card vio"><span class="gf-ic">📍</span><b>here → there</b><small>this → that</small></div>
+</div>`, cap:'Khi kể lại, mọi thứ “lùi một bước”: thì của động từ, từ chỉ thời gian và nơi chốn.'},
+  {sec:3, html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Câu hỏi</b><p>“Where do you work?”</p><p>→ He asked me <b>where I worked</b>.</p><p><span class="mini">không đảo, bỏ do, lùi thì</span></p></div>
+<div class="gf-col warn"><b>Mệnh lệnh</b><p>“Don’t be late!”</p><p>→ She told us <b>not to be</b> late.</p><p><span class="mini">tell / ask + người + (not) to V</span></p></div>
+</div>`, cap:'Câu hỏi tường thuật giữ <b>trật tự câu khẳng định</b>; mệnh lệnh chuyển thành <b>(not) to V</b>.'}
+ ],
+ ex:[
+  {i:'😴', e:'She said she <b>was</b> too tired to go out.', v:'Cô ấy nói mình mệt quá, không đi chơi nổi.'},
+  {i:'📞', e:'He said he <b>would call</b> me back <b>the next day</b>.', v:'Anh ấy nói hôm sau sẽ gọi lại cho tôi.', n:'will → would; tomorrow → the next day.'},
+  {i:'🏨', e:'The receptionist asked me <b>where I lived</b>.', v:'Lễ tân hỏi tôi sống ở đâu.', n:'Câu hỏi tường thuật: không đảo, không do.'},
+  {i:'🍽️', e:'The waiter asked <b>if we were</b> ready to order.', v:'Người phục vụ hỏi chúng tôi đã sẵn sàng gọi món chưa.', n:'Câu hỏi Yes/No → if/whether.'},
+  {i:'🤫', e:'The librarian <b>told us not to talk</b> so loudly.', v:'Cô thủ thư nhắc chúng tôi đừng nói to như vậy.', n:'Mệnh lệnh phủ định: tell + người + not to V.'},
+  {i:'📰', e:'My teacher <b>advised me to read</b> English news every day.', v:'Thầy khuyên tôi đọc tin tức tiếng Anh mỗi ngày.'},
+  {i:'🎌', e:'My best friend <b>told me that</b> she <b>had</b> just <b>got</b> a job in Japan.', v:'Bạn thân kể với tôi là cô ấy vừa nhận được việc ở Nhật.', n:'IELTS Part 2 kể chuyện: “I’ve just got…” → had just got.'},
+  {i:'📺', e:'Health experts <b>warn that</b> too much screen time <b>can affect</b> children’s sleep.', v:'Các chuyên gia y tế cảnh báo dùng màn hình quá nhiều có thể ảnh hưởng đến giấc ngủ của trẻ.', n:'Task 2: động từ tường thuật ở hiện tại nên không lùi thì.'}
+ ]
+};
+
+</script>
+<script>/* ex_D.js */
+/* ===== Ngữ pháp A–Z · Nhóm D · hình minh họa + ví dụ ===== */
+GAX.sentences={
+ fig:[
+  {sec:2, html:`<div class="gf-cols">
+<div class="gf-col ac"><b>🧱 Câu đơn</b><p><span class="gf-pill ac">mệnh đề độc lập</span></p><p>Online learning is flexible.</p></div>
+<div class="gf-col vio"><b>🧱🔗🧱 Câu ghép</b><p><span class="gf-pill vio">mệnh đề 1</span><span class="gf-pill warn">, but</span><span class="gf-pill vio">mệnh đề 2</span></p><p>It is flexible<b>, but</b> it requires discipline.</p><p><span class="mini">FANBOYS: for, and, nor, but, or, yet, so</span></p></div>
+<div class="gf-col good"><b>🏠 Câu phức</b><p><span class="gf-pill warn">Although</span><span class="gf-pill good">mệnh đề phụ</span>,<span class="gf-pill ac">mệnh đề chính</span></p><p><b>Although</b> it is flexible, it requires discipline.</p></div>
+</div>`, cap:'Ba loại câu như ba cách xếp khối: <b>một khối</b>, <b>hai khối ngang hàng</b> nối bằng liên từ, hoặc <b>khối phụ</b> bám vào khối chính.'},
+  {sec:3, html:`<div class="gf-flow">
+<div class="gf-step bad">❌ Many students work part-time<b>,</b> they need money. <span class="mini">(dấu phẩy không nối được hai mệnh đề)</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step good">✅ …part-time<b>.</b> They need money.<br>✅ …part-time<b>;</b> they need money.<br>✅ …part-time <b>because</b> they need money.</div>
+</div>`, cap:'Sửa câu chạy: thay dấu phẩy bằng <b>dấu chấm</b>, <b>dấu chấm phẩy</b> hoặc thêm <b>từ nối</b>.'}
+ ],
+ ex:[
+  {i:'📈', e:'The number of tourists <b>rose</b> steadily over the period.', v:'Số lượng du khách tăng đều trong suốt giai đoạn.', n:'S + V: rise là nội động từ, không có tân ngữ (khác raise).'},
+  {i:'🧣', e:'My grandmother <b>gave me</b> a woollen scarf.', v:'Bà tặng tôi một chiếc khăn len.', n:'S + V + O + O: người nhận đứng trước vật.'},
+  {i:'😊', e:'The good news <b>made everyone happy</b>.', v:'Tin tốt khiến ai cũng vui.', n:'S + V + O + C: happy bổ nghĩa cho everyone.'},
+  {i:'☕', e:'I was tired<b>, so</b> I made another coffee.', v:'Tôi mệt nên pha thêm một cốc cà phê.'},
+  {i:'🏙️', e:'Hanoi is crowded<b>;</b> Da Lat is much quieter.', v:'Hà Nội đông đúc; Đà Lạt yên tĩnh hơn nhiều.', n:'Dấu chấm phẩy nối hai mệnh đề độc lập, thay cho dấu phẩy.'},
+  {i:'🏠', e:'<b>Because</b> rents are high<b>,</b> many young people still live with their parents.', v:'Vì tiền thuê nhà cao, nhiều người trẻ vẫn sống cùng bố mẹ.', n:'Mệnh đề phụ đứng đầu → đặt phẩy trước mệnh đề chính.'},
+  {i:'🚲', e:'Cycling to work <b>saves</b> money, <b>reduces</b> stress and <b>keeps</b> you fit.', v:'Đạp xe đi làm giúp tiết kiệm tiền, giảm căng thẳng và giữ dáng.'},
+  {i:'💻', e:'Online learning is <b>not only cheaper but also more flexible</b> than classroom study.', v:'Học trực tuyến không chỉ rẻ hơn mà còn linh hoạt hơn học trên lớp.', n:'Hai vế song song: cùng là tính từ so sánh.'}
+ ]
+};
+
+GAX.relative={
+ fig:[
+  {sec:0, html:`<div class="gf-flow">
+<div class="gf-step">👨 The man is my uncle. <span class="gf-pill ac">+</span> 🏡 <b>He</b> lives next door.</div>
+<div class="gf-down">↓</div>
+<div class="gf-step vio"><b>He</b> → <b>who</b> <span class="mini">(người, làm chủ ngữ)</span>, đặt ngay sau <b>the man</b></div>
+<div class="gf-down">↓</div>
+<div class="gf-step good">✅ The man <b>who lives next door</b> is my uncle.</div>
+</div>`, cap:'Mệnh đề quan hệ nối hai câu: đại từ quan hệ <b>thay</b> cho danh từ lặp lại, không thêm he/it.'},
+  {sec:1, html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🙋</span><b>who</b><small>người</small></div>
+<div class="gf-card vio"><span class="gf-ic">📦</span><b>which</b><small>vật, sự việc</small></div>
+<div class="gf-card warn"><span class="gf-ic">🔁</span><b>that</b><small>người/vật, không phẩy</small></div>
+<div class="gf-card good"><span class="gf-ic">🔑</span><b>whose</b><small>của ai / của cái gì</small></div>
+<div class="gf-card ac"><span class="gf-ic">📍</span><b>where</b><small>nơi chốn = in which</small></div>
+<div class="gf-card vio"><span class="gf-ic">⏰</span><b>when</b><small>thời gian</small></div>
+</div>`, cap:'Chọn đại từ theo <b>loại danh từ</b> đứng trước và <b>vai trò</b> của nó trong mệnh đề.'},
+  {sec:2, html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Xác định · không phẩy</b><p>🎓 Students <b>who live on campus</b> pay less.</p><p>✓ dùng được <b>that</b></p><p>Bỏ đi → mất nghĩa <span class="mini">(sinh viên nào?)</span></p></div>
+<div class="gf-col vio"><b>Không xác định · có phẩy</b><p>👩 My sister<b>, who lives in Hue,</b> is a nurse.</p><p>✗ không dùng <b>that</b></p><p>Bỏ đi → câu vẫn đủ nghĩa</p></div>
+</div>`, cap:'Dấu phẩy quyết định: <b>không phẩy</b> = chỉ rõ ai/cái nào; <b>có phẩy</b> = thêm thông tin phụ.'}
+ ],
+ ex:[
+  {i:'📐', e:'The teacher <b>who taught me maths</b> has just retired.', v:'Thầy dạy toán của tôi vừa nghỉ hưu.'},
+  {i:'📱', e:'The phone <b>(that) I bought last week</b> has already stopped working.', v:'Chiếc điện thoại tôi mua tuần trước đã hỏng rồi.', n:'that là tân ngữ của bought → bỏ được.'},
+  {i:'🌊', e:'We stayed with a family <b>whose house</b> overlooked the sea.', v:'Chúng tôi ở nhờ một gia đình có ngôi nhà nhìn ra biển.', n:'whose + danh từ: chỉ sở hữu.'},
+  {i:'🏡', e:'This is the village <b>where</b> my father grew up.', v:'Đây là ngôi làng nơi bố tôi lớn lên.', n:'grew up không cần tân ngữ → where (= in which).'},
+  {i:'🌾', e:'People <b>who grow up in the countryside</b> often feel closer to nature.', v:'Những người lớn lên ở nông thôn thường gắn bó với thiên nhiên hơn.', n:'Xác định nhóm người nào → không phẩy. Hợp Speaking Part 3.'},
+  {i:'🏊', e:'My grandfather<b>, who is 85,</b> still goes swimming every morning.', v:'Ông tôi năm nay 85 tuổi mà vẫn đi bơi mỗi sáng.'},
+  {i:'🎓', e:'Scholarships should go to students <b>for whom</b> tuition fees are a real burden.', v:'Học bổng nên dành cho những sinh viên coi học phí là gánh nặng thực sự.', n:'Giới từ + whom: trang trọng, hợp Task 2.'},
+  {i:'📵', e:'Many teenagers spend hours on social media<b>, which can affect their sleep</b>.', v:'Nhiều thiếu niên dành hàng giờ cho mạng xã hội, điều này có thể ảnh hưởng đến giấc ngủ.', n:', which chỉ cả mệnh đề trước; động từ chia số ít.'}
+ ]
+};
+
+GAX.reducedrel={
+ fig:[
+  {sec:1, html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Chủ động → V-ing</b><p>the girl <s>who is</s> sitting by the window</p><p>→ the girl <b>sitting</b> by the window</p></div>
+<div class="gf-col vio"><b>Bị động → V3</b><p>the bridge <s>which was</s> built in 1990</p><p>→ the bridge <b>built</b> in 1990</p></div>
+<div class="gf-col warn"><b>first / last / only → to V</b><p>the last guest <s>who left</s></p><p>→ the last guest <b>to leave</b></p></div>
+</div>`, cap:'Rút gọn = bỏ đại từ quan hệ <b>và cả be</b>; sau first/last/only thì đổi thành <b>to V</b>.'},
+  {sec:2, html:`<div class="gf-flow">
+<div class="gf-step">❓ Danh từ đứng trước <b>tự làm</b> hay <b>bị làm</b>?</div>
+<div class="gf-down">↓</div>
+<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🙋</span><b>Tự làm → V-ing</b><small>people <i>using</i> buses</small></div>
+<div class="gf-card vio"><span class="gf-ic">📦</span><b>Bị làm → V3</b><small>waste <i>sent</i> to landfill</small></div>
+</div>
+</div>`, cap:'Một câu hỏi duy nhất để chọn <b>V-ing</b> hay <b>V3</b>.'}
+ ],
+ ex:[
+  {i:'🪑', e:'The girl <b>sitting</b> next to me kept checking her phone.', v:'Cô gái ngồi cạnh tôi cứ liên tục xem điện thoại.', n:'= who was sitting → chủ động → V-ing.'},
+  {i:'🏙️', e:'People <b>living</b> in big cities tend to have less free time.', v:'Người sống ở thành phố lớn thường ít thời gian rảnh hơn.'},
+  {i:'🥬', e:'Most of the vegetables <b>sold</b> at this market are grown locally.', v:'Phần lớn rau bán ở chợ này được trồng tại địa phương.', n:'Rau được bán → bị động → V3.'},
+  {i:'🍰', e:'Is there any cake <b>left</b>?', v:'Còn chút bánh nào không?', n:'= cake that is left → V3.'},
+  {i:'🥇', e:'She was the first person in her family <b>to go</b> to university.', v:'Cô ấy là người đầu tiên trong nhà vào đại học.', n:'Sau the first / last / only → to V.'},
+  {i:'🐕', e:'Max<b>, my neighbour’s dog,</b> barks every time the postman comes.', v:'Max, con chó nhà hàng xóm, sủa mỗi khi người đưa thư đến.', n:'Cụm đồng vị (= which is my neighbour’s dog), phẩy hai đầu.'},
+  {i:'📊', e:'The graph shows the number of people <b>using</b> public libraries in three countries.', v:'Biểu đồ thể hiện số người sử dụng thư viện công cộng ở ba quốc gia.'},
+  {i:'🚢', e:'Food <b>imported</b> from abroad often travels thousands of kilometres before it reaches consumers.', v:'Thực phẩm nhập khẩu thường đi hàng nghìn ki-lô-mét trước khi đến tay người tiêu dùng.', n:'= food which is imported → V3. Hợp Task 2 chủ đề môi trường.'}
+ ]
+};
+
+GAX.nounclause={
+ fig:[
+  {sec:2, html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Chủ ngữ</b><p><span class="gf-pill ac">What he said</span> surprised everyone.</p></div>
+<div class="gf-col vio"><b>Tân ngữ</b><p>I believe <span class="gf-pill vio">that education is a right</span>.</p></div>
+<div class="gf-col warn"><b>Bổ ngữ · sau giới từ</b><p>The problem is <span class="gf-pill warn">that we lack staff</span>.</p><p>It depends on <span class="gf-pill warn">whether we have time</span>.</p></div>
+</div>`, cap:'Cả mệnh đề đứng vào <b>ô của một danh từ</b>: chủ ngữ, tân ngữ hoặc bổ ngữ.'},
+  {sec:3, html:`<div class="gf-flow">
+<div class="gf-step vio">❓ Câu hỏi: Where <b>does he live</b>?</div>
+<div class="gf-down">↓</div>
+<div class="gf-step warn">✂️ Bỏ <b>does</b>, đưa chủ ngữ lên trước động từ, chia lại <b>lives</b></div>
+<div class="gf-down">↓</div>
+<div class="gf-step good">💬 I don’t know where <b>he lives</b>.</div>
+</div>`, cap:'Câu hỏi lồng vào câu thì trở về <b>trật tự câu khẳng định</b>.'}
+ ],
+ ex:[
+  {i:'🚉', e:'Could you tell me <b>where the station is</b>?', v:'Bạn chỉ giúp tôi nhà ga ở đâu được không?', n:'Câu hỏi lồng: is đứng sau chủ ngữ.'},
+  {i:'🎂', e:'I can’t remember <b>what she wanted</b> for her birthday.', v:'Tôi không nhớ cô ấy muốn gì cho sinh nhật.'},
+  {i:'🥗', e:'<b>What you eat</b> affects <b>how you feel</b>.', v:'Bạn ăn gì sẽ ảnh hưởng đến cảm giác của bạn.', n:'Một mệnh đề làm chủ ngữ, một mệnh đề làm tân ngữ.'},
+  {i:'🚆', e:'We haven’t decided <b>whether to go</b> by train or by bus.', v:'Chúng tôi chưa quyết định nên đi tàu hay xe buýt.', n:'Trước to V chỉ dùng whether, không dùng if.'},
+  {i:'📚', e:'I believe <b>that every child deserves a good education</b>.', v:'Tôi tin rằng đứa trẻ nào cũng xứng đáng được học hành tử tế.'},
+  {i:'🚌', e:'The main problem is <b>that buses in my city rarely run on time</b>.', v:'Vấn đề chính là xe buýt ở thành phố tôi hiếm khi chạy đúng giờ.', n:'Mệnh đề that làm bổ ngữ sau be. Hợp Speaking Part 3.'},
+  {i:'📱', e:'<b>It</b> worries many parents <b>that their children spend so much time online</b>.', v:'Nhiều phụ huynh lo vì con cái dành quá nhiều thời gian trên mạng.', n:'It giả làm chủ ngữ, mệnh đề that dời ra cuối cho tự nhiên.'},
+  {i:'🤝', e:'The success of the scheme depends on <b>whether local people support it</b>.', v:'Dự án thành công hay không phụ thuộc vào việc người dân địa phương có ủng hộ hay không.', n:'Sau giới từ (on) dùng whether, không dùng if.'}
+ ]
+};
+
+GAX.adverbial={
+ fig:[
+  {sec:1, html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">⏰</span><b>Thời gian</b><small>when, while + S V<br>during + N</small></div>
+<div class="gf-card vio"><span class="gf-ic">💡</span><b>Lý do</b><small>because + S V<br>because of + N</small></div>
+<div class="gf-card warn"><span class="gf-ic">⚖️</span><b>Nhượng bộ</b><small>although + S V<br>despite + N</small></div>
+<div class="gf-card good"><span class="gf-ic">🎯</span><b>Mục đích</b><small>so that + S V<br>in order to + V</small></div>
+<div class="gf-card bad"><span class="gf-ic">🔀</span><b>Tương phản</b><small>whereas + S V<br>unlike + N</small></div>
+</div>`, cap:'Mỗi ý nghĩa có một cặp: <b>liên từ + mệnh đề</b> và <b>giới từ + danh từ</b>.'},
+  {sec:5, html:`<div class="gf-cols">
+<div class="gf-col bad"><b>✗ Hai từ nối</b><p><b>Although</b> it was expensive, <s>but</s> we bought it.</p><p><b>Because</b> traffic is heavy, <s>so</s> I leave early.</p></div>
+<div class="gf-col good"><b>✓ Một từ nối</b><p><b>Although</b> it was expensive, we bought it.</p><p>Traffic is heavy, <b>so</b> I leave early.</p></div>
+</div>`, cap:'"Mặc dù… nhưng", "Vì… nên" của tiếng Việt: sang tiếng Anh chỉ giữ <b>một</b> từ nối.'}
+ ],
+ ex:[
+  {i:'📲', e:'I’ll text you <b>as soon as I arrive</b>.', v:'Tới nơi là mình nhắn cho bạn ngay.', n:'Mệnh đề thời gian: hiện tại đơn, không dùng will.'},
+  {i:'🍳', e:'He was cooking dinner <b>while</b> his wife was putting the kids to bed.', v:'Anh ấy nấu bữa tối trong lúc vợ cho các con đi ngủ.'},
+  {i:'☔', e:'<b>Despite the rain</b>, thousands of fans turned up.', v:'Dù trời mưa, hàng nghìn người hâm mộ vẫn đến.', n:'despite + danh từ, không đi với mệnh đề.'},
+  {i:'🚌', e:'<b>Because</b> the bus was late, I missed the first lesson.', v:'Vì xe buýt đến muộn, tôi lỡ tiết học đầu.'},
+  {i:'😴', e:'The film was <b>so boring that</b> I fell asleep halfway through.', v:'Bộ phim chán đến mức tôi ngủ gật giữa chừng.'},
+  {i:'🏙️', e:'Many people move to cities <b>so that</b> they <b>can</b> find better jobs.', v:'Nhiều người chuyển lên thành phố để có thể tìm việc tốt hơn.', n:'so that + can/could: chỉ mục đích. Hợp Speaking Part 3.'},
+  {i:'🏖️', e:'<b>Although</b> tourism creates jobs, it can also damage the local environment.', v:'Dù du lịch tạo ra việc làm, nó cũng có thể gây hại cho môi trường địa phương.', n:'Công nhận ý đối lập rồi nêu quan điểm: mẫu hay cho Task 2.'},
+  {i:'📊', e:'Spending on food fell slightly<b>, whereas</b> spending on leisure rose considerably.', v:'Chi tiêu cho thực phẩm giảm nhẹ, trong khi chi tiêu cho giải trí tăng đáng kể.', n:'Task 1: whereas so sánh hai xu hướng trái chiều.'}
+ ]
+};
+
+GAX.participle={
+ fig:[
+  {sec:0, html:`<div class="gf-flow">
+<div class="gf-step"><b>When she opened</b> the door, <b>she</b> saw a huge box.</div>
+<div class="gf-down">↓</div>
+<div class="gf-step warn">Hai vế cùng chủ ngữ <b>she</b> → bỏ <b>When she</b>, đổi động từ thành <b>V-ing</b></div>
+<div class="gf-down">↓</div>
+<div class="gf-step good">✅ <b>Opening the door</b>, she saw a huge box.</div>
+</div>`, cap:'Cụm phân từ chỉ rút gọn được khi <b>hai vế cùng một chủ ngữ</b>.'},
+  {sec:1, tl:{now:false, items:[
+    {p:.28,t:'① finished the report',c:'vio'},
+    {p:.72,t:'② sent it to her boss',c:'ac'}],
+   marks:[{p:.28,t:'Having finished'},{p:.72,t:'she sent'}]},
+   cap:'<b>Having finished</b> the report, she sent it: <b>Having + V3</b> cho biết việc ① xong <b>trước</b> rồi mới đến việc ②.'},
+  {sec:3, html:`<div class="gf-cols">
+<div class="gf-col bad"><b>✗ Chủ ngữ treo</b><p>🌧️ Walking to school, <b>the rain</b> started.</p><p><span class="mini">(cơn mưa đi bộ đến trường?)</span></p></div>
+<div class="gf-col good"><b>✓ Đúng</b><p>Walking to school, <b>I</b> got caught in the rain.</p><p><b>As I was walking</b> to school, it started to rain.</p></div>
+</div>`, cap:'Người làm hành động trong cụm phân từ phải là <b>chủ ngữ ngay sau dấu phẩy</b>.'}
+ ],
+ ex:[
+  {i:'🎧', e:'<b>Listening</b> to music, she cleaned the whole flat.', v:'Vừa nghe nhạc, cô ấy vừa dọn sạch cả căn hộ.', n:'V-ing: hai việc cùng lúc, cùng chủ ngữ.'},
+  {i:'🤒', e:'<b>Feeling</b> unwell, he left work early.', v:'Thấy không khỏe, anh ấy về sớm.', n:'= Because he felt unwell.'},
+  {i:'✈️', e:'<b>Having lived</b> abroad for two years, I find it easier to talk to strangers.', v:'Sau hai năm sống ở nước ngoài, tôi thấy bắt chuyện với người lạ dễ hơn.', n:'Having + V3: việc xảy ra trước. Hợp Speaking.'},
+  {i:'📖', e:'<b>Written</b> in simple English, the book is ideal for beginners.', v:'Được viết bằng tiếng Anh đơn giản, cuốn sách rất hợp với người mới học.'},
+  {i:'🤷', e:'<b>Not knowing</b> anyone at the party, she stayed close to her sister.', v:'Không quen ai ở bữa tiệc, cô ấy cứ đứng cạnh chị gái.', n:'Phủ định: Not đặt trước V-ing.'},
+  {i:'🌊', e:'Heavy rain flooded the main road, <b>causing</b> long delays.', v:'Mưa lớn làm ngập đường chính, gây ùn tắc kéo dài.'},
+  {i:'📈', e:'Sales rose steadily throughout the decade, <b>reaching</b> a peak in the final year.', v:'Doanh số tăng đều suốt thập kỷ, đạt đỉnh vào năm cuối.', n:'Mẫu Task 1 quen thuộc: ", reaching a peak…".'},
+  {i:'🏗️', e:'More and more people are moving to cities, <b>putting</b> pressure on housing and transport.', v:'Ngày càng nhiều người đổ về thành phố, gây áp lực lên nhà ở và giao thông.'}
+ ]
+};
+
+GAX.inversion={
+ fig:[
+  {sec:0, html:`<div class="gf-flow">
+<div class="gf-step">I <b>have</b> never seen such a sunset.</div>
+<div class="gf-down">↓</div>
+<div class="gf-step warn">Đưa <b>Never</b> lên đầu → đảo <b>have</b> lên trước <b>I</b> (như câu hỏi)</div>
+<div class="gf-down">↓</div>
+<div class="gf-step good">🌅 <b>Never have I</b> seen such a sunset.</div>
+</div>`, cap:'Từ phủ định/hạn chế đứng đầu câu kéo <b>trợ động từ</b> lên trước chủ ngữ.'},
+  {sec:1, html:`<div class="gf-cols">
+<div class="gf-col ac"><b>Có trợ động từ → đảo nó</b><p>Never <b>have I</b> seen…</p><p>Rarely <b>can we</b> afford…</p></div>
+<div class="gf-col vio"><b>Không có → mượn do/does/did</b><p>Rarely <b>do we</b> get the chance.</p><p>Not only <b>did she</b> pass…</p></div>
+</div>`, cap:'Thì đơn không có trợ động từ thì mượn <b>do / does / did</b>, động từ chính về nguyên mẫu.'},
+  {sec:2, html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">⚡</span><b>No sooner had… than</b><small>vừa… thì</small></div>
+<div class="gf-card vio"><span class="gf-ic">⏱️</span><b>Hardly had… when</b><small>vừa… thì</small></div>
+<div class="gf-card warn"><span class="gf-ic">🔓</span><b>Only after… did I…</b><small>đảo ở mệnh đề chính</small></div>
+</div>`, cap:'Nhớ theo cặp: <b>No sooner → than</b>, <b>Hardly → when</b>; với Only after / Not until, phần đảo nằm ở <b>mệnh đề chính</b>.'}
+ ],
+ ex:[
+  {i:'☕', e:'<b>Never have I</b> tasted such good coffee.', v:'Chưa bao giờ tôi được uống cà phê ngon đến thế.'},
+  {i:'🎬', e:'<b>Rarely do</b> we go to the cinema these days.', v:'Dạo này chúng tôi hiếm khi đi xem phim.', n:'Hiện tại đơn không có trợ động từ → mượn do.'},
+  {i:'📚', e:'<b>Not only does</b> reading improve vocabulary, but it <b>also</b> helps children concentrate.', v:'Đọc sách không chỉ giúp tăng vốn từ mà còn giúp trẻ tập trung.', n:'Một câu đảo ngữ đúng chỗ trong Task 2 là đủ.'},
+  {i:'🚿', e:'<b>Hardly had</b> I got into the shower <b>when</b> the doorbell rang.', v:'Tôi vừa bước vào phòng tắm thì chuông cửa reo.'},
+  {i:'🔑', e:'<b>Only when</b> I got home <b>did I realise</b> I had lost my keys.', v:'Mãi đến khi về nhà tôi mới nhận ra mình đã làm mất chìa khóa.', n:'Đảo ở mệnh đề chính, không đảo "I got".'},
+  {i:'🏫', e:'<b>Only by</b> investing in teachers <b>can schools</b> raise standards.', v:'Chỉ có đầu tư vào giáo viên thì trường học mới nâng được chất lượng.', n:'Only by + V-ing, rồi đảo ở mệnh đề chính.'},
+  {i:'🌱', e:'<b>Little did</b> she <b>know</b> that her life was about to change.', v:'Cô ấy nào hay biết cuộc đời mình sắp sang trang.'},
+  {i:'✉️', e:'<b>Should</b> you need any further information, please do not hesitate to contact me.', v:'Nếu cần thêm thông tin, xin đừng ngần ngại liên hệ với tôi.', n:'= If you should need…: câu kết thư trang trọng (IELTS General).'}
+ ]
+};
+
+GAX.cleft={
+ fig:[
+  {sec:1, html:`<div class="gf-flow">
+<div class="gf-step">📝 Câu gốc: Mai broke the vase yesterday.</div>
+<div class="gf-down">↓</div>
+<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🔦</span><b>It was <u>Mai</u> who broke the vase.</b><small>nhấn người: chính Mai</small></div>
+<div class="gf-card vio"><span class="gf-ic">📅</span><b>It was <u>yesterday</u> that Mai broke it.</b><small>nhấn thời gian: chính hôm qua</small></div>
+</div>
+</div>`, cap:'Đặt phần muốn "rọi đèn" vào giữa <b>It was … that/who</b>; phần còn lại giữ nguyên.'},
+  {sec:2, html:`<div class="gf-row">
+<div class="gf-card ac"><span class="gf-ic">🧩</span><b>What I need</b><small>mệnh đề What (số ít)</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card warn"><span class="gf-ic">🔗</span><b>is</b><small>luôn is / was</small></div>
+<span class="gf-arrow">→</span>
+<div class="gf-card good"><span class="gf-ic">🌴</span><b>a long holiday</b><small>phần được nhấn</small></div>
+</div>`, cap:'Câu chẻ <b>What… is</b>: giữ lại phần quan trọng nhất cho cuối câu.'}
+ ],
+ ex:[
+  {i:'🔑', e:'<b>It was</b> my brother <b>who</b> lost the keys, not me!', v:'Chính anh tôi làm mất chìa khóa chứ không phải tôi!'},
+  {i:'📅', e:'<b>It was</b> only last year <b>that</b> I started learning English seriously.', v:'Mãi đến năm ngoái tôi mới bắt đầu học tiếng Anh nghiêm túc.', n:'Nhấn thời gian: It was + thời gian + that.'},
+  {i:'🍲', e:'<b>What</b> I miss most about home <b>is</b> my mum’s cooking.', v:'Điều tôi nhớ nhất về quê nhà là những món mẹ nấu.'},
+  {i:'😴', e:'<b>All</b> I want right now <b>is</b> a good night’s sleep.', v:'Giờ tôi chỉ muốn được ngủ một giấc thật ngon.'},
+  {i:'🏖️', e:'<b>The reason</b> I moved to Da Nang <b>is that</b> life there is less stressful.', v:'Lý do tôi chuyển đến Đà Nẵng là cuộc sống ở đó bớt áp lực hơn.', n:'Văn viết: is that, không dùng is because.'},
+  {i:'🚪', e:'I <b>did</b> lock the door. I’m absolutely sure.', v:'Tôi khóa cửa rồi mà. Tôi chắc chắn đấy.', n:'did + V nguyên mẫu: nhấn mạnh, phản bác ý người khác.'},
+  {i:'💼', e:'<b>What</b> young people need most <b>is</b> practical work experience.', v:'Điều người trẻ cần nhất là kinh nghiệm làm việc thực tế.', n:'Câu chủ đề Task 2: nhấn vào ý chính.'},
+  {i:'👪', e:'<b>It is</b> parents, not schools, <b>who</b> should teach children good manners.', v:'Chính cha mẹ, chứ không phải nhà trường, mới là người nên dạy trẻ phép lịch sự.', n:'Speaking Part 3: nêu rõ quan điểm.'}
+ ]
+};
+
+GAX.subjunctive={
+ fig:[
+  {sec:1, html:`<div class="gf-flow">
+<div class="gf-step ac">🗣️ <b>suggest · recommend · insist · demand</b><br>It is <b>essential · vital · important</b></div>
+<div class="gf-down">↓</div>
+<div class="gf-step vio"><b>that</b> + chủ ngữ <span class="mini">(he, she, every student…)</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step good"><b>V nguyên mẫu</b>: stop · be rewritten · not travel <span class="mini">(không -s, không to)</span></div>
+<div class="gf-down">↓</div>
+<div class="gf-step">✅ The doctor recommended that he <b>stop</b> smoking.</div>
+</div>`, cap:'Thức giả định: sau từ chỉ <b>đề nghị, yêu cầu, sự cần thiết</b>, động từ giữ <b>nguyên mẫu</b> với mọi chủ ngữ.'},
+  {sec:3, html:`<div class="gf-cols">
+<div class="gf-col ac"><b>⏳ Ước hiện tại</b><p>wish + <b>quá khứ / could</b></p><p>I wish I <b>had</b> more time.</p></div>
+<div class="gf-col vio"><b>😔 Tiếc quá khứ</b><p>wish + <b>had + V3</b></p><p>I wish I <b>had listened</b>.</p></div>
+<div class="gf-col warn"><b>😤 Phàn nàn</b><p>wish + <b>would</b></p><p>I wish it <b>would</b> stop raining.</p></div>
+</div>`, cap:'Sau <b>wish</b> luôn lùi một bậc thì: hiện tại → quá khứ, quá khứ → quá khứ hoàn thành.'}
+ ],
+ ex:[
+  {i:'🩺', e:'The doctor suggested that she <b>take</b> a few days off.', v:'Bác sĩ khuyên cô ấy nên nghỉ vài ngày.', n:'take, không phải takes: thức giả định.'},
+  {i:'🕘', e:'<b>It’s time we left</b>, or we’ll miss the bus.', v:'Đến lúc mình đi rồi, không thì lỡ xe buýt.', n:'It’s time + S + quá khứ đơn.'},
+  {i:'🤫', e:'I’d <b>rather</b> you <b>didn’t</b> tell anyone about this.', v:'Tôi mong bạn đừng kể chuyện này với ai.', n:'would rather + người khác + quá khứ.'},
+  {i:'🌧️', e:'I <b>wish</b> it <b>would</b> stop raining.', v:'Ước gì trời tạnh mưa.'},
+  {i:'📚', e:'I <b>wish</b> I <b>had started</b> learning English earlier.', v:'Giá mà tôi bắt đầu học tiếng Anh sớm hơn.', n:'Tiếc về quá khứ → wish + had + V3.'},
+  {i:'😒', e:'He talks <b>as if</b> he <b>were</b> an expert on everything.', v:'Anh ta nói như thể mình là chuyên gia về mọi thứ.'},
+  {i:'🥗', e:'It is essential that every school <b>provide</b> healthy meals.', v:'Điều thiết yếu là trường học nào cũng phải có bữa ăn lành mạnh.', n:'provide không thêm -s dù chủ ngữ số ít.'},
+  {i:'🚲', e:'I would strongly recommend that each city <b>invest</b> more in cycle lanes.', v:'Tôi đề xuất mỗi thành phố nên đầu tư nhiều hơn vào làn đường cho xe đạp.', n:'Đoạn giải pháp Task 2. Không chắc thì viết should invest.'}
+ ]
+};
+
+GAX.linking={
+ fig:[
+  {sec:1, html:`<div class="gf-row">
+<div class="gf-card good"><span class="gf-ic">➕</span><b>Thêm ý</b><small><span class="gf-pill good">In addition</span><span class="gf-pill good">Moreover</span><span class="gf-pill good">and</span></small></div>
+<div class="gf-card bad"><span class="gf-ic">⚖️</span><b>Tương phản</b><small><span class="gf-pill bad">However</span><span class="gf-pill bad">In contrast</span><span class="gf-pill bad">but</span></small></div>
+<div class="gf-card ac"><span class="gf-ic">➡️</span><b>Nguyên nhân – kết quả</b><small><span class="gf-pill ac">Therefore</span><span class="gf-pill ac">As a result</span><span class="gf-pill ac">so</span></small></div>
+<div class="gf-card vio"><span class="gf-ic">💡</span><b>Ví dụ</b><small><span class="gf-pill vio">For example</span><span class="gf-pill vio">For instance</span><span class="gf-pill vio">such as</span></small></div>
+</div>`, cap:'Chọn từ nối theo <b>quan hệ</b> giữa hai ý, không theo thói quen.'},
+  {sec:2, html:`<div class="gf-cols">
+<div class="gf-col good"><b>✓ Trạng từ nối</b><p>…cheap<b>. However,</b> it is slow.</p><p>…cheap<b>; however,</b> it is slow.</p></div>
+<div class="gf-col ac"><b>✓ Liên từ</b><p>…cheap<b>, but</b> it is slow.</p><p>…cheap<b>, so</b> it is popular.</p></div>
+<div class="gf-col bad"><b>✗ Câu chạy</b><p>…cheap<b>, however</b> it is slow.</p></div>
+</div>`, cap:'However, Therefore đứng sau <b>dấu chấm / chấm phẩy</b>; but, so đứng sau <b>dấu phẩy</b>.'}
+ ],
+ ex:[
+  {i:'🏢', e:'The flat is small. <b>However,</b> it’s very close to my office.', v:'Căn hộ nhỏ. Tuy vậy, nó rất gần chỗ tôi làm.', n:'However đầu câu: sau dấu chấm, trước dấu phẩy.'},
+  {i:'🔋', e:'The design is attractive. The battery<b>, however,</b> is disappointing.', v:'Thiết kế thì đẹp. Còn pin thì đáng thất vọng.', n:'However giữa câu: phẩy hai đầu.'},
+  {i:'🎫', e:'The tickets were expensive<b>; nevertheless,</b> they sold out within an hour.', v:'Vé đắt, vậy mà vẫn bán hết trong vòng một giờ.'},
+  {i:'🥭', e:'Tropical fruits<b>, such as</b> mangoes and papayas, grow well here.', v:'Các loại trái cây nhiệt đới như xoài và đu đủ phát triển tốt ở đây.', n:'such as + danh từ trong câu; For example mở đầu câu mới.'},
+  {i:'📝', e:'The test wasn’t easy. <b>In fact,</b> it was the hardest one this year.', v:'Bài kiểm tra không dễ. Thật ra, đó là bài khó nhất năm nay.'},
+  {i:'🏙️', e:'Big cities offer more job opportunities. <b>On the other hand,</b> the cost of living there is much higher.', v:'Thành phố lớn có nhiều cơ hội việc làm hơn. Mặt khác, chi phí sinh hoạt ở đó cao hơn nhiều.', n:'Hai mặt đối lập của cùng một vấn đề. Hợp Speaking Part 3.'},
+  {i:'🏠', e:'Many young people cannot afford to buy a home. <b>As a result,</b> they live with their parents for longer.', v:'Nhiều người trẻ không đủ tiền mua nhà. Vì vậy, họ sống cùng bố mẹ lâu hơn.'},
+  {i:'📵', e:'Some schools have banned mobile phones in class. <b>This policy</b> can help students focus on their lessons.', v:'Một số trường đã cấm điện thoại trong lớp. Chính sách này có thể giúp học sinh tập trung vào bài.', n:'This + danh từ tóm tắt: liên kết chặt hơn Moreover.'}
+ ]
+};
+
+</script>
 <script>
 /* ============ Ngữ pháp A–Z: mục lục, bài học, quiz, kiểm tra tổng hợp ============ */
 (function(){
@@ -9686,8 +10961,76 @@ const byId={};GA.forEach((t,i)=>byId[t.id]=i);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const norm=s=>String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/đ/g,'d');
 const strip=h=>h.replace(/<[^>]+>/g,' ').replace(/&[a-z#0-9]+;/g,' ');
-const IDX=GA.map(t=>norm(t.t+' '+t.sum+' '+strip(t.html)+' '+t.q.map(x=>x.q+' '+x.o.join(' ')).join(' ')));
+/* phần bổ sung: hình minh họa + ví dụ (GAX[id]={fig:[…],ex:[…]}) */
+const X=typeof GAX!=='undefined'?GAX:{};
+GA.forEach(t=>{const x=X[t.id]||{};t.fig=x.fig||[];t.ex=x.ex||[]});
+const IDX=GA.map(t=>norm(t.t+' '+t.sum+' '+strip(t.html)+' '+t.q.map(x=>x.q+' '+x.o.join(' ')).join(' ')+' '+
+  t.ex.map(e=>strip(e.e)+' '+e.v).join(' ')));
 const top=()=>window.scrollTo({top:0});
+
+/* ---------- trục thời gian (SVG) ----------
+ tl={now:.62, nowT:'Bây giờ', items:[{p:.3,t:'went'} | {a:.2,b:.62,t:'have lived',s:'s|d|w',arr:1} | {a,b,n:5,t}], marks:[{p,t}], c:'ac|vio|warn|good|bad'} */
+const COL={ac:'var(--ac)',vio:'var(--vio)',warn:'var(--warn)',good:'var(--good)',bad:'var(--bad)',tx:'var(--tx2)'};
+function tl(s){
+  const W=360,L=14,R=346,X=p=>L+(R-L)*p,lane=44,items=s.items||[],H=26+items.length*lane+46;
+  const ax=H-40,now=s.now==null?.62:s.now;
+  const tw=t=>String(t).length*7.6;
+  const lab=(x,y,t,c,sz)=>{const w=tw(t)*(sz||14)/14;let a='middle';
+    if(x-w/2<2){x=2;a='start'}else if(x+w/2>W-2){x=W-2;a='end'}
+    return '<text x="'+x.toFixed(1)+'" y="'+y+'" text-anchor="'+a+'" style="fill:'+c+';font-size:'+(sz||14)+'px;font-weight:700">'+esc(t)+'</text>'};
+  let g='<line x1="'+L+'" y1="'+ax+'" x2="'+(R+8)+'" y2="'+ax+'" style="stroke:var(--tx3);stroke-width:2"/>'+
+    '<path d="M'+(R+8)+' '+(ax-5)+'L'+(R+15)+' '+ax+'L'+(R+8)+' '+(ax+5)+'Z" style="fill:var(--tx3)"/>';
+  if(now!==false){g+='<line x1="'+X(now)+'" y1="10" x2="'+X(now)+'" y2="'+(ax+6)+'" style="stroke:var(--warn);stroke-width:1.6;stroke-dasharray:4 4"/>'+
+    lab(X(now),ax+22,s.nowT||'Bây giờ','var(--warn)',13)}
+  g+='<text x="'+L+'" y="'+(ax+38)+'" style="fill:var(--tx3);font-size:12px">◀ Quá khứ</text>'+
+    '<text x="'+(R+12)+'" y="'+(ax+38)+'" text-anchor="end" style="fill:var(--tx3);font-size:12px">Tương lai ▶</text>';
+  (s.marks||[]).forEach(m=>{g+='<line x1="'+X(m.p)+'" y1="'+(ax-5)+'" x2="'+X(m.p)+'" y2="'+(ax+5)+'" style="stroke:var(--tx3);stroke-width:2"/>'+
+    lab(X(m.p),ax+22,m.t,'var(--tx2)',12)});
+  items.forEach((it,k)=>{
+    const y=26+k*lane+22,c=COL[it.c]||COL[s.c]||COL.ac;
+    if(it.p!=null){const x=X(it.p);
+      g+='<line x1="'+x+'" y1="'+(y+8)+'" x2="'+x+'" y2="'+ax+'" style="stroke:'+c+';stroke-width:1;opacity:.35"/>'+
+        '<circle cx="'+x+'" cy="'+y+'" r="7" style="fill:'+c+'"/>'+lab(x,y-13,it.t,c)}
+    else{const a=X(it.a),b=X(it.b);
+      if(it.n){for(let i=0;i<it.n;i++){const x=a+(b-a)*(it.n>1?i/(it.n-1):.5);g+='<path d="M'+(x-6)+' '+(y+1)+'l5 5 9-11" style="fill:none;stroke:'+c+';stroke-width:3;stroke-linecap:round;stroke-linejoin:round"/>'}}
+      else if(it.s==='w'){let d='M'+a+' '+y;for(let x=a;x<b;x+=12)d+='q3 -7 6 0t6 0';
+        g+='<path d="'+d+'" style="fill:none;stroke:'+c+';stroke-width:3;stroke-linecap:round"/>'}
+      else g+='<line x1="'+a+'" y1="'+y+'" x2="'+b+'" y2="'+y+'" style="stroke:'+c+';stroke-width:8;stroke-linecap:round'+(it.s==='d'?';stroke-dasharray:2 12':'')+'"/>';
+      if(it.arr)g+='<path d="M'+(b+4)+' '+(y-8)+'L'+(b+16)+' '+y+'L'+(b+4)+' '+(y+8)+'Z" style="fill:'+c+'"/>';
+      g+='<line x1="'+a+'" y1="'+(y+6)+'" x2="'+a+'" y2="'+ax+'" style="stroke:'+c+';stroke-width:1;opacity:.3"/>'+
+        '<line x1="'+b+'" y1="'+(y+6)+'" x2="'+b+'" y2="'+ax+'" style="stroke:'+c+';stroke-width:1;opacity:.3"/>'+
+        lab((a+b)/2,y-13,it.t,c)}
+  });
+  return '<svg class="ga-tl" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Trục thời gian">'+g+'</svg>'}
+function figHTML(f){
+  return '<figure class="ga-fig">'+(f.tl?tl(f.tl):'')+(f.svg||'')+(f.html||'')+
+    (f.cap?'<figcaption>'+f.cap+'</figcaption>':'')+'</figure>'}
+/* chèn hình vào bài: sec 0 = sau đoạn mở đầu, sec n = cuối mục n */
+function withFigs(t){
+  if(!t.fig.length)return t.html;
+  const parts=t.html.split(/(?=<h3[ >])/);
+  t.fig.forEach(f=>{const n=f.sec||0;const k=Math.min(n,parts.length-1);parts[k]+=figHTML(f)});
+  return parts.join('')}
+/* đọc câu tiếng Anh */
+let VO=null;
+function pickVoice(){try{const v=speechSynthesis.getVoices().filter(x=>/^en[-_]/i.test(x.lang));
+  VO=v.find(x=>/en[-_]US/i.test(x.lang)&&/Google|Natural|Aria|Jenny|Samantha/i.test(x.name))||v.find(x=>/en[-_](US|GB)/i.test(x.lang))||v[0]||null}catch(e){}}
+if('speechSynthesis' in window){pickVoice();speechSynthesis.addEventListener('voiceschanged',pickVoice)}
+function say(text,btn){
+  if(!('speechSynthesis' in window))return;
+  try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='en-US';if(VO)u.voice=VO;u.rate=.92;
+    if(btn){document.querySelectorAll('.ga-say.on').forEach(b=>b.classList.remove('on'));btn.classList.add('on');
+      u.onend=u.onerror=()=>btn.classList.remove('on')}
+    speechSynthesis.speak(u)}catch(e){}}
+function exHTML(t){
+  if(!t.ex.length)return'';
+  const can='speechSynthesis' in window;
+  return '<div class="ga-ex"><h2>Ví dụ minh họa · '+t.ex.length+' câu</h2>'+
+    '<p class="mini" style="margin-top:-4px">'+(can?'Bấm 🔊 để nghe câu tiếng Anh. ':'')+'Phần in đậm là chỗ dùng ngữ pháp của bài.</p><div class="ga-exg">'+
+    t.ex.map(e=>'<div class="ga-exc"><span class="ga-exi" aria-hidden="true">'+(e.i||'💬')+'</span><div class="ga-ext"><div class="ga-exe">'+e.e+'</div>'+
+      '<div class="ga-exv">'+e.v+'</div>'+(e.n?'<div class="ga-exn">'+e.n+'</div>':'')+'</div>'+
+      (can?'<button class="ga-say" data-say="'+esc(strip(e.e).replace(/\s+/g,' ').trim())+'" aria-label="Nghe câu này">🔊</button>':'')+'</div>').join('')+
+    '</div></div>'}
 
 function scoreTag(id){const s=st.score[id];if(!s)return'';const p=s.best/s.n;
   return '<span class="ga-sc '+(p>=.83?'g':p>=.5?'w':'b')+'">'+s.best+'/'+s.n+'</span>'}
@@ -9758,14 +11101,22 @@ function topic(id){
   '<h1 class="ga-title">'+esc(t.t)+'</h1>'+
   '<div class="ga-meta"><span class="tag ac">Trình độ '+esc(t.lv)+'</span>'+(st.done[id]?'<span class="tag g">Đã học</span>':'')+scoreTag(id)+'</div>'+
   '<p class="sub" style="margin-bottom:6px">'+esc(t.sum)+'</p>'+
-  '<div class="ga-content">'+t.html+'</div>'+
-  '<div class="ga-quiz-wrap"><h2>Kiểm tra nhanh · '+t.q.length+' câu</h2><p class="mini" style="margin-top:-4px">Chọn đáp án, xem giải thích ngay. Đúng từ '+
+  '<div class="ga-content">'+withFigs(t)+'</div>'+exHTML(t)+
+  '<div class="ga-quiz-wrap" id="ga-qw"><h2>Kiểm tra nhanh · '+t.q.length+' câu</h2><p class="mini" style="margin-top:-4px">Chọn đáp án, xem giải thích ngay. Đúng từ '+
   Math.ceil(t.q.length*5/6)+'/'+t.q.length+' câu trở lên thì bài tự đánh dấu “đã học”.</p><div id="ga-quiz"></div></div>'+
   '<div class="ga-foot">'+
   (pv?'<button class="ga-pn" data-id="'+pv.id+'"><small>← Bài trước</small><b>'+esc(pv.t)+'</b></button>':'<span></span>')+
   '<div class="mid"><button class="btn gh ga-done-btn'+(st.done[id]?' on':'')+'" data-act="done">'+(st.done[id]?'✓ Đã học':'Đánh dấu đã học')+'</button></div>'+
   (nx?'<button class="ga-pn nx" data-id="'+nx.id+'"><small>Bài sau →</small><b>'+esc(nx.t)+'</b></button>':'<button class="ga-pn nx" data-act="test"><small>Hết bài →</small><b>Làm kiểm tra tổng hợp</b></button>')+
-  '</div></article></div>';
+  '</div></article></div>'+
+  /* thanh dưới cho điện thoại: bài trước · mục lục · quiz · bài sau */
+  '<nav class="ga-mbar" aria-label="Điều hướng bài">'+
+  '<button '+(pv?'data-id="'+pv.id+'"':'disabled')+' aria-label="Bài trước"><b>‹</b><small>Bài trước</small></button>'+
+  '<button data-act="toc"><b>☰</b><small>Bài '+(i+1)+'/'+GA.length+'</small></button>'+
+  '<button data-act="goquiz"><b>✎</b><small>Làm quiz</small></button>'+
+  '<button '+(nx?'data-id="'+nx.id+'"':'data-act="test"')+' aria-label="Bài sau"><b>›</b><small>'+(nx?'Bài sau':'Kiểm tra')+'</small></button></nav>'+
+  '<div class="ga-sheet-bg" data-act="tocx"></div>';
+  if(window.uiStack)window.uiStack(root);
   quiz(document.getElementById('ga-quiz'),t.q.map(x=>Object.assign({tid:id},x)),(ok,n)=>{
     const s=st.score[id]||{best:0,n};s.n=n;s.last=ok;s.best=Math.max(s.best,ok);st.score[id]=s;
     if(ok>=Math.ceil(n*5/6))st.done[id]=true;save();
@@ -9832,9 +11183,14 @@ function test(group){
 
 /* ---------- điều hướng trong mục ---------- */
 root.addEventListener('click',e=>{
+  const sb=e.target.closest('[data-say]');if(sb){say(sb.dataset.say,sb);return}
   const b=e.target.closest('[data-id],[data-open],[data-act]');if(!b||!root.contains(b))return;
-  if(b.dataset.id||b.dataset.open){topic(b.dataset.id||b.dataset.open);top();return}
+  if(b.dataset.id||b.dataset.open){root.classList.remove('toc-open');topic(b.dataset.id||b.dataset.open);top();return}
   const a=b.dataset.act;
+  if(a==='toc'){const o=root.classList.toggle('toc-open');if(o){const c=root.querySelector('.ga-toc .cur');if(c)c.scrollIntoView({block:'center'})}return}
+  if(a==='tocx'){root.classList.remove('toc-open');return}
+  if(a==='goquiz'){const q=document.getElementById('ga-qw');if(q)q.scrollIntoView({behavior:'smooth'});return}
+  root.classList.remove('toc-open');
   if(a==='home'){home();top()}
   else if(a==='test')test();
   else if(a==='done'){const id=st.last;st.done[id]=!st.done[id];save();
@@ -9871,7 +11227,26 @@ function syncTitle(){
 const close=()=>{body.classList.remove('navopen');$('#tb-menu').setAttribute('aria-expanded','false')};
 $('#tb-menu').onclick=()=>{const o=body.classList.toggle('navopen');$('#tb-menu').setAttribute('aria-expanded',String(o))};
 $('#scrim').onclick=close;
-document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){close();const g=$('#ga-root');if(g)g.classList.remove('toc-open')}});
+
+/* bảng ≥3 cột: trên điện thoại hiện thành từng thẻ (nhãn cột lấy từ hàng tiêu đề) */
+function stack(scope){
+  scope.querySelectorAll('table:not(.stk)').forEach(tb=>{
+    if(tb.querySelector('[rowspan],[colspan],input,select,button,textarea')||tb.closest('#s-zh,#s-jp,#s-ko'))return;
+    const rows=[...tb.rows];if(rows.length<2)return;
+    const hd=rows[0];if(hd.querySelector('td')||!hd.querySelector('th'))return;
+    const labels=[...hd.cells].map(c=>c.textContent.trim());if(labels.length<3)return;
+    rows.slice(1).forEach(r=>[...r.cells].forEach((c,i)=>{if(labels[i])c.setAttribute('data-l',labels[i]);
+      const sp=document.createElement('span');sp.className='cv';while(c.firstChild)sp.appendChild(c.firstChild);c.appendChild(sp)}));
+    hd.classList.add('hd');tb.classList.add('stk');
+  });
+}
+window.uiStack=stack;
+document.querySelectorAll('main>section:not(#s-zh,#s-jp,#s-ko)').forEach(stack);
+/* bảng vẫn phải cuộn ngang: thêm gợi ý "vuốt" */
+function hint(){document.querySelectorAll('section.on .tw').forEach(w=>w.classList.toggle('scrolls',w.scrollWidth>w.clientWidth+4))}
+document.querySelectorAll('.nb').forEach(b=>b.addEventListener('click',()=>setTimeout(hint,60)));
+addEventListener('resize',hint);setTimeout(hint,300);
 document.querySelectorAll('.nb').forEach(b=>b.addEventListener('click',()=>{close();setTimeout(syncTitle)}));
 syncTitle();
 
