@@ -903,14 +903,14 @@ main [class*="gf-"].ac{--fc:var(--ac)} main [class*="gf-"].vio{--fc:var(--vio)} 
 
 /* ===================== Trang trí theo từng nước (body[data-lang]) ===================== */
 /* ---- bảng màu ---- */
-body[data-lang="en"]{--ac:#6b9bff;--vio:#ff6b7f;--jade-soft:rgba(107,155,255,.14)}
-body[data-lang="zh"]{--ac:#ff7a63;--ac2:#c0392b;--vio:#f0c14b;--jade-soft:rgba(255,122,99,.14)}
-body[data-lang="jp"]{--ac:#ff8fb5;--ac2:#c2185b;--vio:#95a6ff;--jade-soft:rgba(255,143,181,.14)}
-body[data-lang="ko"]{--ac:#38c6a4;--ac2:#0f7d65;--vio:#ff6f6f;--jade-soft:rgba(56,198,164,.14)}
-html:is([data-theme="light"],[data-theme="paper"]) body[data-lang="en"]{--ac:#1d4fc4;--vio:#c8102e;--jade-soft:rgba(29,79,196,.1)}
-html:is([data-theme="light"],[data-theme="paper"]) body[data-lang="zh"]{--ac:#b42318;--vio:#9a6a00;--jade-soft:rgba(180,35,24,.1)}
-html:is([data-theme="light"],[data-theme="paper"]) body[data-lang="jp"]{--ac:#c2185b;--vio:#3346a8;--jade-soft:rgba(194,24,91,.1)}
-html:is([data-theme="light"],[data-theme="paper"]) body[data-lang="ko"]{--ac:#0b7a62;--vio:#c62828;--jade-soft:rgba(11,122,98,.1)}
+:is(body[data-lang="en"],#game[data-lang="en"]){--ac:#6b9bff;--vio:#ff6b7f;--jade-soft:rgba(107,155,255,.14)}
+:is(body[data-lang="zh"],#game[data-lang="zh"]){--ac:#ff7a63;--ac2:#c0392b;--vio:#f0c14b;--jade-soft:rgba(255,122,99,.14)}
+:is(body[data-lang="jp"],#game[data-lang="jp"]){--ac:#ff8fb5;--ac2:#c2185b;--vio:#95a6ff;--jade-soft:rgba(255,143,181,.14)}
+:is(body[data-lang="ko"],#game[data-lang="ko"]){--ac:#38c6a4;--ac2:#0f7d65;--vio:#ff6f6f;--jade-soft:rgba(56,198,164,.14)}
+html:is([data-theme="light"],[data-theme="paper"]) :is(body[data-lang="en"],#game[data-lang="en"]){--ac:#1d4fc4;--vio:#c8102e;--jade-soft:rgba(29,79,196,.1)}
+html:is([data-theme="light"],[data-theme="paper"]) :is(body[data-lang="zh"],#game[data-lang="zh"]){--ac:#b42318;--vio:#9a6a00;--jade-soft:rgba(180,35,24,.1)}
+html:is([data-theme="light"],[data-theme="paper"]) :is(body[data-lang="jp"],#game[data-lang="jp"]){--ac:#c2185b;--vio:#3346a8;--jade-soft:rgba(194,24,91,.1)}
+html:is([data-theme="light"],[data-theme="paper"]) :is(body[data-lang="ko"],#game[data-lang="ko"]){--ac:#0b7a62;--vio:#c62828;--jade-soft:rgba(11,122,98,.1)}
 
 /* ---- dải màu trên cùng màn hình ---- */
 body[data-lang]::before{content:"";position:fixed;left:0;right:0;top:0;height:4px;z-index:41;pointer-events:none}
@@ -996,6 +996,119 @@ body[data-lang="ko"] :is(#s-ko) .gram details{border-image:none;border-top-color
   #s-ko .view>.top h1{padding-right:62px}
   body[data-lang="en"] .hero::after{width:210px;height:64px}
 }
+
+/* ===== Trò chơi Chuỗi từ ===== */
+.gm-nav{display:flex;align-items:center;gap:9px;width:100%;margin:10px 0 4px;padding:9px 12px;border:0;border-radius:12px;cursor:pointer;font-family:inherit;text-align:left;
+  color:#fff;background:linear-gradient(135deg,var(--ac2,var(--ac)),var(--vio));box-shadow:0 4px 14px color-mix(in srgb,var(--ac) 30%,transparent)}
+.gm-nav span{font-size:17px}.gm-nav b{flex:1;font-size:14px}
+.gm-nav em{font-style:normal;font-size:10.5px;font-weight:700;background:rgba(255,255,255,.22);border-radius:20px;padding:1px 7px}
+.gm-nav:hover{filter:brightness(1.08)}
+.ql .ql-game{grid-column:1/-1;background:linear-gradient(135deg,color-mix(in srgb,var(--ac) 18%,var(--bg2)),color-mix(in srgb,var(--vio) 16%,var(--bg2)))}
+.ql .ql-game i{background:color-mix(in srgb,var(--warn) 22%,transparent)!important}
+.gm-banner{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;width:100%;margin:14px 0 0;padding:12px 14px;border:0;border-radius:16px;cursor:pointer;
+  font-family:inherit;text-align:left;color:#fff;background:linear-gradient(135deg,var(--ac2,var(--ac)),var(--vio));box-shadow:var(--sh)}
+.gm-banner span{font-size:22px}.gm-banner b{font-size:16px}.gm-banner small{flex-basis:100%;font-size:13px;opacity:.92}
+#game{position:fixed;inset:0;z-index:90;background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  display:flex;align-items:flex-start;justify-content:center;overflow-y:auto;padding:5vh 12px 24px}
+#game[hidden]{display:none}
+body.gm-open{overflow:hidden}
+.gm-box{position:relative;width:100%;max-width:520px;background:var(--bg2);border:1px solid var(--line);border-radius:22px;box-shadow:0 20px 60px rgba(0,0,0,.4);padding:18px}
+.gm-box.shake{animation:gmShake .4s}
+@keyframes gmShake{20%,60%{transform:translateX(-7px)}40%,80%{transform:translateX(7px)}}
+.gm-x{position:absolute;top:10px;right:10px;width:38px;height:38px;border-radius:12px;border:1px solid var(--line);background:var(--bg3);color:var(--tx);cursor:pointer;font-size:15px}
+.gm-title{display:flex;gap:12px;align-items:center;margin:0 44px 14px 0}
+.gm-fire{font-size:38px;line-height:1;filter:drop-shadow(0 4px 10px rgba(255,120,0,.4))}
+.gm-title b{display:block;font-size:22px;font-weight:800;letter-spacing:-.3px}
+.gm-title small{display:block;font-size:13px;color:var(--tx2);line-height:1.45}
+.gm-tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:10px}
+.gm-tabs button,.gm-modes button{font-family:inherit;cursor:pointer;border:1px solid var(--line);background:var(--bg3);color:var(--tx);border-radius:12px}
+.gm-tabs button{padding:8px 4px;font-weight:700;font-size:14px}
+.gm-tabs button[aria-pressed="true"],.gm-modes button[aria-pressed="true"]{border-color:var(--ac);background:color-mix(in srgb,var(--ac) 16%,var(--bg3));color:var(--ac)}
+.gm-modes{display:grid;gap:6px;margin-bottom:10px}
+.gm-modes button{text-align:left;padding:9px 12px}
+.gm-modes b{display:block;font-size:14.5px}.gm-modes small{display:block;font-size:12.5px;color:var(--tx2);line-height:1.45;margin-top:1px}
+.gm-row{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;margin:4px 0 8px}
+.gm-row select{flex:1;min-height:40px;border-radius:10px;border:1px solid var(--line);background:var(--bg3);color:var(--tx);font-family:inherit;font-size:16px;padding:0 8px}
+.gm-n{font-size:12.5px;color:var(--tx3);white-space:nowrap}
+.gm-opts{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13.5px;color:var(--tx2);margin-bottom:12px}
+.gm-opts label{display:flex;align-items:center;gap:6px;cursor:pointer}
+.gm-opts input{width:18px;height:18px;accent-color:var(--ac)}
+.gm-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:6px 0 14px}
+.gm-stats div{background:var(--bg3);border-radius:14px;padding:9px 10px;text-align:center}
+.gm-stats b{display:block;font-size:24px;font-weight:800;color:var(--ac);line-height:1.2}
+.gm-stats small{font-size:11.5px;color:var(--tx3)}
+.gm-go{display:block;width:100%;min-height:48px;border:0;border-radius:14px;cursor:pointer;font-family:inherit;font-size:16.5px;font-weight:800;color:#fff;
+  background:linear-gradient(135deg,var(--ac2,var(--ac)),var(--vio));box-shadow:0 6px 18px color-mix(in srgb,var(--ac) 30%,transparent)}
+.gm-go:disabled{opacity:.5;cursor:default}
+.gm-go.gh{background:var(--bg3);color:var(--tx);border:1px solid var(--line);box-shadow:none}
+.gm-go.sm{width:auto;min-height:46px;padding:0 18px;font-size:15px}
+.gm-warn{color:var(--bad);font-size:13px;text-align:center}
+.gm-hud{display:flex;align-items:center;gap:12px;margin:0 0 10px;padding-right:46px;font-weight:800;position:relative;min-height:36px}
+.gm-hud .gm-x{top:-2px;right:-2px}
+.gm-lives{font-size:17px;letter-spacing:1px}.gm-lives i{font-style:normal;opacity:.45}
+.gm-streak{font-size:18px;color:var(--warn);transition:transform .2s}
+.gm-streak.hot{animation:gmHot 1s infinite;text-shadow:0 0 12px rgba(255,140,0,.6)}
+@keyframes gmHot{50%{transform:scale(1.12)}}
+.gm-score{margin-left:auto;font-size:15px;color:var(--tx2)}
+.gm-time{height:6px;border-radius:9px;background:var(--bg3);overflow:hidden;margin-bottom:12px}
+.gm-time i{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--good),var(--warn))}
+.gm-time.low i{background:var(--bad)}
+.gm-card{position:relative;text-align:center;padding:22px 12px 18px;border-radius:18px;background:linear-gradient(135deg,color-mix(in srgb,var(--ac) 12%,var(--bg3)),var(--bg3));margin-bottom:12px}
+.gm-card.pop{animation:gmPop .35s}
+@keyframes gmPop{40%{transform:scale(1.04)}}
+.gm-prompt{font-size:21px;font-weight:700;line-height:1.4}
+.gm-prompt.big{font-size:44px;font-weight:600;line-height:1.25}
+.gm-sub{font-size:13.5px;color:var(--tx2);margin-top:8px;line-height:1.5}
+.gm-mult{position:absolute;top:8px;right:10px;font-size:12px;font-weight:800;color:var(--warn);background:color-mix(in srgb,var(--warn) 16%,transparent);border-radius:20px;padding:1px 8px}
+.gm-hear{width:84px;height:84px;border-radius:50%;border:0;cursor:pointer;font-size:34px;background:var(--bg2);box-shadow:var(--sh)}
+.gm-form{display:flex;gap:8px}
+.gm-form input{flex:1;min-width:0;min-height:50px;border-radius:14px;border:2px solid var(--line);background:var(--bg);color:var(--tx);font-family:inherit;font-size:19px;padding:0 14px;outline:none}
+.gm-form input:focus{border-color:var(--ac)}
+.gm-form input.han{font-family:var(--f-han,serif)}
+.gm-btns{display:flex;gap:6px;margin-top:8px}
+.gm-btns button{flex:1;min-height:40px;border-radius:12px;border:1px solid var(--line);background:var(--bg3);color:var(--tx);font-family:inherit;font-size:13.5px;font-weight:600;cursor:pointer}
+.gm-fb{margin-top:10px;font-size:14.5px;line-height:1.5;min-height:4px}
+.gm-fb.ok b:first-child{color:var(--good);font-size:17px}
+.gm-fb.no>b:first-child{color:var(--bad);font-size:16px}
+.gm-fb.near{color:var(--warn);font-weight:700}
+.gm-fb.hint{color:var(--tx2)}
+.gm-fb .gm-go{margin-top:10px;width:100%}
+.gm-ans{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin-top:8px;padding:10px 12px;border-radius:14px;background:var(--bg3)}
+.gm-ans b{font-size:24px}.gm-ans span{color:var(--ac);font-weight:600}.gm-ans .gm-hv{color:var(--tx3);font-size:12.5px;font-weight:700}
+.gm-ans em{flex-basis:100%;font-style:normal;color:var(--tx)}
+.gm-ans small{flex-basis:100%;color:var(--tx2);font-size:13px}
+.gm-mile{font-size:22px;font-weight:900;color:var(--warn);text-align:center;margin-bottom:4px;animation:gmPop .5s}
+.gm-best{text-align:center;font-size:13px;color:var(--tx2);margin:-4px 0 12px}
+.gm-miss{background:var(--bg3);border-radius:14px;padding:10px 12px;margin-bottom:12px;max-height:40vh;overflow:auto}
+.gm-miss>b{display:block;font-size:13px;margin-bottom:6px;color:var(--tx2)}
+.gm-miss div{display:flex;align-items:baseline;flex-wrap:wrap;gap:2px 8px;padding:5px 0;border-top:1px solid var(--line)}
+.gm-miss div span{font-size:18px;font-weight:600}.gm-miss div small{color:var(--ac)}
+.gm-miss div em{font-style:normal;color:var(--tx2);font-size:13.5px;flex-basis:100%;padding-left:42px}
+.gm-say{width:34px;height:34px;border-radius:10px;border:1px solid var(--line);background:var(--bg2);cursor:pointer;align-self:center}
+.gm-end{display:grid;gap:8px}
+.gm-conf{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:95}
+.gm-conf i{position:absolute;top:30%;width:9px;height:13px;border-radius:2px;animation:gmConf 1.5s ease-out forwards}
+@keyframes gmConf{0%{transform:translate(0,0) rotate(0);opacity:1}100%{transform:translate(var(--dx),70vh) rotate(var(--r));opacity:0}}
+@media(max-width:600px){
+  #game{padding:0;align-items:stretch}
+  .gm-box{border-radius:0;min-height:100%;border:0;padding:14px 14px 24px}
+  .gm-prompt.big{font-size:40px}
+}
+@media (prefers-reduced-motion:reduce){.gm-conf,.gm-streak.hot{animation:none!important}}
+
+/* ===== Tài liệu chính thức ===== */
+.rs-box{border:1px solid var(--line);border-radius:18px;background:var(--bg2);box-shadow:var(--sh);padding:14px;margin:16px 0 20px}
+.rs-head b{display:block;font-size:17px}
+.rs-head small{display:block;font-size:13px;color:var(--tx3);line-height:1.5;margin:2px 0 4px}
+.rs-grp{margin-top:12px}
+.rs-gt{font-size:12.5px;font-weight:800;letter-spacing:.4px;color:var(--tx2);margin-bottom:6px}
+.rs-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px}
+.rs-btn{display:block;text-decoration:none;color:var(--tx);background:var(--bg3);border:1px solid var(--line);border-radius:12px;padding:9px 12px;transition:border-color .15s,transform .1s}
+.rs-btn:hover{border-color:var(--ac);transform:translateY(-1px)}
+.rs-btn b{display:block;font-size:14px;line-height:1.35;color:var(--ac)}
+.rs-btn b i{font-style:normal;font-size:12px;opacity:.8}
+.rs-btn small{display:block;font-size:12.5px;color:var(--tx2);line-height:1.45;margin-top:2px}
+@media(max-width:600px){.rs-list{grid-template-columns:1fr}}
 </style>
 <!--UI2_STYLE_END-->
 </head>
@@ -5658,7 +5771,7 @@ const saveSet=()=>save('set',SET),saveWrong=()=>save('wrong',WRONG);
 
 /* ---------- data ---------- */
 function parse(raw,lv){return raw.trim().split('\n').map(l=>{const [h,p,hv,vi]=l.split('|');return {id:lv+':'+h,h,p,hv,vi,lv}})}
-const WORDS=[...parse(RAW_HSK1,'HSK1'),...parse(RAW_HSK2,'HSK2'),...parse(RAW_WORK,'CV'),...parse(RAW_XNK,'XNK')];
+const WORDS=[...parse(RAW_HSK1,'HSK1'),...parse(RAW_HSK2,'HSK2'),...parse(RAW_WORK,'CV'),...parse(RAW_XNK,'XNK')];window.__W=window.__W||{};window.__W.zh=WORDS;
 const BYID=Object.fromEntries(WORDS.map(w=>[w.id,w]));
 const DECKS=[{id:'HSK1',name:'HSK 1'},{id:'HSK2',name:'HSK 2'},{id:'CV',name:'Công việc & Game'},{id:'XNK',name:'Xuất nhập khẩu'},{id:'ALL',name:'Tất cả'}];
 const deckWords=d=>d==='ALL'?WORDS:WORDS.filter(w=>w.lv===d);
@@ -7181,7 +7294,7 @@ const pick=(a,n)=>shuffle(a).slice(0,n);
 
 /* ---------- dữ liệu ---------- */
 function parse(raw,lv){return raw.trim().split('\n').map(l=>{const [w,r,hv,vi]=l.split('|');return {id:lv+':'+w,w,r,hv,vi,lv}})}
-const WORDS=[...parse(JRAW_N5,'N5'),...parse(JRAW_WORK,'CV'),...parse(JRAW_XNK,'XNK')];
+const WORDS=[...parse(JRAW_N5,'N5'),...parse(JRAW_WORK,'CV'),...parse(JRAW_XNK,'XNK')];window.__W=window.__W||{};window.__R=window.__R||{};window.__W.jp=WORDS;window.__R.jp=s=>romaji(s);
 const BYID=Object.fromEntries(WORDS.map(w=>[w.id,w]));
 const KANJI=JKANJI.trim().split('\n').map(l=>{const [k,hv,on,kun,vi,ex]=l.split('|');return {k,hv,on,kun,vi,ex}});
 const DECKS=[{id:'N5',name:'N5'},{id:'CV',name:'Công việc & IT'},{id:'XNK',name:'Xuất nhập khẩu'},{id:'ALL',name:'Tất cả'}];
@@ -8942,7 +9055,7 @@ const take=(a,n)=>pick(a,n||a.length);
 
 /* ---------- dữ liệu ---------- */
 function parse(raw,lv){return raw.trim().split('\n').map(l=>{const [w,hj,hv,vi]=l.split('|');return {id:lv+':'+w,w,hj,hv,vi,lv}})}
-const WORDS=[...parse(KRAW_T1,'T1'),...parse(KRAW_WORK,'CV'),...parse(KRAW_XNK,'XNK')];
+const WORDS=[...parse(KRAW_T1,'T1'),...parse(KRAW_WORK,'CV'),...parse(KRAW_XNK,'XNK')];window.__W=window.__W||{};window.__R=window.__R||{};window.__W.ko=WORDS;window.__R.ko=s=>roman(s);
 const BYID=Object.fromEntries(WORDS.map(w=>[w.id,w]));
 const DECKS=[{id:'T1',name:'TOPIK I'},{id:'CV',name:'Công việc & IT'},{id:'XNK',name:'Xuất nhập khẩu'},{id:'ALL',name:'Tất cả'}];
 const deckWords=d=>d==='ALL'?WORDS:WORDS.filter(w=>w.lv===d);
@@ -13084,7 +13197,8 @@ function run(m,p){
 function planHTML(m){
   const P=GXP[m]||[],d=load(m);let tot=0,dn=0;P.forEach((w,i)=>w.x.forEach((t,j)=>{tot++;if(d[i+'-'+j])dn++}));
   const cur=Math.max(0,P.findIndex((w,i)=>w.x.some((t,j)=>!d[i+'-'+j])));
-  return '<div class="cp-plan" data-m="'+m+'"><div class="cp-head"><div><b>Lộ trình '+P.length+' tuần</b>'+
+  return '<button class="gm-banner" data-game="'+m+'" type="button"><span>🔥</span><b>Trò chơi Chuỗi từ</b><small>Ôn từ vựng: mỗi lượt 1 từ mới, gõ đúng để giữ chuỗi →</small></button>'+
+    '<div class="cp-plan" data-m="'+m+'"><div class="cp-head"><div><b>Lộ trình '+P.length+' tuần</b>'+
     '<small>Bấm nút dưới mỗi việc để mở đúng bài; làm xong thì tick. Tiến độ lưu trên máy bạn.</small></div>'+
     '<span class="cp-pct">'+dn+'/'+tot+'</span></div><div class="cp-bar"><i style="width:'+(tot?dn/tot*100:0)+'%"></i></div>'+
     P.map((w,i)=>{const n=w.x.filter((t,j)=>d[i+'-'+j]).length;
@@ -13140,6 +13254,365 @@ window.cpCheck=m=>{const bad=[];(GXP[m]||[]).forEach((w,i)=>w.x.forEach((t,j)=>t
 })();
 </script>
 <!--CJK2_END-->
+<!--GAME_START-->
+<script>
+/* ============ Trò chơi "Chuỗi từ": mỗi lượt 1 từ mới, gõ đúng để giữ chuỗi ============ */
+(function(){
+'use strict';
+const KEY='i7_game';
+let S;try{S=JSON.parse(localStorage.getItem(KEY))||{}}catch(e){S={}}
+S=Object.assign({best:{},wrong:{},seen:{},day:{last:'',n:0},mute:false,timer:true,voice:true,lang:null,mode:{},deck:{}},S);
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
+const $=(s,r)=>(r||document).querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const LANGS={en:'Anh',zh:'Trung',jp:'Nhật',ko:'Hàn'};
+const FONT={zh:'han',jp:'ja',ko:'ko',en:''};
+
+/* ---------- chuẩn hoá để so đáp án ---------- */
+const deacc=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'');
+const basic=s=>String(s).normalize('NFKC').toLowerCase().replace(/[’‘`´]/g,"'").replace(/[“”]/g,'"').trim();
+const nEN=s=>basic(s).replace(/\(.*?\)/g,' ').replace(/[.,!?;:"…—–\-\/]/g,' ').replace(/'/g,'').replace(/\s+/g,' ').trim()
+  .replace(/^(to|a|an|the) /,'').replace(/\bsomeone\b|\bsb\b/g,'sb').replace(/\bsomething\b|\bsth\b/g,'sth');
+const nPY=s=>deacc(basic(s).replace(/ü|v/g,'u')).replace(/[0-9'\s·.\-]/g,'');
+const hira=s=>s.replace(/[ァ-ヶ]/g,c=>String.fromCharCode(c.charCodeAt(0)-96));
+const nKANA=s=>hira(basic(s)).replace(/[\s・。、.,!?！？〜~]/g,'');
+function nRO(s){ /* romaji: đưa Hepburn/Kunrei, trường âm về một dạng */
+  s=deacc(basic(s).replace(/ā/g,'aa').replace(/ī/g,'ii').replace(/ū/g,'uu').replace(/ē/g,'ee').replace(/ō/g,'ou')).replace(/[\s'\-.,!?]/g,'');
+  return s.replace(/sh(?=[aiueo])/g,'sy').replace(/sy(?=i)/g,'s').replace(/ch(?=[aiueo])/g,'ty').replace(/ty(?=i)/g,'t')
+    .replace(/tsu/g,'tu').replace(/fu/g,'hu').replace(/j(?=[aiueo])/g,'zy').replace(/zy(?=i)/g,'z')
+    .replace(/nn/g,'n').replace(/m(?=[bmp])/g,'n').replace(/ou|oo/g,'o').replace(/uu/g,'u').replace(/ei/g,'e').replace(/aa/g,'a').replace(/ii/g,'i')}
+const nKO=s=>basic(s).replace(/[\s\-'.,!?]/g,'');
+const nKOR=s=>deacc(basic(s)).replace(/[\s\-'.,!?]/g,'');
+function lev(a,b){if(Math.abs(a.length-b.length)>1)return 9;const d=[...Array(b.length+1).keys()];
+  for(let i=1;i<=a.length;i++){let p=d[0];d[0]=i;for(let j=1;j<=b.length;j++){const t=d[j];d[j]=Math.min(d[j]+1,d[j-1]+1,p+(a[i-1]===b[j-1]?0:1));p=t}}return d[b.length]}
+
+/* ---------- dữ liệu từng thứ tiếng ---------- */
+const W=()=>window.__W||{},R=()=>window.__R||{};
+function enItems(){const out=[];if(typeof VOC==='undefined')return out;
+  Object.keys(VOC).forEach(topic=>VOC[topic].forEach(r=>{const [ph,vi,ex]=r;
+    const cloze=ex?ex.replace(new RegExp(ph.replace(/[.*+?^${}()|[\]\\]/g,'\\$&').replace(/\s+/g,'\\s+'),'i'),'_____'):'';
+    out.push({id:'en:'+ph,deck:topic,word:ph,vi,ex,cloze:cloze!==ex?cloze:'',say:ph,sayL:'en-US'})}));return out}
+const DATA={
+  en:{decks:()=>['ALL',...(typeof VOC!=='undefined'?Object.keys(VOC):[])],deckName:d=>d==='ALL'?'Tất cả chủ đề':d,
+    modes:{vi2en:{n:'Nghĩa → gõ cụm từ',d:'Thấy nghĩa tiếng Việt (và câu ví dụ có chỗ trống), gõ cụm tiếng Anh.'},
+           listen:{n:'Nghe → gõ lại',d:'Nghe cụm từ, gõ lại đúng chính tả. Luyện nghe + chính tả.'}},
+    items:enItems},
+  zh:{decks:()=>['ALL','HSK1','HSK2','CV','XNK'],deckName:d=>({ALL:'Tất cả',HSK1:'HSK 1',HSK2:'HSK 2',CV:'Công việc & Game',XNK:'Xuất nhập khẩu'})[d]||d,
+    modes:{h2py:{n:'Chữ Hán → gõ pinyin',d:'Không cần dấu thanh: 你好 → nihao (gõ ni3hao3 cũng được).'},
+           vi2py:{n:'Nghĩa → gõ pinyin',d:'Thấy nghĩa tiếng Việt, gõ pinyin của từ tiếng Trung.'},
+           listen:{n:'Nghe → gõ pinyin',d:'Nghe từ, gõ pinyin (không cần dấu).'}},
+    items:()=>(W().zh||[]).map(w=>({id:'zh:'+w.id,deck:w.lv,word:w.h,read:w.p,hv:w.hv,vi:w.vi,say:w.h,sayL:'zh-CN'}))},
+  jp:{decks:()=>['ALL','N5','CV','XNK'],deckName:d=>({ALL:'Tất cả',N5:'N5',CV:'Công việc & IT',XNK:'Xuất nhập khẩu'})[d]||d,
+    modes:{w2r:{n:'Từ → gõ cách đọc',d:'Thấy từ (kanji/kana), gõ cách đọc bằng romaji hoặc kana: 先生 → sensei.'},
+           vi2jp:{n:'Nghĩa → gõ tiếng Nhật',d:'Thấy nghĩa tiếng Việt, gõ từ tiếng Nhật bằng romaji hoặc kana.'},
+           listen:{n:'Nghe → gõ lại',d:'Nghe từ, gõ lại bằng romaji hoặc kana.'}},
+    items:()=>(W().jp||[]).map(w=>({id:'jp:'+w.id,deck:w.lv,word:w.w,read:w.r,rom:R().jp?R().jp(w.r):'',hv:w.hv,vi:w.vi,say:w.r,sayL:'ja-JP'}))},
+  ko:{decks:()=>['ALL','T1','CV','XNK'],deckName:d=>({ALL:'Tất cả',T1:'TOPIK I',CV:'Công việc & IT',XNK:'Xuất nhập khẩu'})[d]||d,
+    modes:{vi2ko:{n:'Nghĩa → gõ tiếng Hàn',d:'Thấy nghĩa tiếng Việt, gõ từ tiếng Hàn bằng chữ Hangul hoặc phiên âm (annyeonghaseyo).'},
+           ko2r:{n:'Chữ Hàn → gõ phiên âm',d:'Thấy chữ Hangul, gõ phiên âm Latinh: 감사합니다 → gamsahamnida.'},
+           listen:{n:'Nghe → gõ lại',d:'Nghe từ, gõ lại bằng Hangul hoặc phiên âm.'}},
+    items:()=>(W().ko||[]).map(w=>({id:'ko:'+w.id,deck:w.lv,word:w.w,rom:R().ko?R().ko(w.w):'',hj:w.hj,hv:w.hv,vi:w.vi,say:w.w,sayL:'ko-KR'}))}
+};
+/* đáp án chấp nhận + đề bài theo chế độ */
+function task(L,mode,it){
+  const t={prompt:'',sub:'',big:false,listen:mode==='listen',accept:[],show:it.word,hint:''};
+  if(L==='en'){t.prompt=mode==='listen'?'':it.vi;t.sub=mode==='listen'?'Gõ lại cụm từ vừa nghe':(it.cloze?'“'+it.cloze+'”':'');t.accept=[[nEN,it.word]];t.hint=it.word}
+  if(L==='zh'){t.accept=[[nPY,it.read]];t.hint=nPY(it.read);
+    if(mode==='h2py'){t.prompt=it.word;t.big=true;t.sub='Hán Việt: '+it.hv}else if(mode==='vi2py'){t.prompt=it.vi;t.sub='Gõ pinyin (không cần dấu)'}}
+  if(L==='jp'){t.accept=[[nKANA,it.read],[nRO,it.rom],[nKANA,it.word]];t.hint=it.rom||it.read;
+    if(mode==='w2r'){t.prompt=it.word;t.big=true;t.sub=it.hv&&it.hv!=='—'?'Hán Việt: '+it.hv:'Gõ romaji hoặc kana'}else if(mode==='vi2jp'){t.prompt=it.vi;t.sub='Gõ romaji hoặc kana'}}
+  if(L==='ko'){t.accept=[[nKO,it.word],[nKOR,it.rom]];t.hint=it.rom||it.word;
+    if(mode==='vi2ko'){t.prompt=it.vi;t.sub='Gõ Hangul hoặc phiên âm'}else if(mode==='ko2r'){t.prompt=it.word;t.big=true;t.accept=[[nKOR,it.rom]];t.sub='Gõ phiên âm Latinh'}}
+  if(t.listen&&L!=='en')t.sub='Bấm 🔊 để nghe lại';
+  return t}
+function check(t,input){
+  if(!input.trim())return 'empty';
+  for(const [f,ans] of t.accept){if(!ans)continue;const a=f(ans),b=f(input);if(a&&a===b)return 'ok'}
+  for(const [f,ans] of t.accept){if(!ans)continue;const a=f(ans),b=f(input);if(a.length>=5&&lev(a,b)===1)return 'near'}
+  return 'no'}
+
+/* ---------- giọng đọc ---------- */
+let utt=null;
+function speak(text,lang){
+  if(!S.voice||!('speechSynthesis' in window)||!text)return;
+  try{const SS=speechSynthesis,busy=SS.speaking||SS.pending;if(busy)SS.cancel();
+    const u=new SpeechSynthesisUtterance(text);u.lang=lang;u.rate=lang==='en-US'?.92:.85;
+    const v=SS.getVoices().filter(x=>x.lang.replace('_','-').toLowerCase().startsWith(lang.slice(0,2).toLowerCase()));
+    const pick=v.find(x=>x.lang.replace('_','-')===lang&&/Google|Natural|Online/i.test(x.name))||v.find(x=>x.lang.replace('_','-')===lang)||v[0];if(pick)u.voice=pick;
+    utt=u;const go=()=>{try{SS.resume()}catch(e){}SS.speak(u)};if(busy)setTimeout(go,90);else go()}catch(e){}}
+/* ---------- âm thanh nhỏ ---------- */
+let AC=null;
+function beep(kind){if(S.mute)return;try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();
+  const seq=kind==='ok'?[[660,.07],[880,.09]]:kind==='big'?[[523,.08],[659,.08],[784,.08],[1047,.16]]:kind==='near'?[[440,.08]]:[[220,.12],[165,.18]];
+  let t=AC.currentTime;seq.forEach(([f,d])=>{const o=AC.createOscillator(),g=AC.createGain();o.type=kind==='no'?'sawtooth':'triangle';o.frequency.value=f;
+    g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(.12,t+.01);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(AC.destination);o.start(t);o.stop(t+d+.02);t+=d})}catch(e){}}
+
+/* ---------- giao diện ---------- */
+const ov=document.createElement('div');ov.id='game';ov.hidden=true;ov.setAttribute('role','dialog');ov.setAttribute('aria-label','Trò chơi Chuỗi từ');
+document.body.appendChild(ov);
+let G=null; /* phiên đang chơi */
+const today=()=>{const d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate()};
+function dayStreak(){const t=today();if(S.day.last===t)return S.day.n;const y=new Date();y.setDate(y.getDate()-1);
+  const ys=y.getFullYear()+'-'+(y.getMonth()+1)+'-'+y.getDate();return S.day.last===ys?S.day.n:0}
+function markDay(){const t=today();if(S.day.last===t)return;S.day.n=dayStreak()+1;S.day.last=t;save()}
+function lang(){return S.lang&&DATA[S.lang]?S.lang:(document.body.dataset.lang||'en')}
+
+function startScreen(){
+  const L=lang();ov.dataset.lang=L;const D=DATA[L],modes=Object.keys(D.modes),mode=D.modes[S.mode[L]]?S.mode[L]:modes[0],decks=D.decks(),deck=decks.includes(S.deck[L])?S.deck[L]:'ALL';
+  const n=D.items().filter(x=>deck==='ALL'||x.deck===deck).length,bk=S.best[L+':'+mode]||{};
+  ov.innerHTML='<div class="gm-box gm-start"><button class="gm-x" data-a="close" aria-label="Đóng">✕</button>'+
+  '<div class="gm-title"><span class="gm-fire">🔥</span><div><b>Chuỗi từ</b><small>Mỗi lượt một từ mới. Gõ đúng để giữ chuỗi, sai mất 1 ❤️.</small></div></div>'+
+  '<div class="gm-tabs">'+Object.keys(LANGS).map(k=>'<button data-lang="'+k+'" aria-pressed="'+(k===L)+'">'+LANGS[k]+'</button>').join('')+'</div>'+
+  '<div class="gm-modes">'+modes.map(k=>'<button data-mode="'+k+'" aria-pressed="'+(k===mode)+'"><b>'+D.modes[k].n+'</b><small>'+D.modes[k].d+'</small></button>').join('')+'</div>'+
+  '<label class="gm-row">Bộ từ <select id="gm-deck">'+decks.map(d=>'<option value="'+esc(d)+'"'+(d===deck?' selected':'')+'>'+esc(D.deckName(d))+'</option>').join('')+'</select><span class="gm-n">'+n+' từ</span></label>'+
+  '<div class="gm-opts"><label><input type="checkbox" id="gm-timer"'+(S.timer?' checked':'')+'> ⏱ Đếm giờ 20 giây/từ</label>'+
+  '<label><input type="checkbox" id="gm-voice"'+(S.voice?' checked':'')+'> 🔊 Đọc đáp án</label>'+
+  '<label><input type="checkbox" id="gm-snd"'+(!S.mute?' checked':'')+'> 🎵 Âm báo</label></div>'+
+  '<div class="gm-stats"><div><b>'+(bk.streak||0)+'</b><small>chuỗi kỷ lục</small></div><div><b>'+(bk.score||0)+'</b><small>điểm cao nhất</small></div><div><b>'+dayStreak()+'</b><small>ngày chơi liên tiếp</small></div></div>'+
+  '<button class="gm-go" data-a="start"'+(n?'':' disabled')+'>Bắt đầu ▶</button>'+
+  (n?'':'<p class="gm-warn">Chưa có từ nào trong bộ này.</p>')+'</div>';
+  ov.querySelector('#gm-deck').onchange=e=>{S.deck[L]=e.target.value;save();startScreen()};
+  ov.querySelector('#gm-timer').onchange=e=>{S.timer=e.target.checked;save()};
+  ov.querySelector('#gm-voice').onchange=e=>{S.voice=e.target.checked;save()};
+  ov.querySelector('#gm-snd').onchange=e=>{S.mute=!e.target.checked;save()};
+}
+function pickNext(){
+  const pool=G.pool.filter(x=>!G.used.has(x.id));if(!pool.length){G.used.clear();return pickNext()}
+  let tot=0;const w=pool.map(x=>{const v=1+3*(S.wrong[x.id]||0)+(S.seen[x.id]?0:1.5);tot+=v;return v});
+  let r=Math.random()*tot;for(let i=0;i<pool.length;i++){r-=w[i];if(r<=0)return pool[i]}return pool[pool.length-1]}
+function start(onlyIds){
+  const L=lang(),D=DATA[L],mode=D.modes[S.mode[L]]?S.mode[L]:Object.keys(D.modes)[0],deck=S.deck[L]||'ALL';
+  let pool=D.items().filter(x=>deck==='ALL'||x.deck===deck);
+  if(onlyIds)pool=D.items().filter(x=>onlyIds.includes(x.id));
+  if(L==='jp')pool=pool.filter(x=>x.read);if(L==='ko'&&mode==='ko2r')pool=pool.filter(x=>x.rom);
+  ov.dataset.lang=L;G={L,mode,deck,pool,used:new Set(),lives:3,streak:0,maxStreak:0,score:0,ok:0,miss:[],cur:null,t:null,left:0,hintN:0,state:'ask',retry:false,review:!!onlyIds};
+  markDay();next();
+}
+function hud(){return '<div class="gm-hud"><span class="gm-lives">'+'❤️'.repeat(G.lives)+'<i>'+'🤍'.repeat(3-G.lives)+'</i></span>'+
+  '<span class="gm-streak'+(G.streak>=5?' hot':'')+'">🔥 <b>'+G.streak+'</b></span><span class="gm-score">⭐ '+G.score+'</span>'+
+  '<button class="gm-x" data-a="quit" aria-label="Dừng">✕</button></div>'}
+function next(){
+  clearInterval(G.t);G.cur=pickNext();G.used.add(G.cur.id);G.hintN=0;G.state='ask';G.retry=false;
+  const it=G.cur,t=task(G.L,G.mode,it);G.task=t;
+  /* cùng nghĩa tiếng Việt → từ nào cũng tính đúng */
+  if(/^vi2/.test(G.mode)){G.all=G.all||DATA[G.L].items();G.all.forEach(x=>{if(x.id!==it.id&&x.vi===it.vi)t.accept=t.accept.concat(task(G.L,G.mode,x).accept)})}
+  const mult=1+Math.floor(G.streak/5);
+  ov.innerHTML='<div class="gm-box gm-play">'+hud()+(S.timer?'<div class="gm-time"><i></i></div>':'')+
+  '<div class="gm-card">'+(t.listen?'<button class="gm-hear" data-a="hear" aria-label="Nghe lại">🔊</button>':
+     '<div class="gm-prompt '+(t.big?'big '+FONT[G.L]:'')+'">'+esc(t.prompt)+'</div>')+
+  (t.sub?'<div class="gm-sub">'+esc(t.sub)+'</div>':'')+
+  (mult>1?'<div class="gm-mult">×'+mult+' điểm</div>':'')+'</div>'+
+  '<form class="gm-form" autocomplete="off"><input id="gm-in" class="'+(G.L!=='en'&&G.mode!=='ko2r'?FONT[G.L]:'')+'" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="go" placeholder="Gõ đáp án rồi Enter" aria-label="Đáp án">'+
+  '<button class="gm-go sm" type="submit">OK</button></form>'+
+  '<div class="gm-btns"><button data-a="hint">💡 Gợi ý</button><button data-a="skip">Bỏ qua</button>'+(t.listen?'':'<button data-a="hear">🔊 Nghe</button>')+'</div>'+
+  '<div class="gm-fb" aria-live="polite"></div></div>';
+  const inp=$('#gm-in',ov);setTimeout(()=>inp.focus(),30);
+  $('.gm-form',ov).onsubmit=e=>{e.preventDefault();submit()};
+  if(t.listen)setTimeout(()=>speak(it.say,it.sayL),250);
+  if(S.timer){G.left=20;const bar=$('.gm-time i',ov);bar.style.transition='none';bar.style.width='100%';
+    requestAnimationFrame(()=>{bar.style.transition='width 20s linear';bar.style.width='0%'});
+    const me=G,cur=G.cur;const id=setInterval(()=>{if(G!==me||me.cur!==cur||me.state!=='ask'||ov.hidden){clearInterval(id);return}
+      me.left--;const tb=$('.gm-time',ov);if(tb&&me.left<=5)tb.classList.add('low');if(me.left<=0){clearInterval(id);fail('⏱ Hết giờ!')}},1000);G.t=id}
+}
+function reveal(){const it=G.cur,L=G.L;
+  const read=L==='zh'?it.read:L==='jp'?(it.read!==it.word?it.read+' · ':'')+it.rom:L==='ko'?it.rom:'';
+  return '<div class="gm-ans"><b class="'+FONT[L]+'">'+esc(it.word)+'</b>'+(read?'<span>'+esc(read)+'</span>':'')+
+    (it.hv&&it.hv!=='—'?'<span class="gm-hv">'+esc(it.hv)+'</span>':'')+'<em>'+esc(it.vi)+'</em>'+
+    (it.ex?'<small>'+esc(it.ex)+'</small>':'')+'</div>'}
+function submit(){
+  if(G.state!=='ask'){if(G.state==='wrong'||G.state==='ok')next();return}
+  const inp=$('#gm-in',ov),r=check(G.task,inp.value),fb=$('.gm-fb',ov);
+  if(r==='empty'){inp.focus();return}
+  if(r==='near'&&!G.retry){G.retry=true;beep('near');fb.className='gm-fb near';fb.innerHTML='Suýt đúng! Kiểm tra lại chính tả và gõ lại.';inp.select();return}
+  if(r==='ok')win();else fail('Chưa đúng.')}
+function win(){
+  clearInterval(G.t);G.state='ok';const it=G.cur;S.seen[it.id]=1;if(S.wrong[it.id])S.wrong[it.id]=Math.max(0,S.wrong[it.id]-1);
+  G.streak++;G.ok++;G.maxStreak=Math.max(G.maxStreak,G.streak);
+  const mult=1+Math.floor((G.streak-1)/5),pts=Math.max(2,Math.round((10+(S.timer?G.left:5))*mult/(1+G.hintN)));G.score+=pts;
+  const big=[5,10,15,20,30,40,50,75,100].includes(G.streak);beep(big?'big':'ok');
+  speak(it.say,it.sayL);save();
+  const fb=$('.gm-fb',ov);fb.className='gm-fb ok';fb.innerHTML='<b>✓ Đúng! +'+pts+'</b>'+reveal();
+  $('.gm-card',ov).classList.add('pop');$('.gm-hud',ov).outerHTML=hud();
+  if(big){confetti();fb.insertAdjacentHTML('afterbegin','<div class="gm-mile">🔥 Chuỗi '+G.streak+'!</div>')}
+  $('#gm-in',ov).disabled=true;const me=G,cw=G.cur;setTimeout(()=>{if(G===me&&G.cur===cw&&G.state==='ok'&&!ov.hidden)next()},big?1900:1300)}
+function fail(msg){
+  clearInterval(G.t);G.state='wrong';const it=G.cur;S.wrong[it.id]=(S.wrong[it.id]||0)+1;S.seen[it.id]=1;
+  G.lives--;G.streak=0;G.miss.push(it);beep('no');speak(it.say,it.sayL);save();
+  const fb=$('.gm-fb',ov);fb.className='gm-fb no';
+  fb.innerHTML='<b>✕ '+esc(msg)+'</b> Đáp án:'+reveal()+'<button class="gm-go sm" data-a="'+(G.lives>0?'next':'over')+'">'+(G.lives>0?'Từ tiếp theo →':'Xem kết quả')+'</button>';
+  $('.gm-box',ov).classList.add('shake');$('.gm-hud',ov).outerHTML=hud();
+  const inp=$('#gm-in',ov);inp.disabled=true;setTimeout(()=>{const b=$('.gm-fb .gm-go',ov);if(b)b.focus()},60);
+  if(G.lives<=0)G.state='over'}
+function over(){
+  clearInterval(G.t);G.state='done';const k=G.L+':'+G.mode,b=S.best[k]||{streak:0,score:0},rec=G.maxStreak>b.streak||G.score>b.score;
+  S.best[k]={streak:Math.max(b.streak,G.maxStreak),score:Math.max(b.score,G.score)};save();
+  const miss=[...new Map(G.miss.map(x=>[x.id,x])).values()];
+  ov.innerHTML='<div class="gm-box gm-over"><button class="gm-x" data-a="close" aria-label="Đóng">✕</button>'+
+  '<div class="gm-title"><span class="gm-fire">'+(rec?'🏆':'🔥')+'</span><div><b>'+(rec?'Kỷ lục mới!':'Hết lượt')+'</b><small>'+LANGS[G.L]+' · '+DATA[G.L].modes[G.mode].n+'</small></div></div>'+
+  '<div class="gm-stats"><div><b>'+G.maxStreak+'</b><small>chuỗi dài nhất</small></div><div><b>'+G.score+'</b><small>điểm</small></div><div><b>'+G.ok+'</b><small>từ đúng</small></div></div>'+
+  '<p class="gm-best">Kỷ lục: chuỗi '+S.best[k].streak+' · '+S.best[k].score+' điểm · 🔥 '+dayStreak()+' ngày chơi liên tiếp</p>'+
+  (miss.length?'<div class="gm-miss"><b>Từ cần ôn ('+miss.length+')</b>'+miss.map(x=>'<div><button class="gm-say" data-say="'+esc(x.say)+'" data-l="'+x.sayL+'" aria-label="Nghe">🔊</button><span class="'+FONT[G.L]+'">'+esc(x.word)+'</span>'+
+    (x.read&&G.L==='zh'?'<small>'+esc(x.read)+'</small>':x.rom?'<small>'+esc(x.rom)+'</small>':'')+'<em>'+esc(x.vi)+'</em></div>').join('')+'</div>':'')+
+  '<div class="gm-end">'+(miss.length?'<button class="gm-go" data-a="review">Ôn lại '+miss.length+' từ sai</button>':'')+
+  '<button class="gm-go'+(miss.length?' gh':'')+'" data-a="again">Chơi lại ▶</button><button class="gm-go gh" data-a="menu">Đổi chế độ</button></div></div>';
+  G.missIds=miss.map(x=>x.id)}
+function confetti(){const box=document.createElement('div');box.className='gm-conf';
+  const cols=['var(--ac)','var(--vio)','var(--warn)','var(--good)','#ff6b81','#4dabf7'];
+  for(let i=0;i<28;i++){const s=document.createElement('i');s.style.left=(Math.random()*100)+'%';s.style.background=cols[i%cols.length];
+    s.style.setProperty('--dx',(Math.random()*160-80)+'px');s.style.setProperty('--r',(Math.random()*720-360)+'deg');s.style.animationDelay=(Math.random()*.25)+'s';box.appendChild(s)}
+  ov.appendChild(box);setTimeout(()=>box.remove(),1800)}
+
+function open(L){if(L&&DATA[L])S.lang=L;else S.lang=document.body.dataset.lang||'en';save();ov.hidden=false;document.body.classList.add('gm-open');startScreen()}
+function close(){if(G)clearInterval(G.t);G=null;ov.hidden=true;document.body.classList.remove('gm-open');try{speechSynthesis.cancel()}catch(e){}}
+window.gameOpen=open;window.__gm=()=>G;window.__gmNext=()=>{if(G)next()};window.__gmT={DATA,task,check};
+/* lối vào: nút trong menu trái (luôn hiện) + thẻ ở trang chủ tiếng Anh */
+const subj=document.querySelector('#nav .subj');
+if(subj){const b=document.createElement('button');b.className='gm-nav';b.type='button';b.innerHTML='<span>🔥</span><b>Trò chơi · Chuỗi từ</b><em>gõ từ</em>';
+  b.onclick=()=>{document.body.classList.remove('navopen');open(null)};subj.insertAdjacentElement('afterend',b)}
+const ql=document.querySelector('#s-home .ql');
+if(ql)ql.insertAdjacentHTML('beforeend','<button data-game="en" class="ql-game"><i>🔥</i><span><b>Trò chơi Chuỗi từ</b><small>Mỗi lượt 1 từ mới, gõ đúng để giữ chuỗi</small></span></button>');
+ov.addEventListener('click',e=>{
+  const sb=e.target.closest('[data-say]');if(sb){speak(sb.dataset.say,sb.dataset.l);return}
+  const b=e.target.closest('[data-a],[data-lang],[data-mode]');if(!b||b===ov||!ov.contains(b))return; /* body và khung cũng có data-lang: chỉ nhận nút trong khung trò chơi */
+  if(b.dataset.lang){S.lang=b.dataset.lang;save();startScreen();return}
+  if(b.dataset.mode){S.mode[lang()]=b.dataset.mode;save();startScreen();return}
+  const a=b.dataset.a;
+  if(a==='close')close();else if(a==='start'||a==='again')start();else if(a==='menu'){if(G)clearInterval(G.t);G=null;startScreen()}
+  else if(a==='review')start(G.missIds);else if(a==='next')next();else if(a==='over')over();
+  else if(a==='quit'){if(G&&G.ok+G.miss.length>0){G.lives=0;over()}else{if(G)clearInterval(G.t);G=null;startScreen()}}
+  else if(a==='hear'){if(G&&G.cur)speak(G.cur.say,G.cur.sayL)}
+  else if(a==='skip'){if(G&&G.state==='ask')fail('Bỏ qua.')}
+  else if(a==='hint'){if(!G||G.state!=='ask')return;const h=G.task.hint;G.hintN++;const inp=$('#gm-in',ov);
+    const show=h.slice(0,Math.min(h.length-1,G.hintN*Math.max(1,Math.ceil(h.length/5))));
+    $('.gm-fb',ov).className='gm-fb hint';$('.gm-fb',ov).innerHTML='💡 Bắt đầu bằng: <b class="'+(G.L==='en'?'':FONT[G.L])+'">'+esc(show)+'…</b> (điểm từ này giảm)';inp.focus()}
+});
+document.addEventListener('keydown',e=>{if(ov.hidden)return;if(e.key==='Escape'){close();return}
+  if(e.key==='Enter'&&G&&(G.state==='wrong'||G.state==='over'||G.state==='ok')&&e.target.id!=='gm-in'){e.preventDefault();G.state==='over'?over():next()}});
+/* nút mở trò chơi: [data-game] ở bất kỳ đâu */
+document.addEventListener('click',e=>{const b=e.target.closest('[data-game]');if(!b)return;e.preventDefault();open(b.dataset.game||null)});
+})();
+</script>
+<!--GAME_END-->
+<!--RES_START-->
+<script>const RES={
+  "en": [
+    {"item": "Cambridge IELTS 15 Academic", "kind": "buy", "url": "https://www.cambridge.org/cambridgeenglish/catalog/cambridge-english-exams-ielts/ielts-15/ielts-15-authentic-practice-tests-academic-students-book-answers-audio-resource-bank", "note": "Trang sách của NXB Cambridge: 4 đề Academic, đáp án, audio tải về", "verified": true},
+    {"item": "Cambridge IELTS 16 Academic", "kind": "buy", "url": "https://www.cambridge.org/cambridgeenglish/catalog/cambridge-english-exams-ielts/ielts-16/ielts-16-academic-students-book-answers-audio-resource-bank", "note": "Trang sách của NXB Cambridge: 4 đề Academic, đáp án, audio tải về", "verified": true},
+    {"item": "Cambridge IELTS 17 Academic", "kind": "buy", "url": "https://www.cambridge.org/cambridgeenglish/catalog/cambridge-english-exams-ielts/ielts-17/ielts-17-academic-students-book-answers-audio-resource-bank", "note": "Trang sách của NXB Cambridge: 4 đề Academic, đáp án, audio tải về", "verified": true},
+    {"item": "Cambridge IELTS 18 Academic", "kind": "buy", "url": "https://www.cambridge.org/cambridgeenglish/catalog/cambridge-english-exams-ielts/ielts-18/ielts-18-authentic-practice-tests-academic-students-book-answers-audio-resource-bank", "note": "Trang sách của NXB Cambridge: 4 đề Academic, đáp án, audio tải về", "verified": true},
+    {"item": "Cambridge IELTS 19 Academic", "kind": "buy", "url": "https://www.cambridge.org/cambridgeenglish/catalog/cambridge-english-exams-ielts/ielts-19/ielts-19-academic-students-book-answers-audio-resource-bank", "note": "Trang sách của NXB Cambridge: 4 đề Academic, đáp án, audio tải về", "verified": true},
+    {"item": "Cambridge IELTS 20 Academic", "kind": "buy", "url": "https://www.cambridge.org/cambridgeenglish/catalog/cambridge-english-exams-ielts/ielts-20-practice-test/ielts-20-practice-test-academic-students-book-answers-digital-pack", "note": "Bộ mới nhất (7/2025): 4 đề Academic, đáp án, audio, video Speaking mẫu", "verified": true},
+    {"item": "Cambridge IELTS — toàn bộ sách luyện đề (series)", "kind": "buy", "url": "https://www.cambridge.org/cambridgeenglish/catalog/cambridge-english-exams-ielts", "note": "Danh mục sách IELTS của NXB Cambridge, xem tất cả các bộ", "verified": true},
+    {"item": "IELTS Band Descriptors — trang chính thức (ielts.org)", "kind": "site", "url": "https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail", "note": "Cách chấm điểm từng kỹ năng, có link PDF band descriptors Writing/Speaking", "verified": true},
+    {"item": "IELTS Writing Band Descriptors (PDF, Task 1 + Task 2)", "kind": "free-pdf", "url": "https://ielts.org/cdn/Guides/ielts-writing-band-descriptors.pdf", "note": "PDF chính thức (cập nhật 5/2023), 9 trang: Task 1 trang 2–5, Task 2 trang 6–9", "verified": true},
+    {"item": "IELTS Writing Task 1 Band Descriptors", "kind": "free-pdf", "url": "https://ielts.org/cdn/Guides/ielts-writing-band-descriptors.pdf#page=2", "note": "Mở thẳng phần Task 1 trong PDF chính thức (trang 2)", "verified": true},
+    {"item": "IELTS Writing Task 2 Band Descriptors", "kind": "free-pdf", "url": "https://ielts.org/cdn/Guides/ielts-writing-band-descriptors.pdf#page=6", "note": "Mở thẳng phần Task 2 trong PDF chính thức (trang 6)", "verified": true},
+    {"item": "IELTS Speaking Band Descriptors (PDF)", "kind": "free-pdf", "url": "https://ielts.org/cdn/ielts-guides/ielts-speaking-band-descriptors.pdf", "note": "PDF chính thức 4 trang: 4 tiêu chí chấm Speaking, band 0–9", "verified": true},
+    {"item": "IELTS sample test questions (ielts.org, Academic)", "kind": "free-test", "url": "https://ielts.org/take-a-test/preparation-resources/sample-test-questions/academic-test", "note": "Đề mẫu chính thức Listening/Reading/Writing/Speaking, có đáp án", "verified": true},
+    {"item": "British Council — Free IELTS practice tests", "kind": "free-test", "url": "https://takeielts.britishcouncil.org/prepare/ielts-free-practice-mock-tests", "note": "Đề luyện miễn phí của British Council, cả bản giấy và trên máy", "verified": true},
+    {"item": "British Council — IELTS on computer Familiarisation Test", "kind": "free-test", "url": "https://takeielts.britishcouncil.org/prepare/ielts-free-practice-mock-tests/ielts-familiarisation-test", "note": "Làm thử đúng giao diện thi trên máy tính, miễn phí", "verified": true},
+    {"item": "IDP — Free IELTS practice tests", "kind": "free-test", "url": "https://ielts.idp.com/prepare/free-ielts-practice-tests", "note": "Tài liệu và đề luyện miễn phí chính thức của IDP", "verified": true},
+    {"item": "IDP — IELTS Familiarisation test (computer)", "kind": "free-test", "url": "https://ielts.idp.com/about/ielts-familiarisation-tests", "note": "Bài làm quen thi IELTS trên máy của IDP, miễn phí", "verified": true},
+    {"item": "IELTS Liz", "kind": "site", "url": "https://ieltsliz.com/", "note": "Mẹo, bài mẫu và chiến thuật IELTS miễn phí", "verified": true},
+    {"item": "IELTS Simon", "kind": "site", "url": "https://ielts-simon.com/", "note": "Bài mẫu Writing/Speaking của cựu giám khảo, miễn phí", "verified": true},
+    {"item": "IELTS Vocabulary Up to Band 6.0 (trước là Cambridge Vocabulary for IELTS)", "kind": "buy", "url": "https://www.cambridge.org/cambridgeenglish/catalog/cambridge-english-exams-ielts/ielts-vocabulary-band-60", "note": "Sách từ vựng IELTS của Cambridge, có bài tập, đáp án, audio", "verified": true},
+    {"item": "IELTS Vocabulary For Bands 6.5 and above", "kind": "buy", "url": "https://www.cambridge.org/cambridgeenglish/catalog/cambridge-english-exams-ielts/ielts-vocabulary-bands-65/ielts-vocabulary-bands-65-and-above-answers-and-downloadable-audio", "note": "Bản nâng cao (thay Cambridge Vocabulary for IELTS Advanced)", "verified": true},
+    {"item": "IELTS Grammar (trước là Cambridge Grammar for IELTS)", "kind": "buy", "url": "https://www.cambridge.org/cambridgeenglish/catalog/cambridge-english-exams-ielts/ielts-grammar", "note": "Sách ngữ pháp IELTS của Cambridge, có bài tập và audio", "verified": true},
+    {"item": "IELTS Grammar For Bands 6.5 and above", "kind": "buy", "url": "https://www.cambridge.org/cambridgeenglish/catalog/cambridge-english-exams-ielts/ielts-grammar/ielts-grammar-bands-65-and-above-answers-and-downloadable-audio", "note": "Bản thay thế Cambridge Grammar for IELTS, có đáp án và audio", "verified": true},
+    {"item": "BBC Learning English — 6 Minute English", "kind": "podcast", "url": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english", "note": "Bài nghe 6 phút có transcript, hợp để chép chính tả", "verified": true},
+    {"item": "TED-Ed", "kind": "site", "url": "https://ed.ted.com/", "note": "Video bài giảng ngắn có phụ đề, gần chủ đề Reading Academic", "verified": true},
+    {"item": "TED Talks", "kind": "site", "url": "https://www.ted.com/talks", "note": "Bài nói có transcript, luyện nghe kiểu Listening Part 4", "verified": true},
+    {"item": "The Economist podcasts", "kind": "podcast", "url": "https://www.economist.com/podcasts", "note": "Podcast thời sự, kinh tế; khó hơn IELTS, luyện tai tốt", "verified": true},
+    {"item": "Financial Times podcasts", "kind": "podcast", "url": "https://www.ft.com/podcasts", "note": "Podcast FT về kinh tế, kinh doanh", "verified": true},
+    {"item": "The Guardian podcasts", "kind": "podcast", "url": "https://www.theguardian.com/podcasts", "note": "Danh sách podcast của The Guardian", "verified": true},
+    {"item": "The Guardian — The long read", "kind": "site", "url": "https://www.theguardian.com/news/series/the-long-read", "note": "Bài đọc dài chuyên sâu, luyện đọc Passage 3", "verified": true},
+    {"item": "The Guardian — The Audio Long Read", "kind": "podcast", "url": "https://www.theguardian.com/news/series/the-audio-long-read", "note": "Bản audio của The long read, vừa nghe vừa đọc", "verified": true},
+    {"item": "Aeon", "kind": "site", "url": "https://aeon.co/", "note": "Bài luận triết học, khoa học, xã hội; đọc miễn phí", "verified": true},
+    {"item": "BBC Future", "kind": "site", "url": "https://www.bbc.co.uk/future", "note": "Bài khoa học, sức khoẻ. Dùng bbc.co.uk vì bbc.com không vào được từ VN", "verified": true},
+    {"item": "National Geographic", "kind": "site", "url": "https://www.nationalgeographic.com/", "note": "Bài về thiên nhiên, lịch sử, khoa học", "verified": true},
+    {"item": "Scientific American", "kind": "site", "url": "https://www.scientificamerican.com/", "note": "Bài khoa học phổ thông, đúng chất Passage 3", "verified": true},
+    {"item": "Nature News", "kind": "site", "url": "https://www.nature.com/news", "note": "Tin nghiên cứu khoa học mới", "verified": true}
+  ],
+  "zh": [
+    {"item": "Giáo trình chuẩn HSK (HSK Standard Course) — trang NXB", "kind": "buy", "url": "https://www.blcup.com/EnSeriesBook/index/8", "note": "Trang bộ sách của NXB Đại học Ngôn ngữ Bắc Kinh (BLCUP)", "verified": true},
+    {"item": "HSK Standard Course 1", "kind": "buy", "url": "https://www.blcup.com/EnPInfo/index/77", "note": "Trang sách HSK 1 của NXB BLCUP", "verified": true},
+    {"item": "HSK Standard Course — audio và tài liệu kèm sách", "kind": "site", "url": "https://www.blcup.com/EnRes", "note": "Kho tài nguyên chính thức của BLCUP: MP3, hình bài tập", "verified": true},
+    {"item": "Pleco (trang chính thức)", "kind": "app", "url": "https://www.pleco.com/", "note": "Từ điển Trung: viết tay, chụp ảnh, thứ tự nét. Miễn phí", "verified": true},
+    {"item": "Pleco — Google Play", "kind": "app", "url": "https://play.google.com/store/apps/details?id=com.pleco.chinesesystem", "note": "Tải Pleco cho Android", "verified": true},
+    {"item": "Pleco — App Store", "kind": "app", "url": "https://apps.apple.com/app/id341922306", "note": "Tải Pleco cho iPhone/iPad", "verified": true},
+    {"item": "Bộ gõ pinyin — Windows (Microsoft Pinyin)", "kind": "site", "url": "https://support.microsoft.com/en-us/windows/hardware/input-devices/microsoft-simplified-chinese-ime", "note": "Hướng dẫn chính thức cài bộ gõ pinyin trên Windows", "verified": true},
+    {"item": "Bộ gõ pinyin — Android (Gboard)", "kind": "app", "url": "https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin", "note": "Gboard của Google, thêm ngôn ngữ Trung (pinyin)", "verified": true},
+    {"item": "Thêm bàn phím ngôn ngữ — Gboard Help", "kind": "site", "url": "https://support.google.com/gboard/answer/7068494", "note": "Hướng dẫn chính thức thêm bàn phím Trung/Hàn trên Gboard", "verified": true},
+    {"item": "Thêm bàn phím — iPhone (Apple Support)", "kind": "site", "url": "https://support.apple.com/guide/iphone/add-or-change-keyboards-iph73b71eb/ios", "note": "Hướng dẫn chính thức thêm bàn phím pinyin trên iPhone", "verified": true},
+    {"item": "HSK — trang chính thức (chinesetest.cn)", "kind": "site", "url": "https://www.chinesetest.cn/HSK", "note": "Giới thiệu HSK, lịch thi, đăng ký, tra điểm", "verified": true},
+    {"item": "HSK 3.0 — thi thử trên máy chính thức", "kind": "free-test", "url": "https://hsk3demo-intl.chinesetest.cn/", "note": "Bài thi trải nghiệm HSK 3.0 của CLEC/CTI, miễn phí", "verified": true},
+    {"item": "HSK 3.0 — bộ đề mẫu (file ZIP)", "kind": "free-pdf", "url": "https://hsk-sample-1409982902.cos.ap-beijing.myqcloud.com/HSK3.0.zip", "note": "Đề mẫu HSK 3.0, link tải đặt trên chinesetest.cn; có thể đổi", "verified": true}
+  ],
+  "jp": [
+    {"item": "Minna no Nihongo — trang bộ sách (3A Corporation)", "kind": "buy", "url": "https://www.3anet.co.jp/en/series.html", "note": "Danh mục sách của NXB 3A, gồm bộ Minna no Nihongo", "verified": true},
+    {"item": "Minna no Nihongo Sơ cấp I (bản 2) — sách chính", "kind": "buy", "url": "https://www.3anet.co.jp/np/books/2300/", "note": "Sách chính 25 bài (bài 1–25), kèm CD", "verified": true},
+    {"item": "Minna no Nihongo Sơ cấp II (bản 2) — sách chính", "kind": "buy", "url": "https://www.3anet.co.jp/np/books/2400/", "note": "Sách chính bài 26–50", "verified": true},
+    {"item": "Minna no Nihongo Sơ cấp I (bản 2) — Dịch và giải thích ngữ pháp tiếng Việt", "kind": "buy", "url": "https://www.3anet.co.jp/np/books/2322/", "note": "Bản tiếng Việt chính thức: từ vựng, ngữ pháp bài 1–25", "verified": true},
+    {"item": "Minna no Nihongo Sơ cấp II (bản 2) — Dịch và giải thích ngữ pháp tiếng Việt", "kind": "buy", "url": "https://www.3anet.co.jp/np/books/2422/", "note": "Bản tiếng Việt chính thức: từ vựng, ngữ pháp bài 26–50", "verified": true},
+    {"item": "Minna no Nihongo Sơ cấp I (bản 3, mới)", "kind": "buy", "url": "https://www.3anet.co.jp/np/en/books/1300/", "note": "Bản 3 mới ra; bản 2 vẫn được bán tiếp", "verified": true},
+    {"item": "Minna no Nihongo Sơ cấp II (bản 3, mới)", "kind": "buy", "url": "https://www.3anet.co.jp/np/en/books/1400/", "note": "Bản 3 của tập II", "verified": true},
+    {"item": "Mazii (web, tiếng Việt)", "kind": "app", "url": "https://mazii.net/vi-VN", "note": "Từ điển Nhật–Việt, tra kanji bằng viết tay", "verified": true},
+    {"item": "Mazii — Google Play", "kind": "app", "url": "https://play.google.com/store/apps/details?id=com.mazii.dictionary", "note": "Tải Mazii cho Android", "verified": true},
+    {"item": "Mazii — App Store", "kind": "app", "url": "https://apps.apple.com/app/id933081417", "note": "Tải Mazii cho iPhone/iPad", "verified": true},
+    {"item": "Takoboto (web)", "kind": "app", "url": "https://takoboto.jp/", "note": "Từ điển Nhật–Anh miễn phí, tra kanji, câu ví dụ", "verified": true},
+    {"item": "Takoboto — Google Play", "kind": "app", "url": "https://play.google.com/store/apps/details?id=jp.takoboto", "note": "Tải Takoboto cho Android (dùng offline)", "verified": true},
+    {"item": "Takoboto — App Store", "kind": "app", "url": "https://apps.apple.com/app/id6743079369", "note": "Tải Takoboto cho iPhone/iPad", "verified": true},
+    {"item": "NHK News Web Easy", "kind": "site", "url": "https://news.web.nhk/news/easy/", "note": "Tin tức tiếng Nhật dễ, có furigana và audio (địa chỉ mới của NHK)", "verified": true},
+    {"item": "JLPT — câu hỏi mẫu chính thức", "kind": "free-test", "url": "https://www.jlpt.jp/e/samples/forlearners.html", "note": "Trang thử câu hỏi mẫu N1–N5 của JLPT", "verified": true},
+    {"item": "JLPT Official Practice Workbook (PDF)", "kind": "free-pdf", "url": "https://www.jlpt.jp/e/samples/sampleindex.html", "note": "Đề luyện chính thức N1–N5 dạng PDF, có audio nghe", "verified": true},
+    {"item": "JLPT — đề mẫu N5 phần từ vựng (PDF trực tiếp)", "kind": "free-pdf", "url": "https://www.jlpt.jp/samples/sample2018/pdf/N5V.pdf", "note": "File PDF chính thức; đổi N5V thành N4V, N5G, N5R, N5L... cho phần khác", "verified": true}
+  ],
+  "ko": [
+    {"item": "Tiếng Hàn tổng hợp dành cho người Việt Nam (Sơ cấp 1–2)", "kind": "buy", "url": "https://www.kf.or.kr/", "note": "Chưa tìm thấy trang sách chính thức; tạm dẫn về Korea Foundation (NXB)", "verified": false},
+    {"item": "Từ điển Naver Hàn–Việt (web)", "kind": "app", "url": "https://korean.dict.naver.com/kovidict/", "note": "Từ điển Hàn–Việt chính thức của Naver, có phát âm, ví dụ", "verified": true},
+    {"item": "Naver Dictionary — Google Play", "kind": "app", "url": "https://play.google.com/store/apps/details?id=com.nhn.android.naverdic", "note": "Tải app từ điển Naver cho Android", "verified": true},
+    {"item": "Naver Dictionary — App Store", "kind": "app", "url": "https://apps.apple.com/app/id673085116", "note": "Tải app từ điển Naver cho iPhone/iPad", "verified": true},
+    {"item": "Bàn phím Hangul — Windows (Microsoft IME)", "kind": "site", "url": "https://support.microsoft.com/en-us/windows/hardware/input-devices/advanced-input-methods-for-east-asian-languages", "note": "Hướng dẫn chính thức bộ gõ tiếng Hàn trên Windows", "verified": true},
+    {"item": "Bàn phím Hangul — Android (Gboard)", "kind": "app", "url": "https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin", "note": "Gboard của Google, thêm bàn phím tiếng Hàn 2벌식", "verified": true},
+    {"item": "Thêm bàn phím ngôn ngữ — Gboard Help", "kind": "site", "url": "https://support.google.com/gboard/answer/7068494", "note": "Hướng dẫn chính thức thêm bàn phím tiếng Hàn trên Gboard", "verified": true},
+    {"item": "Thêm bàn phím — iPhone (Apple Support)", "kind": "site", "url": "https://support.apple.com/guide/iphone/add-or-change-keyboards-iph73b71eb/ios", "note": "Hướng dẫn chính thức thêm bàn phím tiếng Hàn trên iPhone", "verified": true},
+    {"item": "TOPIK — trang chính thức", "kind": "site", "url": "https://www.topik.go.kr/", "note": "Lịch thi, đăng ký, tra điểm TOPIK", "verified": true},
+    {"item": "TOPIK — làm đề thi cũ chính thức (기출문제)", "kind": "free-test", "url": "https://www.topik.go.kr/TWSTDY/TWSTDY0080.do", "note": "Đề TOPIK I/II các kỳ 2018–2025, làm online, có audio nghe", "verified": true}
+  ]
+}
+;</script>
+<script>
+/* ============ Tài liệu chính thức: nút mở thẳng (chỉ link, không lưu file của người khác) ============ */
+(function(){
+'use strict';
+if(typeof RES==='undefined')return;
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const KIND={'free-test':['📝','Đề thi thử miễn phí'],'free-pdf':['📄','Tài liệu PDF chính thức (miễn phí)'],buy:['🛒','Sách nên mua (trang chính hãng)'],
+  site:['🌐','Trang học miễn phí'],app:['📱','Ứng dụng & từ điển'],podcast:['🎧','Nghe & đọc mỗi ngày']};
+const ORDER=['free-test','free-pdf','site','app','podcast','buy'];
+function block(list,title){
+  const ok=(list||[]).filter(x=>x&&x.url&&x.verified!==false&&/^https:\/\//.test(x.url));if(!ok.length)return'';
+  const groups=ORDER.map(k=>[k,ok.filter(x=>x.kind===k)]).filter(g=>g[1].length);
+  const other=ok.filter(x=>!KIND[x.kind]);if(other.length)groups.push(['site',other]);
+  return '<div class="rs-box"><div class="rs-head"><b>'+esc(title)+'</b><small>Bấm là mở trang chính thức trong tab mới. Sách có bản quyền thì dẫn tới nơi bán chính hãng; đề thi thử và PDF miễn phí lấy từ chính tổ chức thi.</small></div>'+
+    groups.map(([k,xs])=>'<div class="rs-grp"><div class="rs-gt">'+KIND[k][0]+' '+KIND[k][1]+'</div><div class="rs-list">'+
+      xs.map(x=>'<a class="rs-btn" href="'+esc(x.url)+'" target="_blank" rel="noopener"><b>'+esc(x.item)+' <i>↗</i></b>'+(x.note?'<small>'+esc(x.note)+'</small>':'')+'</a>').join('')+'</div></div>').join('')+'</div>';
+}
+/* tiếng Anh: đầu trang Tài nguyên */
+const res=document.getElementById('s-res');
+if(res&&RES.en){const sub=res.querySelector('.sub');const h=block(RES.en,'Tài liệu chính thức · bấm là mở');
+  if(sub)sub.insertAdjacentHTML('afterend',h);else res.insertAdjacentHTML('afterbegin',h)}
+/* Trung · Nhật · Hàn: dưới tiêu đề "Tài liệu nên có" trong trang Cần học những gì */
+const MAIN={zh:'zh-main',jp:'jp-main',ko:'ko-main'};
+function inject(m){const root=document.getElementById(MAIN[m]);if(!root||root.querySelector('.rs-box'))return;
+  const h=[...root.querySelectorAll('h2,h3')].find(x=>/tài liệu nên có/i.test(x.textContent));if(!h)return;
+  h.insertAdjacentHTML('afterend',block(RES[m],'Mở nhanh tài liệu chính thức'))}
+Object.keys(MAIN).forEach(m=>{const root=document.getElementById(MAIN[m]);if(!root||!RES[m])return;
+  new MutationObserver(()=>inject(m)).observe(root,{childList:true});inject(m)});
+window.resFind=(lang,re)=>(RES[lang]||[]).find(x=>re.test(x.item));
+})();
+</script>
+<!--RES_END-->
 <!--PLAN2_START-->
 <script>
 /* ============ Lộ trình: mỗi việc có nút mở thẳng bài học / bài tập ============
@@ -13162,12 +13635,16 @@ const ERR='track>Sổ lỗi|Mở sổ lỗi';
 const CLOCK='tools>Đồng hồ thi thật|Đồng hồ thi';
 const PAID='res>Việc phải trả tiền|Vì sao cần người sửa';
 const VO='wt2>Vở viết|Vở viết có đồng hồ';
+const FREE='x:https://takeielts.britishcouncil.org/prepare/ielts-free-practice-mock-tests|Đề thi thử miễn phí (British Council)';
+const FREE2='x:https://ielts.idp.com/prepare/free-ielts-practice-tests|Đề thi thử miễn phí (IDP)';
+const BDW='x:https://ielts.org/cdn/Guides/ielts-writing-band-descriptors.pdf|Band Descriptors Writing (PDF)';
+const BDS='x:https://ielts.org/cdn/ielts-guides/ielts-speaking-band-descriptors.pdf|Band Descriptors Speaking (PDF)';
 const MAP={
-'0-0':[CAM,CLOCK,MOCK],
-'0-1':['wt2>4 tiêu chí|Tiêu chí Writing','spk>4 tiêu chí|Tiêu chí Speaking','res>Band Descriptors|Tải bản chính thức'],
+'0-0':[FREE,'x:https://www.cambridge.org/cambridgeenglish/catalog/cambridge-english-exams-ielts/ielts-17/ielts-17-academic-students-book-answers-audio-resource-bank|Mua Cambridge IELTS 17',CLOCK,MOCK],
+'0-1':[BDW,BDS,'wt2>4 tiêu chí|Tóm tắt tiêu chí Writing','spk>4 tiêu chí|Tóm tắt tiêu chí Speaking'],
 '0-2':['g:present','g:past','g:countable','g:articles'],
 '0-3':['f:Education','voc>Education|20 cụm Education'],
-'0-4':[BBC,'res>Nghe & đọc mở rộng|Nguồn nghe miễn phí'],
+'0-4':[BBC,'res>Tài liệu chính thức|Nguồn nghe miễn phí'],
 '1-0':['lis>Cấu trúc đề|Các dạng Part 1–4','d:lisnum'],
 '1-1':['d:spell',BBC],
 '1-2':['lis>Bẫy #2|Chính tả & số nhiều','d:spell'],
@@ -13181,7 +13658,7 @@ const MAP={
 '3-0':['spk>Bộ câu hỏi Part 1|Câu hỏi Part 1','spk>Máy ghi âm|Máy ghi âm'],
 '3-1':['pro>Vấn đề 1|Rơi âm cuối'],
 '3-2':['wt1>Các loại đề khác|Pie, bar, table','w:1'],
-'3-3':[CAM,CLOCK,MOCK],
+'3-3':[FREE,FREE2,CLOCK,MOCK],
 '3-4':[ERR],
 '4-0':['rea>Dạng 1|Quy trình TFNG','d:tfng','d:ynng'],
 '4-1':['voc>Kho paraphrase|Kho paraphrase','d:para'],
@@ -13218,7 +13695,7 @@ const MAP={
 '10-2':['spk>Luyện Part 2|Cue card + đồng hồ'],
 '10-3':['rea>Multiple choice|Multiple choice','rea>Diagram / flow-chart|Diagram labelling'],
 '10-4':['f:Government & City','voc>Government & City|20 cụm Government'],
-'11-0':[CLOCK,MOCK,'tools>Máy tính band|Tính band'],
+'11-0':[FREE,CLOCK,MOCK,'tools>Máy tính band|Tính band'],
 '11-1':['wt2>Tự chấm bài|Rubric 12 câu','gra>Phần A|4 lỗi mất điểm nhất','d:gram'],
 '11-2':[PAID],
 '11-3':['daily>Khung 120 phút|Chia lại giờ học'],
@@ -13258,7 +13735,7 @@ const MAP={
 '18-2':['spk>Bộ câu hỏi Part 3|Câu hỏi để luyện','res>Việc phải trả tiền|Vì sao cần người thật'],
 '18-3':[CLOCK,'rea>Quản lý thời gian|Chia giờ Reading'],
 '18-4':[ERR],
-'19-0':[CLOCK,MOCK,'tools>Máy tính band|Tính band'],
+'19-0':[FREE2,CLOCK,MOCK,'tools>Máy tính band|Tính band'],
 '19-1':['res>Trước ngày thi|Trước ngày thi'],
 '19-2':['wt2>5 dạng đề|5 dạng đề','w:2'],
 '19-3':['voc>50 cụm|50 cụm Task 2','d:coll'],
@@ -13272,7 +13749,7 @@ const MAP={
 '21-1':['spk>Máy ghi âm|Máy ghi âm'],
 '21-2':['w:2'],
 '21-3':['w:2|Mở vở viết (bài đã lưu)'],
-'21-4':['res>British Council|Luyện thi trên máy'],
+'21-4':['x:https://takeielts.britishcouncil.org/prepare/ielts-free-practice-mock-tests/ielts-familiarisation-test|Thi thử trên máy (British Council)','x:https://ielts.idp.com/about/ielts-familiarisation-tests|Thi thử trên máy (IDP)'],
 '22-0':[CLOCK,MOCK],
 '22-1':[ERR,'s:drill|Phòng bài tập'],
 '22-2':['w:2|Vở viết Task 2','w:1|Vở viết Task 1'],

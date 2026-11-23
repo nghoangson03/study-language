@@ -7,6 +7,9 @@ Web tự học ngoại ngữ, chạy trong một file HTML duy nhất:
 - **Tiếng Nhật**: kana, N5, tiếng Nhật công việc/IT, xuất nhập khẩu
 - **Tiếng Hàn**: Hangul, TOPIK I, tiếng Hàn công việc/IT, xuất nhập khẩu
 
+Cả 4 thứ tiếng có lộ trình theo tuần (bấm là mở đúng bài), trò chơi **Chuỗi từ** ôn từ vựng (gõ đúng để giữ chuỗi)
+và trang tài liệu chính thức (đề thi thử miễn phí, PDF band descriptors, nơi mua sách chính hãng).
+
 Mở trang: https://nghoangson03.github.io/study-language/
 
 Tiến độ học lưu trong trình duyệt của người dùng (localStorage), không gửi lên máy chủ.
